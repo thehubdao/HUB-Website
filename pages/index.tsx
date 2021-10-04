@@ -55,6 +55,7 @@ const Home: NextPage = () => {
                     <Team />
 
                     <Partner />
+                    
                 </div>
 
             </main>
