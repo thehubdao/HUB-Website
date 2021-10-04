@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  /* @font-face {
+    font-family: 'Nexa';
+    font-weight: 100;
+    src: url("./fonts/Nexa-Thin.ttf");
+  }
+  @font-face {
+    font-family: 'Nexa';
+    font-weight: 200;
+    src: url("./fonts/Nexa-Light.ttf");
+  }
+  @font-face {
+    font-family: 'Nexa';
+    font-weight: 300;
+    src: url("./fonts/Nexa-Book.ttf");
+  }
+  @font-face {
+    font-family: 'Nexa';
+    font-weight: 500;
+    src: url("./fonts/Nexa-Bold.ttf");
+  }
+  @font-face {
+    font-family: 'Nexa';
+    font-weight: 800;
+    src: url("./fonts/Nexa-Black.ttf");
+  } */
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: url("./fonts/Montserrat/Montserrat-Thin.ttf");
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url("./fonts/Montserrat/Montserrat-Light.ttf");
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+  }
+}
+
+.nav-item {
+  @apply text-gray-200 pb-1 text-xl transform hover:scale-115 transition-all duration-500 ease-in-out hover:text-blue-400 ;
+}
+
+.nav-item-selected {
+  @apply hidden lg:block pb-1 text-xl font-medium bg-transparent;
+}
+
+.social-media-icon {
+  @apply text-xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-gray-200 transform hover:scale-125 transition duration-300 ease-in-out;
+}
+
+.button {
+  @apply px-4 p-1 xl:text-xl font-medium bg-transparent rounded-2xl text-gray-200 bg-black bg-opacity-20 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button border border-white border-opacity-20 hover:border-opacity-70;
+}
+
+@responsive {
+
+  .toolbar-top {
+    @apply z-50 p-5 top-5 fixed w-11/12 text-gray-200 rounded-2xl bg-white transition-all duration-500 bg-opacity-20;
+  }
+
+  .toolbar-scroll {
+    @apply z-50 p-5 top-0 fixed w-11/12 text-gray-200 rounded-b-2xl bg-white transition-all duration-500 bg-opacity-20 backdrop-filter backdrop-blur-3xl;
+  }
+
+  .toolbar-top-small {
+    @apply z-50 p-5 top-0 fixed w-full text-gray-200 bg-white bg-opacity-20 backdrop-filter backdrop-blur-3xl;
+  }
+
+}
+
+.space-img {
+  --animate-duration: 5s;
+}
+
+html {
+  @apply bg-black;
+  scroll-behavior: smooth;
+}
+
+.progress-ring__circle {
+  stroke-dashoffset: 250;
+  stroke-dasharray: 500 500;
+}

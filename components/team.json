@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Nicolas Weber",
+    "position": "Founder",
+    "image": "/images/Team/nicolas.png",
+    "linkeind": "https://www.linkedin.com/in/nicolas97weber/"
+  },
+  {
+    "name": "Camilo Echeverri",
+    "position": "Co-Founder & Operations",
+    "image": "/images/Team/camilo.png",
+    "linkeind": "https://www.linkedin.com/in/caem2017/"
+  },
+  {
+    "name": "Lukas Philipp",
+    "position": "Co-Founder & Operations",
+    "image": "/images/Team/lukas.png",
+    "linkeind": "https://www.linkedin.com/in/lukasph/"
+  },
+  {
+    "name": "Jean Feier",
+    "position": "Co-Founder & Operations",
+    "image": "/images/Team/jean.png",
+    "linkeind": "https://www.linkedin.com/in/jeanine-feierfeil/"
+  },
+  {
+    "name": "Phil Thomsen",
+    "position": "Lead Blockchain Architect",
+    "image": "/images/Team/phil.png",
+    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
+  },
+  {
+    "name": "Fredy Teheran",
+    "position": "Lead Developer",
+    "image": "/images/Team/fredy.png",
+    "linkeind": "https://www.linkedin.com/in/fredyteheranto/"
+  },
+  {
+    "name": "Oskar Latussek",
+    "position": "Lead Frontend Developer",
+    "image": "/images/Team/oskar.png",
+    "linkeind": "https://www.linkedin.com/in/oskar-latussek/"
+  },
+  {
+    "name": "Pierre Baumann",
+    "position": "Blockchain Developer",
+    "image": "/images/Team/pierre.png",
+    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
+  },
+  {
+    "name": "Philipp Kothe",
+    "position": "Blockchain Architect",
+    "image": "/images/Team/philipp.png",
+    "linkeind": "https://www.linkedin.com/in/philippkothe/"
+  },
+  {
+    "name": "Eboni Jazzmine Taylor",
+    "position": "Lead Marketing",
+    "image": "/images/Team/eboni.png",
+    "linkeind": "https://www.linkedin.com/in/eboni-jazzmine-68765510b/"
+  }
+]
