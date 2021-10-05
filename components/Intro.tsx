@@ -20,9 +20,9 @@ const Intro = ({ scroll }: any) => {
 
                 <div className={`absolute top-0 h-screen w-full z-20 flex justify-center items-center`}>
                     <div className={`${scroll > 10 ? "transition-all duration-1000 transform xl:translate-x-56 xl:-translate-y-0 -translate-y-32" : ""} flex flex-col items-center xl:items-start`}>
-                        <p className={`${scroll > 10 ? "lg:text-7xl" : "lg:text-9xl"} transition-all duration-1000 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-200  to-blue-500`}>MetaGameHub</p>
+                        <p className={`${scroll > 10 ? "xl:text-7xl" : "xl:text-9xl"} transition-all duration-1000 text-4xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-200  to-blue-500`}>MetaGameHub</p>
 
-                        <button className={`lg:${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-0"} mt-5 transition-all duration-300 ease-in-out bg-black bg-opacity-50 border border-white border-opacity-25 hover:border-opacity-70 hover:shadow-color px-4 xl:px-6 py-2 xl:py-4 rounded-full`}>
+                        <button className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} mt-5 transition-all duration-300 ease-in-out bg-black bg-opacity-50 border border-white border-opacity-25 hover:border-opacity-70 hover:shadow-color px-4 xl:px-6 py-2 xl:py-4 rounded-full`}>
                             <a href="https://t.me/metagamehub_dao" className="cursor-pointer" target="_blank" >
                                 <span className="text-gray-200 text-lg xl:text-xl">Join Community!</span>
 
