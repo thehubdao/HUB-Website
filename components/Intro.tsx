@@ -18,7 +18,7 @@ const Intro = ({ scroll }: any) => {
                     <Image src="/images/background/stars-1.jpg" width="2848" height="1899" className="animate__animated animate__zoomIn space-img z-0" /> */}
                 </div>
 
-                <div className={`absolute top-0 h-screen w-full z-10 flex justify-center items-center`}>
+                <div className={`absolute top-0 h-screen w-full z-20 flex justify-center items-center`}>
                     <div className={`${scroll > 10 ? "transition-all duration-1000 transform xl:translate-x-56 xl:-translate-y-0 -translate-y-32" : ""} flex flex-col items-center xl:items-start`}>
                         <p className={`${scroll > 10 ? "lg:text-7xl" : "lg:text-9xl"} transition-all duration-1000 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-200  to-blue-500`}>MetaGameHub</p>
 
