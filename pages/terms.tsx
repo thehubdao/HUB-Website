@@ -26,7 +26,7 @@ const TermsofusePage: NextPage = () => {
           <p className="py-1 text-gray-400">
             The MetaGame Hub website located at
             https://www.metagamehub.io is a copyrighted work belonging
-            to DAC BV. Certain features of the Site may be subject to
+            to the MetaGameHub DAO. Certain features of the Site may be subject to
             additional guidelines, terms, or rules, which will be posted
             on the Site in connection with such features.
           </p>
@@ -594,10 +594,6 @@ const TermsofusePage: NextPage = () => {
             consent of such third party which may own the Marks.
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Contact Information</h2>
-
-          <p className="py-1 text-gray-400">Address: Bredasingel 186 NA, Arnhem, 6844AT Netherlands</p>
-          <p className="py-1 text-gray-400">Email: [social@thedac.info](mailto:social@thedac.info)</p>
         </div>
 
       </main>
