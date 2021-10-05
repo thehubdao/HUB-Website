@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Quoc Bao Ngo",
+    "position": "Strategic Advisor",
+    "image": "/images/Team/quoc.png",
+    "linkeind": "https://www.linkedin.com/in/ngoquocbao1980/"
+  },
+  {
+    "name": "Nick Allison",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/nick.png",
+    "linkeind": "https://www.linkedin.com/in/nick-allison/"
+  },
+  {
+    "name": "Marc Lanz",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/marc.png",
+    "linkeind": "https://www.linkedin.com/in/marclanz/"
+  },
+  {
+    "name": "Christian Werner",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/christian.png",
+    "linkeind": "https://www.linkedin.com/in/christian-werner-5aab41171/"
+  },
+  {
+    "name": "Peter Rafelson",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/peter.png",
+    "linkeind": "https://www.linkedin.com/in/rafelsonmedia/"
+  }
+]

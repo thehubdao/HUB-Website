@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Patrick Sührer",
+    "position": "Blockchain Researcher",
+    "image": "/images/Team/patrick.png",
+    "linkeind": "https://www.linkedin.com/in/patrick-suehrer/"
+  },
+  {
+    "name": "Yoshinori Sugiura",
+    "position": "Marketing",
+    "image": "/images/Team/yoshi.png",
+    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
+  },
+  {
+    "name": "Selcuk Kösemehmetoglu",
+    "position": "Sales",
+    "image": "/images/Team/selcuk.png",
+    "linkeind": "https://www.linkedin.com/in/selcuk-k%C3%B6semehmetoglu-28b31862/"
+  },
+  {
+    "name": "Javan Sarderabady",
+    "position": "Sales & Marketing",
+    "image": "/images/Team/javan.png",
+    "linkeind": "https://www.linkedin.com/in/javan-sardarabady-301a48215/"
+  },
+  {
+    "name": "Robin Prock",
+    "position": "Marketing",
+    "image": "/images/Team/robin.png",
+    "linkeind": "https://www.linkedin.com/in/robin-prock-931612210/"
+  },
+  {
+    "name": "Alejandra Corbella",
+    "position": "Marketing",
+    "image": "/images/Team/alejandra.png",
+    "linkeind": "https://www.linkedin.com/in/alejandra-corbella-obregon-a6637ba9/"
+  }
+
+]
