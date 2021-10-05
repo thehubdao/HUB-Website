@@ -44,7 +44,7 @@ const Toolbar = () => {
                     {open ? <MdClose size={34} /> : <HiMenuAlt4 size={34} />}
                 </button>
             </div>
-            <nav className={`${open ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOutUp"} p-5 top-0 fixed w-full text-gray-200 backdrop-filter backdrop-blur-2xl bg-black bg-opacity-10 flex flex-col space-y-5 items-center pt-20`} >
+            <nav className={`${open ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOutUp hidden"} p-5 top-0 fixed w-full text-gray-200 backdrop-filter backdrop-blur-2xl bg-black bg-opacity-10 flex flex-col space-y-5 items-center pt-20`} >
                 <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank">
                     <div className="nav-item">Whitepaper</div>
                 </a>
