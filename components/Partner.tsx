@@ -15,7 +15,7 @@ const Partner = () => {
             <div className="w-full">
                 <div className={`w-full flex flex-col items-center justify-start p-8`}>
 
-                    <span className={`col-span-full text-5xl sm:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-gray-400 via-gray-400 to-gray-900 mb-10`}>Partner</span>
+                    <span className={`col-span-full text-5xl sm:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-gray-400 via-gray-400 to-gray-900 mb-10`}>Partners</span>
 
                     <div className="relative w-full flex flex-col md:flex-row justify-center items-center">
                         <div className="m-5 max-w-sm ">
