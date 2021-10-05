@@ -34,7 +34,7 @@ module.exports = {
         '1/2': '50%'
       },
       transitionProperty: {
-        'display': 'display'
+        'visibility': 'visibility'
       },
       boxShadow: {
         round: '0 0px 30px -15px rgba(0, 0, 0, 0.25)',

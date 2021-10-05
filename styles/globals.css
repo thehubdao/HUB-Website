@@ -85,7 +85,7 @@
   }
 
   .toolbar-top-small {
-    @apply z-50 p-5 top-0 fixed w-full text-gray-200 bg-white bg-opacity-20 backdrop-filter backdrop-blur-3xl;
+    @apply p-5 top-0 fixed w-full text-gray-200 bg-white bg-opacity-20 backdrop-filter backdrop-blur-3xl;
   }
 
 }
