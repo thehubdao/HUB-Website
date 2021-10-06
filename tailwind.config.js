@@ -1,5 +1,6 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   important: true,
   theme: {
@@ -80,7 +81,8 @@ module.exports = {
       backgroundImage: ['hover'],
       grayscale: ['hover'],
       zIndex: ['hover'],
-      opactiy: ['last'] 
+      opactiy: ['last'],
+      backgroundColor: ['checked']
     },
   },
   plugins: [],

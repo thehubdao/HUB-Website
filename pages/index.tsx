@@ -14,6 +14,7 @@ import Roadmap from '../components/Roadmap';
 import Team from '../components/Team';
 import Partner from '../components/Partner';
 import Press from '../components/Press';
+import Ocean from '../components/Ocean';
 
 
 const Home: NextPage = () => {
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>MGH</title>
+                <title>MGH DAO</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -47,6 +48,8 @@ const Home: NextPage = () => {
                     <NPTStructure />
 
                     <Governance />
+
+                    {/* <Ocean /> */}
 
                     <Tokenomics />
 
