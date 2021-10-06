@@ -28,5 +28,35 @@
     "position": "Strategy Advisor",
     "image": "/images/Team/peter.png",
     "linkeind": "https://www.linkedin.com/in/rafelsonmedia/"
+  },
+  {
+    "name": "Nova Lorraine",
+    "position": "Creative Advisor",
+    "image": "/images/Team/nova.png",
+    "linkeind": "https://www.linkedin.com/in/novalorraine/"
+  },
+  {
+    "name": "Manuel Müller",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/manuel.png",
+    "linkeind": "https://www.linkedin.com/in/manuel-müller-0a47bbb6/"
+  },
+  {
+    "name": "Jonathan Ayerbe",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/jonathan.png",
+    "linkeind": "https://www.linkedin.com/in/jonathan-ayerbe-5503a550/"
+  },
+  {
+    "name": "Max Zheng",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/max.png",
+    "linkeind": "https://www.linkedin.com/in/max-zheng/"
+  },
+  {
+    "name": "Juri Baum",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/juri.png",
+    "linkeind": "https://www.linkedin.com/in/juri-maibaum-0a272a1b2/"
   }
 ]
