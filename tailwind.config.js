@@ -15,7 +15,11 @@ module.exports = {
       },
       inset: {
         '15': '3.75rem',
+        '18': '4.5rem',
         '22': '5.5rem'
+      },
+      height: {
+        '18': '4.5rem'
       },
       scale: {
         '55': '.55',
