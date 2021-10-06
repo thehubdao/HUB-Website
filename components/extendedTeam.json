@@ -1,5 +1,11 @@
 [
   {
+    "name": "Philipp Kothe",
+    "position": "Blockchain Architect",
+    "image": "/images/Team/philipp.png",
+    "linkeind": "https://www.linkedin.com/in/philippkothe/"
+  },
+  {
     "name": "Patrick Sührer",
     "position": "Blockchain Researcher",
     "image": "/images/Team/patrick.png",

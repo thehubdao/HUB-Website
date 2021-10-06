@@ -7,7 +7,7 @@
   },
   {
     "name": "Camilo Echeverri",
-    "position": "Co-Founder & Operations",
+    "position": "Co-Founder & Business Development",
     "image": "/images/Team/camilo.png",
     "linkeind": "https://www.linkedin.com/in/caem2017/"
   },
@@ -22,6 +22,12 @@
     "position": "Co-Founder & Operations",
     "image": "/images/Team/jean.png",
     "linkeind": "https://www.linkedin.com/in/jeanine-feierfeil/"
+  },
+  {
+    "name": "Youssef Gabsi",
+    "position": "Co-Founder & Business Development",
+    "image": "/images/Team/youssef.png",
+    "linkeind": "https://www.linkedin.com/in/youssef-gabsi/"
   },
   {
     "name": "Phil Thomsen",
@@ -46,12 +52,6 @@
     "position": "Blockchain Developer",
     "image": "/images/Team/pierre.png",
     "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
-  },
-  {
-    "name": "Philipp Kothe",
-    "position": "Blockchain Architect",
-    "image": "/images/Team/philipp.png",
-    "linkeind": "https://www.linkedin.com/in/philippkothe/"
   },
   {
     "name": "Eboni Jazzmine Taylor",
