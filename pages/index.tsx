@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 
                     <Governance />
 
-                    {/* <Ocean /> */}
+                    <Ocean />
 
                     <Tokenomics />
 

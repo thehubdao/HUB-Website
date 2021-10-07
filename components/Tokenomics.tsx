@@ -24,7 +24,7 @@ const Tokenomics = () => {
 
                         <div className="relative flex flex-col items-center w-full sm:w-2/4 max-w-xs p-2">
                             <div className="absolute inset-1/4 w-2/4 h-2/4 bg-gradient-to-br from-pink-500 to-blue-500 rounded-full filter blur-2xl" />
-                            <span className="text-white text-xl mb-3 p-1 z-10 border-b border-pink-500 max-w-max">Tokenomics Utility</span>
+                            <span className="text-white text-xl mb-3 p-1 z-10 border-b border-pink-500 max-w-max">Utility</span>
                             <span className="text-gray-400 z-10">Access to the MGH ecosystem, governance over network rewards, pool proposals and NFT curation</span>
                         </div>
 
