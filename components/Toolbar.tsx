@@ -8,7 +8,7 @@ const Toolbar = ({dark}: any) => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className={`absolute top-0 left-0 justify-center text-center w-full p-0 lg:p-5 flex z-50 ${dark ? "text-gray-200": "text-black opacity-80"}`}>
+        <div className={`absolute top-0 left-0 justify-center text-center w-full p-0 lg:p-5 flex z-50 ${dark ? "text-gray-200": "text-black text-opacity-80"}`}>
 
             <div className="z-20 p-5 w-full lg:w-11/12 font-medium rounded-2xl">
                 <nav className={`hidden lg:flex flex-row justify-center space-x-6 lg:space-x-14 items-center`} >
@@ -43,7 +43,7 @@ const Toolbar = ({dark}: any) => {
                     </div>
 
                 </nav>
-                <button className={`block float-right ${dark ? "text-gray-200": "text-black opacity-80"} lg:hidden transform hover:scale-110 transition duration-300 ease-in-out`} onClick={() => setOpen(!open)}>
+                <button className={`block float-right ${dark ? "text-gray-200": "text-black text-opacity-80"} lg:hidden transform hover:scale-110 transition duration-300 ease-in-out`} onClick={() => setOpen(!open)}>
                     {open ? <MdClose size={34} /> : <HiMenuAlt4 size={34} />}
                 </button>
             </div>
