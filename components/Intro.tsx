@@ -9,7 +9,7 @@ const Intro = ({ scroll }: any) => {
         <div className="text-center w-full" style={{ height: "4000px" }}>
 
             <div className={`sticky top-0 h-screen w-full`}>
-                <Toolbar />
+                <Toolbar dark={true} />
 
                 <div className={`absolute top-0 right-0 h-screen w-full xl:w-3/4`}>
                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10" /> */}

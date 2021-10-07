@@ -59,7 +59,7 @@
 }
 
 .nav-item {
-  @apply text-gray-200 pb-1 text-xl transform hover:scale-115 transition-all duration-500 ease-in-out hover:text-blue-400 ;
+  @apply pb-1 text-xl transform hover:scale-115 transition-all duration-500 ease-in-out hover:text-blue-400 ;
 }
 
 .nav-item-selected {

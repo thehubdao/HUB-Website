@@ -1,5 +1,4 @@
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
-import { BsArrowRight, BsArrowUp } from "react-icons/bs";
 
 
 const OceanIllustration = () => {

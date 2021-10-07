@@ -5,7 +5,7 @@ import { VscMail } from "react-icons/vsc";
 const Footer = () => {
 
     return (
-        <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-white bg-opacity-10 shadow-colorbottom">
+        <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-white bg-opacity-10 shadow-colorbottom text-gray-200">
             <div className="flex flex-col justify-center items-center lg:items-start ">
                 {/* <a href="/">
                     <p className={`text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-gray-200 mb-5`}>MGH</p>
