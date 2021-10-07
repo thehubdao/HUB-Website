@@ -13,7 +13,7 @@ const Tokenomics = () => {
                 {/* <div className="flex flex-col lg:flex-row justify-around items-start h-screen"> */}
 
                     <div className="flex flex-col h-full w-full lg:w-1/2 items-center justify-center">
-                        <span className={`text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-blue-500 to-pink-500 mb-10`}>Tokenomics</span>
+                        <span className={`text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br z-10 from-blue-500 to-pink-500 mb-10`}>Tokenomics</span>
                         <div className="grid grid-cols-2 gap-10 place-content-center p-8">
                             <Circle />
                         </div>
