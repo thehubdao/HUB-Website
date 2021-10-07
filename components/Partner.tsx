@@ -36,6 +36,9 @@ const Partner = () => {
                         <div className="m-0 max-w-sm">
                             <img src="/images/Partner/itrm.png" className="object-scale-down h-20 w-auto md:h-28 filter grayscale hover:grayscale-0 transition ease-in-out duration-500 cursor-pointer" />
                         </div>
+                        <div className="m-0 max-w-sm">
+                            <img src="/images/Partner/defitimes.svg" className="object-scale-down h-20 w-auto md:h-28 filter grayscale hover:grayscale-0 transition ease-in-out duration-500 cursor-pointer" />
+                        </div>
                     </div>
 
                 </div>

@@ -37,9 +37,9 @@ const OceanIllustration = () => {
                 </div>
             </div>
 
-            <div className="absolute top-30 border border-pink-600 rounded-full py-3 px-8 flex justify-center items-center w-52">
-            <p className="absolute top-0 right-4 text-pink-600 text-xxs">OCEAN Platform</p>
-                <p className="text-gray-200 text-center">Datapool</p>
+            <div className="absolute top-30 border border-pink-600 z-10 rounded-full py-3 px-8 flex justify-center items-center w-52">
+            <p className="absolute bottom-1 text-right right-4 text-pink-600 text-xxs">OCEAN<br/>Platform</p>
+                <p className="text-gray-200 text-center mr-20">Datapool</p>
             </div>
 
             <div className="h-18 w-10 absolute top-10 left-32 flex flex-col items-center">
@@ -63,6 +63,14 @@ const OceanIllustration = () => {
 
             <div className="absolute top-0 border rounded-full py-2 px-8 flex justify-center items-center w-52">
                 <p className="text-gray-200 text-center">User</p>
+            </div>
+
+            {/* <div className="absolute top-16 right- z-0 w-56 h-56 opacity-10">
+                <img src="/images/ocean.png"/>
+            </div> */}
+
+            <div className="absolute top-31 right-32 z-0 w-11 h-11 opacity-20">
+                <img src="/images/ocean.png"/>
             </div>
 
 
