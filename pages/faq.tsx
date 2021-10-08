@@ -16,6 +16,7 @@ const FAQPage: NextPage = () => {
       <Head>
         <title>MGH - FAQ</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Any Questions regarding the MetaGameHub DAO? You will find the answer here!" />
       </Head>
 
       <main className="flex flex-col items-center bg-gray-100">

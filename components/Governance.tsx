@@ -9,11 +9,12 @@ const Governance = ({ scroll }: any) => {
             <div className="w-full min-h-screen py-20">
                 <div className={` w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
 
-                    <div className="relative flex flex-col w-3/5 justify-center pb-20 xl:pb-0 items-center">
+                    <div className="relative flex flex-col pb-0 sm:pb-10 lg:pb-0 w-full h-full justify-center items-center">
                         <GovernanceIllustration />
                     </div>
 
-                    <div className="flex flex-col items-center lg:items-start 2xl:items-center text-center lg:text-right 2xl:text-center w-full lg:w-2/5">
+                    <div className="flex flex-col items-center lg:items-end 2xl:items-center text-center lg:text-right 2xl:text-center w-full">
+
                         <p className={` text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-pink-500 mb-10`}>MGH Governance</p>
                         <p className="text-gray-400 text-lg lg:text-lg xl:text-xl max-w-md lg:max-w-2xl">Holders of the MGH DAO have the power to vote on which NFT Pools are created, the terms of each pool (e.g., how much MGH has to be staked to access them) and the management of the DAO´s funds.</p>
                         

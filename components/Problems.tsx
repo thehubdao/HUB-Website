@@ -26,7 +26,7 @@ const Problems = () => {
                 <div className="relative flex flex-col items-center w-full p-2 max-w-xs">
                     <div className="absolute inset-1/4 w-2/4 h-2/4 bg-gradient-to-br from-pink-200 to-pink-800 rounded-full filter blur-2xl" />
                     <span className="text-white text-xl mb-3 z-10 border-b border-pink-500 max-w-max">Limited Access</span>
-                    <span className="text-gray-400 z-10">NFT datasets and their respective valuations are hard to retreive</span>
+                    <span className="text-gray-400 z-10">NFT datasets and their respective valuations are hard to retrieve</span>
                 </div>
             </div>
 
