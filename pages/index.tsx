@@ -15,6 +15,7 @@ import Team from '../components/Team';
 import Partner from '../components/Partner';
 import Press from '../components/Press';
 import Ocean from '../components/Ocean';
+import favicon from '../public/favicon.ico';
 
 
 const Home: NextPage = () => {
@@ -31,16 +32,8 @@ const Home: NextPage = () => {
         <>
             <Head>
                 <title>MetaGameHub DAO</title>
-                <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
                 {/* <meta name="robots" content="noodp,noydir" /> */}
-                <link rel="shortcut icon" href="/favicon.ico" />
-                <link 
-                rel="icon"
-                type="image/png"
-                sizes="96x96"
-                href="/favicon-96x96.png"
-          />
             </Head>
 
             <main className="flex flex-col items-center">

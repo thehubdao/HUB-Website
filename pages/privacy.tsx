@@ -10,7 +10,6 @@ const PrivacypolicyPage: NextPage = () => {
     <>
       <Head>
         <title>MGH - Privacy</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Privacy is very important for us! Find our policy on this page." />
       </Head>
 

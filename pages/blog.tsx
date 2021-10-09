@@ -10,7 +10,6 @@ const BlogPage: NextPage = () => {
     <>
       <Head>
         <title>MGH - Blog</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Stay on point about news, public launch, NFT drops and more." />
       </Head>
 

@@ -10,7 +10,6 @@ const TermsofusePage: NextPage = () => {
     <>
       <Head>
         <title>MGH - Terms</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Terms of use for the MetaGameHub DAO website." />
       </Head>
 
