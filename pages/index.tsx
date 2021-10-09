@@ -34,6 +34,13 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
                 {/* <meta name="robots" content="noodp,noydir" /> */}
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <link 
+                rel="icon"
+                type="image/png"
+                sizes="96x96"
+                href="/favicon-96x96.png"
+          />
             </Head>
 
             <main className="flex flex-col items-center">
@@ -60,7 +67,7 @@ const Home: NextPage = () => {
                     <Team />
 
                     <Partner />
-                    
+
                 </div>
 
             </main>
@@ -73,5 +80,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-

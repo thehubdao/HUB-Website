@@ -8,21 +8,25 @@ const Toolbar = ({ dark }: any) => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className={`absolute top-0 left-0 justify-center text-center w-full p-0 lg:p-5 flex z-50 ${dark ? "text-gray-200" : "text-black text-opacity-80"}`}>
+        <div className={`text-xl absolute top-0 left-0 justify-center text-center w-full p-0 lg:p-5 flex z-50 ${dark ? "text-gray-200" : "text-black text-opacity-80"}`}>
 
-            <div className="z-20 p-5 w-full lg:w-11/12 font-medium rounded-2xl">
-                <nav className={`hidden lg:flex flex-row justify-center space-x-6 lg:space-x-14 items-center`} >
-                    {/* <a href="https://www.metagamehub.io">
-                        <p className={`text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-gray-200`}>MGH</p>
-                    </a> */}
+            <div className="z-20 p-5 w-full flex justify-between items-center font-medium">
+                <a href="/" className="block lg:hidden transform hover:scale-110 transition-all duration-500 ease-in-out">
+                    <img src="/images/mgh_logo.png" className={`h-10 w-10`} />
+                </a>
+
+                <nav className={`hidden lg:flex flex-row flex-grow justify-center items-center`} >
 
                     <div className="flex flex-grow space-x-8 items-center justify-start">
+                        <a href="/" className="hidden lg:block mr-10 transform hover:scale-110 transition-all duration-500 ease-in-out">
+                            <img src="/images/mgh_logo.png" className={`h-12 w-12`} />
+                        </a>
                         <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank" className="nav-item">Whitepaper</a>
                         <a href="/#news" className="nav-item">News</a>
                         <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
                         <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                     </div>
-                    <div className="flex flex-grow space-x-8 items-center justify-end">
+                    <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
                         <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
                         {/* <a href="https://thedap.space" target="_blank" className="nav-item">Launch App</a> */}
                     </div>
