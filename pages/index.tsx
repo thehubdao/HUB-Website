@@ -33,6 +33,7 @@ const Home: NextPage = () => {
                 <title>MetaGameHub DAO</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
+                {/* <meta name="robots" content="noodp,noydir" /> */}
             </Head>
 
             <main className="flex flex-col items-center">

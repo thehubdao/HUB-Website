@@ -1,24 +1,47 @@
 import BlogCard from "./BlogCard"
 
 import pressJson from "./press.json";
+import { useState } from "react";
 
 
 const Press = () => {
+    const [message, setMessage] = useState("")
+    const [email, setEmail] = useState("")
+
+    const formSubmitted = async (e: any) => {
+        e.preventDefault();
+        let message;
+        try {
+            const res = await fetch("/api/addContact", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({email_address: email})
+              });
+            message = await res.json()
+            setMessage(message.message)
+        } catch (e) {
+            setMessage("Something went wrong, try again later!")
+        }
+    }
+
 
     return (
         <div className="w-full min-h-screen py-20" id="news">
             <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
 
-                <div className="flex flex-col text-center lg:text-left  items-center lg:items-start   w-full lg:w-2/5">
+                <div className="flex flex-col text-center lg:text-left items-center lg:items-start w-full lg:w-2/5">
                     <p className={`text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-300 text-center lg:text-left mb-10`}>Stay updated!</p>
                     <p className="text-gray-400 max-w-md">Hello Universe! Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
 
-                    <div className="relative flex items-center mt-6 w-full max-w-sm">
-                        <input type="email" placeholder="Email address" className="bg-transparent w-full text-white py-3 px-4 focus:outline-none border rounded-full placeholder-white placeholder-opacity-75" />
-                        <button className="absolute bg-gray-200 right-0 h-4/5 border rounded-full mr-1  w-1/6">
+                    <form onSubmit={formSubmitted} onFocus={()=>setMessage("")} className="relative flex items-center mt-6 w-full max-w-sm">
+                        <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Email address" className="bg-transparent w-full text-white py-3 px-4 focus:outline-none border rounded-full placeholder-white placeholder-opacity-75" />
+                        <button type="submit" className="absolute bg-gray-200 right-0 h-4/5 border rounded-full mr-1  w-1/6">
                             <span className="text-black">Join</span>
                         </button>
-                    </div>
+                    </form>
+                    <p className="text-xs text-gray-200 mt-2">{message}</p>
                 </div>
 
                 <div className="w-full h-full xl:h-80 lg:w-3/5 grid grid-cols-1 md:grid-cols-2 xl:grid-rows-5 xl:grid-cols-1 place-content-stretch justify-items-center gap-5 p-0 py-8 sm:pl-8">

@@ -1,8 +1,29 @@
+import { useState } from "react";
 import { FaLinkedin, FaTelegramPlane, FaDiscord, FaEthereum, FaInstagram, FaTwitter, FaMedium } from "react-icons/fa";
 import { VscMail } from "react-icons/vsc";
 
 
 const Footer = () => {
+    const [message, setMessage] = useState("")
+    const [email, setEmail] = useState("")
+
+    const formSubmitted = async (e: any) => {
+        e.preventDefault();
+        let message;
+        try {
+            const res = await fetch("/api/addContact", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({email_address: email})
+              });
+            message = await res.json()
+            setMessage(message.message)
+        } catch (e) {
+            setMessage("Something went wrong, try again later!")
+        }
+    }
 
     return (
         <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-white bg-opacity-10 shadow-colorbottom text-gray-200">
@@ -73,12 +94,13 @@ const Footer = () => {
                     <VscMail className="text-white text-2xl hidden sm:block lg:hidden xl:block" />
                     <span className="text-gray-200 text-sm sm:text md:text-lg lg:text-base text-center">Stay up to date for the latest from MGH!</span>
                 </div>
-                <div className="relative flex items-center w-full max-w-sm">
-                    <input type="email" placeholder="Email address" className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
+                <form onSubmit={formSubmitted} onFocus={()=>setMessage("")} className="relative flex items-center w-full max-w-sm">
+                    <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Email address" className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
                     <button className="absolute bg-gray-200 right-0 h-4/5 rounded-full mr-1  w-1/6">
                         <span className="text-black">Join</span>
                     </button>
-                </div>
+                </form>
+                <p className="text-xs text-gray-200 mt-2">{message}</p>
             </div>
 
         </footer>
