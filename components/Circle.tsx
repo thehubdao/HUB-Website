@@ -10,7 +10,7 @@ const Circle = () => {
             <svg className="absolute left-0 top-0 h-full w-full progress-ring z-10">
                 <circle
                     className="transform -rotate-90 origin-center"
-                    style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 182.966336 }}
+                    style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 182.966336 }} //326.7256 * (1-0.44)
                     stroke="url(#grad1)"
                     strokeWidth="4"
                     fill="transparent"
@@ -21,13 +21,13 @@ const Circle = () => {
         </div>
         <div className="relative flex flex-col z-10 p-2 h-28 w-28 rounded-full bg-gray-400 bg-opacity-10 items-center justify-center">
                 <div className="z-0 h-full w-full absolute top-0 left-0 border-4 border-opacity-30 rounded-full" />
-                <span className="text-white text-2xl mb-1 z-10">32%</span>
+                <span className="text-white text-2xl mb-1 z-10">24%</span>
                 <span className="text-gray-400 text-xs z-10">Sales</span>
 
                 <svg className="absolute left-0 top-0 h-full w-full progress-ring z-10">
                     <circle
                         className="transform rotate-44 origin-center"
-                        style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 222.173408 }}
+                        style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 248.311456 }}
                         stroke="url(#grad1)"
                         strokeWidth="4"
                         fill="transparent"
@@ -38,7 +38,7 @@ const Circle = () => {
             </div>
             <div className="relative place-self-end flex flex-col z-10 p-2 h-28 w-28 rounded-full bg-gray-400 bg-opacity-10 items-center justify-center">
                 <div className="z-0 h-full w-full absolute top-0 left-0 border-4 border-opacity-30 rounded-full" />
-                <span className="text-white text-2xl mb-1 z-10">12%</span>
+                <span className="text-white text-2xl mb-1 z-10">20%</span>
                 <span className="text-gray-400 text-xs z-10">DAO Treasury</span>
 
                 <svg className="absolute left-0 top-0 h-full w-full progress-ring z-10">
@@ -50,7 +50,7 @@ const Circle = () => {
                     </defs>
                     <circle
                         className="transform rotate-12 origin-center"
-                        style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 287.518528 }}
+                        style={{ strokeDasharray: "326.7256 326.7256", strokeDashoffset: 261.38048 }}
                         stroke="url(#grad1)"
                         strokeWidth="4"
                         fill="transparent"
