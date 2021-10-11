@@ -3,7 +3,7 @@ const Problems = () => {
     return (
 
         <div className="relative flex flex-col w-full h-full space-y-12 justify-center items-center p-8">
-            <span className={`py-1 text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-gray-200 to-pink-600`}>Industry Pain Points</span>
+            <span className={`py-1 text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-pink-100 to-pink-600`}>Industry Pain Points</span>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
                 <div className="relative flex flex-col items-center p-2 max-w-xs">
                     <div className="absolute inset-1/4 w-2/4 h-2/4 bg-gradient-to-br from-pink-200 to-pink-800 rounded-full filter blur-2xl opacity-80" />

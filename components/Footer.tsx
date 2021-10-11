@@ -66,8 +66,8 @@ const Footer = () => {
                 <a href="/" className="nav-item">
                     Home
                 </a>
-                <a href="/" className="nav-item">
-                    DAO
+                <a href="/collection" className="nav-item">
+                    LANDs
                 </a>
                 <a href="https://discord.gg/QEWfTJeWCV" className="nav-item">
                     Community

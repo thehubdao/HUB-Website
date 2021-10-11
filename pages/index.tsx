@@ -7,6 +7,7 @@ import Intro from "../components/Intro";
 import Infrastructure from "../components/Infrastructure";
 import Footer from "../components/Footer";
 import NFTs from '../components/NFTs';
+import Lands from '../components/Lands';
 import NPTStructure from '../components/NPT';
 import Governance from '../components/Governance';
 import Tokenomics from "../components/Tokenomics";
@@ -15,7 +16,6 @@ import Team from '../components/Team';
 import Partner from '../components/Partner';
 import Press from '../components/Press';
 import Ocean from '../components/Ocean';
-import favicon from '../public/favicon.ico';
 
 
 const Home: NextPage = () => {
@@ -44,6 +44,8 @@ const Home: NextPage = () => {
                     <Infrastructure />
 
                     <NFTs />
+
+                    <Lands />
 
                     <Press />
 

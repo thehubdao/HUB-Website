@@ -22,7 +22,7 @@ const FAQPage: NextPage = () => {
                 <Toolbar dark={true} />
 
                 <div className="flex flex-col items-center p-8 sm:p-10 w-full 2xl:max-w-screen-2xl">
-                    <h1 className="text-5xl sm:text-7xl py-2 font-bold text-transparent bg-clip-text bg-gradient-to-br z-10 from-green-400 to-blue-400 text-center m-20 mt-20 lg:mt-32">Lands</h1>
+                    <h1 className="text-5xl sm:text-7xl py-2 font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-green-200 to-green-500 text-center m-20 mt-20 lg:mt-32">LANDs</h1>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-content-start gap-5 w-full min-h-screen pb-20">
                         {landsJson.map((element, key) => {
