@@ -5,8 +5,8 @@ import NFTCard from "./NFTCard"
 const Lands = () => {
 
     return (
-        <div className="text-center w-full">
-            <div className={` w-full min-h-screen flex flex-col xl:flex-row items-center justify-center p-8 pt-20`}>
+        <div className="text-center w-full pt-20 xl:pt-0">
+            <div className={` w-full min-h-screen flex flex-col xl:flex-row items-center justify-center p-8 `}>
                 
                 <div className="w-full xl:w-2/4 flex flex-col items-center xl:items-start justify-center mb-10 xl:mb-0 ">
                     {/* <p className={`text-5xl sm:text-6xl lg:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600 mb-3`}>NFT</p>
