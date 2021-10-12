@@ -10,8 +10,8 @@ const Member = ({name, position, img, link}: any) => {
 
         <div className="relative w-32 h-32 lg:w-40 lg:h-40 rounded-full grayscale-0 m-4">
             <div className="absolute z-10 flex flex-col text-center justify-center items-center rounded-full w-full h-full transition ease-in-out duration-500 opacity-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur hover:opacity-100 cursor-pointer">
-                <span className="text-gray-200 text-sm lg:text-lg">{name}</span>
-                <span className="text-blue-300 text-xxs lg:text-xs">{position}</span>
+                <span className="text-gray-200 text-sm lg:text-lg font-medium lg:font-normal">{name}</span>
+                <span className="text-blue-300 text-xxs lg:text-xs font-medium lg:font-normal">{position}</span>
                 <a href={link} className="cursor-pointer flex items-center justify-center" target="_blank" >
                     <TiSocialLinkedinCircular className="social-media-icon absolute bottom-1"/>
                 </a>

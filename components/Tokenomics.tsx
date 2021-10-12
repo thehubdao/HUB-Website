@@ -6,7 +6,7 @@ const Tokenomics = () => {
 
     return (
 
-        <div className="text-center w-full min-h-screen" >
+        <div className="text-center w-full min-h-screen py-20" >
             <div className={`w-full flex flex-col lg:flex-row items-center justify-between p-8`}>
 
 
