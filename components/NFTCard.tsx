@@ -10,7 +10,7 @@ const NFTCard = ({ img, title, link, classes }: any) => {
                 <div className="relative text-center h-72 w-full pb-full">
                     <Image className="rounded-2xl object-cover" src={img} layout="fill" />
                 </div>
-                <span className="absolute w-full opacity-100 xl:opacity-0 group-hover:opacity-100 bottom-0 p-2 left-0 rounded-b-2xl bg-black bg-opacity-40 backdrop-filter backdrop-blur text-gray-200">{title}</span>
+                <p className="absolute w-full opacity-100 xl:opacity-0 group-hover:opacity-100 bottom-0 p-2 left-0 rounded-b-2xl bg-black bg-opacity-40 backdrop-filter backdrop-blur text-gray-200">{title}</p>
 
             </div>
         </a>
