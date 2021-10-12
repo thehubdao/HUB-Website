@@ -8,7 +8,7 @@ const Roadmap = ({ scroll }: any) => {
         <>
             <div className="w-full min-h-screen py-20">
                 <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
-                    <p className={`text-4xl sm:text-5xl md:text-6xl font-bold text-gray-300 text-center lg:text-left 2xl:text-center`}>MGH DAO public membership is scheduled for the <span className={`text-transparent bg-clip-text bg-gradient-to-br z-10 from-blue-500 to-pink-500`}>14.10.21</span></p>
+                    <p className={`text-4xl sm:text-5xl md:text-6xl text-gray-200 text-center lg:text-left 2xl:text-center `}>MGH DAO public membership is scheduled for the <span className={`text-transparent bg-clip-text bg-gradient-to-br z-10 from-blue-500 to-pink-500`}>14.10.21</span></p>
                     {/* <span className={`col-span-full text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-blue-500 to-pink-500 mb-10`}>MGH DAO public launch is scheduled for the 14.10.21</span> */}
 
                     <div className="relative flex flex-col justify-center py-20 w-full items-center transform -translate-x-5 lg:translate-x-0">

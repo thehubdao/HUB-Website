@@ -10,15 +10,15 @@ const NFTs = () => {
                 <div className="w-full xl:w-2/4 flex flex-col items-center xl:items-start justify-center mb-10 xl:mb-0 ">
                     {/* <p className={`text-5xl sm:text-6xl lg:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600 mb-3`}>NFT</p>
                     <p className={`text-2xl lg:text-4xl xl:text-5xl font-bold text-gray-300`}>Artist Series</p> */}
-                    <div className=" flex space-x-5 items-center">
-                        <span className={`text-6xl sm:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600`}>NFT</span>
-                        <span className={`text-lg sm:text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600`}>Artist <br/>Series</span>
+                    <div className=" flex space-x-0 sm:space-x-2 lg:space-x-5 items-center justify-start">
+                        <h1 className={`text-transparent bg-clip-text  bg-gradient-to-b from-pink-300 to-pink-700`}>NFT</h1>
+                        <span className={`text-base sm:text-xl md:text-2xl lg:text-4xl font-medium leading-tight text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600`}>Artist <br/>Series</span>
                     </div>
-                    <p className={`text-lg lg:text-2xl font-bold text-gray-300 mt-2`}>Community curated 1-of-1 NFTs</p>
+                    <p className={`text-lg lg:text-2xl font-medium text-gray-200`}>Community curated 1-of-1 NFTs</p>
 
-                    <div className="mt-5 text-center rounded-full px-6 py-2 drop-shadow bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer">
+                    <div className="mt-5 button">
                         <a href="https://opensea.io/MGH_DAO" target="_blank">
-                            <span className="text-gray-200">Discover All</span>
+                            <span className="button-text">Discover All</span>
                         </a>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
 
 const GovernanceIllustration = () => {
     return (
-        <div className="relative flex items-center justify-center h-96 w-96 transform scale-70 sm:scale-110 2xl:scale-125 my-0 sm:my-10 lg:my-0">
+        <div className="relative flex items-center font-medium justify-center h-96 w-96 transform scale-70 sm:scale-110 2xl:scale-125 my-0 sm:my-10 lg:my-0">
 
             <div className="absolute bottom-0 border rounded-full p-2 flex justify-center items-center w-32">
                 <p className="text-gray-200 text-center">Community</p>
@@ -27,7 +27,7 @@ const GovernanceIllustration = () => {
                 <div className="absolute bottom-0 border-l-2 border-white h-24 rounded-full" />
 
                 <div className="absolute top-11 rounded-full py-1 px-2 bg-pink-300 w-18 flex justify-center items-center z-10 transform -rotate-90">
-                    <p className="text-black text-xs leading-none text-center">NFT Analysis</p>
+                    <p className="text-black text-xs leading-none text-center pt-0.5">NFT Analysis</p>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ const GovernanceIllustration = () => {
                 <div className="absolute bottom-0 border-l-2 border-white h-24 rounded-full" />
 
                 <div className="absolute top-11 rounded-full py-1 px-0 bg-blue-300 w-18 flex justify-center items-center z-10 transform rotate-90">
-                    <p className="text-black text-xs leading-none text-center">On-Chain Data</p>
+                    <p className="text-black text-xs leading-none text-center pt-0.5">On-Chain Data</p>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ const GovernanceIllustration = () => {
                 <div className="absolute bottom-0 border-l-2 border-white h-24 rounded-full" />
 
                 <div className="absolute top-10 rounded-full py-2 px-2 w-18 bg-gray-400 flex justify-center items-center z-10">
-                    <p className="text-black text-xs leading-none text-center">Lands</p>
+                    <p className="text-black text-xs leading-none text-center pt-0.5">Lands</p>
                 </div>
             </div>
 

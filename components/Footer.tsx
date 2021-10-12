@@ -28,8 +28,8 @@ const Footer = () => {
     return (
         <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-white bg-opacity-10 shadow-colorbottom text-gray-200">
             <div className="flex flex-col justify-center items-center space-y-8">
-                <a href="/" className="transform hover:scale-110 transition-all duration-500 ease-in-out">
-                    <img src="/images/mgh_logo.png" className={`h-14 md:h-18 lg:h-20 w-14 md:w-18 lg:w-20`} />
+                <a href="/" className="">
+                    <img src="/images/version-3.png" className={`h-14 md:h-18 lg:h-36 xl:h-40`} />
                 </a>
                 <div className="flex flex-row items-center justify-center lg:justify-start w-full flex-wrap space-x-3 ">
 
@@ -69,7 +69,7 @@ const Footer = () => {
                 <a href="/collection" className="nav-item">
                     LANDs
                 </a>
-                <a href="https://discord.gg/QEWfTJeWCV" className="nav-item">
+                <a href="https://t.me/metagamehub_dao" className="nav-item">
                     Community
                 </a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
@@ -91,13 +91,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col justify-start items-center space-y-2">
                 <div className="flex flex-row items-center justify-center space-x-2 mb-0 lg:mb-3">
-                    <VscMail className="text-white text-2xl hidden sm:block lg:hidden xl:block" />
-                    <span className="text-gray-200 text-sm sm:text md:text-lg lg:text-base text-center">Stay up to date for the latest from MGH!</span>
+                    <VscMail className="text-gray-200 text-2xl hidden sm:block lg:hidden xl:block" />
+                    <span className="text-gray-200 text-sm sm:text md:text-lg lg:text-base text-center font-medium">Stay up to date for the latest from MGH!</span>
                 </div>
                 <form onSubmit={formSubmitted} onFocus={() => setMessage("")} className="relative flex items-center w-full max-w-sm">
                     <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
                     <button className="absolute bg-gray-200 right-0 h-4/5 rounded-full mr-1  w-1/6">
-                        <span className="text-black">Join</span>
+                        <span className="text-black font-medium">Join</span>
                     </button>
                 </form>
                 <p className="text-xs text-gray-200 mt-2">{message}</p>

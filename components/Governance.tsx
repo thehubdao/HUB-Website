@@ -15,12 +15,12 @@ const Governance = ({ scroll }: any) => {
 
                     <div className="flex flex-col items-center lg:items-end 2xl:items-center text-center lg:text-right 2xl:text-center w-full">
 
-                        <p className={` text-4xl sm:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-pink-500 mb-10`}>MGH Governance</p>
-                        <p className="text-gray-400 text-lg lg:text-lg xl:text-xl max-w-md lg:max-w-2xl">Holders of the MGH DAO have the power to vote on which NFT Pools are created, the terms of each pool (e.g., how much MGH has to be staked to access them) and the management of the DAO´s funds.</p>
+                        <h2 className={`text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-pink-500 mb-10`}>MGH Governance</h2>
+                        <p className="long-text">Holders of the MGH DAO have the power to vote on which NFT Pools are created, the terms of each pool (e.g., how much MGH has to be staked to access them) and the management of the DAO´s funds.</p>
                         
-                        <div className="max-w-xs self-center lg:self-end 2xl:self-center mt-10 text-center justify-self-start rounded-full px-6 py-2 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer">
+                        <div className="max-w-xs self-center lg:self-end 2xl:self-center mt-10 button">
                             <a href="https://snapshot.org/#/metagamehub.eth" target="_blank">
-                                <span className="text-gray-200 ">Learn more</span>
+                                <span className="button-text">Learn more</span>
                             </a>
                         </div>
                     </div>

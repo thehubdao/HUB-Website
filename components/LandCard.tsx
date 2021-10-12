@@ -10,7 +10,7 @@ const LandCard = ({ img, title, link, classes }: any) => {
                 <div className="relative text-center w-full pb-full">
                     <Image className="rounded-2xl object-cover" src={img} layout="fill" />
                 </div>
-                <span className="absolute bottom-2 px-2 py-1 right-2 rounded-2xl group-hover:backdrop-blur-3xl bg-white bg-opacity-20 backdrop-filter backdrop-blur text-gray-200">{title}</span>
+                <p className="absolute bottom-2 px-2 py-1 pt-1.5 right-2 rounded-2xl group-hover:backdrop-blur-3xl bg-white bg-opacity-20 backdrop-filter backdrop-blur font-medium text-gray-200">{title}</p>
 
             </div>
         </a>

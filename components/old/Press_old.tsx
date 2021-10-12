@@ -13,7 +13,7 @@ const Press = () => {
             <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
 
                 <div className="flex flex-col text-center items-center lg:items-start lg:text-left w-full lg:w-2/5">
-                    <p className={`text-5xl sm:text-6xl font-bold text-gray-300 text-center lg:text-left mb-10`}>Stay updated!</p>
+                    <p className={`text-5xl sm:text-6xl font-bold text-gray-200 text-center lg:text-left mb-10`}>Stay updated!</p>
                     <p className="text-gray-400">Hello Universe! Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
 
                     <div className="relative flex items-center mt-10 w-full max-w-sm">

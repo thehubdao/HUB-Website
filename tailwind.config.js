@@ -66,7 +66,10 @@ module.exports = {
       },
       fontFamily: {
         // 'sans': ['Quicksand', 'sans-serif'],
-        'sans': ['Montserrat', 'sans-serif'],
+        // 'sans': ['Montserrat', 'sans-serif'],
+        'sans': ['Alterwave', 'sans-serif'],
+        'prompt': ['Prompt', 'sans-serif'],
+        'lighters': ['Lighters', 'sans-serif']
       },
       fontSize: {
         'xxs': '0.5rem'
@@ -90,6 +93,14 @@ module.exports = {
         }
       },
     },
+    screens: {
+      'xs': '400px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px'
+    }
   },
   variants: {
     extend: {

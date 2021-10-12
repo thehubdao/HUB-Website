@@ -32,13 +32,13 @@ const Press = () => {
             <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
 
                 <div className="flex flex-col text-center lg:text-left items-center lg:items-start w-full lg:w-2/5">
-                    <p className={`text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-300 text-center lg:text-left mb-10`}>Stay updated!</p>
-                    <p className="text-gray-400 max-w-md">Hello Universe! Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
+                    <h2 className={`text-gray-200 text-center lg:text-left mb-5`}>Stay updated!</h2>
+                    <p className="text-gray-400 font-medium max-w-md">Hello Universe! Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
 
                     <form onSubmit={formSubmitted} onFocus={()=>setMessage("")} className="relative flex items-center mt-6 w-full max-w-sm">
                         <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Email address" className="bg-transparent w-full text-white py-3 px-4 focus:outline-none border rounded-full placeholder-white placeholder-opacity-75" />
                         <button type="submit" className="absolute bg-gray-200 right-0 h-4/5 border rounded-full mr-1  w-1/6">
-                            <span className="text-black">Join</span>
+                            <span className="text-black font-medium">Join</span>
                         </button>
                     </form>
                     <p className="text-xs text-gray-200 mt-2">{message}</p>
@@ -50,9 +50,9 @@ const Press = () => {
                     <BlogCard classes="z-0 xl:scale-95 xl:opacity-90 xl:bg-gray-300" date={pressJson[2].date} link={pressJson[2].link} title={pressJson[2].title} article={pressJson[2].text} />
                     <BlogCard classes="z-0 xl:scale-100" date={pressJson[3].date} link={pressJson[3].link} title={pressJson[3].title} article={pressJson[3].text} />
 
-                    <div className="col-span-full z-50 max-w-xs m-auto text-center rounded-full px-6 py-2 bg-gray-400 bg-opacity-10 transform xl:translate-y-36 hover:scale-105 transition duration-300 ease-in-out hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer">
+                    <div className="col-span-full z-50 max-w-xs m-auto xl:translate-y-36 button">
                         <a href="https://thedac.medium.com" target="_blank">
-                            <span className="text-gray-200 ">Read all Articles</span>
+                            <span className="button-text">Read all Articles</span>
                         </a>
                     </div>
                 </div>

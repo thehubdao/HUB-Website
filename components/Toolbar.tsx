@@ -27,7 +27,7 @@ const Toolbar = ({ dark }: any) => {
                         <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                     </div>
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
-                        <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
+                        <a href="https://t.me/metagamehub_dao" target="_blank" className="nav-item">Community</a>
                         <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
                         {/* <a href="https://thedap.space" target="_blank" className="nav-item">Launch App</a> */}
                     </div>

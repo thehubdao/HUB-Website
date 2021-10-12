@@ -3,7 +3,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
 
 const OceanIllustration = () => {
     return (
-        <div className="relative flex items-center justify-center h-96 w-96 transform scale-110 my-10 lg:my-0 2xl:scale-125">
+        <div className="relative font-medium flex items-center justify-center h-96 w-96 transform scale-110 my-10 lg:my-0 2xl:scale-125">
 
             <div className="absolute bottom-0 border rounded-full py-2 px-8 flex justify-center items-center w-52">
                 <p className="text-gray-200 text-center">MGH DAO</p>
@@ -23,7 +23,7 @@ const OceanIllustration = () => {
                 <div className="absolute bottom-0 border-l-2 border-white h-16 rounded-full" />
 
                 <div className="absolute top-7 rounded-full h-8 w-8 bg-blue-300 flex justify-center items-center z-10">
-                    <p className="text-black text-xs">Data</p>
+                    <p className="text-black text-xs pt-0.5">Data</p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ const OceanIllustration = () => {
                 <IoIosArrowDown className="absolute bottom-1 text-white text-3xl " />
 
                 <div className="absolute top-12 rounded-full p-2 bg-pink-300 flex justify-center items-center z-10">
-                    <p className="text-black text-xs">Rewards</p>
+                    <p className="text-black text-xs pt-0.5">Rewards</p>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@ const OceanIllustration = () => {
                 <div className="absolute bottom-0 border-l-2 border-white h-16 rounded-full" />
 
                 <div className="absolute top-7 rounded-full h-8 w-8 bg-blue-300 flex justify-center items-center z-10">
-                    <p className="text-black text-xs">Data</p>
+                    <p className="text-black text-xs pt-0.5">Data</p>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@ const OceanIllustration = () => {
                 <IoIosArrowDown className="absolute bottom-1 text-white text-2xl " />
 
                 <div className="absolute top-4 rounded-full p-1 bg-pink-600 flex justify-center items-center z-10">
-                    <p className="text-black text-xs">OCEAN</p>
+                    <p className="text-black text-xs pt-0.5">OCEAN</p>
                 </div>
             </div>
 

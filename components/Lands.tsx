@@ -6,18 +6,18 @@ const Lands = () => {
 
     return (
         <div className="text-center w-full pt-20 xl:pt-0">
-            <div className={` w-full min-h-screen flex flex-col xl:flex-row items-center justify-center p-8 `}>
+            <div className={` w-full min-h-screen flex flex-col xl:flex-row items-center justify-center p-8`}>
                 
                 <div className="w-full xl:w-2/4 flex flex-col items-center xl:items-start justify-center mb-10 xl:mb-0 ">
                     {/* <p className={`text-5xl sm:text-6xl lg:text-7xl xl:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-pink-600 mb-3`}>NFT</p>
                     <p className={`text-2xl lg:text-4xl xl:text-5xl font-bold text-gray-300`}>Artist Series</p> */}
-                    <div className=" flex space-x-5 items-center">
-                        <span className={`text-6xl sm:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-200 to-green-500`}>LANDs</span>
-                    </div>
+                    <h1 className={`text-transparent bg-clip-text bg-gradient-to-b from-green-200 to-green-500`}>LANDs</h1>
+                    <p className={`text-lg lg:text-2xl font-medium text-gray-200`}>Community developed & curated </p>
 
-                    <div className="mt-5 text-center rounded-full px-6 py-2 drop-shadow bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer">
+
+                    <div className="button mt-5">
                         <a href="/collection" target="_blank">
-                            <span className="text-gray-200">Discover All</span>
+                            <p className="button-text">Show Collection</p>
                         </a>
                     </div>
                 </div>
