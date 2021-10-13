@@ -5,7 +5,7 @@ const Milestone = ({date, text}: any) => {
             <div className="flex-grow text-right w-2/5" >
                 <span className="text-gray-400 text-lg lg:text-2xl text-right">{date}</span>
             </div>
-            <div className="rounded-full flex-grow-0 h-4 w-4 bg-gray-300 shadow-color z-10" />
+            <div className="rounded-full flex-grow-0 h-4 w-4 bg-gray-300 shadow-color z-10 mb-0.5 lg:mb-1.5" />
             <div className="flex-grow text-left w-2/5 " >
                 <span className="text-gray-400 text-lg lg:text-2xl text-left">{text}</span>
             </div>
