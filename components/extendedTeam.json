@@ -11,7 +11,6 @@
     "image": "/images/Team/patrick.png",
     "linkeind": "https://www.linkedin.com/in/patrick-suehrer/"
   },
-
   {
     "name": "Camilo Alaguna",
     "position": "AI & Data Science",
@@ -23,13 +22,6 @@
     "position": "Oracle Infrastructure",
     "image": "/images/Team/santiago.png",
     "linkeind": "https://www.linkedin.com/in/santiago-h-hernandez/"
-  },
-
-  {
-    "name": "Yoshinori Sugiura",
-    "position": "Marketing",
-    "image": "/images/Team/yoshi.png",
-    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
   },
   {
     "name": "Selcuk Kösemehmetoglu",
