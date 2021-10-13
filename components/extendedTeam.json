@@ -11,6 +11,20 @@
     "image": "/images/Team/patrick.png",
     "linkeind": "https://www.linkedin.com/in/patrick-suehrer/"
   },
+
+  {
+    "name": "Camilo Alaguna",
+    "position": "AI & Data Science",
+    "image": "/images/Team/camilo_alaguna.png",
+    "linkeind": "https://www.linkedin.com/in/camilo-alaguna/"
+  },
+  {
+    "name": "Santiago Hernandez",
+    "position": "Oracle Infrastructure",
+    "image": "/images/Team/santiago.png",
+    "linkeind": "https://www.linkedin.com/in/santiago-h-hernandez/"
+  },
+
   {
     "name": "Yoshinori Sugiura",
     "position": "Marketing",
