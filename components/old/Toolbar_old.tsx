@@ -31,7 +31,7 @@ const Toolbar = () => {
                         <a href="https://www.metagamehub.io">
                             <div className="nav-item">Home</div>
                         </a>
-                        <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank">
+                        <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank">
                             <div className="nav-item">Whitepaper</div>
                         </a>
                         <a href="#news">

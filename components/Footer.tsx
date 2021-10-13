@@ -75,7 +75,7 @@ const Footer = () => {
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
                     Voting
                 </a>
-                <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank" className="nav-item">
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
                     Whitepaper
                 </a>
                 <a href="/faq" target="_blank" className="nav-item">

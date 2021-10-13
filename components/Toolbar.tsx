@@ -23,7 +23,7 @@ const Toolbar = ({ dark }: any) => {
                         </a>
                         <a href="/collection" target="_blank" className="nav-item">LANDs</a>
                         <a href="/#news" className="nav-item">News</a>
-                        <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank" className="nav-item">Whitepaper</a>
+                        <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
                         <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                     </div>
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
@@ -40,7 +40,7 @@ const Toolbar = ({ dark }: any) => {
             <nav onClick={() => setOpen(!open)} className={`${open ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOutUp hidden"} p-5 top-0 fixed w-full backdrop-filter backdrop-blur-2xl bg-black bg-opacity-10 flex flex-col space-y-5 items-center pt-20`} >
                 <a href="/collection" target="_blank" className="nav-item">LANDs</a>
                 <a href="/#news" className="nav-item">News</a>
-                <a href="https://www.metagamehub.io/docs/mghdao_engl_whitepaper.pdf" target="_blank" className="nav-item">Whitepaper</a>
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
                 <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                 <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
