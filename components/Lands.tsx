@@ -15,11 +15,9 @@ const Lands = () => {
                     <p className={`text-lg lg:text-2xl font-medium text-gray-200`}>Community developed & curated </p>
 
 
-                    <div className="button mt-5">
-                        <a href="/collection" target="_blank">
-                            <p className="button-text">Show Collection</p>
-                        </a>
-                    </div>
+                    <a href="/collection" target="_blank" className="button mt-5">
+                        <p className="button-text">Show Collection</p>
+                    </a>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-5 w-full xl:w-2/4 transform xl:-translate-x-36 max-w-6xl">
