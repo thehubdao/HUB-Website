@@ -10,7 +10,7 @@ const Toolbar = ({ dark }: any) => {
     return (
         <div className={`text-xl absolute top-0 left-0 justify-center text-center w-full p-0 lg:p-5 flex z-50 ${dark ? "text-gray-200" : "text-black text-opacity-80"}`}>
 
-            <div className="z-20 p-5 w-full flex justify-between items-center font-medium">
+            <div className="z-20 p-5 pr-5 lg:pr-0 xl:pr-5 w-full flex justify-between items-center font-medium">
                 <a href="/" className="block lg:hidden transform hover:scale-110 transition-all duration-500 ease-in-out">
                     <img src="/images/mgh_logo.png" className={`h-10 w-10`} />
                 </a>
@@ -29,7 +29,7 @@ const Toolbar = ({ dark }: any) => {
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
                         <a href="https://t.me/metagamehub_dao" target="_blank" className="nav-item">Community</a>
                         <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
-                        <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item">Tokensale</a>
+                        <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item">Public Membership</a>
                     </div>
 
                 </nav>
@@ -44,7 +44,7 @@ const Toolbar = ({ dark }: any) => {
                 <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                 <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
-                <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item">Tokensale</a>
+                <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item">Public Membership</a>
             </nav>
 
         </div>

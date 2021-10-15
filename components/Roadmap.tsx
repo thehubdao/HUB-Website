@@ -12,7 +12,7 @@ const Roadmap = ({ scroll }: any) => {
                         <p className={`text-4xl sm:text-5xl md:text-6xl text-gray-200 text-center lg:text-left 2xl:text-center`}>MGH DAO public membership is open <span className={`text-transparent bg-clip-text bg-gradient-to-br z-50 from-blue-500 to-pink-500`}>14.10.21-</span><span className={`text-transparent bg-clip-text bg-gradient-to-br z-50 from-blue-500 to-pink-500`}>14.11.21</span></p>
 
                         <a href="https://www.thedap.space/membership/mgh" target="_blank" className="button mt-5">
-                            <p className="button-text">Join Tokensale</p>
+                            <p className="button-text">Join public membership</p>
                         </a>
                     </div>
                     {/* <span className={`col-span-full text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-blue-500 to-pink-500 mb-10`}>MGH DAO public launch is scheduled for the 14.10.21</span> */}
