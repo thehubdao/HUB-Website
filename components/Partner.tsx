@@ -17,9 +17,12 @@ const Partner = () => {
 
                     <h2 className={`col-span-full uppercase text-transparent bg-clip-text bg-gradient-to-b z-10 from-gray-200 to-gray-600 mb-5`}>Partners</h2>
 
-                    <div className="relative w-full flex flex-col md:flex-row space-y-10 md:space-y-0 space-x-0 md:space-x-10 lg:space-x-24 justify-evenly items-center">
+                    <div className="relative w-full flex flex-col md:flex-row space-y-10 md:space-y-0 space-x-0 md:space-x-10 lg:space-x-16 xl:space-x-24 justify-evenly items-center">
                         <div className="m-0 max-w-sm">
                             <img src="/images/Partner/chainlink.png" className="object-scale-down w-52 h-auto md:w-auto md:h-28 max-w-10 filter grayscale hover:grayscale-0 transition ease-in-out duration-500 cursor-pointer" />
+                        </div>
+                        <div className="m-0 max-w-sm">
+                            <img src="/images/Partner/ocean_full.png" className="object-scale-down h-20 w-auto md:h-28 max-w-10 filter grayscale hover:grayscale-0 transition ease-in-out duration-500 cursor-pointer" />
                         </div>
                         <div className="m-0 max-w-sm">
                             <img src="/images/Partner/amazingblocks.svg" className="object-scale-down w-52 h-auto md:w-auto md:h-28 filter grayscale hover:grayscale-0 transition ease-in-out duration-500 cursor-pointer" />
