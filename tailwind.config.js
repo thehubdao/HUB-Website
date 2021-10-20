@@ -48,7 +48,7 @@ module.exports = {
       },
       rotate: {
         '44': '68.4deg',
-        '12': '183.6deg',
+        '12': '154.8deg',
         '24': '226.8deg'
       },
       padding: {
