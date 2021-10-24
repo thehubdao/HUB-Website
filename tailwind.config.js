@@ -5,6 +5,9 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 1.5s linear infinite',
+      },
       inset: {
         '1/5': '20%',
         '1/6': '10%'
@@ -63,6 +66,7 @@ module.exports = {
         colorbottom: '0 0px 40px 0px rgba(250, 250, 250, 0.1)',
         button: '0 0px 8px 0px rgba(250, 250, 250, 0.4)',
         black: '0 0px 40px 0px rgba(0, 0, 0, 0.1)',
+        white: "rgba(250, 250, 250, 0.25) 10px 10px 50px"
       },
       fontFamily: {
         // 'sans': ['Quicksand', 'sans-serif'],

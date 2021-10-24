@@ -37,9 +37,9 @@ const Home: NextPage = () => {
             </Head>
 
             <main className="flex flex-col items-center">
-                <div className="max-w-full 2xl:max-w-screen-2xl">
+                <Intro scroll={scroll} />
 
-                    <Intro scroll={scroll} />
+                <div className="max-w-full 2xl:max-w-screen-2xl">
 
                     <Infrastructure />
 

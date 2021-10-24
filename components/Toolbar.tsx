@@ -24,7 +24,10 @@ const Toolbar = ({ dark }: any) => {
                         <a href="/collection" target="_blank" className="nav-item">LANDs</a>
                         <a href="/#news" className="nav-item">News</a>
                         <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
-                        <a href="/faq" target="_blank" className="nav-item">FAQ</a>
+                        {/* <div className="relative flex flex-col items-center justify-center"> */}
+                            {/* <div className="absolute left-0 bg-blue-400 bg-opacity-70 filter z-0 blur w-full h-full p-4 rounded-2xl" /> */}
+                            <a href="/faq" target="_blank" className="nav-item pt-1 z-20">FAQ</a>
+                        {/* </div> */}
                     </div>
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
                         <a href="https://t.me/metagamehub_dao" target="_blank" className="nav-item">Community</a>
