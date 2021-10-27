@@ -19,9 +19,10 @@ const ValuationPage: NextPage = ({ prices }: any) => {
     const [imageLink, setImageLink] = useState("");
     const [tokenID, setTokenID] = useState("");
 
-    const [processing, SetProcessing] = useState(false);
+    const [processing, setProcessing] = useState(false);
     const [showCard, setShowCard] = useState(false);
     const [error, setError] = useState("");
+
 
     const convertPrices = (eth: number) => {
         const ethUSD = prices.ethereum.usd;
@@ -31,33 +32,46 @@ const ValuationPage: NextPage = ({ prices }: any) => {
         return [USDfromETH, SANDfromETH]
     }
 
-    const handleSubmit = (ev: any) => {
+    const handleSubmit = async (ev: any) => {
         ev.preventDefault();
-        setTokenID((document.getElementById('tokenID') as HTMLInputElement).value)
-        SetProcessing(true);
 
-        fetch(`https://services.itrmachines.com/sandbox/predictDetailed?tokenId=${tokenID}`)
-        .then((res)=>
-            res.json()
-        )
-        .then((data)=>{
-            console.log(data);
-            setName(data.name);
-            setImageLink(data.images.image_url)
-            const price = data.prices.predicted_price;
-            const [USDfromETH, SANDfromETH] = convertPrices(price)
-            setETHPrice(price.toLocaleString({ maximumFractionDigits: 4 }))
-            setSANDPrice(SANDfromETH.toLocaleString())
-            setUSDPrice(USDfromETH.toLocaleString())
-            setShowCard(true);
-        })
-        .catch((err)=>{
-            console.log("error", err)
-            setError("Invalid token ID");
+        const currentTokenID = (document.getElementById('tokenID') as HTMLInputElement).value
+        if (currentTokenID === tokenID) {
+            return
+        }
+        setProcessing(true);
+        setTokenID(currentTokenID)
+
+        try {
+            const res = await fetch("/api/getLandData", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({tokenID: currentTokenID})
+              });
+            const data = await res.json()
+            console.log(data)
+            if (data.err) {
+                setError("Invalid token ID")
+                setShowCard(false);
+            } else {
+                setName(data.name);
+                setImageLink(data.images.image_url)
+                const price = data.prices.predicted_price;
+                const [USDfromETH, SANDfromETH] = convertPrices(price)
+                setETHPrice(price.toLocaleString({ maximumFractionDigits: 4 }))
+                setSANDPrice(SANDfromETH.toLocaleString())
+                setUSDPrice(USDfromETH.toLocaleString())
+                setShowCard(true);
+            }
+            setProcessing(false);
+
+        } catch (e) {
+            setError("Something went wrong, please try again later");
             setShowCard(false);
-        })
-
-        SetProcessing(false);
+            setProcessing(false);
+        }
     }
 
     return (
@@ -77,7 +91,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
                         <p className={`text-lg xl:text-xl font-medium text-gray-200 mb-10`}>Find the real value of The Sandbox LANDs with our machine learning pricing algorithm.</p>
 
                         <form onSubmit={handleSubmit} onFocus={() => setError("")} className="relative flex items-center w-full backdrop-filter rounded-xl backdrop-blur-3xl max-w-xl">
-                            <input id="tokenID" type="text" placeholder="Enter token id of LAND" className="bg-transparent w-full text-white font-bold py-4 px-4 shadow-button focus:outline-none border border-opacity-40 hover:border-opacity-100 focus:border-opacity-100 transition duration-300 ease-in-out rounded-xl placeholder-white placeholder-opacity-75" />
+                            <input required id="tokenID" type="text" placeholder="Enter token id of LAND" className="bg-transparent w-full text-white font-bold py-4 px-4 shadow-button focus:outline-none border border-opacity-40 hover:border-opacity-100 focus:border-opacity-100 transition duration-300 ease-in-out rounded-xl placeholder-white placeholder-opacity-75" />
                             <button type="submit" className="absolute flex items-center justify-around bg-gray-200 right-0 h-4/5 border rounded-lg mr-1.5  w-12 sm:w-28">
                                 <svg className={`${processing ? "block" : "hidden"} animate-spin-slow h-6 w-6 border-4 border-t-gray-300 border-l-gray-300 border-gray-800 rounded-full " viewBox="0 0 24 24`} />
                                 <span className="text-black font-medium border pt-1 hidden sm:block">Search</span>
@@ -89,7 +103,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
 
 
                     <div className="relative z-0 flex flex-col h-96 w-full  xl:w-1/2 max-w-3xl items-center justify-center mt-20 xl:mt-32 ">
-                        <PriceCard showCard={showCard} name={name} imageLink={imageLink} tokenID={tokenID} ethPrice={ethPrice} sandPrice={sandPrice} usdPrice={usdPrice} />
+                        <PriceCard showCard={showCard} processing={processing} name={name} imageLink={imageLink} tokenID={tokenID} ethPrice={ethPrice} sandPrice={sandPrice} usdPrice={usdPrice} />
                         <div className={`${showCard ? "block  animate__fadeIn" : "hidden"} absolute animate__animated h-full w-screen xl:w-full bg-black bg-opacity-50 z-30 scale-y-150`} />
 
                         <div className={`hidden md:block absolute bottom-0 left-64 rounded-md h-56 w-56 z-0 opacity-60 scale-90 animate__animated animate__zoomIn`}>

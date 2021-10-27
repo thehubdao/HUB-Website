@@ -1,9 +1,9 @@
-const PriceCard = ({ showCard, name, imageLink, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
+const PriceCard = ({ showCard, processing, name, imageLink, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
     return (
 
 
 
-        <div className={`${showCard ? "animate__zoomIn animate__fast" : "hidden"} animate__animated shadow-white w-64 h-96 transform scale-100 xl:scale-120 relative flex flex-col pt-5 pb-2 items-center backdrop-filter backdrop-blur-2xl rounded-xl  border-l border-t border-opacity-30 z-50 `}>
+        <div className={`${showCard ? "animate__zoomIn animate__fast" : "hidden"} ${processing && "animate__zoomOut"} animate__animated shadow-white w-64 h-96 transform scale-100 xl:scale-120 relative flex flex-col pt-5 pb-2 items-center backdrop-filter backdrop-blur-2xl rounded-xl  border-l border-t border-opacity-30 z-50 `}>
             {/* <div className=" text-center w-28 h-28">
                 <Image className="rounded-lg object-cover" src="/images/land.jpg" layout="fill" />
             </div> */}
