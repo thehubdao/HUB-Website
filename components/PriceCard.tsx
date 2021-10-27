@@ -9,7 +9,9 @@ const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPr
             {/* <div className=" text-center w-28 h-28">
                 <Image className="rounded-lg object-cover" src="/images/land.jpg" layout="fill" />
             </div> */}
-            <img src={imageLink} className="w-30 h-30 rounded-xl object-cover" />
+            <a href={link} target="_blank">
+                <img src={imageLink} className="w-30 h-30 rounded-xl object-cover" />
+            </a>
             <p className="text-2xl font-bold text-gray-200 pt-4">
                 {name}
             </p>
@@ -42,7 +44,7 @@ const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPr
 
 
 
-            <a href={link} target="_blank" className="flex items-center absolute bottom-1 right-2 space-x-1 text-gray-300 text-xxs hover:text-blue-400 transition duration-300 ease-in-out" >
+            <a href={link} target="_blank" className="flex items-center absolute bottom-1 right-2 space-x-1 text-gray-300 text-xxs xl:text-xs hover:text-blue-400 transition duration-300 ease-in-out" >
                 <p className="">Opensea</p>
                 <FiExternalLink className="mb-0.5" />
             </a>
