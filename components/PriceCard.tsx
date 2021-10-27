@@ -1,4 +1,4 @@
-const PriceCard = ({ showCard, name, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
+const PriceCard = ({ showCard, name, imageLink, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
     return (
 
 
@@ -7,7 +7,7 @@ const PriceCard = ({ showCard, name, tokenID, ethPrice, sandPrice, usdPrice }: a
             {/* <div className=" text-center w-28 h-28">
                 <Image className="rounded-lg object-cover" src="/images/land.jpg" layout="fill" />
             </div> */}
-            <img src="/images/land.jpg" className="w-32 h-32 rounded-xl object-cover" />
+            <img src={imageLink} className="w-32 h-32 rounded-xl object-cover" />
             <p className="text-2xl font-bold text-gray-300 pt-5">
                 {name}
             </p>

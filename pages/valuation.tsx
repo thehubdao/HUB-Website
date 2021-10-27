@@ -16,6 +16,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
     const [usdPrice, setUSDPrice] = useState("");
     const [sandPrice, setSANDPrice] = useState("");
     const [name, setName] = useState("");
+    const [imageLink, setImageLink] = useState("");
     const [tokenID, setTokenID] = useState("");
 
     const [processing, SetProcessing] = useState(false);
@@ -34,26 +35,27 @@ const ValuationPage: NextPage = ({ prices }: any) => {
         ev.preventDefault();
         setTokenID((document.getElementById('tokenID') as HTMLInputElement).value)
         SetProcessing(true);
-        setError("Invalid token ID");
-        // setShowCard(true);
-        // fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cthe-sandbox&vs_currencies=usd")
-        // .then((res)=>
-        //     res.json()
-        // )
-        // .then((data)=>{
-        //     console.log(data);
-        // })
-        // .catch((err)=>{
-        //     setError("Invalid token ID");
-        //     setShowCard(false);
-        // })
 
-        // setName("LAND (-152, -375)");
-        // const price = 0.557;
-        // const [USDfromETH, SANDfromETH] = convertPrices(price)
-        // setETHPrice(price.toLocaleString())
-        // setSANDPrice(SANDfromETH.toLocaleString())
-        // setUSDPrice(USDfromETH.toLocaleString())
+        fetch(`https://services.itrmachines.com/sandbox/predictDetailed?tokenId=${tokenID}`)
+        .then((res)=>
+            res.json()
+        )
+        .then((data)=>{
+            console.log(data);
+            setName(data.name);
+            setImageLink(data.images.image_url)
+            const price = data.prices.predicted_price;
+            const [USDfromETH, SANDfromETH] = convertPrices(price)
+            setETHPrice(price.toLocaleString({ maximumFractionDigits: 4 }))
+            setSANDPrice(SANDfromETH.toLocaleString())
+            setUSDPrice(USDfromETH.toLocaleString())
+            setShowCard(true);
+        })
+        .catch((err)=>{
+            console.log("error", err)
+            setError("Invalid token ID");
+            setShowCard(false);
+        })
 
         SetProcessing(false);
     }
@@ -87,7 +89,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
 
 
                     <div className="relative z-0 flex flex-col h-96 w-full  xl:w-1/2 max-w-3xl items-center justify-center mt-20 xl:mt-32 ">
-                        <PriceCard showCard={showCard} name={name} tokenID={tokenID} ethPrice={ethPrice} sandPrice={sandPrice} usdPrice={usdPrice} />
+                        <PriceCard showCard={showCard} name={name} imageLink={imageLink} tokenID={tokenID} ethPrice={ethPrice} sandPrice={sandPrice} usdPrice={usdPrice} />
                         <div className={`${showCard ? "block  animate__fadeIn" : "hidden"} absolute animate__animated h-full w-screen xl:w-full bg-black bg-opacity-50 z-30 scale-y-150`} />
 
                         <div className={`hidden md:block absolute bottom-0 left-64 rounded-md h-56 w-56 z-0 opacity-60 scale-90 animate__animated animate__zoomIn`}>
