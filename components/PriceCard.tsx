@@ -45,7 +45,7 @@ const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPr
 
 
             <a href={link} target="_blank" className="flex items-center absolute bottom-1 right-2 space-x-1 text-gray-300 text-xxs xl:text-xs hover:text-blue-400 transition duration-300 ease-in-out" >
-                <p className="">Opensea</p>
+                <p className="font-medium">Opensea</p>
                 <FiExternalLink className="mb-0.5" />
             </a>
 

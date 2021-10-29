@@ -94,16 +94,17 @@ const ValuationPage: NextPage = ({ prices }: any) => {
                     <div className="z-10 flex flex-col justify-center w-full xl:w-1/2 pr-0 xl:pr-28 text-center xl:text-left items-center xl:items-start mt-32">
                         <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-green-400 to-green-500">LAND Valuation</h2>
                         <p className={`text-lg xl:text-xl font-medium text-gray-200 mb-10`}>Find the real value of The Sandbox LANDs with our machine learning pricing algorithm.</p>
-
-                        <form onSubmit={handleSubmit} onFocus={() => setError("")} className="relative flex items-center w-full backdrop-filter rounded-xl backdrop-blur-3xl max-w-xl">
-                            <input required id="tokenID" type="text" placeholder="Enter Token ID of LAND" className="bg-transparent w-full text-white font-bold py-4 px-4 shadow-button focus:outline-none border border-opacity-40 hover:border-opacity-100 focus:border-opacity-100 transition duration-300 ease-in-out rounded-xl placeholder-white placeholder-opacity-75" />
+                        
+                        <p className="font-medium text-xs text-red-500 mb-1 ml-0 xl:ml-2">{error}</p>
+                        <form onSubmit={handleSubmit} onFocus={() => {setError("")}} className="relative flex items-center w-full backdrop-filter rounded-xl backdrop-blur-3xl max-w-xl">
+                            <input required id="tokenID" type="text" placeholder="Enter Token ID of LAND" className={`bg-transparent w-full text-white font-bold py-4 px-4 shadow-button focus:outline-none border ${error ? "border-red-500 border-opacity-100" : "border-opacity-40 "} hover:border-opacity-100 focus:border-opacity-100 transition duration-300 ease-in-out rounded-xl placeholder-white placeholder-opacity-75`} />
                             <button type="submit" className="absolute flex items-center justify-around bg-gray-200 right-0 h-4/5 border rounded-lg mr-1.5  w-12 sm:w-28">
                                 <svg className={`${processing ? "block" : "hidden"} animate-spin-slow h-6 w-6 border-4 border-t-gray-300 border-l-gray-300 border-gray-800 rounded-full " viewBox="0 0 24 24`} />
                                 <span className="text-black font-medium border pt-1 hidden sm:block">Search</span>
                                 <HiOutlineSearch className={`${processing ? "hidden" : "block"} sm:hidden text-2xl`} />
                             </button>
                         </form>
-                        <p className="font-medium text-xs text-red-500 mt-3 ml-2">{error}</p>
+                        <p className="font-medium text-xxs lg:text-xs text-gray-400 mt-2 xl:ml-2 ml-0">Find LAND on Opensea &gt; Details &gt; Token ID</p>
                     </div>
 
 
