@@ -14,7 +14,7 @@ const Question = ({ question, answer }: any) => {
 
                 <p className="text-black opacity-80 font-medium text-xl sm:text-2xl peer-checked:mb-3 ml-3 col-span-11 select-none">{question}</p>
 
-                <div className="hidden peer-checked:block text-black text-opacity-50 col-span-full whitespace-pre-wrap font-medium">
+                <div className="hidden peer-checked:block text-black text-opacity-60 col-span-full whitespace-pre-wrap font-medium">
                     {answer}
                 </div>
             </label>

@@ -1,6 +1,6 @@
 import { FiExternalLink } from "react-icons/fi"
 
-const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
+const PriceCard = ({ showCard, processing, name, imageLink, openseaLink, sandboxLink, tokenID, ethPrice, sandPrice, usdPrice }: any) => {
     return (
 
 
@@ -9,8 +9,9 @@ const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPr
             {/* <div className=" text-center w-28 h-28">
                 <Image className="rounded-lg object-cover" src="/images/land.jpg" layout="fill" />
             </div> */}
-            <a href={link} target="_blank">
-                <img src={imageLink} className="w-30 h-30 rounded-xl object-cover" />
+            <a href={sandboxLink} target="_blank" className="relative w-30 h-30">
+                <img src={imageLink} className="rounded-xl object-cover" />
+                <FiExternalLink className="absolute top-0 right-0 text-white text-xs backdrop-filter backdrop-blur-sm rounded-xl w-6 h-6 p-1" />
             </a>
             <p className="text-2xl font-bold text-gray-200 pt-4">
                 {name}
@@ -26,25 +27,25 @@ const PriceCard = ({ showCard, processing, name, imageLink, link, tokenID, ethPr
             <div className="flex space-x-4 items-center w-full justify-start px-4 py-1.5 h-full">
                 <img src="/images/ethereum-eth-logo.png" className="rounded-full h-8 w-8  p-1 shadow-button" />
                 <p className="text-lg font-medium text-gray-300 pt-0.5">
-                    {ethPrice}
+                    {ethPrice} <span className="font-light text-base">ETH</span>
                 </p>
             </div>
             <div className={`flex ${!sandPrice && "invisible"} space-x-4 items-center w-full justify-start px-4 py-1.5 h-full`}>
                 <img src="/images/the-sandbox-sand-logo.png" className="rounded-full h-8 w-8  p-1 shadow-button" />
                 <p className="text-lg font-medium text-gray-300 pt-0.5">
-                    {sandPrice}
+                    {sandPrice} <span className="font-light text-base">SAND</span>
                 </p>
             </div>
             <div className={`flex ${!usdPrice && "invisible"} space-x-4 items-center w-full justify-start px-4 py-1.5 h-full`}>
                 <img src="/images/usd-coin-usdc-logo.png" className="rounded-full h-8 w-8  p-1 shadow-button" />
                 <p className="text-lg font-medium text-gray-300 pt-0.5">
-                    {usdPrice}
+                    {usdPrice} <span className="font-light text-base">USDC</span>
                 </p>
             </div>
 
 
 
-            <a href={link} target="_blank" className="flex items-center absolute bottom-1 right-2 space-x-1 text-gray-300 text-xxs xl:text-xs hover:text-blue-400 transition duration-300 ease-in-out" >
+            <a href={openseaLink} target="_blank" className="flex items-center absolute bottom-1 right-2 space-x-1 text-gray-300 text-xxs xl:text-xs hover:text-blue-400 transition duration-300 ease-in-out" >
                 <p className="font-medium">Opensea</p>
                 <FiExternalLink className="mb-0.5" />
             </a>
