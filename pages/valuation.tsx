@@ -58,7 +58,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
             });
             const data = await res.json()
             if (data.err) {
-                setCoordinatesError("Invalid Coordinates")
+                setCoordinatesError("Not enough data yet")
                 setShowCard(false);
             } else {
                 setName(data.name);
@@ -103,7 +103,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
             });
             const data = await res.json()
             if (data.err) {
-                setIdError("Invalid token ID")
+                setIdError("Not enough data yet")
                 setShowCard(false);
             } else {
                 setName(data.name);
