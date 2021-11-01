@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaLinkedin, FaTelegramPlane, FaDiscord, FaEthereum, FaInstagram, FaTwitter, FaMedium } from "react-icons/fa";
+import { FaLinkedin, FaTelegramPlane, FaDiscord, FaEthereum, FaInstagram, FaTwitter, FaMedium, FaYoutube } from "react-icons/fa";
 import { VscMail } from "react-icons/vsc";
 
 
@@ -53,8 +53,8 @@ const Footer = () => {
                         <FaTelegramPlane className="social-media-icon" />
                     </a>
 
-                    <a href="https://discord.gg/QEWfTJeWCV" className="cursor-pointer" target="_blank" >
-                        <FaDiscord className="social-media-icon" />
+                    <a href="https://www.youtube.com/channel/UC6lHXEEmjGiRmIVmiS0odpw" className="cursor-pointer" target="_blank" >
+                        <FaYoutube className="social-media-icon" />
                     </a>
                     <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656#balances" className="cursor-pointer" target="_blank" >
                         <FaEthereum className="social-media-icon" />

@@ -141,7 +141,7 @@ const ValuationPage: NextPage = ({ prices }: any) => {
 
                     <div className="z-10 flex flex-col justify-center w-full xl:w-1/2 pr-0 xl:pr-28 text-center xl:text-left items-center xl:items-start mt-32">
                         <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-green-400 to-green-500">LAND Valuation</h2>
-                        <p className={`text-lg xl:text-xl font-medium text-gray-200 mb-10`}>Find the real value of The Sandbox LANDs with our machine learning pricing algorithm.</p>
+                        <p className={`text-lg xl:text-xl font-medium text-gray-200 mb-12 max-w-lg`}>Find the real value of The Sandbox LANDs with our machine learning pricing algorithm.</p>
 
                         <div className="flex flex-wrap items-center mb-1 pl-2 text-left w-full max-w-sm">
                             <p className="font-medium text-gray-300 pt-1">Find by Token ID</p>
@@ -171,6 +171,9 @@ const ValuationPage: NextPage = ({ prices }: any) => {
                             </button>
                         </form>
                         <p className="font-medium text-xs text-red-500 mt-1 pl-2 text-left w-full max-w-sm">{coordinatesError}</p>
+
+                        <p className="  font-medium text-xs text-gray-400 mt-10 text-center xl:text-left w-full max-w-md">The pricing tool only evaluates lands that have been sold in the past. We are working around the clock to include all available lands on Opensea.</p>
+
                     </div>
 
 
