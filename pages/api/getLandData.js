@@ -6,8 +6,8 @@ export default async function handler(req, res) {
   
     try {
       tokenID ? 
-      response = await fetch(`https://services.itrmachines.com/sandbox/predictDetailed?tokenId=${tokenID}`) :
-      response = await fetch(`https://services.itrmachines.com/sandbox/predictDetailed?x=${X}&y=${Y}`)
+      response = await fetch(`https://services.itrmachines.com/sandbox/predict?tokenId=${tokenID}`) :
+      response = await fetch(`https://services.itrmachines.com/sandbox/predict?x=${X}&y=${Y}`)
       const data = await response.json()
       res.json(data)
   
