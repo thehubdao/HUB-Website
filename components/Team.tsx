@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Member from "./Member";
-import teamJson from "./team.json";
-import extendedTeamJson from "./extendedTeam.json";
-import advisorsJson from "./advisors.json";
+import teamJson from "../data/team.json";
+import extendedTeamJson from "../data/extendedTeam.json";
+import advisorsJson from "../data/advisors.json";
 
 
 const Team = () => {

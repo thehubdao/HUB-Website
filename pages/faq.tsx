@@ -7,7 +7,7 @@ import "animate.css"
 import Footer from "../components/Footer";
 import Toolbar from "../components/Toolbar";
 import Question from "../components/Question";
-import faqJson from "../components/faq.json"
+import faqJson from "../data/faq.json"
 
 
 const FAQPage: NextPage = () => {

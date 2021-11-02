@@ -118,6 +118,7 @@ h2 {
 }
 
 h3 {
+  @apply text-3xl xs:text-4xl  sm:text-5xl lg:text-6xl font-medium py-3;
 }
 
 h4 {

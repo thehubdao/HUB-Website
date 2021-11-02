@@ -1,7 +1,9 @@
+import { useState } from "react";
+
 import BlogCard from "./BlogCard"
 
-import pressJson from "./press.json";
-import { useState } from "react";
+import pressJson from "../data/press.json";
+
 
 
 const Press = () => {

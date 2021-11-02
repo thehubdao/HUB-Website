@@ -13,7 +13,7 @@ import Governance from '../components/Governance';
 import Tokenomics from "../components/Tokenomics";
 import Roadmap from '../components/Roadmap';
 import Team from '../components/Team';
-import Partner from '../components/Partner';
+import Partner from '../components/Collaborators';
 import Press from '../components/Press';
 import Ocean from '../components/Ocean';
 
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
                     <Tokenomics />
 
-                    <Roadmap scroll={scroll} />
+                    <Roadmap />
 
                     <Team />
 

@@ -1,5 +1,4 @@
 import LandCard from "./LandCard"
-import NFTCard from "./NFTCard"
 
 
 const Lands = () => {

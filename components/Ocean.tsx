@@ -1,7 +1,7 @@
 import OceanIllustration from "./OceanIllustration";
 
 
-const Ocean = ({ scroll }: any) => {
+const Ocean = () => {
 
     return (
 

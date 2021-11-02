@@ -1,0 +1,38 @@
+[
+    {
+        "link": "https://chain.link",
+        "logo": "/images/Collaborators/chainlink.png"
+    },
+    {
+        "link": "https://oceanprotocol.com",
+        "logo": "/images/Collaborators/ocean.png"
+    },
+    {
+        "link": "https://www.sandbox.game/",
+        "logo": "/images/Collaborators/sandbox.png"
+    },
+    {
+        "link": "https://my.amazingblocks.io",
+        "logo": "/images/Collaborators/amazingblocks.svg"
+    },
+    {
+        "link": "https://www.myreality.no",
+        "logo": "/images/Collaborators/myreality.png"
+    },
+    {
+        "link": "https://dezentralizedfinance.com",
+        "logo": "/images/Collaborators/defi.png"
+    },
+    {
+        "link": "https://defitimes.io",
+        "logo": "/images/Collaborators/defitimes.svg"
+    },
+    {
+        "link": "http://itrmachines.com",
+        "logo": "/images/Collaborators/itrm.png"
+    },
+    {
+        "link": "",
+        "logo": "/images/Collaborators/pec.png"
+    }
+]

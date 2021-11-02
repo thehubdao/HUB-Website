@@ -1,7 +1,7 @@
 import NPTIllustration from "./NPTIllustration";
 
 
-const NPT = ({ scroll }: any) => {
+const NPT = () => {
 
     return (
 

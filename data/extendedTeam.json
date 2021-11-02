@@ -40,6 +40,11 @@
     "position": "Marketing",
     "image": "/images/Team/alejandra.png",
     "linkeind": "https://www.linkedin.com/in/alejandra-corbella-obregon-a6637ba9/"
+  },
+  {
+    "name": "Branko",
+    "position": "Graphic Designer",
+    "image": "/images/Team/branko.png",
+    "linkeind": ""
   }
-
 ]

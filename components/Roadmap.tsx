@@ -1,7 +1,7 @@
 import Milestone from "./Milestone";
 
 
-const Roadmap = ({ scroll }: any) => {
+const Roadmap = () => {
 
     return (
 
