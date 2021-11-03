@@ -6,7 +6,7 @@ import "animate.css"
 
 import Footer from "../components/Footer";
 import Toolbar from "../components/Toolbar";
-import landsJson from "../components/lands.json"
+import landsJson from "../data/lands.json"
 import LandCard from "../components/LandCard";
 
 
