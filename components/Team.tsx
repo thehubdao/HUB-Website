@@ -17,7 +17,7 @@ const Team = () => {
 
                     <h1 className={`text-blue-300 bg-clip-text mb-10 uppercase lg:font-light lg:text-9xl`}>Initiators</h1>
 
-                    <div className="relative w-full max-w-screen-lg flex flex-row flex-wrap justify-center items-start">
+                    <div className="relative w-full max-w-screen-xl flex flex-row flex-wrap justify-center items-start">
                         {teamJson.map((element, key) => {
                             return (
                                 <Member key={key} name={element.name} position={element.position} img={element.image} link={element.linkeind} />

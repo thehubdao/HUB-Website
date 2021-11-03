@@ -1,17 +1,5 @@
 [
   {
-    "name": "Pierre Baumann",
-    "position": "Blockchain Developer",
-    "image": "/images/Team/pierre.png",
-    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
-  },
-  {
-    "name": "Philipp Kothe",
-    "position": "Blockchain Architect",
-    "image": "/images/Team/philipp.png",
-    "linkeind": "https://www.linkedin.com/in/philippkothe/"
-  },
-  {
     "name": "Patrick Sührer",
     "position": "Blockchain Researcher",
     "image": "/images/Team/patrick.png",

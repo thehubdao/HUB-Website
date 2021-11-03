@@ -58,5 +58,17 @@
     "position": "Oracle Infrastructure",
     "image": "/images/Team/santiago.png",
     "linkeind": "https://www.linkedin.com/in/santiago-h-hernandez/"
+  },
+  {
+    "name": "Pierre Baumann",
+    "position": "Blockchain Developer",
+    "image": "/images/Team/pierre.png",
+    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
+  },
+  {
+    "name": "Philipp Kothe",
+    "position": "Blockchain Architect",
+    "image": "/images/Team/philipp.png",
+    "linkeind": "https://www.linkedin.com/in/philippkothe/"
   }
 ]

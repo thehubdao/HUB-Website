@@ -100,5 +100,23 @@
     "position": "Strategy Advisor",
     "image": "/images/Team/alexander.png",
     "linkeind": ""
+  },
+  {
+    "name": "Ferdinand Hauptmann",
+    "position": "Marketing Advisor",
+    "image": "/images/Team/ferdinand.png",
+    "linkeind": "https://www.linkedin.com/in/ferdinandhauptmann/"
+  },
+  {
+    "name": "Jonas Makki",
+    "position": "Marketing Advisor",
+    "image": "/images/Team/jonas.png",
+    "linkeind": "https://www.linkedin.com/in/jonas-bakri-makki-9693a9205/"
+  },
+  {
+    "name": "Daniel Schmunk",
+    "position": "Marketing Advisor",
+    "image": "/images/Team/daniel.png",
+    "linkeind": "https://www.linkedin.com/in/danielschmunk/"
   }
 ]
