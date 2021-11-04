@@ -118,5 +118,17 @@
     "position": "Marketing Advisor",
     "image": "/images/Team/daniel.png",
     "linkeind": "https://www.linkedin.com/in/danielschmunk/"
+  },
+  {
+    "name": "Simon Peters",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/simon.png",
+    "linkeind": "https://www.linkedin.com/in/snj-peters/"
+  },
+  {
+    "name": "Wolfgang Krämer",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/wolfgang.png",
+    "linkeind": "https://www.linkedin.com/in/wolfgang-kraemer/"
   }
 ]
