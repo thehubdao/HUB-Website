@@ -30,7 +30,7 @@ const Press = () => {
                     <BlogCard date="Sep 1" title="Announcing new partnership between MGH and MyReality DAO to develop amazing games for The Sandbox" article="The Ethiopians say, “If spiders weave together, they can bind a lion.” That’s why Batman trusted Robin. Bud Spencer only hit it off with Terence Hill — and R2D2 and C-3PO constantly talked past each other..." />
                     <BlogCard date="Aug 25" title="Big news coming: MGH is partnering with the AI expert Intelligent Trading Machines to develop a unique NFT price oracle!" article="Algorithms are better people. Better than probation officers, study counselors or couple therapists, they predict which criminal will go back to jail, what grades freshmen will have or whether a marriage will fail or not..." />
                     <div className="col-span-full max-w-xs m-auto text-center rounded-full px-6 py-2 drop-shadow bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer">
-                        <a href="https://thedac.medium.com" target="_blank">
+                        <a href="https://metagamehub.medium.com" target="_blank">
                             <span className="text-gray-200 text-lg">Read all Articles</span>
                         </a>
                     </div>

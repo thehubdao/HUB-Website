@@ -33,7 +33,7 @@ const Footer = () => {
                 </a>
                 <div className="flex flex-row items-center justify-center lg:justify-start w-full flex-wrap space-x-3 ">
 
-                    <a href="https://thedac.medium.com" className="cursor-pointer" target="_blank" >
+                    <a href="https://metagamehub.medium.com" className="cursor-pointer" target="_blank" >
                         <FaMedium className="social-media-icon" />
                     </a>
 

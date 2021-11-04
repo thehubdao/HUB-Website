@@ -53,7 +53,7 @@ const Press = () => {
                     <BlogCard classes="z-0 xl:scale-100" date={pressJson[3].date} link={pressJson[3].link} title={pressJson[3].title} article={pressJson[3].text} />
 
                     <div className="col-span-full z-50 max-w-xs m-auto xl:translate-y-36 button">
-                        <a href="https://thedac.medium.com" target="_blank">
+                        <a href="https://metagamehub.medium.com" target="_blank">
                             <span className="button-text">Read all Articles</span>
                         </a>
                     </div>
