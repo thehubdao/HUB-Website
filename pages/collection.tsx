@@ -25,7 +25,7 @@ const FAQPage: NextPage = () => {
                     <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-green-200 to-green-500 text-center mt-20 lg:mt-32">LANDs</h1>
                     <p className={`text-lg lg:text-2xl font-medium text-gray-200 text-center`}>Community developed & curated </p>
 
-                    <a href="/valuation" target="_blank" className="button mt-5 mb-20">
+                    <a href="https://app.metagamehub.io/valuation" target="_blank" className="button mt-5 mb-20">
                         <p className="button-text">LAND Valuation</p>
                     </a>
 

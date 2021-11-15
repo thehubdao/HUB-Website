@@ -20,20 +20,17 @@ const Intro = ({ scroll }: any) => {
                 {/* MeTagaMeHUb DaO from-blue-400 via-pink-400 to-pink-600 */}
                 <div className={`absolute top-0 h-screen w-full z-20 flex justify-center items-center`}>
                     <div className={`${scroll > 10 && "transition-all duration-1000 transform xl:translate-x-64 xl:-translate-y-0 -translate-y-20"} flex flex-col items-center xl:items-start`}>
-                        <h6 className={`${scroll > 10 ? "xl:text-6xl" : "xl:text-8xl"} transition-all duration-1000 text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 px-2`}>MeTagaMeHUb DaO</h6>
+                        <h6 className={`${scroll > 10 ? "xl:text-6xl" : "xl:text-8xl"} transition-all duration-1000 text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 px-2 mb-4`}>MeTagaMeHUb DaO</h6>
 
-                        <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-10">
-                            <button className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} mt-5 transition-all duration-300 ease-in-out bg-black bg-opacity-50 border border-white border-opacity-25 hover:border-opacity-70 hover:shadow-color px-4 xl:px-6 py-2 xl:py-3 rounded-full`}>
-                                <a href="https://t.me/metagamehub_dao" className="cursor-pointer" target="_blank" >
-                                    <span className="text-gray-200 text-lg xl:text-xl font-medium mt-1">Join Community!</span>
-                                </a>
-                            </button>
-
-                            <button className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} mt-5 transition-all duration-300 ease-in-out bg-white bg-opacity-20 border border-white border-opacity-25 hover:border-opacity-70 hover:shadow-color px-4 xl:px-6 py-2 xl:py-3 rounded-full`}>
-                                <a href="https://www.thedap.space/membership/mgh" className="cursor-pointer" target="_blank" >
-                                    <span className="text-gray-200 text-lg xl:text-xl font-medium mt-1">Join public membership!</span>
-                                </a>
-                            </button>
+                        <div className="flex flex-col space-y-1 sm:space-y-0 sm:flex-row space-x-0 lg:space-x-2 xl:space-x-6 items-center">
+                            <a href="https://app.metagamehub.io" className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} relative w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-400 bg-opacity-60 group shadow-color overflow-hidden transition ease-in-out duration-500`}>
+                                <div className="h-full w-full absolute bg-gradient-to-br transition-all ease-in-out duration-300 from-pink-600 to-blue-500 rounded-xl blur-md group-hover:blur-sm" />
+                                <span className="pt-1 z-10">Launch App</span>
+                            </a>
+                            <a href="https://t.me/metagamehub_dao" className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} relative w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
+                                <div className="h-full w-full absolute bg-gradient-to-br from-grey-dark to-grey-darkest rounded-xl blur-none group-hover:blur-md transition-all ease-in-out duration-300" />
+                                <span className="pt-1 z-10">Join Community</span>
+                            </a>
                         </div>
 
 

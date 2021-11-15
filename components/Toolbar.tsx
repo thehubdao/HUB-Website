@@ -32,7 +32,7 @@ const Toolbar = ({ dark }: any) => {
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
                         <a href="https://t.me/metagamehub_dao" target="_blank" className="nav-item pt-1">Community</a>
                         <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item pt-1">Voting</a>
-                        <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item pt-1">Public Membership</a>
+                        <a href="https://app.metagamehub.io" target="_blank" className="nav-item pt-1">Launch App</a>
                     </div>
 
                 </nav>
@@ -47,7 +47,7 @@ const Toolbar = ({ dark }: any) => {
                 <a href="/faq" target="_blank" className="nav-item">FAQ</a>
                 <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
-                <a href="https://www.thedap.space/membership/mgh" target="_blank" className="nav-item">Public Membership</a>
+                <a href="https://app.metagamehub.io" target="_blank" className="nav-item">Launch App</a>
             </nav>
 
         </div>

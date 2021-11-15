@@ -17,7 +17,7 @@ const Lands = () => {
                         <a href="/collection" target="_blank" className="button mt-5">
                             <p className="button-text">Show Collection</p>
                         </a>
-                        <a href="/valuation" target="_blank" className="button mt-5 bg-white bg-opacity-20">
+                        <a href="https://app.metagamehub.io/valuation" target="_blank" className="button mt-5 bg-white bg-opacity-20">
                             <p className="button-text">LAND Valuation</p>
                         </a>
                     </div>
