@@ -14,7 +14,7 @@ const Roadmap = () => {
                         {/* <a href="https://www.thedap.space/membership/mgh" target="_blank" className="button mt-5">
                             <p className="button-text">Join public membership</p>
                         </a> */}
-                        <a href="https://www.thedap.space/membership/mgh" target="_blank" className={`relative mt-5 sm:mt-10 w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
+                        <a href="https://app.metagamehub.io" target="_blank" className={`relative mt-5 sm:mt-10 w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
                             <div className="h-full w-full absolute bg-gradient-to-br from-grey-dark to-grey-darkest rounded-xl blur-none group-hover:blur-md transition-all ease-in-out duration-300" />
                             <span className="pt-1 z-10">Launch App</span>
                         </a>
