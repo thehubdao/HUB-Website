@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 
 import Footer from "../components/Footer";
+import Toolbar from "../components/Toolbar";
 
 
 const TermsofusePage: NextPage = () => {
@@ -14,16 +15,17 @@ const TermsofusePage: NextPage = () => {
       </Head>
 
 
-      <main className="flex flex-col items-center">
+      <main className="flex flex-col items-center bg-gray-100 pt-20 lg:pt-32 pb-20">
+        <Toolbar dark={false} />
 
-        <div className="text-gray-200 p-10 max-w-full 2xl:max-w-screen-2xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-10">Terms of use</h1>
+        <div className="text-gray-200 p-6 md:p-10 max-w-full 2xl:max-w-screen-2xl">
+          <h1 className="text-5xl md:text-7xl font-bold mb-10 text-black text-opacity-80">Terms of use</h1>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Website Terms of Use</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Website Terms of Use</h2>
 
-          <p className="py-1 text-gray-400">Version 1.0</p>
+          <p className="py-1 text-black text-opacity-70">Version 1.0</p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             The MetaGame Hub website located at
             https://www.metagamehub.io is a copyrighted work belonging
             to the MetaGameHub DAO. Certain features of the Site may be subject to
@@ -31,12 +33,12 @@ const TermsofusePage: NextPage = () => {
             on the Site in connection with such features.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             All such additional terms, guidelines, and rules are
             incorporated by reference into these Terms.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             These Terms of Use described the legally binding terms and
             conditions that oversee your use of the Site.&nbsp;BY
             LOGGING INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE
@@ -46,24 +48,24 @@ const TermsofusePage: NextPage = () => {
             WITH ALL OF THE PROVISION OF THESE TERMS, DO NOT LOG INTO
             AND/OR USE THE SITE.
           </p>
-          <p className="py-1 text-gray-400"></p>
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70"></p>
+          <p className="py-1 text-black text-opacity-70">
             These terms require the use of arbitration Section 10.2 on
             an individual basis to resolve disputes and also limit the
             remedies available to you in the event of a dispute. These
             Terms of Use were created with the help of the .
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Access to the Site</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Access to the Site</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Subject to these Terms.</strong> Company grants you
             a non-transferable, non-exclusive, revocable, limited
             license to access the Site solely for your own personal,
             noncommercial use.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Certain Restrictions.</strong> The rights approved
             to you in these Terms are subject to the following
             restrictions: (a) you shall not sell, rent, lease, transfer,
@@ -81,7 +83,7 @@ const TermsofusePage: NextPage = () => {
             notices on the Site must be retained on all copies thereof.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Company reserves the right to change, suspend, or cease the
             Site with or without notice to you.&nbsp; You approved that
             Company will not be held liable to you or any third-party
@@ -89,13 +91,13 @@ const TermsofusePage: NextPage = () => {
             any part.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>No Support or Maintenance.</strong> You agree that
             Company will have no obligation to provide you with any
             support in connection with the Site.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Excluding any User Content that you may provide, you are
             aware that all the intellectual property rights, including
             copyrights, patents, trademarks, and trade secrets, in the
@@ -107,9 +109,9 @@ const TermsofusePage: NextPage = () => {
             reserve all rights not granted in these Terms.
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Third-Party Links &amp; Ads; Other Users</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Third-Party Links &amp; Ads; Other Users</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Third-Party Links &amp; Ads.</strong> The Site may
             contain links to third-party websites and services, and/or
             display advertisements for third parties.&nbsp; Such
@@ -127,7 +129,7 @@ const TermsofusePage: NextPage = () => {
             privacy and data gathering practices.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Other Users.</strong> Each Site user is solely
             responsible for any and all of its own User Content.&nbsp;
             Because we do not control User Content, you acknowledge and
@@ -139,7 +141,7 @@ const TermsofusePage: NextPage = () => {
             under no obligation to become involved.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             You hereby release and forever discharge the Company and our
             officers, employees, agents, successors, and assigns from,
             and hereby waive and relinquish, each and every past,
@@ -156,9 +158,9 @@ const TermsofusePage: NextPage = () => {
             affected his or her settlement with the debtor."
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Disclaimers</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Disclaimers</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             The site is provided on an "as-is" and "as available" basis,
             and the company and our suppliers expressly disclaim any and
             all warranties and conditions of any kind, whether express,
@@ -175,7 +177,7 @@ const TermsofusePage: NextPage = () => {
             (90) days from the date of first use.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Some jurisdictions do not allow the exclusion of implied
             warranties, so the above exclusion may not apply to
             you.&nbsp; Some jurisdictions do not allow limitations on
@@ -183,9 +185,9 @@ const TermsofusePage: NextPage = () => {
             may not apply to you.
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Limitation on Liability</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Limitation on Liability</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             To the maximum extent permitted by law, in no event shall
             Company or our suppliers be liable to you or any third-party
             for any lost profits, lost data, costs of procurement of
@@ -199,7 +201,7 @@ const TermsofusePage: NextPage = () => {
             or computer system, or loss of data resulting therefrom.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             To the maximum extent permitted by law, notwithstanding
             anything to the contrary contained herein, our liability to
             you for any damages arising from or related to this
@@ -210,13 +212,13 @@ const TermsofusePage: NextPage = () => {
             from or relating to this agreement.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Some jurisdictions do not allow the limitation or exclusion
             of liability for incidental or consequential damages, so the
             above limitation or exclusion may not apply to you.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Term and Termination.</strong> Subject to this
             Section, these Terms will remain in full force and effect
             while you use the Site.&nbsp; We may suspend or terminate
@@ -235,9 +237,9 @@ const TermsofusePage: NextPage = () => {
             2.5, Section 3, and Sections 4 through 10.
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">Copyright Policy.</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">Copyright Policy.</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Company respects the intellectual property of others and
             asks that users of our Site do the same.&nbsp; In connection
             with our Site, we have adopted and implemented a policy
@@ -253,7 +255,7 @@ const TermsofusePage: NextPage = () => {
             Designated Copyright Agent:
           </p>
 
-          <ul className="text-gray-400">
+          <ul className="text-black text-opacity-70">
             <li>your physical or electronic signature;</li>
             <li>
               identification of the copyrighted work(s) that you claim
@@ -282,7 +284,7 @@ const TermsofusePage: NextPage = () => {
             </li>
           </ul>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Please note that pursuant to 17 U.S.C. § 512(f), any
             misrepresentation of material fact in a written notification
             automatically subjects the complaining party to liability
@@ -291,9 +293,9 @@ const TermsofusePage: NextPage = () => {
             of copyright infringement.
           </p>
 
-          <h2 className="text-xl md:text-3xl mt-4 mb-2">General</h2>
+          <h2 className="text-xl md:text-3xl mt-4 mb-2 text-black text-opacity-80">General</h2>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             These Terms are subject to occasional revision, and if we
             make any substantial changes, we may notify you by sending
             you an e-mail to the last e-mail address you provided to us
@@ -319,7 +321,7 @@ const TermsofusePage: NextPage = () => {
             ACTION WAIVER.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Applicability of Arbitration Agreement.</strong> All
             claims and disputes in connection with the Terms or the use
             of any product or service provided by the Company that
@@ -334,7 +336,7 @@ const TermsofusePage: NextPage = () => {
             beneficiaries of services or goods provided under the Terms.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>
               Notice Requirement and Informal Dispute Resolution.
             </strong>{" "}
@@ -354,7 +356,7 @@ const TermsofusePage: NextPage = () => {
             entitled.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Arbitration Rules.</strong> Arbitration shall be
             initiated through the American Arbitration Association, an
             established alternative dispute resolution provider that
@@ -391,7 +393,7 @@ const TermsofusePage: NextPage = () => {
             an equal share of the fees and costs of the ADR Provider.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>
               Additional Rules for Non-Appearance Based Arbitration.
             </strong>{" "}
@@ -404,7 +406,7 @@ const TermsofusePage: NextPage = () => {
             otherwise agreed by the parties.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Time Limits.</strong> If you or the Company pursues
             arbitration, the arbitration action must be initiated and/or
             demanded within the statute of limitations and within any
@@ -412,7 +414,7 @@ const TermsofusePage: NextPage = () => {
             claim.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Authority of Arbitrator.</strong> If arbitration is
             initiated, the arbitrator will decide the rights and
             liabilities of you and the Company, and the dispute will not
@@ -431,7 +433,7 @@ const TermsofusePage: NextPage = () => {
             binding upon you and the Company.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Waiver of Jury Trial.</strong> THE PARTIES HEREBY
             WAIVE THEIR CONSTITUTIONAL AND STATUTORY RIGHTS TO GO TO
             COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY,
@@ -448,7 +450,7 @@ const TermsofusePage: NextPage = () => {
             judge.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Waiver of Class or Consolidated Actions.</strong>{" "}
             All claims and disputes within the scope of this arbitration
             agreement must be arbitrated or litigated on an individual
@@ -457,7 +459,7 @@ const TermsofusePage: NextPage = () => {
             or consolidated with those of any other customer or user.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Confidentiality.</strong> All aspects of the
             arbitration proceeding shall be strictly confidential.&nbsp;
             The parties agree to maintain confidentiality unless
@@ -468,7 +470,7 @@ const TermsofusePage: NextPage = () => {
             relief.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Severability.</strong> If any part or parts of this
             Arbitration Agreement are found under the law to be invalid
             or unenforceable by a court of competent jurisdiction, then
@@ -477,7 +479,7 @@ const TermsofusePage: NextPage = () => {
             shall continue in full force and effect.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Right to Waive.</strong> Any or all of the rights
             and limitations set forth in this Arbitration Agreement may
             be waived by the party against whom the claim is
@@ -485,19 +487,19 @@ const TermsofusePage: NextPage = () => {
             other portion of this Arbitration Agreement.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Survival of Agreement.</strong> This Arbitration
             Agreement will survive the termination of your relationship
             with the Company.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Small Claims Court.</strong> Nonetheless the
             foregoing, either you or the Company may bring an individual
             action in small claims court.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Emergency Equitable Relief.</strong> Anyhow the
             foregoing, either party may seek emergency equitable relief
             before a state or federal court in order to maintain the
@@ -506,7 +508,7 @@ const TermsofusePage: NextPage = () => {
             obligations under this Arbitration Agreement.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Claims Not Subject to Arbitration.</strong>{" "}
             Notwithstanding the foregoing, claims of defamation,
             violation of the Computer Fraud and Abuse Act, and
@@ -515,7 +517,7 @@ const TermsofusePage: NextPage = () => {
             subject to this Arbitration Agreement.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             In any circumstances where the foregoing Arbitration
             Agreement permits the parties to litigate in court, the
             parties hereby agree to submit to the personal jurisdiction
@@ -523,7 +525,7 @@ const TermsofusePage: NextPage = () => {
             for such purposes.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             The Site may be subject to U.S. export control laws and may
             be subject to export or import regulations in other
             countries. You agree not to export, re-export, or transfer,
@@ -532,7 +534,7 @@ const TermsofusePage: NextPage = () => {
             violation of the United States export laws or regulations.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             Company is located at the address in Section 10.8. If you
             are a California resident, you may report complaints to the
             Complaint Assistance Unit of the Division of Consumer
@@ -541,7 +543,7 @@ const TermsofusePage: NextPage = () => {
             95814, or by telephone at (800) 952-5210.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Electronic Communications.</strong> The
             communications between you and Company use electronic means,
             whether you use the Site or send us emails, or whether
@@ -555,7 +557,7 @@ const TermsofusePage: NextPage = () => {
             copywriting.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Entire Terms.</strong> These Terms constitute the
             entire agreement between you and us regarding the use of the
             Site. Our failure to exercise or enforce any right or
@@ -580,12 +582,12 @@ const TermsofusePage: NextPage = () => {
             Terms shall be binding upon assignees.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Your Privacy.</strong> Please read our Privacy
             Policy.
           </p>
 
-          <p className="py-1 text-gray-400">
+          <p className="py-1 text-black text-opacity-70">
             <strong>Copyright/Trademark Information.</strong> Copyright
             ©. All rights reserved.&nbsp; All trademarks, logos, and
             service marks displayed on the Site are our property or the

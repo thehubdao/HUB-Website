@@ -10,7 +10,7 @@ import landsJson from "../data/lands.json"
 import LandCard from "../components/LandCard";
 
 
-const LandPage: NextPage = () => {
+const ContributePage: NextPage = () => {
     return (
         <>
             <Head>
@@ -49,4 +49,4 @@ const LandPage: NextPage = () => {
     )
 };
 
-export default LandPage;
+export default ContributePage;
