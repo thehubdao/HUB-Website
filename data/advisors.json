@@ -118,5 +118,17 @@
     "position": "Strategy Advisor",
     "image": "/images/Team/wolfgang.png",
     "linkeind": "https://www.linkedin.com/in/wolfgang-kraemer/"
+  },
+  {
+    "name": "Sagar Barvaliya",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/sagar.png",
+    "linkeind": "https://www.linkedin.com/in/sagar-barvaliya-73337644/"
+  },
+  {
+    "name": "Biyan Mienert",
+    "position": "Legal Advisor",
+    "image": "/images/Team/biyan.png",
+    "linkeind": "https://www.linkedin.com/in/biyanmienert/"
   }
 ]
