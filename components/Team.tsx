@@ -20,17 +20,17 @@ const Team = () => {
                     <div className="relative w-full max-w-screen-xl flex flex-row flex-wrap justify-center items-start">
                         {teamJson.map((element, key) => {
                             return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} link={element.linkeind} />
+                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} />
                             );
                         })}
                         {showAll && extendedTeamJson.map((element, key) => {
                             return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} link={element.linkeind} />
+                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} telegram={element.telegram} />
                             );
                         })}
                         {showAll && advisorsJson.map((element, key) => {
                             return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} link={element.linkeind} />
+                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} />
                             );
                         })}
                     </div>

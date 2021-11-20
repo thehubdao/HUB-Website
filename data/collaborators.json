@@ -16,6 +16,14 @@
         "logo": "/images/Collaborators/polygon.png"
     },
     {
+        "link": "https://coinmarketcap.com",
+        "logo": "/images/Collaborators/cmc.png"
+    },
+    {
+        "link": "https://www.coingecko.com",
+        "logo": "/images/Collaborators/coingecko.svg"
+    },
+    {
         "link": "https://my.amazingblocks.io",
         "logo": "/images/Collaborators/amazingblocks.svg"
     },
