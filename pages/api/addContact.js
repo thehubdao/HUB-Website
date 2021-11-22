@@ -2,10 +2,10 @@ const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 mailchimp.setConfig({
   apiKey: process.env.MAILCHIMP_API_KEY,
-  server: "us5",
+  server: "us20",
 });
 
-const listID = "e4825fe57d"
+const listID = process.env.MAILCHIMP_LIST_ID
 
 const addContact = async (email) => {
   await mailchimp.lists.addListMember(listID, {
