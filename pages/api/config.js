@@ -28,10 +28,6 @@ module.exports = {
             returns: [['TOTAL_SUPPLY', val => val / 10 ** 18]]
         }, {
             target: MGH,
-            call: ['totalSupply()(uint256)'],
-            returns: [['TOTAL_SUPPLY', val => val / 10 ** 18]]
-        }, {
-            target: MGH,
             call: ['balanceOf(address)(uint256)', VESTING],
             returns: [['VESTING', val => val / 10 ** 18]]
         }, {

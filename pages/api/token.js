@@ -1,35 +1,27 @@
-// export default async function handler(req, res) {
-//     return res.json({ message: "Hello World" });
-// }
-
-const { createWatcher } = require('@makerdao/multicall');
+import { createWatcher } from '@makerdao/multicall';
 const { tags, config, labels } = require('./config');
-// const express = require("express");
-// const router = express.Router();
-// const app = express();
-
-require('dotenv').config();
-
-// const PORT = process.env.PORT || "NONE";
 
 let watcher;
 
-async function run() {
+function run() {
     console.log("> initializing");
     watcher = createWatcher(tags, config);
-    await watcher.start();
+    watcher.start();
     console.log("> initialized");
 }
 
+// await run()
+
 run()
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
+    // run()
     let { type } = req.query;
     if (isValidValue(type)) {
         console.log("> requesting", type);
         let result = {};
         watcher.subscribe(update => {
-            //console.log(`Update: ${update.type} = ${update.value}`);
+            console.log(`Update: ${update.type} = ${update.value}`);
             if (type === 'ALL' || type == 'CIRCULATING_SUPPLY') {
                 result[update.type] = update.value;
                 if (Object.keys(result).length == labels.length) {
