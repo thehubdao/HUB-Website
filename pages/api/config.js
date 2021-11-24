@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const MGH = process.env.MGH || "NONE";
 const VESTING = process.env.VESTING || "NONE";
 const TREASURY = process.env.TREASURY || "NONE";

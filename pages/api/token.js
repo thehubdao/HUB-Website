@@ -10,12 +10,9 @@ function run() {
     console.log("> initialized");
 }
 
-// await run()
-
 run()
 
 export default function handler(req, res) {
-    // run()
     let { type } = req.query;
     if (isValidValue(type)) {
         console.log("> requesting", type);
