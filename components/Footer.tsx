@@ -4,11 +4,13 @@ import { VscMail } from "react-icons/vsc";
 
 
 const Footer = () => {
+    const [processing, setProcessing] = useState(false)
     const [message, setMessage] = useState("")
     const [email, setEmail] = useState("")
 
     const formSubmitted = async (e: any) => {
         e.preventDefault();
+        setProcessing(true)
         let message;
         try {
             const res = await fetch("/api/addContact", {
@@ -20,8 +22,10 @@ const Footer = () => {
             });
             message = await res.json()
             setMessage(message.message)
+            setProcessing(false)
         } catch (e) {
             setMessage("Something went wrong, try again later!")
+            setProcessing(false)
         }
     }
 
@@ -90,17 +94,17 @@ const Footer = () => {
 
             </div>
             <div className="flex flex-col justify-start items-center space-y-2">
-                <div className="flex flex-row items-center justify-center space-x-2 mb-0 lg:mb-3">
-                    <VscMail className="text-gray-200 text-2xl hidden sm:block lg:hidden xl:block" />
-                    <span className="text-gray-200 text-sm sm:text md:text-lg lg:text-base text-center font-medium">Stay up to date for the latest from MGH!</span>
-                </div>
+
+                <p className="text-sm sm:text md:text-lg lg:text-base text-center font-medium">Stay up to date for the latest from MGH!</p>
+
                 <form onSubmit={formSubmitted} onFocus={() => setMessage("")} className="relative flex items-center w-full max-w-sm">
-                    <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
-                    <button className="absolute bg-gray-200 right-0 h-4/5 rounded-full mr-1  w-1/6">
-                        <span className="text-black font-medium">Join</span>
+                    <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" required className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
+                    <button className="absolute flex items-center justify-around bg-gray-200 right-0 h-4/5 rounded-full mr-1 w-1/6">
+                        <svg className={`${processing ? "block" : "hidden"} animate-spin-slow h-6 w-6 border-4 border-t-gray-300 border-l-gray-300 border-gray-800 rounded-full `} />
+                        <span className={`${processing ? "hidden" : "block"} text-black font-medium  w-full`}>Join</span>
                     </button>
                 </form>
-                <p className="text-xs text-gray-200 mt-2">{message}</p>
+                <p className="text-xs text-gray-400 font-medium mt-2">{message}</p>
             </div>
 
         </footer>

@@ -76,11 +76,11 @@
 }
 
 .long-text {
-  @apply text-gray-400 text-base lg:text-lg xl:text-xl max-w-md lg:max-w-2xl;
+  @apply text-grey text-base lg:text-lg xl:text-xl max-w-md lg:max-w-2xl;
 }
 
 .short-text {
-  @apply text-gray-400 z-10 ;
+  @apply z-10 text-grey;
 }
 
 @responsive {
@@ -122,7 +122,7 @@ h3 {
 }
 
 h4 {
-  @apply text-gray-200 text-xl mb-3 z-10 border-b max-w-max;
+  @apply text-gray-200 text-xl sm:text-2xl font-medium mb-3 z-10 border-b max-w-max;
 }
 
 h6 {

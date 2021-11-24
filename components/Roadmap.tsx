@@ -9,7 +9,7 @@ const Roadmap = () => {
             <div className="w-full min-h-screen py-20">
                 <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
                     <div className="flex flex-col items-center lg:items-start 2xl:items-center">
-                        <p className={`text-4xl sm:text-5xl md:text-6xl text-gray-200 text-center lg:text-left 2xl:text-center`}>MGH staking is going live on the <span className={`text-transparent bg-clip-text bg-gradient-to-br z-50 from-blue-500 to-pink-500`}>01.12.2021</span></p>
+                        <p className={`text-4xl sm:text-5xl md:text-6xl text-gray-200 text-center lg:text-left 2xl:text-center leading-tight sm:leading-tight md:leading-tight lg:leading-tight`}>MGH staking is going live on the <span className={`text-transparent bg-clip-text bg-gradient-to-br z-50 from-blue-500 to-pink-500`}>01.12.2021</span></p>
 
                         {/* <a href="https://www.thedap.space/membership/mgh" target="_blank" className="button mt-5">
                             <p className="button-text">Join public membership</p>

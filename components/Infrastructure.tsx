@@ -7,7 +7,7 @@ const Infrastructure = () => {
     return (
         <div className="text-center min-h-screen w-full py-20">
             <div className={`w-full`}>
-                <div className="flex flex-col justify-around items-start space-y-10">
+                <div className="flex flex-col justify-around items-start space-y-14">
                     {/* <div className="z-10 h-full w-full absolute top-0 left-0 bg-black bg-opacity-40 backdrop-filter backdrop-blur-2xl " /> */}
                     <Problems />
                     <Solutions />
