@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Awareness",
+        "description": "The purpose of this working group is to ensure sustainable community growth and fostering as well as education. Members of the Awareness WG create strategies and content by using various formats and mediums to make interested parties aware of MGH and to educate the existing MGH community. In general, members of this WG should like, comment and repost/retweet social media content from MetaGameHub DAO, as well as share the articles on other communication platforms such as Reddit or 4chan."
+    },
+    {
+        "title": "Technical",
+        "description": "This WG is responsible for the technical (infrastructure) development and maintenance of the MGH DAO and its products/services. This includes above all, website development, smart contract development, technical process optimization and other related tasks. Members of the technical working group are furthermore responsible for the technical documentation as well as for making it processable for the marketing team, so they can create content out of it."
+    },
+    {
+        "title": "Research",
+        "description": "This WG is continuously doing research around MGH’s ecosystem and business model with the goal to improve processes, spot new trends, come up with new products or services, etc. Moreover, members of this WG monitor competitors - from marketing activities to (in the best case) backend activities, such as smart contract development. Furthermore, it this WG’s responsibility to make the research results seamlessly accessible to other MGH contributors (e.g., providing summaries)."
+    },
+    {
+        "title": "Legal",
+        "description": "This working group increases the knowledge of all legal manners regarding MGH’s ecosystem and its operations. Above all, this working group monitors trends in the legal space where MGH is operating to ensure MGH’s compliance with these new trends."
+    },
+    {
+        "title": "Operations, Governance & Tokenomics",
+        "description": "The Operations WG works closely with the initiators and core team members to support the planning, execution and monitoring of ongoing operations and MGH community activities. Moreover, members of this working group monitor and push the observance of the roadmap, spotting inefficiencies in workflows and finding ways to improve them. Members are furthermore responsible for the maintenance and management of MGH’s token economy by monitoring the budget and continuously optimizing the tokenomics with the overall goal to ensure a sustainable token economy."
+    },
+    {
+        "title": "Metaverse LAND Development",
+        "description": "This working group populates and curates metaverse lands owned by the MGH DAO with the overall goal to foster, entertain and engage the MGH community within the metaverse and to attract new potential community members. There are many possibilities regarding the land population (Games, NFT galleries, malls, community places, event location, etc). Furthermore, this WG works closely together with the Operations WG when it comes to all kinds of metaverse event planning."
+    },
+    {
+        "title": "Data & Algorithm",
+        "description": "This Working Group is closely related to the Technical WG but focused on the Data and Algorithm aspect of the MGH DAO. Members of this WG deal with the datasets and the data tokens as well as push MGH’s role to a metaverse data aggregator. Furthermore, searching and suggesting new data sources and improvements around the AI valuation algorithm are part of this WG, which is one of the most important aspects of MGH."
+    },
+    {
+        "title": "Advisory Council",
+        "description": "This Working Group is focusing on maintaining and expanding the advisory council which will continuously support the MGH DAO and its ecosystem. The council meets on a by-monthly basis to 1) assess the current status quo and 2) provide feedback and improvement suggestions to the MGH DAO."
+    },
+    {
+        "title": "MGH Japan",
+        "description": "This Working Group is responsible to spread and foster MGH’s vision in Japan. Further, the goal is to educate the respective community on the Metaverse, Dataverse and MGH DAO’s endeavors of converging them."
+    },
+    {
+        "title": "MGH LATAM",
+        "description": "This Working Group is responsible to spread and foster MGH’s vision in LATAM. Further, the goal is to educate the respective community on the Metaverse, Dataverse and MGH DAO’s endeavors of converging them."
+    }
+]
