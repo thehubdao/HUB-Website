@@ -5,6 +5,7 @@ const MULTISIG = process.env.MULTISIG || "NONE";
 const LP = process.env.LP || "NONE";
 const OLD_SALE = process.env.OLD_SALE || "NONE";
 const NEW_SALE = process.env.NEW_SALE || "NONE";
+const POLYGON_SUPPLY = process.env.POLYGON_SUPPLY || "NONE";
 
 console.log("> MGH:", MGH);
 console.log("> VESTING:", VESTING);
@@ -13,6 +14,7 @@ console.log("> MULTISIG:", MULTISIG);
 console.log("> LP:", LP);
 console.log("> OLD_SALE:", OLD_SALE);
 console.log("> NEW_SALE:", NEW_SALE);
+console.log("> POLYGON_SUPPLY:", POLYGON_SUPPLY);
 
 module.exports = {
     config: {
@@ -48,8 +50,12 @@ module.exports = {
             target: MGH,
             call: ['balanceOf(address)(uint256)', NEW_SALE],
             returns: [['NEW_SALE', val => val / 10 ** 18]]
+        }, {
+            target: MGH,
+            call: ['balanceOf(address)(uint256)', POLYGON_SUPPLY],
+            returns: [['POLYGON_SUPPLY', val => val / 10 ** 18]]
         }
     ], labels: [
-        'TOTAL_SUPPLY', 'VESTING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE'
+        'TOTAL_SUPPLY', 'VESTING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE', 'POLYGON_SUPPLY'
     ]
 }
