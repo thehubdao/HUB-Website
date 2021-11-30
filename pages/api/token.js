@@ -42,6 +42,6 @@ function isValidValue(type) {
 }
 
 function calculateCirculatingSupply(data) {
-    let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'];
+    let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'] + data['POLYGON_SUPPLY'];
     return data['TOTAL_SUPPLY'] - lockedSupply;
 }
