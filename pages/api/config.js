@@ -25,11 +25,11 @@ console.log("> POLYGON_LP:", POLYGON_LP);
 console.log("> POLYGON_TREASURY", POLYGON_TREASURY);
 
 module.exports = {
-    config_mainnet: {
+    config: {
         rpcUrl: 'https://mainnet.infura.io/v3/235efa9d59c34db8b7f383496c242855',
         multicallAddress: '0xeefba1e63905ef1d7acba5a8513c70307c1ce441',
         interval: 1000
-    }, tags_mainnet: [
+    }, tags: [
         {
             target: MGH,
             call: ['totalSupply()(uint256)'],
