@@ -36,7 +36,7 @@ export default function handler(req, res) {
                     return res.status(200).json(update.value);
                 } else if (update_polygon.type === type) 
                     return res.status(200).json(update_polygon.value);
-            }
+            })
         });
     } else
         return res.status(400).send({ err: "'" + type + "' is not a valid value type" });
@@ -51,6 +51,6 @@ function isValidValue(type) {
 
 function calculateCirculatingSupply(data) {
     let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'] + data['POLYGON_STAKING_BALANCE'] +
-                       data['POLYGON_TREASURY'] + data['POLYGON_LP'] - data['POLYGON_STAKING_SUPPLY';
+                       data['POLYGON_TREASURY'] + data['POLYGON_LP'] - data['POLYGON_STAKING_SUPPLY'];
     return data['TOTAL_SUPPLY'] - lockedSupply;
 }
