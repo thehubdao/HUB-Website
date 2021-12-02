@@ -2,6 +2,7 @@ import { createWatcher } from '@makerdao/multicall';
 const { tags, config, tags_polygon, config_polygon, labels } = require('./config');
 
 let watcher;
+let watcher_polygon;
 
 function run() {
     console.log("> initializing");
