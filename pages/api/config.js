@@ -99,4 +99,5 @@ module.exports = {
             call: ['totalSupply()(uint256)'],
             returns: [['POLYGON_STAKING_SUPPLY', val => val / 10 ** 18]]
         }
+    ]
 }
