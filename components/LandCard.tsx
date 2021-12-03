@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-const LandCard = ({ img, title, link, classes }: any) => {
+const LandCard = ({ img, title, link, classes, metaverse }: any) => {
     return (
 
         <a href={link} target="_blank">
@@ -10,7 +10,10 @@ const LandCard = ({ img, title, link, classes }: any) => {
                 <div className="relative text-center w-full pb-full">
                     <Image className="rounded-2xl object-cover" src={img} layout="fill" />
                 </div>
-                <p className="absolute bottom-2 px-2 py-1 pt-1.5 right-2 rounded-2xl group-hover:backdrop-blur-3xl bg-white bg-opacity-20 backdrop-filter backdrop-blur font-medium text-gray-200">{title}</p>
+                <p className="absolute bottom-2 px-2 py-1 pt-1.5 right-2 rounded-2xl shadow-black bg-white bg-opacity-10 backdrop-filter backdrop-blur-xl font-medium text-gray-200">{title}</p>
+
+                {metaverse === "Decentraland" && <img src="/images/decentraland-mana-logo.png" className="absolute top-2 right-2 h-8" />}
+                {metaverse === "Sandbox" && <img src="/images/the-sandbox-sand-logo.png" className="absolute top-2 right-2 h-8" />}
 
             </div>
         </a>

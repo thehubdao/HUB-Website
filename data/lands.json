@@ -2,66 +2,85 @@
     {
         "title": "LAND (-154, -178)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/10658",
-        "image": "/images/Lands/-154_-178.jpg"
+        "image": "/images/Lands/-154_-178.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (117, -28)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/72129",
-        "image": "/images/Lands/38_1.jpg"
+        "image": "/images/Lands/38_1.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (38, 1)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/83882",
-        "image": "/images/Lands/117_-28.jpg"
+        "image": "/images/Lands/117_-28.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (136, 4)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/85204",
-        "image": "/images/Lands/136_4.jpg"
+        "image": "/images/Lands/136_4.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (80, 53)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/105140",
-        "image": "/images/Lands/80_53.jpg"
+        "image": "/images/Lands/80_53.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (79, 53)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/105139",
-        "image": "/images/Lands/79_53.jpg"
+        "image": "/images/Lands/79_53.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (78, 53)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/105138",
-        "image": "/images/Lands/78_53.jpg"
+        "image": "/images/Lands/78_53.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (78, 52)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104730",
-        "image": "/images/Lands/78_52.jpg"
+        "image": "/images/Lands/78_52.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (79, 52)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104731",
-        "image": "/images/Lands/79_52.jpg"
+        "image": "/images/Lands/79_52.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (80, 52)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104732",
-        "image": "/images/Lands/80_52.jpg"
+        "image": "/images/Lands/80_52.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (80, 51)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104324",
-        "image": "/images/Lands/80_51.jpg"
+        "image": "/images/Lands/80_51.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (79, 51)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104323",
-        "image": "/images/Lands/79_51.jpg"
+        "image": "/images/Lands/79_51.jpg",
+        "metaverse": "Sandbox"
     },
     {
         "title": "LAND (78, 51)",
         "link": "https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/104322",
-        "image": "/images/Lands/78_51.jpg"
+        "image": "/images/Lands/78_51.jpg",
+        "metaverse": "Sandbox"
+    },
+    {
+        "title": "LAND (66, -48)",
+        "link": "https://opensea.io/assets/0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d/22798918583702877052046098697928470167504",
+        "image": "/images/Lands/66_-48.png",
+        "metaverse": "Decentraland"
     }
 ]

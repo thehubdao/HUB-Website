@@ -33,7 +33,7 @@ const LandPage: NextPage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-start gap-5 w-full min-h-screen pb-20">
                         {landsJson.map((element, key) => {
                             return (
-                                <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} />
+                                <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                             );
                         })}
                     </div>
