@@ -77,10 +77,6 @@ module.exports = {
     tags_polygon: [
         {
             target: MGH_POLYGON,
-            call: ['totalSupply()(uint256)'],
-            returns: [['TOTAL_SUPPLY', val => val / 10 ** 18]]
-        }, {
-            target: MGH_POLYGON,
             call: ['balanceOf(address)(uint256)', POLYGON_LP],
             returns: [['POLYGON_LP', val => val / 10 ** 18]]
         }, {
