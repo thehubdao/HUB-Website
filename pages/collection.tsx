@@ -7,7 +7,9 @@ import "animate.css"
 import Footer from "../components/Footer";
 import Toolbar from "../components/Toolbar";
 import landsJson from "../data/lands.json"
+import assetsJson from "../data/assets.json"
 import LandCard from "../components/LandCard";
+import AssetCard from "../components/AssetCard";
 
 
 const LandPage: NextPage = () => {
@@ -34,6 +36,16 @@ const LandPage: NextPage = () => {
                         {landsJson.map((element, key) => {
                             return (
                                 <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                            );
+                        })}
+                    </div>
+
+                    <h2 className="text-gray-400 self-start my-5">Assets</h2>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-start gap-5 w-full pb-20">
+                        {assetsJson.map((element, key) => {
+                            return (
+                                <AssetCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                             );
                         })}
                     </div>

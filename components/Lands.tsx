@@ -25,7 +25,7 @@ const Lands = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-5 w-full xl:w-2/4 transform xl:-translate-x-36 max-w-6xl">
-                    <LandCard classes="z-50 xl:scale-115 hover:xl:scale-120 w-full xl:w-64 opacity-95" img="/images/Lands/-154_-178.jpg" title="LAND (-154, -178)" link="https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/10658" />
+                    <LandCard classes="z-50 xl:scale-115 hover:xl:scale-120 w-full xl:w-64 opacity-95" img="/images/Lands/1_-89.jpg" title="LAND (1, -89)" link="https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/47125" />
                     <LandCard classes="z-40 xl:scale-110 hover:xl:scale-120 w-full xl:w-64 opacity-95" img="/images/Lands/117_-28.jpg" title="LAND (117, -28)" link="https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/72129" />
                     <LandCard classes="z-30 xl:scale-105 hover:xl:scale-120 w-full xl:w-64 opacity-95" img="/images/Lands/38_1.jpg" title="LAND (38, 1)" link="https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/83882" />
                     <LandCard classes="z-20 xl:scale-100 hover:xl:scale-120 w-full xl:w-64 opacity-95" img="/images/Lands/136_4.jpg" title="LAND (136, 4)" link="https://opensea.io/assets/0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a/85204" />
