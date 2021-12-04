@@ -52,8 +52,7 @@ export default function handler(req, res) {
                     return res.status(200).json(result);
                 } else if (update.type === type) {
                     return res.status(200).json(update.value);
-                } else if (update_polygon.type === type) 
-                    return res.status(200).json(update_polygon.value);
+                }
         });
     } else
         return res.status(400).send({ err: "'" + type + "' is not a valid value type" });
