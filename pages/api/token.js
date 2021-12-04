@@ -19,6 +19,7 @@ function run() {
     console.log("watcher ETH: ", watcher);
     console.log("watcher Polygon: ", watcher_polygon);
     console.log("> initialized");
+    console.log("> labels:", labels.length);
 }
 
 run()
@@ -42,6 +43,7 @@ export default function handler(req, res) {
             console.log(`Update: ${update.type} = ${update.value}`);
                 if (type === 'ALL' || type == 'CIRCULATING_SUPPLY') {
                     result[update.type] = update.value;
+                    console.log("result: ", result);
                     if (Object.keys(result).length == labels.length) {
                         if (type == 'CIRCULATING_SUPPLY') {
                             result['CIRCULATING_SUPPLY'] = calculateCirculatingSupply(result);
@@ -66,6 +68,7 @@ function isValidValue(type) {
 }
 
 function calculateCirculatingSupply(data) {
+    console.log("entered calculate");
     let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'] + data['POLYGON_STAKING_BALANCE'] +
                        data['POLYGON_TREASURY'] + data['POLYGON_LP'] - data['POLYGON_STAKING_SUPPLY'];
     return data['TOTAL_SUPPLY'] - lockedSupply;
