@@ -22,13 +22,14 @@ console.log("> OLD_SALE:", OLD_SALE);
 console.log("> NEW_SALE:", NEW_SALE);
 console.log("> POLYGON_SUPPLY:", POLYGON_SUPPLY);
 console.log("> POLYGON_LP:", POLYGON_LP);
-console.log("> POLYGON_TREASURY", POLYGON_TREASURY);
+console.log("> POLYGON_TREASURY:", POLYGON_TREASURY);
+
 
 module.exports = {
     config: {
         rpcUrl: 'https://mainnet.infura.io/v3/235efa9d59c34db8b7f383496c242855',
         multicallAddress: '0xeefba1e63905ef1d7acba5a8513c70307c1ce441',
-        interval: 1000
+        interval: 1
     }, tags: [
         {
             target: MGH,
@@ -64,14 +65,14 @@ module.exports = {
             returns: [['POLYGON_SUPPLY', val => val / 10 ** 18]]
         }
     ], labels: [
-        'TOTAL_SUPPLY', 'VESTING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE', 'POLYGON_SUPPLY', 
-        'POLYGON_LP', 'POLYGON_TREASURY', 'POLYGON_LP_DATA', 'POLYGON_STAKING_BALANCE', 'POLYGON_STAKING_SUPPLY'
+        'TOTAL_SUPPLY', 'VESTING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE', 'POLYGON_SUPPLY',
+        'POLYGON_LP', 'POLYGON_TREASURY', 'POLYGON_STAKING_BALANCE', 'POLYGON_STAKING_SUPPLY'
     ],
     
     config_polygon: {
         rpcUrl: 'https://polygon-mainnet.infura.io/v3/02228c7e18c84384bdcc48a528c20119',
         multicallAddress: '0x11ce4B23bD875D7F5C6a31084f55fDe1e9A87507',
-        interval: 1000
+        interval: 1
     },
     tags_polygon: [
         {
@@ -86,11 +87,11 @@ module.exports = {
             target: MGH_POLYGON,
             call: ['balanceOf(address)(uint256)', POLYGON_TREASURY],
             returns: [['POLYGON_TREASURY', val => val / 10 ** 18]]
-        }, {
+        },/*  {
             target: MGH_POLYGON,
             call: ['balanceOf(address)(uint256)', POLYGON_LP_DATA],
             returns: [['POLYGON_LP_DATA', val => val / 10 ** 18]]
-        }, {
+        },  */{
             target: MGH_POLYGON,
             call: ['balanceOf(address)(uint256)', POLYGON_STAKING],
             returns: [['POLYGON_STAKING_BALANCE', val => val / 10 ** 18]]
