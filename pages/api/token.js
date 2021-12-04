@@ -23,7 +23,7 @@ function run() {
 
 run()
 
-function handler(req, res) {
+export default function handler(req, res) {
     let {type} = req.query;
     console.log("req argument: ", req.query)
     console.log("type: ", type)
