@@ -50,8 +50,8 @@ export default function handler(req, res) {
                             console.log(result['CIRCULATING_SUPPLY'])
                             return res.status(200).json(result['CIRCULATING_SUPPLY']);
                         }
+                        return res.status(200).json(result); 
                     }
-                    return res.status(200).json(result);
                 } else if (update.type === type) {
                     return res.status(200).json(update.value);
                 }
