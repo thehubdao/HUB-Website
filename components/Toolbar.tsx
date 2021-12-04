@@ -45,7 +45,7 @@ const Toolbar = ({ dark }: any) => {
                 <a href="/#news" className="nav-item">News</a>
                 <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
                 <a href="/faq" target="_blank" className="nav-item">FAQ</a>
-                <a href="https://discord.gg/QEWfTJeWCV" target="_blank" className="nav-item">Community</a>
+                <a href="https://t.me/metagamehub_dao" target="_blank" className="nav-item">Community</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
                 <a href="https://app.metagamehub.io" target="_blank" className="nav-item">Launch App</a>
             </nav>
