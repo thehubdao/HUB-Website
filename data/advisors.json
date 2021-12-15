@@ -6,12 +6,6 @@
     "linkeind": "https://www.linkedin.com/in/marclanz/"
   },
   {
-    "name": "Christian Werner",
-    "position": "Strategy Advisor",
-    "image": "/images/Team/christian.png",
-    "linkeind": "https://www.linkedin.com/in/christian-werner-5aab41171/"
-  },
-  {
     "name": "Peter Rafelson",
     "position": "Strategy Advisor",
     "image": "/images/Team/peter.png",
@@ -130,5 +124,11 @@
     "position": "Legal Advisor",
     "image": "/images/Team/biyan.png",
     "linkeind": "https://www.linkedin.com/in/biyanmienert/"
+  },
+  {
+    "name": "Simon Olson",
+    "position": "Strategy Advisor",
+    "image": "/images/Team/simon-olson.png",
+    "linkeind": "https://www.linkedin.com/in/simonolson/"
   }
 ]
