@@ -88,5 +88,17 @@
         "link": "https://opensea.io/assets/0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d/22798918583702877052046098697928470167504",
         "image": "/images/Lands/66_-48.png",
         "metaverse": "Decentraland"
+    },
+    {
+        "title": "XL Parcel",
+        "link": "https://opensea.io/assets/0x913ae503153d9a335398d0785ba60a2d63ddb4e2/3256",
+        "image": "/images/Lands/xl_parcel.png",
+        "metaverse": "Somnium"
+    },
+    {
+        "title": "Medium World",
+        "link": "https://opensea.io/assets/0xf980759616a795b2d692a5c0a0f1bad651984bc1/142",
+        "image": "/images/Lands/medium_world.png",
+        "metaverse": "Somnium"
     }
 ]
