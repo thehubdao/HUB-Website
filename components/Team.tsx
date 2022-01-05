@@ -34,10 +34,15 @@ const Team = () => {
                             );
                         })}
                     </div>
-                    
-                    <button onClick={() => setShowAll(!showAll)} className="mt-5 col-span-full max-w-xs m-auto button">
-                        <span className="button-text">{showAll ? "Hide" : "Meet all"}</span>
-                    </button>
+
+                    <div className="flex space-x-4">
+                        <button onClick={() => setShowAll(!showAll)} className="mt-5 button">
+                            <p className="button-text">{showAll ? "Hide" : "Meet all"}</p>
+                        </button>
+                        <a href="/contribute" target="_blank" className="button mt-5 bg-white bg-opacity-20">
+                            <p className="button-text">Contribute</p>
+                        </a>
+                    </div>
 
                 </div>
             </div></>

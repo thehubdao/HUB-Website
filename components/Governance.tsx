@@ -17,12 +17,11 @@ const Governance = ({ scroll }: any) => {
 
                         <h2 className={`text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-pink-500 mb-5`}>MGH Governance</h2>
                         <p className="long-text">Members of the MGH DAO have the power to vote on which NFT Pools are created, the terms of each pool (e.g. how much MGH has to be staked to access them) and the management of the DAO´s funds.</p>
-                        
-                        <div className="max-w-xs self-center lg:self-end 2xl:self-center mt-10 button">
-                            <a href="https://snapshot.org/#/metagamehub.eth" target="_blank">
-                                <span className="button-text">Learn more</span>
-                            </a>
-                        </div>
+
+                        <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="max-w-xs self-center lg:self-end 2xl:self-center mt-10 button">
+                            <p className="button-text">Learn more</p>
+                        </a>
+
                     </div>
 
                 </div>
