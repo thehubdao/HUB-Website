@@ -45,19 +45,19 @@ import { createConnection } from "mysql2/promise";
 
 // export default async function handler(req, res) {
 //     try {
-        const connection = await createConnection({
-            host: "mgh-frankfurt-do-user-10576482-0.b.db.ondigitalocean.com",
-            user: "doadmin",
-            password: "UlI7z3f7XfE4PQvS",
-            database: 'defaultdb',
-            port: "25060"
-        });
-        connection.connect();
+        // const connection = await createConnection({
+        //     host: "mgh-frankfurt-do-user-10576482-0.b.db.ondigitalocean.com",
+        //     user: "doadmin",
+        //     password: "UlI7z3f7XfE4PQvS",
+        //     database: 'defaultdb',
+        //     port: "25060"
+        // });
+        // connection.connect();
 
-        const sql = "SELECT * FROM defaultdb.tokens;"
-        const result = await connection.query(sql)
-        console.log(result[0])
-        connection.end()
+        // const sql = "SELECT * FROM defaultdb.tokens;"
+        // const result = await connection.query(sql)
+        // console.log(result[0])
+        // connection.end()
 
         // connection.query(sql, function (error, results) {
         //     if (error) throw error;
