@@ -13,11 +13,12 @@ const Tokenomics = () => {
                 {/* <div className="flex flex-col lg:flex-row justify-around items-start h-screen"> */}
 
                 <div className="flex flex-col h-full w-full lg:w-1/2 items-center justify-center pb-20 lg:pb-0">
-                    <h2 className={`text-transparent bg-clip-text bg-gradient-to-br z-10 from-blue-500 to-pink-500 mb-10`}>Tokenomics</h2>
-                    <div className="grid grid-cols-2 gap-10 place-content-center p-8">
+                    <h2 className={`text-transparent bg-clip-text bg-gradient-to-br z-10 from-blue-500 to-pink-500`}>Tokenomics</h2>
+                    <img src="/images/tokenomics.png" className="w-full sm:w-3/4"/>
+                    {/* <div className="grid grid-cols-2 gap-10 place-content-center p-8">
                         <Circle />
-                    </div>
-                    <p className="text-gray-400 mt-8 mb-2 font-medium">Visit on</p>
+                    </div> */}
+                    <p className="text-gray-400 mb-2 font-medium">Visit on</p>
                     <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-10 space-y-5 sm:space-y-0 items-center">
                         <a href="https://coinmarketcap.com/currencies/metagamehub-dao/" target="_blank" className="h-full w-44 cursor-pointer">
                             <img src="/images/cmc.png" className="object-scale-down w-full h-full" />
