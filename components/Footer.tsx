@@ -57,6 +57,10 @@ const Footer = () => {
                         <FaTelegramPlane className="social-media-icon" />
                     </a>
 
+                    <a href="https://discord.gg/gARJfmdD" className="cursor-pointer" target="_blank" >
+                        <FaDiscord className="social-media-icon" />
+                    </a>
+
                     <a href="https://www.youtube.com/channel/UC6lHXEEmjGiRmIVmiS0odpw" className="cursor-pointer" target="_blank" >
                         <FaYoutube className="social-media-icon" />
                     </a>
