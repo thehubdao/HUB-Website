@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import Head from "next/head";
 import "animate.css"
@@ -11,14 +11,24 @@ import Toolbar from "../components/Toolbar";
 import landsJson from "../data/lands.json"
 import assetsJson from "../data/assets.json"
 import SmallLandCard from "../components/SmallLandCard";
+import CryptoCard from "../components/CryptoCard";
 
 
 const TreasuryPage: NextPage = ({ treasury }: any) => {
     const [showLands, setShowLands] = useState("")
+    const [totalCryptoValue, setTotalCryptoValue] = useState(0)
 
-    const price = 1000000
+    useEffect(() => {
 
-    console.log(treasury)
+        treasury.map((element: any) => {
+            setTotalCryptoValue(totalCryptoValue => totalCryptoValue + element.value)
+        })
+
+        return ()=>{setTotalCryptoValue(0)}
+
+    }, [treasury])
+
+
 
     const handleClick = (category: string) => {
         if (showLands === "" || showLands !== category) {
@@ -46,35 +56,26 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                     <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-5 w-full max-w-3xl self-start mb-10">
                         <p className="text-gray-200 text-lg sm:text-2xl lg:text-4xl font-bold min-w-max flex-grow">Total Treasury Value</p>
-                        <p className="text-gray-400 text-lg sm:text-2xl lg:text-4xl font-bold">$3,000,000</p>
+                        <p className="text-gray-400 text-lg sm:text-2xl lg:text-4xl font-bold">$X</p>
                     </div>
 
                     <div className="flex items-center space-x-5 w-full max-w-3xl self-start mb-7 pl-0 sm:pl-1">
                         <hr className="border-pink-600 rounded-full h-12 sm:h-7 lg:h-10 border-4" />
                         <div className="flex flex-col sm:flex-row w-full">
                             <p className="text-gray-200 text-base sm:text-xl lg:text-3xl font-medium min-w-max pt-1.5 flex-grow">Cryptocurrencies</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">$2,000,000</p>
+                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">${totalCryptoValue.toLocaleString('en-GB')}</p>
                         </div>
                     </div>
 
+
+
                     <div className="flex w-full flex-wrap items-center self-start ml-0 sm:ml-2 ">
-                        <div className={`flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/ethereum-eth-logo.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Ethereum</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-1 sm:pt-2">${price.toLocaleString('en-GB')}</p>
-                        </div>
 
-                        <div className={`flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/the-sandbox-sand-logo.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">SAND</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-1 sm:pt-2">$300,000</p>
-                        </div>
-
-                        <div className={`flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/decentraland-mana-logo.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">MANA</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-1 sm:pt-2">$100,000</p>
-                        </div>
+                        {treasury.map((element: any, key: any) => {
+                            return (
+                                <CryptoCard key={key} name={element.symbol} value={element.value} />
+                            );
+                        })}
 
                     </div>
 
@@ -92,7 +93,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
                         <div onClick={() => handleClick("Sandbox")} className={`relative flex flex-col m-2 items-center select-none justify-center space-y-1 sm:space-y-2 rounded-xl ${showLands === "Sandbox" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/the-sandbox-sand-logo.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Sandbox</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${price.toLocaleString('en-GB')}</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
                         </div>
 
                         <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
