@@ -22,5 +22,23 @@
         "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/55464657044963196816950587289035428064568320970692304673817341489688059316224",
         "image": "/images/Lands/snoop_dogg_pass_2.png",
         "metaverse": "Sandbox"
+    },
+    {
+        "title": "ASM AIFA Genesis 9947",
+        "link": "https://opensea.io/assets/0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313/9947",
+        "image": "/images/Lands/asm_9947.png",
+        "metaverse": "ASM"
+    },
+    {
+        "title": "PartyBear 1001",
+        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/1001",
+        "image": "/images/Lands/partybear_1001.png",
+        "metaverse": "PartyBear"
+    },
+    {
+        "title": "PartyBear 8365",
+        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/8365",
+        "image": "/images/Lands/partybear_8365.png",
+        "metaverse": "PartyBear"
     }
 ]
