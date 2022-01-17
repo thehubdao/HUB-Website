@@ -1,7 +1,3 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import nft_image from "../public/images/unnamed-2.png"
-
 const BlogCard = ({title, article, date}: any) => {
     return (
         <a href="https://opensea.io/assets" target="_blank">

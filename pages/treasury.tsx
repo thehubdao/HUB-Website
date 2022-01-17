@@ -91,25 +91,25 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
                     <div className="flex flex-wrap items-center self-start ml-0 sm:ml-2">
 
                         <div onClick={() => handleClick("Sandbox")} className={`relative flex flex-col m-2 items-center select-none justify-center space-y-1 sm:space-y-2 rounded-xl ${showLands === "Sandbox" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/the-sandbox-sand-logo.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                            <img src="/images/Logos/Cryptos/SAND.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Sandbox</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
                         </div>
 
                         <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/decentraland-mana-logo.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                            <img src="/images/Logos/Cryptos/MANA.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Decentraland</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$300,000</p>
                         </div>
 
                         <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/somnium-space-logo.png" className={`h-12 md:h-14 object-contain`} />
+                            <img src="/images/Logos/somnium-space-logo.png" className={`h-12 md:h-14 object-contain`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Somnium Space</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$300,000</p>
                         </div>
 
                         <div onClick={() => handleClick("Other")} className={`${showLands === "Other" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/nft-logo.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                            <img src="/images/Logos/nft-logo.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Other</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
                         </div>
@@ -181,7 +181,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/ethereum-eth-logo.png" className={`h-9 sm:h-11 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-11 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Ethereum</p>
                                     <hr className="border-gray-600 w-12" />
@@ -193,7 +193,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/polygon-matic-logo.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Hodler</p>
                                     <hr className="border-gray-600 w-12" />
@@ -205,7 +205,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/polygon-matic-logo.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Degen</p>
                                     <hr className="border-gray-600 w-12" />
@@ -217,7 +217,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/polygon-matic-logo.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Ape</p>
                                     <hr className="border-gray-600 w-12" />
@@ -229,7 +229,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/polygon-matic-logo.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Hong Long</p>
                                     <hr className="border-gray-600 w-12" />

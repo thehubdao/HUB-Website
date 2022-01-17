@@ -2,67 +2,67 @@
     {
         "title": "Brown Sugar - Snoop Dogg",
         "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/55464657044963196816950587289035428064568320970692304673817341489688285808640",
-        "image": "/images/Lands/snoop_dogg_car.png",
+        "image": "/images/Assets/snoop_dogg_car.png",
         "metaverse": "Sandbox"
     },
     {
         "title": "Snoop Statue - Snoop Dogg",
         "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/55464657044963196816950587289035428064568320970692304673817341489688294197248",
-        "image": "/images/Lands/snoop_dogg_statue.png",
+        "image": "/images/Assets/snoop_dogg_statue.png",
         "metaverse": "Sandbox"
     },
     {
         "title": "Snoopverse Early Access Pass",
         "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/55464657044963196816950587289035428064568320970692304673817341489688277422080",
-        "image": "/images/Lands/snoop_dogg_pass_1.png",
+        "image": "/images/Assets/snoop_dogg_pass_1.png",
         "metaverse": "Sandbox"
     },
     {
         "title": "Snoop Dogg Private Party Pass",
         "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/55464657044963196816950587289035428064568320970692304673817341489688059316224",
-        "image": "/images/Lands/snoop_dogg_pass_2.png",
+        "image": "/images/Assets/snoop_dogg_pass_2.png",
         "metaverse": "Sandbox"
     },
     {
         "title": "ASM AIFA Genesis 9947",
         "link": "https://opensea.io/assets/0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313/9947",
-        "image": "/images/Lands/asm_9947.png",
+        "image": "/images/Assets/asm_9947.png",
         "metaverse": "ASM"
     },
     {
         "title": "PartyBear 1001",
         "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/1001",
-        "image": "/images/Lands/partybear_1001.png",
+        "image": "/images/Assets/partybear_1001.png",
         "metaverse": "PartyBear"
     },
     {
         "title": "PartyBear 8365",
         "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/8365",
-        "image": "/images/Lands/partybear_8365.png",
+        "image": "/images/Assets/partybear_8365.png",
         "metaverse": "PartyBear"
     },
     {
         "title": "FLUF World 7436",
         "link": "https://opensea.io/assets/0xccc441ac31f02cd96c153db6fd5fe0a2f4e6a68d/7436",
-        "image": "/images/Lands/flufworld_7436.png",
+        "image": "/images/Assets/flufworld_7436.png",
         "metaverse": "FLUFWorld"
     },
     {
         "title": "FLUF World 4627",
         "link": "https://opensea.io/assets/0xccc441ac31f02cd96c153db6fd5fe0a2f4e6a68d/4627",
-        "image": "/images/Lands/flufworld_4627.png",
+        "image": "/images/Assets/flufworld_4627.png",
         "metaverse": "FLUFWorld"
     },
     {
         "title": "FLUF World Thingies 177",
         "link": "https://opensea.io/assets/0x1afef6b252cc35ec061efe6a9676c90915a73f18/177",
-        "image": "/images/Lands/flufworld_177.png",
+        "image": "/images/Assets/flufworld_177.png",
         "metaverse": "FLUFWorld"
     },
     {
         "title": "FLUF World Thingies 5842",
         "link": "https://opensea.io/assets/0x1afef6b252cc35ec061efe6a9676c90915a73f18/5842",
-        "image": "/images/Lands/flufworld_5842.png",
+        "image": "/images/Assets/flufworld_5842.png",
         "metaverse": "FLUFWorld"
     }
 ]

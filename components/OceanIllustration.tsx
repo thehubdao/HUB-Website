@@ -65,12 +65,8 @@ const OceanIllustration = () => {
                 <p className="text-gray-200 text-center">User</p>
             </div>
 
-            {/* <div className="absolute top-16 right- z-0 w-56 h-56 opacity-10">
-                <img src="/images/ocean.png"/>
-            </div> */}
-
             <div className="absolute top-31 right-32 z-0 w-11 h-11 opacity-20">
-                <img src="/images/ocean.png"/>
+                <img src="/images/Logos/ocean.png"/>
             </div>
 
 

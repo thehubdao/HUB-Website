@@ -64,12 +64,12 @@ const GovernanceIllustration = () => {
 
             <div className="absolute top-14 -right-6 flex items-center justify-center h-28 w-28">
                 <p className="text-pink-600 text-center leading-5 z-10">OCEAN Marketplace</p>
-                <img src="/images/ocean.png" className="absolute opacity-10 w-4/5 inset-1/6"/>
+                <img src="/images/Logos/ocean.png" className="absolute opacity-10 w-4/5 inset-1/6"/>
             </div>
 
             <div className="absolute top-14 -left-6 flex items-center justify-center h-28 w-28">
                 <p className="text-blue-600 text-center leading-5 z-10">Chainlink Marketplace</p>
-                <img src="/images/chainlink_white.png" className="absolute opacity-10 w-4/5 inset-1/6"/>
+                <img src="/images/Logos/chainlink_white.png" className="absolute opacity-10 w-4/5 inset-1/6"/>
             </div>
 
         </div>

@@ -13,7 +13,7 @@ const Intro = ({ scroll }: any) => {
 
                 <div className={`absolute top-0 right-0 h-screen w-full xl:w-4/5 opacity-75`}>
                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10" /> */}
-                    <Image src="/images/background/space-2.jpg" layout="fill" className="transform scale-125 rotate-180 animate__animated animate__zoomIn space-img z-0 object-scale-down" />
+                    <Image src="/images/space-2.jpg" layout="fill" className="transform scale-125 rotate-180 animate__animated animate__zoomIn space-img z-0 object-scale-down" />
                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10" />
                     <Image src="/images/background/stars-1.jpg" width="2848" height="1899" className="animate__animated animate__zoomIn space-img z-0" /> */}
                 </div>

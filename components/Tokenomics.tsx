@@ -21,10 +21,10 @@ const Tokenomics = () => {
                     <p className="text-gray-400 mb-2 font-medium">Visit on</p>
                     <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-10 space-y-5 sm:space-y-0 items-center">
                         <a href="https://coinmarketcap.com/currencies/metagamehub-dao/" target="_blank" className="h-full w-44 cursor-pointer">
-                            <img src="/images/cmc.png" className="object-scale-down w-full h-full" />
+                            <img src="/images/Logos/cmc.png" className="object-scale-down w-full h-full" />
                         </a>
                         <a href="https://www.coingecko.com/coins/metagamehub-dao" target="_blank" className="h-full w-36  cursor-pointer">
-                            <img src="/images/coingecko.svg" className="object-scale-down w-full h-full" />
+                            <img src="/images/Logos/coingecko.svg" className="object-scale-down w-full h-full" />
                         </a>
                     </div>
                 </div>

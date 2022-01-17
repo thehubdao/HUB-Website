@@ -6,9 +6,7 @@ const PriceCard = ({ showCard, processing, name, imageLink, openseaLink, sandbox
 
 
         <div className={`${showCard ? "animate__zoomIn animate__fast" : "hidden"} ${processing && "animate__zoomOut"} animate__animated shadow-white w-64 h-96 transform scale-100 xl:scale-120 relative flex flex-col pt-4 pb-2 items-center backdrop-filter backdrop-blur-2xl rounded-xl  border-l border-t border-opacity-30 z-50 `}>
-            {/* <div className=" text-center w-28 h-28">
-                <Image className="rounded-lg object-cover" src="/images/land.jpg" layout="fill" />
-            </div> */}
+
             <a href={sandboxLink} target="_blank" className="relative w-30 h-30">
                 <img src={imageLink} className="rounded-xl object-cover" />
                 <FiExternalLink className="absolute top-0 right-0 text-white text-xs backdrop-filter backdrop-blur-sm rounded-xl w-6 h-6 p-1" />
@@ -25,7 +23,7 @@ const PriceCard = ({ showCard, processing, name, imageLink, openseaLink, sandbox
             </p>
 
             <div className="flex space-x-4 items-center w-full justify-start px-4 py-1.5 h-full">
-                <img src="/images/ethereum-eth-logo.png" className="rounded-full h-8 w-8  p-1 shadow-button" />
+                <img src="/images/Logos/Cryptos/ETH.png" className="rounded-full h-8 w-8  p-1 shadow-button" />
                 <p className="text-lg font-medium text-gray-300 pt-0.5">
                     {ethPrice} <span className="font-light text-base">ETH</span>
                 </p>

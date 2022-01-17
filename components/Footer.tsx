@@ -33,7 +33,7 @@ const Footer = () => {
         <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-grey-darkest shadow-colorbottom text-gray-200">
             <div className="flex flex-col justify-center items-center space-y-8">
                 <a href="/" className="">
-                    <img src="/images/version-3.png" className={`h-28 md:h-32 lg:h-36 xl:h-40`} />
+                    <img src="/images/Logos/MGH/version-3.png" className={`h-28 md:h-32 lg:h-36 xl:h-40`} />
                 </a>
                 <div className="flex flex-row items-center justify-center lg:justify-start w-full flex-wrap space-x-3 ">
 

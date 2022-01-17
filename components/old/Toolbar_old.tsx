@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 
 import {VscListFlat, VscClose} from "react-icons/vsc";
 
-import mgh_logo from "../public/images/mgh_logo_white.png";
 
 const Toolbar = () => {
     const [scroll, setScroll] = useState(0);
