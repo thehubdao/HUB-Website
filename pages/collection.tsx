@@ -27,9 +27,14 @@ const LandPage: NextPage = () => {
                     <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-green-200 to-green-500 text-center mt-20 lg:mt-32">LANDs</h1>
                     <p className={`text-lg lg:text-2xl font-medium text-gray-200 text-center`}>Community developed & curated </p>
 
-                    <a href="https://app.metagamehub.io/valuation" target="_blank" className="button mt-5 mb-20">
-                        <p className="button-text">LAND Valuation</p>
-                    </a>
+                    <div className="flex space-x-4 mt-5 mb-20">
+                        <a href="https://opensea.io/0x2a9da28bcbf97a8c008fd211f5127b860613922d" target="_blank" className="button mt-5">
+                            <p className="button-text">Visit on Opensea</p>
+                        </a>
+                        <a href="https://app.metagamehub.io/valuation" target="_blank" className="button mt-5 bg-white bg-opacity-20">
+                            <p className="button-text">LAND Valuation</p>
+                        </a>
+                    </div>
 
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-start gap-5 w-full min-h-screen pb-20">

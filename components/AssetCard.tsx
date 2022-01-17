@@ -16,6 +16,7 @@ const AssetCard = ({ img, title, link, classes, metaverse }: any) => {
                 {metaverse === "Sandbox" && <img src="/images/the-sandbox-sand-logo.png" className="absolute top-2 right-2 h-8" />}
                 {metaverse === "ASM" && <img src="/images/asm-logo.png" className="absolute top-2 right-2 h-8" />}
                 {metaverse === "PartyBear" && <img src="/images/partybear-logo.png" className="absolute top-2 right-2 h-8" />}
+                {metaverse === "FLUFWorld" && <img src="/images/flufworld-logo.png" className="absolute top-2 right-2 h-8" />}
 
             </div>
         </a>
