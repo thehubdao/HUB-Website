@@ -1,7 +1,7 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   important: true,
   theme: {
     extend: {
@@ -66,7 +66,7 @@ module.exports = {
         color: '0 0px 20px 0px rgba(250, 250, 250, 0.5)',
         colorbottom: '0 0px 40px 0px rgba(250, 250, 250, 0.1)',
         button: '0 0px 8px 0px rgba(250, 250, 250, 0.4)',
-        black: '0 0px 40px 0px rgba(0, 0, 0, 0.1)',
+        dark: '0 0px 40px 0px rgba(0, 0, 0, 0.1)',
         white: "rgba(250, 250, 250, 0.25) 10px 10px 50px"
       },
       fontFamily: {

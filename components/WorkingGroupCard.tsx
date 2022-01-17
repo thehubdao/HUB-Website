@@ -1,7 +1,7 @@
 const WorkingGroupCard = ({ title, description }: any) => {
     return (
 
-        <div className="relative w-full max-w-md overflow-hidden rounded-xl p-4 lg:p-6 bg-grey-dark bg-opacity-30 shadow-button border-l border-t border-opacity-0 ">
+        <div className="relative w-full max-w-md overflow-hidden rounded-xl p-4 lg:p-6 bg-grey-dark bg-opacity-30 shadow-button">
             <img src="/images/Logos/MGH/mgh_logo.png" className="-bottom-72 -right-32 absolute blur-md opacity-80 rounded-full" />
 
             <div className="flex flex-col h-full space-y-1 justify-between items-center text-center">

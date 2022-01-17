@@ -10,7 +10,7 @@ const SmallLandCard = ({ img, title, link, classes }: any) => {
                 <div className="relative text-center w-full pb-full">
                     <Image className="rounded-lg object-contain" src={img} layout="fill" />
                 </div>
-                <p className="absolute bottom-0 px-0.5 py-1 pt-1.5 right-0 rounded-b-lg w-full shadow-black bg-black bg-opacity-40 backdrop-filter backdrop-blur-2xl font-medium text-gray-200 text-xs xs:text-sm 2xl:text-base">{title}</p>
+                <p className="absolute bottom-0 px-0.5 py-1 pt-1.5 right-0 rounded-b-lg w-full shadow-dark bg-black bg-opacity-40 backdrop-filter backdrop-blur-2xl font-medium text-gray-200 text-xs xs:text-sm 2xl:text-base">{title}</p>
 
             </div>
         </a>

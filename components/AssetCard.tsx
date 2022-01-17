@@ -10,7 +10,7 @@ const AssetCard = ({ img, title, link, classes, metaverse }: any) => {
                 <div className="relative text-center w-full pb-full">
                     <Image className="rounded-t-2xl object-contain" src={img} layout="fill" />
                 </div>
-                <p className="object-bottom px-3 py-2 pt-2.5 w-full rounded-b-2xl shadow-black bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm font-medium text-gray-200 text-sm lg:text-base">{title}</p>
+                <p className="object-bottom px-3 py-2 pt-2.5 w-full rounded-b-2xl shadow-dark bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm font-medium text-gray-200 text-sm lg:text-base">{title}</p>
 
                 {metaverse === "Decentraland" && <img src="/images/Logos/Cryptos/MANA.png" className="absolute top-2 right-2 h-8" />}
                 {metaverse === "Sandbox" && <img src="/images/Logos/Cryptos/SAND.png" className="absolute top-2 right-2 h-8" />}
