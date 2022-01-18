@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import Link from 'next/link'
 import { HiMenuAlt4 } from "react-icons/hi"
 import { MdClose } from "react-icons/md"
 
@@ -22,7 +22,10 @@ const Toolbar = ({ dark }: any) => {
                             <img src="/images/mgh_logo.png" className={`h-12 w-12`} />
                         </a>
                         <a href="/collection" target="_blank" className="nav-item pt-1">LANDs</a>
-                        <a href="/#news" className="nav-item pt-1">News</a>
+                      <a href="/#news" className="nav-item pt-1">News</a>
+                      <Link href="/team" >
+                        <a className="nav-item pt-1">Team</a>
+                      </Link>
                         <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
                         {/* <div className="relative flex flex-col items-center justify-center"> */}
                             {/* <div className="absolute left-0 bg-blue-400 bg-opacity-70 filter z-0 blur w-full h-full p-4 rounded-2xl" /> */}

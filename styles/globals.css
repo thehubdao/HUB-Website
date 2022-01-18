@@ -134,3 +134,12 @@ h6 {
   stroke-dashoffset: 250;
   stroke-dasharray: 500 500;
 }
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-pink-500 via-blue-400 to-blue-500;
+}
