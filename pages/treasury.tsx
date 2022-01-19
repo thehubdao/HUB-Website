@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useDebugValue, useEffect, useState } from "react";
 import { NextPage } from "next";
 import Head from "next/head";
 import "animate.css"
@@ -14,19 +14,36 @@ import SmallLandCard from "../components/SmallLandCard";
 import CryptoCard from "../components/CryptoCard";
 
 
-const TreasuryPage: NextPage = ({ treasury }: any) => {
+const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) => {
     const [showLands, setShowLands] = useState("")
+    const [totalTreasuryValue, setTotalTreasuryValue] = useState(0)
     const [totalCryptoValue, setTotalCryptoValue] = useState(0)
+    const [totalSandboxValue, setTotalSandboxValue] = useState(0)
+    const [totalDecentralandValue, setTotalDecentralandxValue] = useState(0)
+    const [totalNFTValue, setTotalNFTValue] = useState(0)
 
     useEffect(() => {
 
-        treasury.map((element: any) => {
-            setTotalCryptoValue(totalCryptoValue => totalCryptoValue + element.value)
-        })
+        const cryptoSum = cryptoValues.reduce((acc: any, curr: any) => acc + curr.value, 0)
+        setTotalCryptoValue(cryptoSum)
 
-        return ()=>{setTotalCryptoValue(0)}
+        const sandboxSum = landValues.filter((land: { metaverse: string; })=> land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
+        const sandboxSumRounded = Math.round(sandboxSum)
+        setTotalSandboxValue(sandboxSumRounded)
 
-    }, [treasury])
+        const decentralandSum = landValues.filter((land: { metaverse: string; })=> land.metaverse === "decentraland").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
+        const decentralandSumRounded = Math.round(decentralandSum)
+        setTotalDecentralandxValue(decentralandSumRounded)
+
+        const nftSum = sandboxSumRounded + decentralandSumRounded
+
+        setTotalNFTValue(nftSum)
+
+        setTotalTreasuryValue(cryptoSum + nftSum)
+
+        return () => { setTotalCryptoValue(0) }
+
+    }, [cryptoValues, landValues])
 
 
 
@@ -56,7 +73,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                     <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-5 w-full max-w-3xl self-start mb-10">
                         <p className="text-gray-200 text-lg sm:text-2xl lg:text-4xl font-bold min-w-max flex-grow">Total Treasury Value</p>
-                        <p className="text-gray-400 text-lg sm:text-2xl lg:text-4xl font-bold">$X</p>
+                        <p className="text-gray-400 text-lg sm:text-2xl lg:text-4xl font-bold">${totalTreasuryValue.toLocaleString('en-GB')}</p>
                     </div>
 
                     <div className="flex items-center space-x-5 w-full max-w-3xl self-start mb-7 pl-0 sm:pl-1">
@@ -71,7 +88,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
 
                     <div className="flex w-full flex-wrap items-center self-start ml-0 sm:ml-2 ">
 
-                        {treasury.map((element: any, key: any) => {
+                        {cryptoValues.map((element: any, key: any) => {
                             return (
                                 <CryptoCard key={key} name={element.symbol} value={element.value} />
                             );
@@ -84,7 +101,7 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
                         <hr className="border-blue-500 rounded-full h-12 sm:h-7 lg:h-10 border-4" />
                         <div className="flex flex-col sm:flex-row w-full">
                             <p className="text-gray-200 text-base sm:text-xl lg:text-3xl font-medium min-w-max pt-1.5 flex-grow">NFTs</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">$1,000,000</p>
+                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">${totalNFTValue.toLocaleString('en-GB')}</p>
                         </div>
                     </div>
 
@@ -93,13 +110,13 @@ const TreasuryPage: NextPage = ({ treasury }: any) => {
                         <div onClick={() => handleClick("Sandbox")} className={`relative flex flex-col m-2 items-center select-none justify-center space-y-1 sm:space-y-2 rounded-xl ${showLands === "Sandbox" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/Cryptos/SAND.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Sandbox</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSandboxValue.toLocaleString('en-GB')}</p>
                         </div>
 
                         <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/Cryptos/MANA.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Decentraland</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$300,000</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalDecentralandValue.toLocaleString('en-GB')}</p>
                         </div>
 
                         <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
@@ -262,14 +279,22 @@ export async function getStaticProps() {
     });
     connection.connect();
 
-    const sql = "SELECT * FROM defaultdb.tokens;"
+    const cryptoSQL = "SELECT symbol, value FROM defaultdb.tokens;"
+    const cryptoValues = (await connection.query(cryptoSQL))[0]
 
-    const treasury = (await connection.query(sql))[0]
+    const landsSQL = "SELECT metaverse, priceUsd FROM defaultdb.lands;"
+    const landValues = (await connection.query(landsSQL))[0]
+
+    const nftsSQL = "SELECT metaverse, priceUsd FROM defaultdb.nfts;"
+    const nftValues = (await connection.query(nftsSQL))[0]
+
     connection.end();
 
     return {
         props: {
-            treasury,
+            cryptoValues,
+            landValues,
+            nftValues
         },
     }
 
