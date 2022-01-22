@@ -68,11 +68,11 @@
 }
 
 .button {
-  @apply text-center rounded-full px-4 sm:px-6 py-1.5 sm:py-2 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
+  @apply text-center rounded-full px-4 sm:px-6 pb-1.5 pt-2 sm:pb-2 sm:pt-2.5 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
 }
 
 .button-text {
-  @apply text-gray-300 font-medium mt-0.5 text-base;
+  @apply text-gray-300 font-medium text-base;
 }
 
 .long-text {
@@ -131,4 +131,15 @@ h6 {
 .progress-ring__circle {
   stroke-dashoffset: 250;
   stroke-dasharray: 500 500;
+}
+
+.members-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-pink-500 via-blue-400 to-blue-500;
+}
+.reverse-text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-pink-500 to-pink-500;
 }

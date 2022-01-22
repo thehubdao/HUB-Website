@@ -5,8 +5,19 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      keyframes: {
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        }
+      },
       animation: {
         'spin-slow': 'spin 1.5s linear infinite',
+        'fade-in-slow': 'fade-in 0.8s ease'
       },
       inset: {
         '1/5': '20%',
@@ -40,6 +51,7 @@ module.exports = {
       width: {
         '18': '4.5rem',
         '30': '7.5rem',
+        '80vw': '80vw',
       },
       scale: {
         '55': '.55',
@@ -64,6 +76,7 @@ module.exports = {
       boxShadow: {
         round: '0 0px 30px -15px rgba(0, 0, 0, 0.25)',
         color: '0 0px 20px 0px rgba(250, 250, 250, 0.5)',
+        subtle: '1px 2px 10px 0px rgba(250, 250, 250, 0.15)',
         colorbottom: '0 0px 40px 0px rgba(250, 250, 250, 0.1)',
         button: '0 0px 8px 0px rgba(250, 250, 250, 0.4)',
         dark: '0 0px 40px 0px rgba(0, 0, 0, 0.1)',

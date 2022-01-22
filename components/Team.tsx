@@ -1,13 +1,9 @@
-import { useState } from "react";
 import Member from "./Member";
 import teamJson from "../data/team.json";
-import extendedTeamJson from "../data/extendedTeam.json";
-import advisorsJson from "../data/advisors.json";
+import Link from "next/link";
 
 
 const Team = () => {
-
-    const [showAll, setShowAll] = useState(false)
 
     return (
 
@@ -17,31 +13,21 @@ const Team = () => {
 
                     <h1 className={`text-blue-300 bg-clip-text mb-10 uppercase lg:font-light lg:text-9xl`}>Initiators</h1>
 
-                    <div className="relative w-full max-w-screen-xl flex flex-row flex-wrap justify-center items-start">
-                        {teamJson.map((element, key) => {
+                    <div className="relative w-full max-w-screen-lg flex flex-row flex-wrap justify-center items-start">
+                        {teamJson.slice(0, 10).map((element, key) => {
                             return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} />
-                            );
-                        })}
-                        {showAll && extendedTeamJson.map((element, key) => {
-                            return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} telegram={element.telegram} />
-                            );
-                        })}
-                        {showAll && advisorsJson.map((element, key) => {
-                            return (
-                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkeind} />
+                                <Member key={key} name={element.name} position={element.position} img={element.image} linkedin={element.linkedin}/>
                             );
                         })}
                     </div>
 
-                    <div className="flex space-x-4">
-                        <button onClick={() => setShowAll(!showAll)} className="mt-5 button">
-                            <p className="button-text">{showAll ? "Hide" : "Meet all"}</p>
-                        </button>
-                        <a href="/contribute" target="_blank" className="button mt-5 bg-white bg-opacity-20">
-                            <p className="button-text">Contribute</p>
-                        </a>
+                    <div className="flex space-x-4 mt-10">
+                        <Link href={'/team'}>
+                            <a className='text-gray-300 font-medium button'>Meet all</a>
+                        </Link>
+                        <Link href='/contribute'>
+                            <a className='text-gray-300 font-medium button bg-white bg-opacity-20'>Contribute</a>
+                        </Link>
                     </div>
 
                 </div>

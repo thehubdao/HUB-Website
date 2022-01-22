@@ -1,74 +1,162 @@
 [
   {
     "name": "Nicolas Weber",
-    "position": "Founder",
+    "position": "Ops, Tech, Awareness, Legal",
     "image": "/images/Team/nicolas.png",
-    "linkeind": "https://www.linkedin.com/in/nicolas97weber/"
+    "linkedin": "https://www.linkedin.com/in/nicolas97weber/",
+    "description": "On a mission to foster decentralization",
+    "twitter": "https://twitter.com/thenicolasweber"
   },
   {
     "name": "Camilo Echeverri",
-    "position": "Co-Founder & Operations",
+    "position": "Ops, Tech, Awareness ",
     "image": "/images/Team/camilo.png",
-    "linkeind": "https://www.linkedin.com/in/caem2017/"
+    "linkedin": "https://www.linkedin.com/in/caem2017/",
+    "description": "MetaFi Degen and DAOs maximalist",
+    "twitter": "https://twitter.com/xtimesyequalsk"
   },
   {
     "name": "Lukas Philipp",
-    "position": "Co-Founder & Operations",
-    "image": "/images/Team/lukas.png",
-    "linkeind": "https://www.linkedin.com/in/lukasph/"
+    "position": "Ops, Tech, Awareness ",
+    "image": "/images/Team/lukas.jpeg",
+    "linkedin": "https://www.linkedin.com/in/lukasph/",
+    "twitter": "https://twitter.com/thelukasphilipp",
+    "description": "4+ years financial background in asset valuation and portfolio management. Web3 conceptioner and blockchain enthusiast."
   },
   {
     "name": "Jean Feier",
-    "position": "Co-Founder & Operations",
-    "image": "/images/Team/jean.png",
-    "linkeind": "https://www.linkedin.com/in/jeanine-feierfeil/"
+    "position": "Ops, Awareness",
+    "image": "/images/Team/jean.jpeg",
+    "linkedin": "https://www.linkedin.com/in/jeanine-feierfeil/",
+    "twitter": "https://twitter.com/JEANFEIER",
+    "description": "Defining vision, changing tradition and building with innovative minds. Driven to create products, experiences and art."
   },
   {
     "name": "Youssef Gabsi",
-    "position": "Co-Founder & Business Development",
-    "image": "/images/Team/youssef.png",
-    "linkeind": "https://www.linkedin.com/in/youssef-gabsi/"
+    "position": "Ops, Awareness, Meta Dev",
+    "image": "/images/Team/youssef.jpeg",
+    "linkedin": "https://www.linkedin.com/in/youssef-gabsi/",
+    "twitter": "https://twitter.com/GabsiYoussef1",
+    "description": "Asset management and real estate consultant converted into Web3 front office specialist "
   },
   {
     "name": "Phil Thomsen",
-    "position": "Lead Blockchain Architect",
-    "image": "/images/Team/phil.png",
-    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
-  },
-  {
-    "name": "Fredy Teheran",
-    "position": "Lead Developer",
-    "image": "/images/Team/fredy.png",
-    "linkeind": "https://www.linkedin.com/in/fredyteheranto/"
+    "position": "Tech",
+    "image": "/images/Team/phil.jpeg",
+    "github": "https://github.com/DAC-PhilThomsen",
+    "linkedin": "https://www.linkedin.com/company/metagamehub-dao/mycompany/",
+    "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
   },
   {
     "name": "Oskar Latussek",
-    "position": "Lead Frontend Developer",
-    "image": "/images/Team/oskar.png",
-    "linkeind": "https://www.linkedin.com/in/oskar-latussek/"
+    "position": "Tech",
+    "image": "/images/Team/oskar.jpeg",
+    "linkedin": "https://www.linkedin.com/in/oskar-latussek/",
+    "description": "Fullstack developer with focus on web3 integration and passion for UI/UX design. Background in financial economics and business development."
   },
   {
+    "name": "Christian Werner",
+    "position": "Metaverse Development",
+    "image": "/images/Team/christian.jpeg",
+    "linkedin": "https://www.linkedin.com/in/oskar-latussek/",
+    "description": "Game Designer, Consultant and Lecturer in Game Design at the FH Aachen and HS Fresenius, Cologne. Metaverse Dev Group Lead."
+  },
+
+  {
     "name": "Camilo Alaguna",
-    "position": "AI & Data Science",
-    "image": "/images/Team/camilo_alaguna.png",
-    "linkeind": "https://www.linkedin.com/in/camilo-alaguna/"
+    "position": "Tech, AI & Data Science",
+    "image": "/images/Team/camilo.jpeg",
+    "github": "https://github.com/camilourd",
+    "linkedin": "https://www.linkedin.com/in/camilo-alaguna/",
+    "description": "Computer Scientist with strong experience in AI and entrepreneur. Passionate of solving problems using computational tools."
   },
   {
     "name": "Santiago Hernandez",
-    "position": "Oracle Infrastructure",
+    "position": "Tech, AI & Data Science",
     "image": "/images/Team/santiago.png",
-    "linkeind": "https://www.linkedin.com/in/santiago-h-hernandez/"
+    "linkedin": "https://www.linkedin.com/in/santiago-h-hernandez/",
+    "description": "Fullstack developer with focus on devops and web3 integration passionate about Fintech and high frequency trading. Background in algorithmic trading, cyber security and business development."
+  },
+  {
+    "name": "Felix Sander",
+    "position": "Awareness",
+    "image": "/images/Team/felix.jpeg",
+    "linkedin": "https://www.linkedin.com/in/felix-sander/",
+    "description": "10+ years experience in digital marketing, growth hacking and community building. Active advisor to blockchain startups since 2017. "
+  },
+  {
+    "name": "Vanessa Miske",
+    "position": "Metaverse Development",
+    "image": "/images/Logos/MGH/mgh_logo.png",
+    "twitter": "https://twitter.com/Lune_meya",
+    "description": "IT-Student at FH Aachen Germany focusing on Media & Games, Part of the Metaverse Dev Group"
+  },
+  {
+    "name": "Susanne Bataloff",
+    "position": "Metaverse Development",
+    "image": "/images/Team/susanne.jpeg",
+    "linkedin": "https://www.linkedin.com/in/susanne-bataloff/",
+    "twitter": "https://twitter.com/susi23x01",
+    "github": "https://github.com/susi2301",
+    "description": "Game Design & Management Student at HS Fresenius Cologne, Graphic designer & Social Media Lead at Fresenius Green Office, part of Metaverse DevGroup."
+  },
+  {
+    "name": "Michael Gantner",
+    "position": "Metaverse Development",
+    "image": "/images/Logos/MGH/mgh_logo.png",
+    "github": "https://github.com/MichiGandi",
+    "description": "Studying Computer-Science at the FH Aachen in Germany. Part of the Metaverse Dev Group."
+  },
+  {
+    "name": "Jonathan Lübeck",
+    "position": "Metaverse Development",
+    "image": "/images/Logos/MGH/mgh_logo.png",
+    "twitter": "https://twitter.com/cblech2",
+    "github": "https://github.com/cblech",
+    "description": "Studying IT at the University of applied Science in Aachen. Main developer and maintainer of dcl-edit"
+  },
+  {
+    "name": "Robin Prock",
+    "position": "Awareness",
+    "image": "/images/Team/robin.jpeg",
+    "linkedin": "https://www.linkedin.com/in/robin-prock-931612210/",
+    "description": "Experienced copywriter & writer"
+  },
+  {
+    "name": "Branko Vlahov",
+    "position": "Awareness",
+    "image": "/images/Team/branko.png",
+    "linkedin": "https://www.linkedin.com/in/brankovlahov/",
+    "description": "10 + years of experience in the Motion Design industry. Efficient in animating with the Adobe Suite and Cinema 4D. Finished AP degree in Multimedia Design at the Bussiness Academy of Aarhus."
   },
   {
     "name": "Pierre Baumann",
     "position": "Blockchain Developer",
-    "image": "/images/Team/pierre.png",
-    "linkeind": "https://www.linkedin.com/company/metagamehub-dao/mycompany/"
+    "image": "/images/Team/pierre.jpeg",
+    "linkedin": "https://www.linkedin.com/in/pierre-baumann-8b1473229",
+    "github": "https://github.com/DAC-PierreBaumann",
+    "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
   },
   {
-    "name": "Philipp Kothe",
-    "position": "Blockchain Architect",
-    "image": "/images/Team/philipp.png",
-    "linkeind": "https://www.linkedin.com/in/philippkothe/"
+    "name": "Alejandra Corbella",
+    "position": "Awareness",
+    "image": "/images/Team/alejandra.jpeg",
+    "twitter": "https://twitter.com/alecorbella_",
+    "linkedin": "https://www.linkedin.com/in/alejandra-corbella-obregon-a6637ba9/",
+    "description": "Studied Entrepreneurship at Tufts University. Working as a Community Manager and Content Strategist."
+  },
+  {
+    "name": "Javan Sardarabady",
+    "position": "Awareness",
+    "image": "/images/Team/javan.jpeg",
+    "linkedin": "https://www.linkedin.com/in/javan-sardarabady-301a48215/",
+    "description": "Economics student at the University of Konstanz with focus on political economy. Passionate about decentralized governance."
+  },
+  {
+    "name": "Mauro Guz Bejar",
+    "position": "Tech",
+    "image": "/images/Team/mauro.jpeg",
+    "linkedin": "https://www.linkedin.com/in/mauro-gb-5b657b209/",
+    "description": "Web3 and Smart Contracts Engineer with a special focus in accessibility and security"
   }
 ]
