@@ -24,45 +24,93 @@
         "metaverse": "Sandbox"
     },
     {
-        "title": "ASM AIFA Genesis 9947",
-        "link": "https://opensea.io/assets/0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313/9947",
-        "image": "/images/Assets/asm_9947.png",
-        "metaverse": "ASM"
+        "title": "Snoop's OG Tactical Vest",
+        "link": "https://opensea.io/assets/0xa342f5d851e866e18ff98f351f2c6637f4478db5/7972318491671778805813921615860951059589670574459093065734011416682713581568",
+        "image": "/images/Assets/snoop_dogg_vest.png",
+        "metaverse": "Sandbox"
     },
     {
-        "title": "PartyBear 1001",
-        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/1001",
-        "image": "/images/Assets/partybear_1001.png",
-        "metaverse": "PartyBear"
-    },
-    {
-        "title": "PartyBear 8365",
-        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/8365",
-        "image": "/images/Assets/partybear_8365.png",
-        "metaverse": "PartyBear"
-    },
-    {
-        "title": "FLUF World 7436",
+        "title": "FLUF 7436",
         "link": "https://opensea.io/assets/0xccc441ac31f02cd96c153db6fd5fe0a2f4e6a68d/7436",
         "image": "/images/Assets/flufworld_7436.png",
         "metaverse": "FLUFWorld"
     },
     {
-        "title": "FLUF World 4627",
+        "title": "FLUF 4627",
         "link": "https://opensea.io/assets/0xccc441ac31f02cd96c153db6fd5fe0a2f4e6a68d/4627",
         "image": "/images/Assets/flufworld_4627.png",
         "metaverse": "FLUFWorld"
     },
     {
-        "title": "FLUF World Thingies 177",
+        "title": "PartyBear 1001",
+        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/1001",
+        "image": "/images/Assets/partybear_1001.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "PartyBear 8365",
+        "link": "https://opensea.io/assets/0x35471f47c3c0bc5fc75025b97a19ecdde00f78f8/8365",
+        "image": "/images/Assets/partybear_8365.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "Thingies 177",
         "link": "https://opensea.io/assets/0x1afef6b252cc35ec061efe6a9676c90915a73f18/177",
         "image": "/images/Assets/flufworld_177.png",
         "metaverse": "FLUFWorld"
     },
     {
-        "title": "FLUF World Thingies 5842",
+        "title": "Thingies 5842",
         "link": "https://opensea.io/assets/0x1afef6b252cc35ec061efe6a9676c90915a73f18/5842",
         "image": "/images/Assets/flufworld_5842.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "Burrows 2117",
+        "link": "https://opensea.io/assets/0xe51aac67b09eaed6d3d43e794d6bae679cbe09d8/2117",
+        "image": "/images/Assets/burrows_2117.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "Burrows 2118",
+        "link": "https://opensea.io/assets/0xe51aac67b09eaed6d3d43e794d6bae679cbe09d8/2118",
+        "image": "/images/Assets/burrows_2118.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA Genesis 9947",
+        "link": "https://opensea.io/assets/0x26437d312fb36bdd7ac9f322a6d4ccfe0c4fa313/9947",
+        "image": "/images/Assets/asm_9947.png",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA All-Stars 24048",
+        "link": "https://opensea.io/assets/0x96be46c50e882dbd373081d08e0cde2b055adf6c/24048",
+        "image": "/images/Assets/all-stars_24048.jpg",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA All-Stars 24049",
+        "link": "https://opensea.io/assets/0x96be46c50e882dbd373081d08e0cde2b055adf6c/24049",
+        "image": "/images/Assets/all-stars_24049.jpg",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA All-Stars 24050",
+        "link": "https://opensea.io/assets/0x96be46c50e882dbd373081d08e0cde2b055adf6c/24050",
+        "image": "/images/Assets/all-stars_24050.jpg",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA All-Stars 24051",
+        "link": "https://opensea.io/assets/0x96be46c50e882dbd373081d08e0cde2b055adf6c/24051",
+        "image": "/images/Assets/all-stars_24051.jpg",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "ASM AIFA Brains 6012",
+        "link": "https://opensea.io/assets/0xd0318da435dbce0b347cc6faa330b5a9889e3585/6012",
+        "image": "/images/Assets/brains_6012.jpg",
         "metaverse": "FLUFWorld"
     }
 ]

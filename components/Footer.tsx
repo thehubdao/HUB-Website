@@ -74,23 +74,23 @@ const Footer = () => {
                 <a href="/" className="nav-item">
                     Home
                 </a>
-                <a href="/collection" className="nav-item">
-                    LANDs
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
+                    Whitepaper
                 </a>
                 <a href="https://t.me/metagamehub_dao" className="nav-item">
                     Community
                 </a>
-                <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
-                    Voting
-                </a>
-                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
-                    Whitepaper
-                </a>
                 <a href="/faq" target="_blank" className="nav-item">
                     FAQ
                 </a>
+                <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
+                    Voting
+                </a>
                 <a href="/terms" className="nav-item">
                     Terms of Use
+                </a>
+                <a href="https://github.com/metagamehub" className="nav-item" target="_blank">
+                    GitHub
                 </a>
                 <a href="/privacy" className="nav-item">
                     Privacy Policy

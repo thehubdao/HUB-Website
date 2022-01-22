@@ -30,7 +30,7 @@ const TeamPage: NextPage = () => {
         <h2 className='pt-32 pb-10 text-center reverse-text-gradient'>Our Advisors</h2>
         <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-12 md:px-16 px-8 py-8 mb-28'>
           {advisors.map((advisor, key) => (
-            <MemberCard key={key} member={advisor} />
+            <MemberCard key={key} member={advisor} advisor />
           ))}
         </ul>
       </main>
