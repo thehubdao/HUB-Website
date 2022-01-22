@@ -92,17 +92,9 @@
     "image": "/images/Advisors/frederico.png"
   },
   {
-    "name": "Juri Maibaum",
-    "position": "DEFI TIMES",
-    "description": "Co-Founder DEFI TIMES & Organizer of Cosmoverse",
-    "image": "/images/Advisors/juri.jpeg",
-    "twitter": "https://twitter.com/jurimaibaum",
-    "linkedin": "https://www.linkedin.com/in/juri-maibaum-0a272a1b2/"
-  },
-  {
     "name": "Marc Lanz",
     "position": "Workandsun Canaris",
-    "description": "Co-Founded, Directed, Owned and Reinvented different companies and projects over the past 10 years, most of them in the digital sphere, delivering marketing strategies and overall business solutions for customers in diverse industries.",
+    "description": "Co-founded, directed, owned and reinvented different companies and projects over the past 10 years, most of them in the digital sphere, delivering marketing strategies and overall business solutions for customers in diverse industries.",
     "image": "/images/Advisors/marc.jpeg",
     "twitter": "https://twitter.com/marc_lanz",
     "linkedin": "https://www.linkedin.com/in/marclanz/"
@@ -137,9 +129,10 @@
   },
   {
     "name": "Simon Peters",
-    "position": "General Advisor",
+    "position": "DECUS Network GmbH",
     "linkedin": "https://www.linkedin.com/in/snj-peters/",
-    "image": "/images/Advisors/simon-peters.jpeg"
+    "image": "/images/Advisors/simon-peters.jpeg",
+    "description": "Managing Director of DECUS Network.All-in entrepreneur with a passion for challenging markets and disruptive technology."
   },
   {
     "name": "Sebastian Rocha",

@@ -16,7 +16,7 @@ const TeamPage: NextPage = () => {
 
       <main className='animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-52'>
         <h1 className='mb-10 text-gradient text-center'>
-          Meet Our Team
+          Our core contributors
         </h1>
         <Link href={'/contribute'}>
           <a className='text-gray-300 font-medium button mb-14'>Contribute</a>
