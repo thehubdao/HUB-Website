@@ -285,16 +285,15 @@ export async function getStaticProps() {
     const landsSQL = "SELECT metaverse, priceUsd FROM defaultdb.lands;"
     const landValues = (await connection.query(landsSQL))[0]
 
-    const nftsSQL = "SELECT metaverse, priceUsd FROM defaultdb.nfts;"
-    const nftValues = (await connection.query(nftsSQL))[0]
+    // const nftsSQL = "SELECT metaverse, priceUsd FROM defaultdb.nfts;"
+    // const nftValues = (await connection.query(nftsSQL))[0]
 
     connection.end();
 
     return {
         props: {
             cryptoValues,
-            landValues,
-            nftValues
+            landValues
         },
     }
 
