@@ -27,7 +27,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
     useEffect(() => {
 
-        const cryptoSum = cryptoValues.reduce((acc: any, curr: any) => acc + curr.value, 0)
+        const cryptoSum = cryptoValues.filter((token: { symbol: string }) => token.symbol !== "MGH").reduce((acc: any, curr: any) => acc + curr.value, 0)
         setTotalCryptoValue(cryptoSum)
 
         const sandboxSum = landValues.filter((land: { metaverse: string; }) => land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
@@ -234,9 +234,9 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-11 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-11 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
-                                    <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Ethereum</p>
+                                    <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Polygon</p>
                                     <hr className="border-gray-600 w-12" />
                                     <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">APR: 70%</p>
                                 </div>
@@ -246,7 +246,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Hodler</p>
                                     <hr className="border-gray-600 w-12" />
@@ -258,7 +258,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Degen</p>
                                     <hr className="border-gray-600 w-12" />
@@ -270,7 +270,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Ape</p>
                                     <hr className="border-gray-600 w-12" />
@@ -282,7 +282,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
                         <div className={`flex flex-col m-2 items-center justify-center space-y-3 sm:space-y-5 rounded-xl select-none cursor-default bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <div className="flex space-x-2 sm:space-x-4 items-center">
-                                <img src="/images/Logos/Cryptos/MATIC.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
+                                <img src="/images/Logos/Cryptos/ETH.png" className={`h-9 sm:h-10 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                                 <div className="flex flex-col space-y-0.5">
                                     <p className="font-medium text-gray-400 pt-0.5 text-xs md:text-sm min-w-max">Hong Long</p>
                                     <hr className="border-gray-600 w-12" />

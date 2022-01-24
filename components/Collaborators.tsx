@@ -9,7 +9,7 @@ const Collaborators = () => {
 
         <>
             <div className="w-full">
-                <div className={`w-full flex flex-col items-center justify-start p-8 pb-40`}>
+                <div className={`w-full flex flex-col items-center justify-start p-8 pb-40 pt-20`}>
 
                     <h3 className={`col-span-full uppercase text-transparent bg-clip-text bg-gradient-to-b z-10 from-gray-200 to-gray-600 mb-10`}>Collaborators</h3>
 

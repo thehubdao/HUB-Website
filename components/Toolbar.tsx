@@ -21,9 +21,11 @@ const Toolbar = ({ dark }: any) => {
                         <a href="/" className="hidden lg:block mr-5 transform hover:scale-110 transition-all duration-500 ease-in-out">
                             <img src="/images/Logos/MGH/mgh_logo.png" className={`h-12 w-12`} />
                         </a>
-                        <a href="/collection" target="_blank" className="nav-item pt-1">LANDs</a>
+                        <Link href="/treasury" >
+                            <a className="nav-item">Treasury</a>
+                        </Link>
                         <Link href="/team">
-                            <a className="nav-item pt-1">Team</a>
+                            <a className="nav-item pt-1">Contributors</a>
                         </Link>
                         <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
                         <a href="/faq" target="_blank" className="nav-item z-20 pt-1">FAQ</a>
@@ -41,9 +43,11 @@ const Toolbar = ({ dark }: any) => {
                 </button>
             </div>
             <nav onClick={() => setOpen(!open)} className={`${open ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOutUp hidden"} p-5 top-0 fixed w-full backdrop-filter backdrop-blur-2xl bg-black bg-opacity-10 flex flex-col space-y-5 items-center pt-20`} >
-                <a href="/collection" target="_blank" className="nav-item">LANDs</a>
+                <Link href="/treasury" >
+                    <a className="nav-item">Treasury</a>
+                </Link>
                 <Link href="/team" >
-                    <a className="nav-item">Team</a>
+                    <a className="nav-item">Contributors</a>
                 </Link>
                 <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
                 <a href="/faq" target="_blank" className="nav-item">FAQ</a>

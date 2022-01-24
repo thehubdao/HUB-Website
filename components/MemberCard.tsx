@@ -18,9 +18,11 @@ interface Member {
 const MemberCard = ({
   member,
   advisor,
+  small
 }: {
   member: Member
   advisor?: boolean
+  small?: boolean
 }) => {
   // changing color whether member is an advisor or core team.
   const iconColors = advisor
@@ -30,7 +32,7 @@ const MemberCard = ({
   return (
     <li
       className={
-        'w-80vw sm:w-full max-w-sm  border-white border border-opacity-10 p-3 xs:p-6 rounded-xl shadow-subtle text-white relative flex flex-col items-center lg:block text-center lg:text-left bg-grey-darkest'
+        'w-80vw sm:w-full max-w-sm  border-white border border-opacity-10 p-3 xs:p-5 rounded-xl shadow-subtle text-white relative flex flex-col items-center lg:block text-center lg:text-left bg-grey-darkest'
       }
     >
       <Image
@@ -52,7 +54,7 @@ const MemberCard = ({
         {member.name}
       </h3>
       <h4 className='text-lg border-none pb-1 font-light'>{member.position}</h4>
-      <ul className='text-4xl pb-4 w-full flex relative justify-center lg:justify-start -left-2 bottom-1'>
+      <ul className={`text-4xl ${!small && 'pb-4'} w-full flex relative justify-center lg:justify-start -left-2 bottom-1`}>
         {member.linkedin && (
           <a href={member.linkedin} className='cursor-pointer' target='_blank'>
             <TiSocialLinkedinCircular
@@ -75,7 +77,7 @@ const MemberCard = ({
           </a>
         )}
       </ul>
-      <p>{member.description}</p>
+      {!small && <p>{member.description}</p>}
     </li>
   )
 }
