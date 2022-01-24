@@ -220,7 +220,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
 
 
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-600 to-pink-600 text-center mt-36">Staking</h1>
+                    {/* <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-600 to-pink-600 text-center mt-36">Staking</h1>
                     <a href="https://app.metagamehub.io/stake" target="_blank" className="button mt-5 mb-20">
                         <p className="button-text">Stake now</p>
                     </a>
@@ -292,7 +292,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
