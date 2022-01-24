@@ -19,7 +19,10 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     const [totalTreasuryValue, setTotalTreasuryValue] = useState(0)
     const [totalCryptoValue, setTotalCryptoValue] = useState(0)
     const [totalSandboxValue, setTotalSandboxValue] = useState(0)
-    const [totalDecentralandValue, setTotalDecentralandxValue] = useState(0)
+    const [totalDecentralandValue, setTotalDecentralandValue] = useState(0)
+    const [totalSomniumValue, setTotalSomniumValue] = useState(0)
+    const [totalFlufValue, setTotalFlufValue] = useState(0)
+    const [totalOtherValue, setTotalOtherValue] = useState(0)
     const [totalNFTValue, setTotalNFTValue] = useState(0)
 
     useEffect(() => {
@@ -27,15 +30,27 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         const cryptoSum = cryptoValues.reduce((acc: any, curr: any) => acc + curr.value, 0)
         setTotalCryptoValue(cryptoSum)
 
-        const sandboxSum = landValues.filter((land: { metaverse: string; })=> land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
+        const sandboxSum = landValues.filter((land: { metaverse: string; }) => land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
         const sandboxSumRounded = Math.round(sandboxSum)
         setTotalSandboxValue(sandboxSumRounded)
 
-        const decentralandSum = landValues.filter((land: { metaverse: string; })=> land.metaverse === "decentraland").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
+        const decentralandSum = landValues.filter((land: { metaverse: string; }) => land.metaverse === "decentraland").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
         const decentralandSumRounded = Math.round(decentralandSum)
-        setTotalDecentralandxValue(decentralandSumRounded)
+        setTotalDecentralandValue(decentralandSumRounded)
 
-        const nftSum = sandboxSumRounded + decentralandSumRounded
+        const somniumSum = nftValues.filter((nft: { name: string; }) => nft.name === "somnium-space").reduce((acc: any, curr: any) => acc + curr.value_7, 0)
+        const somniumSumRounded = Math.round(somniumSum)
+        setTotalSomniumValue(somniumSumRounded)
+
+        const flufSum = nftValues.filter((nft: { name: string; }) => ["fluf-world-thingies", "partybear", "asm-aifa-all-stars", "fluf-world", "asm-brains", "fluf-world-burrows"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
+        const flufSumRounded = Math.round(flufSum)
+        setTotalFlufValue(flufSumRounded)
+
+        const otherSum = nftValues.filter((nft: { name: string; }) => ["ens", "uniswap-v3-positions"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
+        const otherSumRounded = Math.round(otherSum)
+        setTotalOtherValue(otherSumRounded)
+
+        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + otherSumRounded
 
         setTotalNFTValue(nftSum)
 
@@ -122,13 +137,19 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/somnium-space-logo.png" className={`h-12 md:h-14 object-contain`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Somnium Space</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$300,000</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSomniumValue.toLocaleString('en-GB')}</p>
+                        </div>
+
+                        <div onClick={() => handleClick("FLUF")} className={`${showLands === "FLUF" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                            <img src="/images/Logos/flufworld-logo.png" className={`h-12 md:h-14 object-contain`} />
+                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">FLUF World</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalFlufValue.toLocaleString('en-GB')}</p>
                         </div>
 
                         <div onClick={() => handleClick("Other")} className={`${showLands === "Other" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/nft-logo.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Other</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">$100,000</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalOtherValue.toLocaleString('en-GB')}</p>
                         </div>
 
                     </div>
@@ -137,6 +158,14 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     {showLands === "Sandbox" &&
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full mt-10 pl-2">
                             {landsJson.map((element, key) => {
+                                if (element.metaverse === "Sandbox") {
+                                    return (
+                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                    );
+                                }
+                            })}
+
+                            {assetsJson.map((element, key) => {
                                 if (element.metaverse === "Sandbox") {
                                     return (
                                         <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
@@ -170,15 +199,22 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         </div>
                     }
 
-                    {showLands === "Other" &&
+                    {showLands === "FLUF" &&
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full mt-10 pl-2">
                             {assetsJson.map((element, key) => {
-                                if (element.metaverse === "Sandbox") {
+                                if (element.metaverse === "FLUFWorld") {
                                     return (
-                                        <SmallLandCard key={key} classes="text-xs" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
+                        </div>
+                    }
+
+                    {showLands === "Other" &&
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full mt-10 pl-2">
+                            <SmallLandCard classes="text-xs" img="/images/Assets/ens.png" title="mghdao.eth ENS Domain" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65094968028965490667962940604995070354564234685879228165394497380248733853575" />
+                            <SmallLandCard classes="text-xs" img="/images/Assets/uniswap-positions.svg" title="Uniswap V3 Positions" link="https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816" />
                         </div>
                     }
 
@@ -285,15 +321,16 @@ export async function getStaticProps() {
     const landsSQL = "SELECT metaverse, priceUsd FROM defaultdb.lands;"
     const landValues = (await connection.query(landsSQL))[0]
 
-    // const nftsSQL = "SELECT metaverse, priceUsd FROM defaultdb.nfts;"
-    // const nftValues = (await connection.query(nftsSQL))[0]
+    const nftsSQL = "SELECT name, value_7 FROM defaultdb.nfts;"
+    const nftValues = (await connection.query(nftsSQL))[0]
 
     connection.end();
 
     return {
         props: {
             cryptoValues,
-            landValues
+            landValues,
+            nftValues
         },
     }
 
