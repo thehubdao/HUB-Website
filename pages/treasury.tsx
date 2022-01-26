@@ -27,7 +27,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
 
     useEffect(() => {
 
-        const cryptoSum = cryptoValues.filter((token: { symbol: string }) => token.symbol !== "MGH").reduce((acc: any, curr: any) => acc + curr.value, 0)
+        const cryptoSum = cryptoValues.reduce((acc: any, curr: any) => acc + curr.value, 0)
         setTotalCryptoValue(cryptoSum)
 
         const sandboxSum = landValues.filter((land: { metaverse: string; }) => land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
@@ -104,9 +104,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     <div className="flex w-full flex-wrap items-center self-start ml-0 sm:ml-2 ">
 
                         {cryptoValues.map((element: any, key: any) => {
-                            return (
-                                <CryptoCard key={key} name={element.symbol} value={element.value} />
-                            );
+                            if (element.value > 0) {
+                                return (
+                                    <CryptoCard key={key} name={element.symbol} value={element.value} />
+                                );
+                            }
                         })}
 
                     </div>
@@ -128,25 +130,25 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSandboxValue.toLocaleString('en-GB')}</p>
                         </div>
 
-                        <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                        <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/Cryptos/MANA.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Decentraland</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalDecentralandValue.toLocaleString('en-GB')}</p>
                         </div>
 
-                        <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                        <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/somnium-space-logo.png" className={`h-12 md:h-14 object-contain`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Somnium Space</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSomniumValue.toLocaleString('en-GB')}</p>
                         </div>
 
-                        <div onClick={() => handleClick("FLUF")} className={`${showLands === "FLUF" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                        <div onClick={() => handleClick("FLUF")} className={`${showLands === "FLUF" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/flufworld-logo.png" className={`h-12 md:h-14 object-contain`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">FLUF World</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalFlufValue.toLocaleString('en-GB')}</p>
                         </div>
 
-                        <div onClick={() => handleClick("Other")} className={`${showLands === "Other" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                        <div onClick={() => handleClick("Other")} className={`${showLands === "Other" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
                             <img src="/images/Logos/nft-logo.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Other</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalOtherValue.toLocaleString('en-GB')}</p>
@@ -305,7 +307,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     )
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const connection = await createConnection({
         host: "mgh-frankfurt-do-user-10576482-0.b.db.ondigitalocean.com",
         user: "doadmin",
