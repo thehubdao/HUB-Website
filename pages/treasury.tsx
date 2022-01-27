@@ -22,6 +22,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     const [totalDecentralandValue, setTotalDecentralandValue] = useState(0)
     const [totalSomniumValue, setTotalSomniumValue] = useState(0)
     const [totalFlufValue, setTotalFlufValue] = useState(0)
+    const [totalXoneValue, setTotalXoneValue] = useState(0)
     const [totalOtherValue, setTotalOtherValue] = useState(0)
     const [totalNFTValue, setTotalNFTValue] = useState(0)
 
@@ -46,11 +47,15 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         const flufSumRounded = Math.round(flufSum)
         setTotalFlufValue(flufSumRounded)
 
+        const xoneSum = nftValues.filter((nft: { name: string; }) => nft.name === "xones").reduce((acc: any, curr: any) => acc + curr.value_7, 0)
+        const xoneSumRounded = Math.round(xoneSum)
+        setTotalXoneValue(xoneSumRounded)
+
         const otherSum = nftValues.filter((nft: { name: string; }) => ["ens", "uniswap-v3-positions"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
         const otherSumRounded = Math.round(otherSum)
         setTotalOtherValue(otherSumRounded)
 
-        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + otherSumRounded
+        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + xoneSumRounded + otherSumRounded
 
         setTotalNFTValue(nftSum)
 
@@ -146,6 +151,12 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <img src="/images/Logos/flufworld-logo.png" className={`h-12 md:h-14 object-contain`} />
                             <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">FLUF World</p>
                             <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalFlufValue.toLocaleString('en-GB')}</p>
+                        </div>
+
+                        <div className={`select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
+                            <img src="/images/Logos/xone-logo.png" className={`h-12 md:h-14 object-contain`} />
+                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">XONE</p>
+                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalXoneValue.toLocaleString('en-GB')}</p>
                         </div>
 
                         <div onClick={() => handleClick("Other")} className={`${showLands === "Other" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
