@@ -18,15 +18,7 @@ import Press from '../components/Press';
 import Ocean from '../components/Ocean';
 
 
-const Home: NextPage = () => {
-    const [scroll, setScroll] = useState(0);
-
-    useEffect(function onFirstMount() {
-        function onScroll() {
-            setScroll(window.scrollY);
-        }
-        window.addEventListener("scroll", onScroll, { passive: true });
-    }, []);
+const Home: NextPage = ({ tokenData }: any) => {
 
     return (
         <>
@@ -37,7 +29,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main className="flex flex-col items-center">
-                <Intro scroll={scroll} />
+                <Intro />
 
                 <div className="max-w-full 2xl:max-w-screen-2xl overflow-x-hidden">
 
@@ -55,7 +47,7 @@ const Home: NextPage = () => {
 
                     <Ocean />
 
-                    <Tokenomics />
+                    <Tokenomics tokenData={tokenData}  />
 
                     <Roadmap />
 
@@ -72,6 +64,17 @@ const Home: NextPage = () => {
 
         </>
     )
+}
+
+export async function getServerSideProps() {
+    const res = await fetch("https://api.coingecko.com/api/v3/coins/metagamehub-dao?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false")
+    const tokenData = await res.json();
+
+    return {
+        props: {
+            tokenData,
+        },
+    }
 }
 
 export default Home

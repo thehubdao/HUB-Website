@@ -85,11 +85,26 @@
     "description": "10+ years experience in digital marketing, growth hacking and community building. Active advisor to blockchain startups since 2017. "
   },
   {
+    "name": "Jonathan Lübeck",
+    "position": "Metaverse Development",
+    "image": "/images/Team/jonathan.jpg",
+    "twitter": "https://twitter.com/cblech2",
+    "github": "https://github.com/cblech",
+    "description": "Studying IT at the University of applied Science in Aachen. Main developer and maintainer of dcl-edit"
+  },
+  {
     "name": "Vanessa Miske",
     "position": "Metaverse Development",
     "image": "/images/Team/vanessa.png",
     "twitter": "https://twitter.com/Lune_meya",
     "description": "IT-Student at FH Aachen Germany focusing on Media & Games, Part of the Metaverse Dev Group"
+  },
+  {
+    "name": "Michael Gantner",
+    "position": "Metaverse Development",
+    "image": "/images/Team/michael.jpg",
+    "github": "https://github.com/MichiGandi",
+    "description": "Studying Computer-Science at the FH Aachen in Germany. Part of the Metaverse Dev Group."
   },
   {
     "name": "Susanne Bataloff",
@@ -101,21 +116,6 @@
     "description": "Game Design & Management Student at HS Fresenius Cologne, Graphic designer & Social Media Lead at Fresenius Green Office, part of Metaverse DevGroup."
   },
   {
-    "name": "Michael Gantner",
-    "position": "Metaverse Development",
-    "image": "/images/Team/michael.jpg",
-    "github": "https://github.com/MichiGandi",
-    "description": "Studying Computer-Science at the FH Aachen in Germany. Part of the Metaverse Dev Group."
-  },
-  {
-    "name": "Jonathan Lübeck",
-    "position": "Metaverse Development",
-    "image": "/images/Team/jonathan.jpg",
-    "twitter": "https://twitter.com/cblech2",
-    "github": "https://github.com/cblech",
-    "description": "Studying IT at the University of applied Science in Aachen. Main developer and maintainer of dcl-edit"
-  },
-  {
     "name": "Robin Prock",
     "position": "Awareness",
     "image": "/images/Team/robin.jpeg",
@@ -123,11 +123,11 @@
     "description": "Experienced copywriter & writer"
   },
   {
-    "name": "Branko Vlahov",
-    "position": "Awareness",
-    "image": "/images/Team/branko.png",
-    "linkedin": "https://www.linkedin.com/in/brankovlahov/",
-    "description": "10 + years of experience in the Motion Design industry. Efficient in animating with the Adobe Suite and Cinema 4D. Finished AP degree in Multimedia Design at the Bussiness Academy of Aarhus."
+    "name": "Mauro Guz Bejar",
+    "position": "Tech",
+    "image": "/images/Team/mauro.jpeg",
+    "linkedin": "https://www.linkedin.com/in/mauro-gb-5b657b209/",
+    "description": "Web3 and Smart Contracts Engineer with a special focus in accessibility and security"
   },
   {
     "name": "Pierre Baumann",
@@ -136,6 +136,13 @@
     "linkedin": "https://www.linkedin.com/in/pierre-baumann-8b1473229",
     "github": "https://github.com/DAC-PierreBaumann",
     "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
+  },
+  {
+    "name": "Branko Vlahov",
+    "position": "Awareness",
+    "image": "/images/Team/branko.png",
+    "linkedin": "https://www.linkedin.com/in/brankovlahov/",
+    "description": "10 + years of experience in the Motion Design industry. Efficient in animating with the Adobe Suite and Cinema 4D. Finished AP degree in Multimedia Design at the Bussiness Academy of Aarhus."
   },
   {
     "name": "Alejandra Corbella",
@@ -151,12 +158,5 @@
     "image": "/images/Team/javan.jpeg",
     "linkedin": "https://www.linkedin.com/in/javan-sardarabady-301a48215/",
     "description": "Economics student at the University of Konstanz with focus on political economy. Passionate about decentralized governance."
-  },
-  {
-    "name": "Mauro Guz Bejar",
-    "position": "Tech",
-    "image": "/images/Team/mauro.jpeg",
-    "linkedin": "https://www.linkedin.com/in/mauro-gb-5b657b209/",
-    "description": "Web3 and Smart Contracts Engineer with a special focus in accessibility and security"
   }
 ]

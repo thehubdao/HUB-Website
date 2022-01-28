@@ -57,7 +57,7 @@ const Footer = () => {
                         <FaTelegramPlane className="social-media-icon" />
                     </a>
 
-                    <a href="https://discord.gg/gARJfmdD" className="cursor-pointer" target="_blank" >
+                    <a href="https://discord.gg/8WJVMDXZwH" className="cursor-pointer" target="_blank" >
                         <FaDiscord className="social-media-icon" />
                     </a>
 
@@ -77,7 +77,7 @@ const Footer = () => {
                 <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
                     Whitepaper
                 </a>
-                <a href="https://t.me/metagamehub_dao" className="nav-item">
+                <a href="https://discord.gg/8WJVMDXZwH" className="nav-item">
                     Community
                 </a>
                 <a href="/faq" target="_blank" className="nav-item">

@@ -50,6 +50,7 @@ module.exports = {
       },
       width: {
         '18': '4.5rem',
+        '15': '3.75rem',
         '30': '7.5rem',
         '80vw': '80vw',
       },
@@ -76,6 +77,9 @@ module.exports = {
       boxShadow: {
         round: '0 0px 30px -15px rgba(0, 0, 0, 0.25)',
         color: '0 0px 20px 0px rgba(250, 250, 250, 0.5)',
+        color_blue: '0 0px 20px 0px rgba(96, 165, 250, 1)',
+        color_pink: '0 0px 20px 0px rgba(236, 72, 153, 1)',
+        color_pink_focus: '0 0px 20px 3px rgba(236, 72, 153, 1)',
         subtle: '1px 2px 10px 0px rgba(250, 250, 250, 0.15)',
         colorbottom: '0 0px 40px 0px rgba(250, 250, 250, 0.1)',
         button: '0 0px 8px 0px rgba(250, 250, 250, 0.4)',

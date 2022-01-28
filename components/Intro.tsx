@@ -1,17 +1,26 @@
 import Image from "next/image"
+import { useEffect, useState } from "react";
 
 import Toolbar from "./Toolbar"
 
 
-const Intro = ({ scroll }: any) => {
+const Intro = () => {
+    const [scroll, setScroll] = useState(0);
+
+    useEffect(function onFirstMount() {
+        function onScroll() {
+            setScroll(window.scrollY);
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+    }, []);
 
     return (
         <div className="text-center w-full" style={{ height: "3000px" }}>
 
-            <div className={`sticky top-0 h-screen w-full`}>
+            <div className={`sticky top-0 h-screen w-full flex justify-end`}>
                 <Toolbar dark={true} />
 
-                <div className={`absolute top-0 right-0 h-screen w-full xl:w-4/5 opacity-75`}>
+                <div className={`h-screen relative w-full xl:w-4/5 opacity-75`}>
                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10" /> */}
                     <Image src="/images/space-2.jpg" layout="fill" className="transform scale-125 rotate-180 animate__animated animate__zoomIn space-img z-0 object-scale-down" />
                     {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10" />
@@ -27,7 +36,7 @@ const Intro = ({ scroll }: any) => {
                                 <div className="h-full w-full absolute bg-gradient-to-br transition-all ease-in-out duration-300 from-pink-600 to-blue-500 rounded-xl blur-md group-hover:blur-sm" />
                                 <span className="pt-1 z-10">Launch App</span>
                             </a>
-                            <a href="https://t.me/metagamehub_dao" target="_blank" className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} relative w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
+                            <a href="https://discord.gg/8WJVMDXZwH" target="_blank" className={`${scroll > 10 ? "opacity-100 transition-opacity delay-1000" : "opacity-100 xl:opacity-0"} relative w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
                                 <div className="h-full w-full absolute bg-gradient-to-br from-grey-dark to-grey-darkest rounded-xl blur-none group-hover:blur-md transition-all ease-in-out duration-300" />
                                 <span className="pt-1 z-10">Join Community</span>
                             </a>
@@ -38,7 +47,7 @@ const Intro = ({ scroll }: any) => {
 
                 </div>
 
-                <div className={`absolute font-medium top-0 h-screen w-full xl:w-2/4 z-10 flex justify-center items-center transition-all duration-500 ${scroll > 10 ? "animate__animated animate__zoomIn animate__delay-1s" : "hidden"}`}>
+                <div className={`absolute font-medium top-0 left-0 h-screen w-full xl:w-2/4 z-10 flex justify-center items-center transition-all duration-500 ${scroll > 10 ? "animate__animated animate__zoomIn animate__delay-1s" : "hidden"}`}>
                     <span className={`w-full mt-60 xl:mt-0 sm:w-1/2 max-w-sm px-8 text-lg lg:text-xl xl:text-2xl leading-normal text-gray-200 ${scroll > 10 ? scroll < 1500 ? "block animate__animated animate__zoomIn animate_delay-0s" : "animate__animated animate__zoomOut animate_slower hidden" : "hidden"}`}>Utility, governance and data combined in one ecosystem</span>
                     <span className={`w-full mt-60 xl:mt-0 sm:w-1/2 max-w-xs px-8 texl-lg lg:text-xl xl:text-2xl leading-normal text-gray-200 ${scroll > 1500 ? scroll < 3000 ? "block animate__animated animate__zoomIn animate_delay-0s" : "animate__animated animate__zoomOut animate_slower hidden" : "hidden"}`}>AI NFT Pricing Oracle, Collaborative NFT Governance & Transparent NFT Pricing</span>
                     {/* <span className={`w-full mt-20 xl:mt-0 sm:w-1/2 px-8 text-lg xl:text-2xl leading-normal text-gray-200 ${scroll > 4000 ? "block animate__animated animate__zoomIn animate_delay-0s" : "hidden"}`}>Providing accessibility and transparent NFT valuation</span> */}

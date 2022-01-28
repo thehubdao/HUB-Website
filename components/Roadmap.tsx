@@ -1,40 +1,131 @@
-import Milestone from "./Milestone";
-
-
 const Roadmap = () => {
 
     return (
 
         <>
-            <div className="w-full min-h-screen py-20">
-                <div className={`w-full flex flex-col lg:flex-row items-center justify-start p-8`}>
-                    <div className="flex flex-col items-center lg:items-start 2xl:items-center">
-                        <p className={`text-4xl sm:text-5xl md:text-6xl text-gray-200 text-center lg:text-left 2xl:text-center leading-tight sm:leading-tight md:leading-tight lg:leading-tight`}>MGH staking is going live on the <span className={`text-transparent bg-clip-text bg-gradient-to-br z-50 from-blue-500 to-pink-500`}>01.12.2021</span></p>
+            <div className="w-full min-h-screen my-20 flex flex-col space-y-20 p-4 xs:p-8">
 
-                        {/* <a href="https://www.thedap.space/membership/mgh" target="_blank" className="button mt-5">
-                            <p className="button-text">Join public membership</p>
-                        </a> */}
-                        <a href="https://app.metagamehub.io" target="_blank" className={`relative mt-5 sm:mt-10 w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
-                            <div className="h-full w-full absolute bg-gradient-to-br from-grey-dark to-grey-darkest rounded-xl blur-none group-hover:blur-md transition-all ease-in-out duration-300" />
-                            <span className="pt-1 z-10">Launch App</span>
-                        </a>
-                    </div>
-                    {/* <p className={`col-span-full text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b z-10 from-blue-500 to-pink-500 mb-10`}>MGH staking going live on the 01.12.2021</p> */}
+                <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
 
-                    <div className="relative flex flex-col justify-center py-20 w-screen sm:w-full items-center transform -translate-x-8 xl:-translate-x-16">
+                    <hr className="border-pink-600 w-[55%] border z-[-1] hidden lg:block" />
 
-                        <div className="absolute inset-1/6 w-px h-4/5 bg-gradient-to-br from-blue-500 to-pink-500" />
+                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                        2021
+                    </p>
 
-                        <Milestone date="Q4 21" text="MGH Liquidity Pools on DEXs" />
-                        <Milestone date="Q4 21" text="Metaverse NFTs curation" />
-                        <Milestone date="Q1 22" text="NFT Pools MVP" />
-                        <Milestone date="Q2 22" text="NFT valuation interface" />
-                        <Milestone date="Q3 22" text="DAO Launch" />
-                        <Milestone date="Q4 22" text="NFT Pools and respective NPTs" />
+                    <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 -mt-7 pl-0 lg:pl-5 min-h-max">
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-pink-600 shadow-color_pink font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q1
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Funding Rounds with {">"} $1 Mio raised without VCs to start as decetralized as possible
+                            </p>
+                        </div>
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-pink-600 shadow-color_pink font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q2
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Ocean Protocol, Chainlink Launch of LAND Pricing Data Tool with over 40,000 requests in first 2 months, MGH Liquidity Pool on Uniswap (Ethereum) and Quickswap (Polygon) with MGH dApp launch
+                            </p>
+                        </div>
 
                     </div>
 
                 </div>
+
+
+                <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
+
+                    <div className="relative w-full z-[-1] hidden lg:block">
+                        <hr className="border-pink-600 w-1/4 border absolute top-0 left-0" />
+                        <hr className="border-blue-400 w-3/4 border absolute top-0 right-0" />
+                    </div>
+
+
+
+                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                        2022
+                    </p>
+
+                    <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 -mt-7 pl-0 lg:pl-5 min-h-max">
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-pink-600 shadow-color_pink_focus scale-125 font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q1
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                NFT Pools and NFT Pool Tokens, IP NFT, Valuation Tool V2, Decentraland Editor, WG launch, Awareness expansion
+                            </p>
+                        </div>
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-blue-400 shadow-color_blue font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q2
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Metaverse Expansion (FLUF World, Somnium Space): Land acquisitions and data tools, Decentraland Community Hub launch, Snoopverse launch, Meta NFT Series launch
+                            </p>
+                        </div>
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-blue-400 shadow-color_blue font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q3
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                GameFi Ecosystem (starting with MGH DAO’s “Lamarcito Game”), MGH DAO Community Hubs across Metaverses, dApp integration into Metaverses
+                            </p>
+                        </div>
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-blue-400 shadow-color_blue font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q4
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Metaverse tool expansion, Metaverse interoperable ID, Perpetual LAND swaps, Cosmos integration
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
+
+                    <hr className="border-blue-400 w-[55%] border hidden lg:block" />
+
+                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                        2023
+                    </p>
+
+                    <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 -mt-7 pl-0 lg:pl-5 min-h-max">
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-blue-400 shadow-color_blue font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q1
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Launching MGH DAO’s own Metaverse “Nothingworld”, Valuation tool integrated on 4+ NFT marketplaces
+                            </p>
+                        </div>
+
+                        <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
+                            <p className="rounded-full bg-blue-400 shadow-color_blue font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
+                                Q2
+                            </p>
+                            <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
+                                Data tools for 6+ Metaverses, Metaverse Community Hub on 4+ Metaverses
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div></>
     )
 }
