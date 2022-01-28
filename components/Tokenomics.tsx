@@ -7,7 +7,7 @@ const Tokenomics = ({ tokenData }: any) => {
 
             <div className={`w-full flex flex-col lg:flex-row items-center justify-center pb-20 lg:pb-10`}>
 
-                <div className="flex h-full w-full max-w-lg lg:max-w-xl lg:w-1/2 items-center justify-center pb-10 lg:pb-0">
+                <div className="flex h-full w-full max-w-lg lg:max-w-xl lg:w-1/2 items-center justify-center pb-10 lg:pb-0 p-3">
                     <img src="/images/tokenomics.png" className="w-full" />
                 </div>
 
