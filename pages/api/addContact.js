@@ -5,9 +5,9 @@ mailchimp.setConfig({
   server: "us20",
 });
 
-const listID = process.env.MAILCHIMP_LIST_ID
 
-const addContact = async (email) => {
+const addContact = async (email, listID) => {
+
   await mailchimp.lists.addListMember(listID, {
     email_address: email,
     status: "subscribed"
@@ -16,10 +16,11 @@ const addContact = async (email) => {
 
 export default async function handler(req, res) {
   const email = req.body.email_address
+  const listID = req.body.report ? process.env.MAILCHIMP_LIST_ID_REPORT : process.env.MAILCHIMP_LIST_ID
 
   try {
 
-    await addContact(email)
+    await addContact(email, listID)
     res.json({message: "Successfully subscribed!"})
 
   } catch(err) {
