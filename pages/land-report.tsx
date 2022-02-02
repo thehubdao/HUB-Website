@@ -29,7 +29,6 @@ const LandReport: NextPage = () => {
             setMessage(message.message)
             setProcessing(false)
         } catch (e) {
-            console.log(e)
             setMessage("Something went wrong, try again later!")
             setProcessing(false)
         }
@@ -38,7 +37,7 @@ const LandReport: NextPage = () => {
     return (
         <>
             <Head>
-                <title>MGH - Collection</title>
+                <title>MGH - LAND Report</title>
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
             </Head>
 
