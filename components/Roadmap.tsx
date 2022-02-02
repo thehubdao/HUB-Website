@@ -20,7 +20,7 @@ const Roadmap = () => {
                                 Q1
                             </p>
                             <p className="font-medium text-lg xl:text-xl text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
-                                Funding Rounds with {">"} $1 Mio raised without VCs to start as decetralized as possible
+                                Funding Rounds with {">"} $1 Mio raised without VCs to start as decentralized as possible
                             </p>
                         </div>
 
