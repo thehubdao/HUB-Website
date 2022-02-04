@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaLinkedin, FaTelegramPlane, FaDiscord, FaEthereum, FaInstagram, FaTwitter, FaMedium, FaYoutube } from "react-icons/fa";
-import { VscMail } from "react-icons/vsc";
 
 
 const Footer = () => {
@@ -30,46 +29,45 @@ const Footer = () => {
     }
 
     return (
-        <footer className="flex flex-col lg:flex-row justify-between 2xl:justify-evenly items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 p-5 py-10 w-full bg-grey-darkest shadow-colorbottom text-gray-200">
-            <div className="flex flex-col justify-center items-center space-y-8">
-                <a href="/" className="">
-                    <img src="/images/Logos/MGH/version-3.png" className={`h-28 md:h-32 lg:h-36 xl:h-40`} />
+        <footer className="relative flex flex-col lg:flex-row justify-around items-end space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
+
+            <img src="/images/Logos/MGH/mgh_logo.png" className="absolute w-1/2 -left-20 top-5 z-[-1] blur-md" />
+
+            <div className="self-end flex flex-row items-center justify-center flex-wrap space-x-3">
+
+                <a href="https://metagamehub.medium.com" className="cursor-pointer" target="_blank" >
+                    <FaMedium className="social-media-icon" />
                 </a>
-                <div className="flex flex-row items-center justify-center lg:justify-start w-full flex-wrap space-x-3 ">
 
-                    <a href="https://metagamehub.medium.com" className="cursor-pointer" target="_blank" >
-                        <FaMedium className="social-media-icon" />
-                    </a>
+                <a href="https://www.instagram.com/metagamehub_dao/" className="cursor-pointer" target="_blank" >
+                    <FaInstagram className="social-media-icon" />
+                </a>
 
-                    <a href="https://www.instagram.com/metagamehub_dao/" className="cursor-pointer" target="_blank" >
-                        <FaInstagram className="social-media-icon" />
-                    </a>
+                <a href="https://www.linkedin.com/company/metagamehub-dao/" className="cursor-pointer" target="_blank" >
+                    <FaLinkedin className="social-media-icon" />
+                </a>
 
-                    <a href="https://www.linkedin.com/company/metagamehub-dao/" className="cursor-pointer" target="_blank" >
-                        <FaLinkedin className="social-media-icon" />
-                    </a>
+                <a href="https://twitter.com/MGH_DAO" className="cursor-pointer" target="_blank" >
+                    <FaTwitter className="social-media-icon" />
+                </a>
 
-                    <a href="https://twitter.com/MGH_DAO" className="cursor-pointer" target="_blank" >
-                        <FaTwitter className="social-media-icon" />
-                    </a>
+                <a href="https://t.me/metagamehub_dao" className="cursor-pointer" target="_blank" >
+                    <FaTelegramPlane className="social-media-icon" />
+                </a>
 
-                    <a href="https://t.me/metagamehub_dao" className="cursor-pointer" target="_blank" >
-                        <FaTelegramPlane className="social-media-icon" />
-                    </a>
+                <a href="https://discord.gg/8WJVMDXZwH" className="cursor-pointer" target="_blank" >
+                    <FaDiscord className="social-media-icon" />
+                </a>
 
-                    <a href="https://discord.gg/8WJVMDXZwH" className="cursor-pointer" target="_blank" >
-                        <FaDiscord className="social-media-icon" />
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UC6lHXEEmjGiRmIVmiS0odpw" className="cursor-pointer" target="_blank" >
-                        <FaYoutube className="social-media-icon" />
-                    </a>
-                    <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656#balances" className="cursor-pointer" target="_blank" >
-                        <FaEthereum className="social-media-icon" />
-                    </a>
-                </div>
+                <a href="https://www.youtube.com/channel/UC6lHXEEmjGiRmIVmiS0odpw" className="cursor-pointer" target="_blank" >
+                    <FaYoutube className="social-media-icon" />
+                </a>
+                <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656#balances" className="cursor-pointer" target="_blank" >
+                    <FaEthereum className="social-media-icon" />
+                </a>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-14 2xl:gap-x-24">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 font-medium text-xl lg:grid-cols-1 xl:grid-cols-2 justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-14 2xl:gap-x-24">
                 {/* <div className="flex flex-col justify-center items-start space-y-2"> */}
                 <a href="/" className="nav-item">
                     Home
@@ -97,9 +95,10 @@ const Footer = () => {
                 </a>
 
             </div>
+
             <div className="flex flex-col justify-start items-center space-y-2">
 
-                <p className="text-sm sm:text md:text-lg lg:text-base text-center font-medium">Stay up to date for the latest from MGH!</p>
+                <p className="text-sm sm:text md:text-lg lg:text-base text-center text-gray-400 font-medium px-3">Stay up to date for the latest from MGH!</p>
 
                 <form onSubmit={formSubmitted} onFocus={() => setMessage("")} className="relative flex items-center w-full max-w-sm">
                     <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" required className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />

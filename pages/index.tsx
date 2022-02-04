@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import "animate.css"
 
-import Intro from "../components/Intro";
+import Intro from "../components/section/Intro";
 import Infrastructure from "../components/Infrastructure";
 import Footer from "../components/Footer";
 import NFTs from '../components/NFTs';
@@ -11,11 +11,16 @@ import Lands from '../components/Lands';
 import NPTStructure from '../components/NPT';
 import Governance from '../components/Governance';
 import Tokenomics from "../components/Tokenomics";
-import Roadmap from '../components/Roadmap';
-import Team from '../components/Team';
-import Partner from '../components/Collaborators';
-import Press from '../components/Press';
+import Roadmap from '../components/section/Roadmap';
+import Team from '../components/section/Team';
+import Partner from '../components/section/Collaborators';
+import Press from '../components/section/Press';
 import Ocean from '../components/Ocean';
+import { Toolbar } from '../components';
+import DAO from '../components/section/DAO';
+import Ecosystem from '../components/section/Ecosystem';
+import Assets from '../components/section/Assets';
+import Tools from '../components/section/Tools';
 
 
 const Home: NextPage = ({ tokenData }: any) => {
@@ -25,35 +30,43 @@ const Home: NextPage = ({ tokenData }: any) => {
             <Head>
                 <title>MetaGameHub DAO</title>
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
-                {/* <meta name="robots" content="noodp,noydir" /> */}
             </Head>
+            <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center">
+            <main className="flex flex-col items-center text-gray-200 select-none">
                 <Intro />
 
-                <div className="max-w-full 2xl:max-w-screen-2xl overflow-x-hidden">
+                <div className="max-w-full 2xl:max-w-screen-2xl ">
 
-                    <Infrastructure />
+                    <DAO />
 
-                    <NFTs />
+                    <Ecosystem />
 
-                    <Lands />
+                    <Assets />
 
-                    <Press />
+                    <Tools />
 
-                    <NPTStructure />
+                    {/* <Infrastructure /> */}
 
-                    <Governance />
+                    {/* <NFTs /> */}
 
-                    <Ocean />
+                    {/* <Lands /> */}
 
-                    <Tokenomics tokenData={tokenData}  />
+                    {/* <NPTStructure /> */}
+
+                    {/* <Governance /> */}
+
+                    {/* <Ocean /> */}
+
+                    <Tokenomics tokenData={tokenData} />
 
                     <Roadmap />
 
                     <Team />
 
                     <Partner />
+
+                    <Press />
 
                 </div>
 

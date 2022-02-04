@@ -1,7 +1,7 @@
 import Member from "./Member";
 import teamJson from "../data/team.json";
 import Link from "next/link";
-import MemberCard from "./MemberCard";
+import MemberCard from "./section-element/MemberCard";
 
 
 const Team = () => {
@@ -12,9 +12,9 @@ const Team = () => {
             <div className="w-full min-h-screen py-20">
                 <div className={`w-full flex flex-col items-center justify-start p-8`}>
 
-                    <h1 className={`text-blue-300 bg-clip-text mb-10 uppercase lg:font-light lg:text-9xl`}>Initiators</h1>
+                    <h1 className={`text-blue-400 font-normal mb-10 text-9xl`}>Initiators</h1>
 
-                    <div className="relative w-full grid gap-5 sm:gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 justify-items-center">
+                    <div className="relative w-full grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 justify-items-center">
                         {teamJson.slice(0, 10).map((member, key) => (
                             <MemberCard key={key} member={member} small />
                         ))}
