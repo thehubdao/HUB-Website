@@ -1,4 +1,4 @@
-import Button from "../general/Button"
+import Button from "../elements/Button"
 import {BsArrowRight} from "react-icons/bs"
 import Issue from "../section-element/Problem"
 
@@ -6,7 +6,7 @@ const Ecosystem = () => {
     return (
         <div className="min-h-screen w-full py-10 px-10 flex flex-col">
             <div className="min-h-screen w-full flex items-center justify-between space-x-20">
-                <img src="/Images/Experience.png" className="max-w-1/2" />
+                <img src="/images/Experience.png" className="max-w-1/2" />
                 <h2 className="text-left max-w-xl leading-tight font-normal">Building a <span className="text-blue-500 font-medium text-8l">holistic ecosystem</span> for profound Metaverse experiences</h2>
             </div>
 
@@ -14,8 +14,8 @@ const Ecosystem = () => {
                 {/* <img src="/Images/Experience.png" className="max-w-1/2" /> */}
                 <h1 className="text-right font-normal text-[15rem] self-end pr-72 text-gray-500">&</h1>
 
-                <div className="w-full sticky top-20 min-h-screen z-50">
-                    <h2 className="w-full text-center leading-tight font-normal bg-black -mt-20 py-20 pb-44">Solving <span className="text-pink-600 font-medium text-8l">key issues</span> within the Metaverse</h2>
+                <div className="w-full sticky top-10 min-h-screen z-50">
+                    <h2 className="w-full text-center leading-tight font-normal bg-black -mt-10 py-10 pb-44">Solving <span className="text-pink-600 font-medium text-8l">key issues</span> within the Metaverse</h2>
                 </div>
 
                 <div className="flex flex-col min-h-screen">

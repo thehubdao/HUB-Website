@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image"
 
 import { TiSocialLinkedinCircular, TiSocialTwitter, TiSocialGithubCircular } from "react-icons/ti"
+import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 
 const Team = () => {
@@ -35,24 +36,24 @@ const Team = () => {
                                 className='rounded grayscale'
                             />
                             <p className="text-blue-400 -rotate-90 origin-bottom-left absolute left- bottom-0 px-1 bg-black/70 backdrop-blur-3xl w-full text-xl">{member.name}</p>
-                            <div className="flex backdrop-blur-xl rounded-tl bg-black/30 rounded-br justify-center text-3xl absolute bottom-0 right-0 z-10">
+                            <div className="flex backdrop-blur-xl rounded-tl bg-black/40 rounded-br justify-center space-x-2 p-1 text-xl absolute bottom-0 right-0 z-10">
                                 {member.linkedin && (
                                     <a href={member.linkedin} className='cursor-pointer' target='_blank'>
-                                        <TiSocialLinkedinCircular
+                                        <BsLinkedin
                                             className={'text-blue-400 hover:text-blue-600 transition duration-500 ease-in-out'}
                                         />
                                     </a>
                                 )}
                                 {member.twitter && (
                                     <a href={member.twitter} className='cursor-pointer' target='_blank'>
-                                        <TiSocialTwitter
+                                        <BsTwitter
                                             className={'text-blue-400 hover:text-blue-600'}
                                         />
                                     </a>
                                 )}
                                 {member.github && (
                                     <a href={member.github} className='cursor-pointer' target='_blank'>
-                                        <TiSocialGithubCircular
+                                        <BsGithub
                                             className={'text-blue-400 hover:text-blue-600'}
                                         />
                                     </a>

@@ -127,3 +127,7 @@ h6 {
 .no-scroll-bar::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+.apexcharts-tooltip {
+  @apply text-green-500 p-5 text-3xl
+  }

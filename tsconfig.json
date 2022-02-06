@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/section-element/PriceChart.jsx"  ],
   "exclude": [
     "node_modules"
   ]

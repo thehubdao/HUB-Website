@@ -3,7 +3,7 @@ import { useState } from "react";
 import BlogCard from "../section-element/BlogCard"
 
 import pressJson from "../../data/press.json";
-import Button from "../general/Button";
+import Button from "../elements/Button";
 
 
 
@@ -35,7 +35,7 @@ const Press = () => {
 
 
     return (
-        <div className="w-full min-h-screen py-10 px-10 flex flex-col">
+        <div className="w-full min-h-screen py-10 px-10 flex flex-col justify-center">
             <div className="flex items-center justify-center space-x-20">
 
                 <div className="flex flex-col text-center lg:text-left items-center lg:items-start">

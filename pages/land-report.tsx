@@ -3,8 +3,8 @@ import { NextPage } from "next";
 import Head from "next/head";
 
 
-import Footer from "../components/Footer";
-import Toolbar from "../components/Toolbar";
+import Footer from "../components/general/Footer";
+import Toolbar from "../components/general/Toolbar";
 
 
 const LandReport: NextPage = () => {

@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import {
-  TiSocialLinkedinCircular,
+  TiSocialLinkedin,
   TiSocialTwitter,
   TiSocialGithubCircular,
 } from 'react-icons/ti'
+
+import {
+  BsLinkedin,
+  BsTwitter,
+  BsGithub
+} from 'react-icons/bs'
 
 interface Member {
   name: string
@@ -54,24 +60,24 @@ const MemberCard = ({
         {member.name}
       </h3>
       <h4 className='text-base border-none pb-1 font-light'>{member.position}</h4>
-      <ul className={`text-4xl ${!small && 'pb-4'} w-full flex relative justify-center lg:justify-start -left-1`}>
+      <ul className={`text-2xl ${!small && 'pb-4'} w-full flex relative justify-center space-x-3 lg:justify-start`}>
         {member.linkedin && (
           <a href={member.linkedin} className='cursor-pointer' target='_blank'>
-            <TiSocialLinkedinCircular
+            <BsLinkedin
               className={iconColors + 'transition-all duration-300 ease-in-out hover:scale-110'}
             />
           </a>
         )}
         {member.twitter && (
           <a href={member.twitter} className='cursor-pointer' target='_blank'>
-            <TiSocialTwitter
+            <BsTwitter
               className={iconColors + 'transition-all duration-300 ease-in-out hover:scale-110'}
             />
           </a>
         )}
         {member.github && (
           <a href={member.github} className='cursor-pointer' target='_blank'>
-            <TiSocialGithubCircular
+            <BsGithub
               className={iconColors + 'transition-all duration-300 ease-in-out hover:scale-110'}
             />
           </a>

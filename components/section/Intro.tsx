@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Button from "../general/Button";
+import Button from "../elements/Button";
 
 
 const Intro = () => {
@@ -15,7 +15,7 @@ const Intro = () => {
 
             <div className={`absolute inset-0 h-full w-full flex flex-col justify-center items-center text-center px-2`}>
                 <h6 className={`text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 xl:text-8xl mb-4`}>MeTagaMeHUb DaO</h6>
-                <p className={`text-3xl text-gray-200 font-medium w-full mb-10`}>Navigating through the Open Metaverse together</p>
+                <p className={`text-3xl text-gray-200 w-full mb-16`}>Navigating through the Open Metaverse together</p>
                 <Button text="Join Community" link="https://discord.gg/8WJVMDXZwH" />
             </div>
 

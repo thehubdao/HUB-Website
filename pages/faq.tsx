@@ -4,8 +4,8 @@ import Head from "next/head";
 import "animate.css"
 
 
-import Footer from "../components/Footer";
-import Toolbar from "../components/Toolbar";
+import Footer from "../components/general/Footer";
+import Toolbar from "../components/general/Toolbar";
 import Question from "../components/Question";
 import faqJson from "../data/faq.json"
 

@@ -5,12 +5,12 @@ import "animate.css"
 
 import Intro from "../components/section/Intro";
 import Infrastructure from "../components/Infrastructure";
-import Footer from "../components/Footer";
+import Footer from "../components/general/Footer";
 import NFTs from '../components/NFTs';
 import Lands from '../components/Lands';
 import NPTStructure from '../components/NPT';
 import Governance from '../components/Governance';
-import Tokenomics from "../components/Tokenomics";
+import Tokenomics from "../components/section/Tokenomics";
 import Roadmap from '../components/section/Roadmap';
 import Team from '../components/section/Team';
 import Partner from '../components/section/Collaborators';

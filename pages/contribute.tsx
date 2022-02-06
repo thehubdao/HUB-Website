@@ -4,10 +4,11 @@ import Head from "next/head";
 import "animate.css"
 
 
-import Footer from "../components/Footer";
-import Toolbar from "../components/Toolbar";
-import WorkingGroupCard from "../components/WorkingGroupCard";
+import Footer from "../components/general/Footer";
+import Toolbar from "../components/general/Toolbar";
+import WorkingGroupCard from "../components/section-element/WorkingGroupCard";
 import wgJSON from "../data/workingGroups.json"
+import Button from "../components/elements/Button";
 
 
 
@@ -18,30 +19,36 @@ const ContributePage: NextPage = () => {
                 <title>MGH - Working Groups</title>
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
             </Head>
+            <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center">
-                <Toolbar dark={true} />
-                {/* <div className="h-72 w-72 rounded-full border bg-gradient-to-br from-yellow-500 to-blue-600 blur-3xl absolute bottom-0 right-0 opacity-80" /> */}
+            <main className="flex flex-col items-center text-gray-200 select-none p-10 pt-64 w-full">
 
+                <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl ">
 
-                <div className="flex flex-col items-center p-4 sm:p-10 w-full 2xl:max-w-screen-2xl z-10">
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-600 to-pink-600 text-center mt-20 lg:mt-32 mb-5">Working Groups</h1>
-                    <p className={`text-base lg:text-lg text-grey text-center max-w-5xl px-2`}>MGH is a Decentralized Autonomous Organization, which means that MGH is community-driven. Implementing the MGH working groups is a huge step towards more contributions from the community side and from everyone who is interested in contributing to MGH’s ecosystem by earning rewards in form of MGH tokens. At MGH, we envision working groups of the next generation of employment and are looking very forward to your application. Visit the <a href="https://www.notion.so/13613b99202d4829865e3e199490e8cf?v=f1d9d6776ed64cfbaac6959ce7fb1a67" target="_blank" className={`text-pink-600 font-medium`}>Operations Board</a> of the working groups to learn more about what MGH DAO is working on.</p>
+                    <div className="flex justify-between items-center space-x-10 w-full mb-10">
 
-                    <a href="https://forms.gle/QCf3hYRR9dn7Ztzj7" target="_blank" className={`relative mt-5 md:mt-10 mb-20 w-52 flex items-center transform scale-75 sm:scale-85 lg:scale-90 xl:scale-100 justify-center cursor-pointer text-gray-200 font-medium text-xl rounded-3xl py-3 px-5 bg-gray-500 bg-opacity-80 group shadow-colorbottom overflow-hidden transition-all ease-in-out duration-500`}>
-                        <div className="h-full w-full absolute bg-gradient-to-br from-grey-dark to-grey-darkest rounded-xl blur-none group-hover:blur-md transition-all ease-in-out duration-300" />
-                        <span className="pt-1 z-10">Apply</span>
-                    </a>
+                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal text-9xl max-w-min">Working Groups</h1>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10 w-full pb-20 pt-10">
+                        <div className="flex flex-col items-center space-y-10 w-1/2">
+                            <p className={`text-base lg:text-lg text-center max-w-2xl px-2`}>MGH is a Decentralized Autonomous Organization, which means that MGH is community-driven. Implementing the MGH working groups is a huge step towards more contributions from the community side and from everyone who is interested in contributing to MGH’s ecosystem by earning rewards in form of MGH tokens. At MGH, we envision working groups of the next generation of employment and are looking very forward to your application. Visit the <a href="https://www.notion.so/13613b99202d4829865e3e199490e8cf?v=f1d9d6776ed64cfbaac6959ce7fb1a67" target="_blank" className={`text-pink-600`}>Operations Board</a> of the working groups to learn more about what MGH DAO is working on.</p>
+                            <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                        </div>
+
+                    </div>
+
+  
+
+                    {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10 w-full pb-20 pt-10"> */}
+                    <div className="flex overflow-x-auto pt-32 pb-16 px-10 no-scroll-bar max-w-full">
 
                         {wgJSON.map((element, key) => {
                             return (
                                 <WorkingGroupCard key={key} title={element.title} description={element.description} />
                             );
                         })}
-
                     </div>
+
+                    <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
 
                 </div>
 

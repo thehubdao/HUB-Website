@@ -4,12 +4,12 @@ import Head from "next/head";
 import "animate.css"
 
 
-import Footer from "../components/Footer";
-import Toolbar from "../components/Toolbar";
-import landsJson from "../data/lands.json"
-import assetsJson from "../data/assets.json"
-import LandCard from "../components/LandCard";
-import AssetCard from "../components/AssetCard";
+import Footer from "../../components/general/Footer";
+import Toolbar from "../../components/general/Toolbar";
+import landsJson from "../../data/lands.json"
+import assetsJson from "../../data/assets.json"
+import LandCard from "../../components/LandCard";
+import AssetCard from "../../components/AssetCard";
 
 
 const LandPage: NextPage = () => {
