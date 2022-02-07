@@ -69,7 +69,7 @@ function isValidValue(type) {
 
 function calculateCirculatingSupply(data) {
     console.log("entered calculate");
-    let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'] + data['POLYGON_STAKING_BALANCE'] +
+    let lockedSupply = data['VESTING'] + data['TREASURY'] + data['MULTISIG'] + data['STAKING'] + data['LP'] + data['OLD_SALE'] + data['NEW_SALE'] + data['POLYGON_STAKING_BALANCE'] +
                        data['POLYGON_TREASURY'] + data['POLYGON_LP'] - data['POLYGON_STAKING_SUPPLY'];
     return data['TOTAL_SUPPLY'] - lockedSupply;
 }
