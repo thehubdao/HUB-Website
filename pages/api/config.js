@@ -12,9 +12,11 @@ const POLYGON_LP = process.env.POLYGON_LP || "NONE";
 const POLYGON_LP_DATA = process.env.POLYGON_DATA || "NONE";
 const POLYGON_TREASURY = process.env.POLYGON_TREASURY || "NONE";
 const POLYGON_STAKING = process.env.POLYGON_STAKING || "NONE";
+const STAKING = process.env.STAKING || "NONE";
 
 console.log("> MGH:", MGH);
 console.log("> VESTING:", VESTING);
+console.log("> STAKING:", STAKING);
 console.log("> TREASURY:", TREASURY);
 console.log("> MULTISIG:", MULTISIG);
 console.log("> LP:", LP);
@@ -63,9 +65,13 @@ module.exports = {
             target: MGH,
             call: ['balanceOf(address)(uint256)', POLYGON_SUPPLY],
             returns: [['POLYGON_SUPPLY', val => val / 10 ** 18]]
+        }, {
+            target: MGH,
+            call: ['balanceOf(address)(uint256)', STAKING],
+            returns: [['STAKING', val => val / 10 ** 18]]
         }
     ], labels: [
-        'TOTAL_SUPPLY', 'VESTING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE', 'POLYGON_SUPPLY',
+        'TOTAL_SUPPLY', 'VESTING', 'STAKING', 'TREASURY', 'MULTISIG', 'LP', 'OLD_SALE', 'NEW_SALE', 'POLYGON_SUPPLY',
         'POLYGON_LP', 'POLYGON_TREASURY', 'POLYGON_STAKING_BALANCE', 'POLYGON_STAKING_SUPPLY'
     ],
     
