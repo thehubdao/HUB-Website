@@ -3,6 +3,7 @@ const MGH_POLYGON = process.env.MGH_POLYGON || "NONE";
 
 const VESTING = process.env.VESTING || "NONE";
 const TREASURY = process.env.TREASURY || "NONE";
+const STAKING = process.env.STAKING || "NONE";
 const MULTISIG = process.env.MULTISIG || "NONE";
 const LP = process.env.LP || "NONE";
 const OLD_SALE = process.env.OLD_SALE || "NONE";
@@ -12,7 +13,6 @@ const POLYGON_LP = process.env.POLYGON_LP || "NONE";
 const POLYGON_LP_DATA = process.env.POLYGON_DATA || "NONE";
 const POLYGON_TREASURY = process.env.POLYGON_TREASURY || "NONE";
 const POLYGON_STAKING = process.env.POLYGON_STAKING || "NONE";
-const STAKING = process.env.STAKING || "NONE";
 
 console.log("> MGH:", MGH);
 console.log("> VESTING:", VESTING);
