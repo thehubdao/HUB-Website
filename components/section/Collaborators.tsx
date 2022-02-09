@@ -14,7 +14,7 @@ const Collaborators = () => {
             </div>
 
 
-            <div className="relative  w-full grow grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 place-items-center items-center">
+            <div className="relative w-full grow grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 place-items-center items-center">
 
                 {collaboratorJSON.map((element, key) => {
                     return (

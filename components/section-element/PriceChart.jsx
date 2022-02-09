@@ -1,104 +1,20 @@
 import Chart from "react-apexcharts"
 
-const series = [{
-    data: [
-        [
-            1637280000000,
-            0.20796100346726995
-          ],
-          [
-            1637366400000,
-            0.20796100346726995
-          ],
-          [
-            1637452800000,
-            0.19802408256546072
-          ],
-          [
-            1637539200000,
-            0.1883902102949226
-          ],
-          [
-            1637625600000,
-            0.13256065346831053
-          ],
-          [
-            1637712000000,
-            0.1283553321373665
-          ],
-          [
-            1637798400000,
-            0.1164935770482595
-          ],
-          [
-            1637884800000,
-            0.15499218043262253
-          ],
-          [
-            1637971200000,
-            0.12145451279606989
-          ],
-          [
-            1638057600000,
-            0.11665714765946851
-          ],
-          [
-            1638144000000,
-            0.13221650165252893
-          ],
-          [
-            1638230400000,
-            0.12770773965463952
-          ],
-          [
-            1638316800000,
-            0.1532663039048088
-          ],
-          [
-            1638403200000,
-            0.14907612877488832
-          ],
-          [
-            1638489600000,
-            0.13558252675931493
-          ],
-          [
-            1638576000000,
-            0.13403460760365177
-          ],
-          [
-            1638662400000,
-            0.11981158675209834
-          ],
-          [
-            1638748800000,
-            0.11382417162157105
-          ],
-          [
-            1638835200000,
-            0.09966697912532363
-          ],
-          [
-            1638921600000,
-            0.10041279463768495
-          ],
-          [
-            1639008000000,
-            0.09497779639487405
-          ]]
-}]
-
-
 const options = {
     chart: {
-        id: "basic-bar"
+        id: "basic-bar",
+        width: '100%'
     },
     stroke: {
         curve: 'smooth',
         width: 1
     },
     grid: {
-        show: false
+        show: false,
+        padding: {
+            left: 0,
+            right: 0
+        }
     },
     xaxis: {
         floating: true,
@@ -113,6 +29,9 @@ const options = {
         },
         tooltip: {
             enabled: false
+        },
+        crosshairs: {
+            show: false
         }
     },
     yaxis: {
@@ -125,40 +44,61 @@ const options = {
         },
         labels: {
             show: false
-        }
+        },
+        min: 0
     },
     tooltip: {
-        marker: {
-            show: false
+        custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+            return '<div class="arrow_box">' +
+                "<p class='header'>" +
+                new Date(w.globals.labels[dataPointIndex]).toLocaleDateString() +
+                "</p><p>$" +
+                series[seriesIndex][dataPointIndex].toFixed(4) +
+                "</p>" +
+                "</div>"
         },
-        style: {
-            fontColor: '#000000'
-        },
-        theme: "dark",
-        y: {
-            formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
-                return `$${value.toFixed(4)}`
-            },
-            title: {
-                formatter: function (seriesName) {
-                    return
-                }
-            }
-        },
-        x: {
-            formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
-                return `${new Date(value).toLocaleDateString()}`
-            },
-        }
+        intersect: false,
+        shared: false
+        // marker: {
+        //     show: false
+        // },
+        // style: {
+        //     fontColor: '#000000'
+        // },
+        // theme: "dark",
+        // y: {
+        //     formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
+        //         return `$${value.toFixed(4)}`
+        //     },
+        //     title: {
+        //         formatter: function (seriesName) {
+        //             return
+        //         }
+        //     }
+        // },
+        // x: {
+        //     formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
+        //         return `${new Date(value).toLocaleDateString()}`
+        //     }
+        // },
+
     },
     fill: {
         type: "gradient",
         gradient: {
             shade: 'dark',
             shadeIntensity: 1,
-            opacityFrom: 0.7,
-            opacityTo: 0.9,
-            stops: [0, 90, 100]
+            opacityFrom: 0.4,
+            opacityTo: 0.8,
+            stops: [0, 100]
+        }
+    },
+    colors: ['#db2777'],
+    markers: {
+        colors: ['#db2777'],
+        strokeWidth: 0,
+        hover: {
+            size: 4
         }
     },
     dataLabels: {
@@ -167,14 +107,21 @@ const options = {
     chart: {
         toolbar: {
             show: false
-        }
+        },
+        zoom: {
+            enabled: false
+        },
+        offsetX: 30
+
     },
-
-
-
 }
 
-const PriceChart = () => {
+const PriceChart = ({ chartData }) => {
+
+    const series = [{
+        data: chartData.prices
+    }]
+
     return (
         <Chart
             options={options}

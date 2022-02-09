@@ -72,10 +72,6 @@ const Tokenomics = ({ tokenData }: any) => {
 
             </div>
 
-
-            <div className="border w-screen h-screen">
-                <PriceChart />
-            </div>
         </div>
     )
 }

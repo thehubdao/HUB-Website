@@ -24,6 +24,9 @@ const Toolbar = ({ dark }: any) => {
                         <Link href="/treasury" >
                             <a className="nav-item">Treasury</a>
                         </Link>
+                        <Link href="/token">
+                            <a className="nav-item pt-1">Token</a>
+                        </Link>
                         <Link href="/team">
                             <a className="nav-item pt-1">Contributors</a>
                         </Link>

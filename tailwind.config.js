@@ -28,6 +28,9 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
       },
+      borderWidth: {
+        '3': '3px'
+      },
       inset: {
         '15': '3.75rem',
         '18': '4.5rem',
