@@ -6,7 +6,7 @@ const Ecosystem = () => {
     return (
         <div className="min-h-screen w-full py-10 px-10 flex flex-col">
             <div className="min-h-screen w-full flex items-center justify-between space-x-20">
-                <img src="/images/Experience.png" className="max-w-1/2" />
+                <img src="/images/ecosystem.png" className="max-w-1/2" />
                 <h2 className="text-left max-w-xl leading-tight font-normal">Building a <span className="text-blue-500 font-medium text-8l">holistic ecosystem</span> for profound Metaverse experiences</h2>
             </div>
 

@@ -54,14 +54,9 @@ const Press = () => {
 
 
                 <div className="flex overflow-x-auto py-10 px-10 no-scroll-bar max-w-full">
-                    <BlogCard classes="" date={pressJson[0].date} link={pressJson[0].link} title={pressJson[0].title} article={pressJson[0].text} />
-                    <BlogCard classes="" date={pressJson[1].date} link={pressJson[1].link} title={pressJson[1].title} article={pressJson[1].text} />
-                    <BlogCard classes="" date={pressJson[2].date} link={pressJson[2].link} title={pressJson[2].title} article={pressJson[2].text} />
-                    <BlogCard classes="" date={pressJson[3].date} link={pressJson[3].link} title={pressJson[3].title} article={pressJson[3].text} />
-                    <BlogCard classes="" date={pressJson[0].date} link={pressJson[0].link} title={pressJson[0].title} article={pressJson[0].text} />
-                    <BlogCard classes="" date={pressJson[1].date} link={pressJson[1].link} title={pressJson[1].title} article={pressJson[1].text} />
-                    <BlogCard classes="" date={pressJson[2].date} link={pressJson[2].link} title={pressJson[2].title} article={pressJson[2].text} />
-                    <BlogCard classes="" date={pressJson[3].date} link={pressJson[3].link} title={pressJson[3].title} article={pressJson[3].text} />
+                    {[...pressJson].reverse().map((article, key) => (
+                        <BlogCard key={key} date={article.date} link={article.link} title={article.title} article={article.text} />
+                    ))}
                 </div>
 
             </div>

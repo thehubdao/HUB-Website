@@ -24,6 +24,9 @@ const Toolbar = ({ dark }: any) => {
                         <Link href="/treasury" >
                             <a className="nav-item">Treasury</a>
                         </Link>
+                        <Link href="/tools">
+                            <a className="nav-item pt-1">Tools</a>
+                        </Link>
                         <Link href="/token">
                             <a className="nav-item pt-1">Token</a>
                         </Link>
@@ -31,11 +34,9 @@ const Toolbar = ({ dark }: any) => {
                             <a className="nav-item pt-1">Contributors</a>
                         </Link>
                         <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
-                        <a href="/faq" target="_blank" className="nav-item z-20 pt-1">FAQ</a>
                     </div>
 
                     <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
-                        <a href="https://discord.gg/8WJVMDXZwH" target="_blank" className="nav-item pt-1">Community</a>
                         <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item pt-1">Voting</a>
                         <a href="https://app.metagamehub.io" target="_blank" className="nav-item pt-1">Launch App</a>
                     </div>
@@ -49,12 +50,16 @@ const Toolbar = ({ dark }: any) => {
                 <Link href="/treasury" >
                     <a className="nav-item">Treasury</a>
                 </Link>
-                <Link href="/team" >
-                    <a className="nav-item">Contributors</a>
+                <Link href="/tools">
+                    <a className="nav-item pt-1">Tools</a>
                 </Link>
-                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
-                <a href="/faq" target="_blank" className="nav-item">FAQ</a>
-                <a href="https://discord.gg/8WJVMDXZwH" target="_blank" className="nav-item">Community</a>
+                <Link href="/token">
+                    <a className="nav-item pt-1">Token</a>
+                </Link>
+                <Link href="/team">
+                    <a className="nav-item pt-1">Contributors</a>
+                </Link>
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
                 <a href="https://app.metagamehub.io" target="_blank" className="nav-item">Launch App</a>
             </nav>

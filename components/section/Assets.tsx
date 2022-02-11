@@ -8,27 +8,7 @@ const Assets = () => {
 
             <div className="h-screen w-screen sticky top-0">
 
-                <AssetImage link="/images/Lands/1_-89.jpg" size="h-1/4 w-1/4" position="top-0 left-1/2" />
-                <AssetImage link="/images/Lands/medium_world.png" size="h-1/4 w-1/4" position="top-0 left-1/4" />
-                <AssetImage link="/images/Assets/xone.png" size="h-1/4 w-1/4" position="top-0 left-0" />
-                <AssetImage link="/images/Lands/66_-48.png" size="h-1/4 w-1/4" position="top-1/4 left-0" />
-                <AssetImage link="/images/Assets/snoop_dogg_car.png" size="h-1/4 w-1/4" position="top-1/4 left-1/4" />
-                <AssetImage link="/images/Assets/partybear_1001.png" size="h-1/4 w-1/4" position="top-1/4 left-1/2" />
-                <AssetImage link="/images/Assets/flufworld_177.png" size="h-1/4 w-1/4" position="top-1/2 left-0" />
-                <AssetImage link="/images/Assets/burrows_2118.png" size="h-1/4 w-1/4" position="top-1/2 left-1/4" />
-                <AssetImage link="/images/Assets/brains_6012.jpg" size="h-1/4 w-1/4" position="top-1/2 left-1/2" />
-                <AssetImage link="/images/Assets/all-stars_24048.jpg" size="h-1/4 w-1/4" position="bottom-0 left-0" />
-
-
-                <AssetImage link="/images/Development/benfica-stadium.png" size="h-1/4 w-1/4" position="bottom-0 left-1/4" />
-                <AssetImage link="/images/Development/BenficaHome-BroadStand.png" size="h-1/4 w-1/4" position="top-0 right-1/4" />
-                <AssetImage link="/images/Development/dcl-edit.png" size="h-1/4 w-1/4" position="top-1/4 right-1/4" />
-                <AssetImage link="/images/Development/decsketch.jpg" size="h-1/4 w-1/4" position="top-1/4 right-0" />
-                <AssetImage link="/images/Development/SnoopDog03.jpg" size="h-1/4 w-1/4" position="top-0 right-0" />
-                <AssetImage link="/images/Development/SnoopDog04.jpg" size="h-1/4 w-1/4" position="top-1/2 right-0" />
-                <AssetImage link="/images/Development/SnoopDog08.jpg" size="h-1/4 w-1/4" position="bottom-0 right-0" />
-                <AssetImage link="/images/Development/SnoopDog11.jpg" size="h-1/4 w-1/4" position="bottom-0 right-1/4" />
-                <AssetImage link="/images/Development/vip-lounge-interior.png" size="h-1/4 w-1/4" position="bottom-1/4 right-0" />
+                <img src="/images/collage.jpg" className="object-cover h-full w-full" />
 
             </div>
 

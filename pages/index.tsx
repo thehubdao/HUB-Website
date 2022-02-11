@@ -58,7 +58,7 @@ const Home: NextPage = ({ tokenData }: any) => {
 
                     {/* <Ocean /> */}
 
-                    <Tokenomics tokenData={tokenData} />
+                    <Tokenomics />
 
                     <Roadmap />
 

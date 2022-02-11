@@ -46,8 +46,7 @@ const Footer = () => {
                 </form>
                 <p className="text-xs text-gray-400 font-medium mt-2">{message}</p>
 
-
-                <div className="self-end flex flex-row items-center justify-center flex-wrap space-x-5 pt-8">
+                <div className="self-end flex flex-row items-center justify-center flex-wrap space-x-5 pt-6">
 
                     <a href="https://metagamehub.medium.com" className="cursor-pointer" target="_blank" >
                         <FaMedium className="social-media-icon" />
@@ -81,11 +80,17 @@ const Footer = () => {
                         <FaEthereum className="social-media-icon" />
                     </a>
                 </div>
+
+                <div className="flex text-gray-400 items-center space-x-1 absolute bottom-5">
+                    <a href="/impressum" className=' hover:text-blue-500 transition ease-linear duration-200'>Terms of Use</a>
+                    <hr className="border-gray-600 w-5 rotate-90" />
+                    <a href="/datenschutz" className=' hover:text-blue-500 transition ease-linear duration-200'>Privacy Policy</a>
+                </div>
             </div>
 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 font-medium text-xl lg:grid-cols-1 backdrop-blur p-5 xl:grid-cols-2 justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 font- text-xl lg:grid-cols-1 backdrop-blur-lg p-5 xl:grid-cols-2 rounded justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-24">
                 {/* <div className="flex flex-col justify-center items-start space-y-2"> */}
                 <a href="/" className="nav-item">
                     Home
@@ -93,35 +98,40 @@ const Footer = () => {
                 <a href="https://app.metagamehub.io" target="_blank" className="nav-item">
                     MGH dApp
                 </a>
+
                 <a href="/treasury" target="_blank" className="nav-item">
                     Treasury
-                </a>
-                <a href="https://github.com/metagamehub" className="nav-item" target="_blank">
-                    GitHub
                 </a>
                 <a href="https://discord.gg/8WJVMDXZwH" className="nav-item">
                     Community
                 </a>
-                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
-                    Whitepaper
-                </a>
-                <a href="/contribute" target="_blank" className="nav-item">
-                    Contribute
-                </a>
-                <a href="/faq" target="_blank" className="nav-item">
-                    FAQ
-                </a>
-                <a href="/team" className="nav-item">
-                    Contributors
-                </a>
-                <a href="/terms" className="nav-item">
-                    Terms of Use
+
+                <a href="/tools" className="nav-item" target="_blank">
+                    Tools
                 </a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
                     Voting
                 </a>
-                <a href="/privacy" className="nav-item">
-                    Privacy Policy
+
+                <a href="/token" className="nav-item" target="_blank">
+                    Token
+                </a>
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
+                    Whitepaper
+                </a>
+
+                <a href="/team" className="nav-item">
+                    Contributors
+                </a>
+                <a href="/faq" target="_blank" className="nav-item">
+                    FAQ
+                </a>
+
+                <a href="/contribute" target="_blank" className="nav-item">
+                    Contribute
+                </a>
+                <a href="https://github.com/metagamehub" className="nav-item" target="_blank">
+                    GitHub
                 </a>
 
             </div>
