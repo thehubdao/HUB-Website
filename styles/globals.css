@@ -124,9 +124,7 @@ h6 {
   overflow-y: scroll; 
 }
 
-.no-scroll-bar::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
+
 
 
 
