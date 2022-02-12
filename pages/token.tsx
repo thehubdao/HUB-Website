@@ -139,13 +139,13 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                             </div>
 
                             <div className="relative h-[85%] flex-grow">
-                                <TokenomicsPart title="Sale/Liquidity" size={24} color="blue-800" distance={0} />
-                                <TokenomicsPart title="Staking/Bonding" size={24} color="blue-700" distance={25} />
-                                <TokenomicsPart title="Treasury" size={20} color="blue-600" distance={50} />
-                                <TokenomicsPart title="Metaverse Rewards" size={16} color="blue-500" distance={71} />
-                                <TokenomicsPart title="Early Contributors" size={6} color="blue-400" distance={88} />
-                                <TokenomicsPart title="Initiators" size={6} color="blue-300" distance={95} />
-                                <TokenomicsPart title="Marketing" size={4} color="blue-200" distance={102} />
+                                <TokenomicsPart title="Sale/Liquidity" classes="top-0 h-[24%] text-blue-800" borderColor="border-blue-800" size={24} />
+                                <TokenomicsPart title="Staking/Bonding" classes="top-[25%] h-[24%] text-blue-700" borderColor="border-blue-700" size={24} />
+                                <TokenomicsPart title="Treasury" classes="top-[50%] h-[20%] text-blue-600" borderColor="border-blue-600" size={20} />
+                                <TokenomicsPart title="Metaverse Rewards" classes="top-[71%] h-[16%] text-blue-500" borderColor="border-blue-500" size={16} />
+                                <TokenomicsPart title="Early Contributors" classes="top-[88%] h-[6%] text-blue-400" borderColor="border-blue-400" size={6} />
+                                <TokenomicsPart title="Initiators" classes="top-[95%] h-[6%] text-blue-300" borderColor="border-blue-300" size={6} />
+                                <TokenomicsPart title="Marketing" classes="top-[102%] h-[4%] text-blue-200" borderColor="border-blue-200" size={4} />
                             </div>
 
                         </div>
