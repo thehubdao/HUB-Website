@@ -29,5 +29,3 @@ const LandCard = ({ img, title, link, classes }: any) => {
 }
 
 export default LandCard
-
-

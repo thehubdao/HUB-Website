@@ -24,5 +24,3 @@ const AssetCard = ({ img, title, link, classes, metaverse }: any) => {
 }
 
 export default AssetCard
-
-

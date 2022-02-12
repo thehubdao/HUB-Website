@@ -1,5 +1,5 @@
 import { Zoom, Fade } from "react-awesome-reveal";
-import BlogCard from "../BlogCard"
+import BlogCard from "../v1.0/BlogCard"
 
 const Press = () => {
 

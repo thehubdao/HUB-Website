@@ -8,8 +8,8 @@ import Footer from "../../components/general/Footer";
 import Toolbar from "../../components/general/Toolbar";
 import landsJson from "../../data/lands.json"
 import assetsJson from "../../data/assets.json"
-import LandCard from "../../components/LandCard";
-import AssetCard from "../../components/AssetCard";
+import LandCard from "../../components/section-element/LandCard";
+import AssetCard from "../../components/section-element/AssetCard";
 
 
 const LandPage: NextPage = () => {

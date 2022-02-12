@@ -5,7 +5,8 @@ interface TokenomicsPartProps {
     borderColor: string
 }
 
-const TokenomicsPart = ({title, size, classes, borderColor}: TokenomicsPartProps) => {
+
+const TokenomicsPart = ({ title, size, classes, borderColor }: TokenomicsPartProps) => {
 
 
     return (

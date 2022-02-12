@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import BlogCard from "./BlogCard"
+import BlogCard from "../section-element/BlogCard"
 
-import pressJson from "../data/press.json";
+import pressJson from "../../data/press.json";
 
 
 

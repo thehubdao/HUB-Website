@@ -1,10 +1,8 @@
-import Member from "../Member";
-import teamJson from "../../data/team.json";
 import Link from "next/link";
 import Image from "next/image"
-
-import { TiSocialLinkedinCircular, TiSocialTwitter, TiSocialGithubCircular } from "react-icons/ti"
 import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
+
+import teamJson from "../../data/team.json";
 
 
 const Team = () => {
@@ -60,33 +58,6 @@ const Team = () => {
                                 )}
                             </div>
 
-                            {/* <div className="group-hover:opacity-100 opacity-0 p-2 w-full h-full flex flex-col justify-center text-center absolute inset-0 backdrop-blur bg-black/70 rounded transition duration-300 ease-in-out">
-                                <p className="text-blue-400 font-medium text-xl w-full mb-1">{member.name}</p>
-                                <p className="w-full mb-2">{member.position}</p>
-                                <div className="flex space-x-2 justify-center text-3xl ">
-                                    {member.linkedin && (
-                                        <a href={member.linkedin} className='cursor-pointer' target='_blank'>
-                                            <TiSocialLinkedinCircular
-                                                className={'text-blue-400 hover:text-blue-600'}
-                                            />
-                                        </a>
-                                    )}
-                                    {member.twitter && (
-                                        <a href={member.twitter} className='cursor-pointer' target='_blank'>
-                                            <TiSocialTwitter
-                                                className={'text-blue-400 hover:text-blue-600'}
-                                            />
-                                        </a>
-                                    )}
-                                    {member.github && (
-                                        <a href={member.github} className='cursor-pointer' target='_blank'>
-                                            <TiSocialGithubCircular
-                                                className={'text-blue-400 hover:text-blue-600'}
-                                            />
-                                        </a>
-                                    )}
-                                </div>
-                            </div> */}
                         </div>
                     ))}
 

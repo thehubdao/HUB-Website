@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import BlogCard from "../section-element/BlogCard"
 
 import pressJson from "../../data/press.json";
-import Button from "../elements/Button";
 
+import BlogCard from "../section-element/BlogCard"
+import Button from "../elements/Button";
 
 
 const Press = () => {

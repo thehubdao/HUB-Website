@@ -1,15 +1,13 @@
 import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import "animate.css"
 
+import wgJSON from "../data/workingGroups.json"
 
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
-import WorkingGroupCard from "../components/section-element/WorkingGroupCard";
-import wgJSON from "../data/workingGroups.json"
 import Button from "../components/elements/Button";
-
+import WorkingGroupCard from "../components/section-element/WorkingGroupCard";
 
 
 const ContributePage: NextPage = () => {
@@ -36,9 +34,6 @@ const ContributePage: NextPage = () => {
 
                     </div>
 
-  
-
-                    {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10 w-full pb-20 pt-10"> */}
                     <div className="flex overflow-x-auto pt-32 pb-16 px-10 no-scroll-bar max-w-full">
 
                         {wgJSON.map((element, key) => {
@@ -55,8 +50,6 @@ const ContributePage: NextPage = () => {
             </main>
 
             <Footer />
-
-
         </>
     )
 };

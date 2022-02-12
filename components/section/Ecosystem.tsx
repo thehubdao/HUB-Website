@@ -1,6 +1,5 @@
-import Button from "../elements/Button"
-import {BsArrowRight} from "react-icons/bs"
 import Issue from "../section-element/Problem"
+
 
 const Ecosystem = () => {
     return (
@@ -11,7 +10,6 @@ const Ecosystem = () => {
             </div>
 
             <div className="min-h-screen w-full relative flex flex-col space-y-20 items-center justify-start -mt-20">
-                {/* <img src="/Images/Experience.png" className="max-w-1/2" /> */}
                 <h1 className="text-right font-normal text-[15rem] self-end pr-72 text-gray-500">&</h1>
 
                 <div className="w-full sticky top-10 min-h-screen z-50">

@@ -1,6 +1,5 @@
 import Button from "../elements/Button"
-import Image from "next/image"
-import AssetImage from "../section-element/AssetImage"
+
 
 const Assets = () => {
     return (

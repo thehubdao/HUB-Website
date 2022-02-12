@@ -125,8 +125,8 @@ const Roadmap = () => {
 
                 </div>
 
-
-            </div></>
+            </div>
+        </>
     )
 }
 

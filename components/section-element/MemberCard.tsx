@@ -1,15 +1,10 @@
 import Image from 'next/image'
 import {
-  TiSocialLinkedin,
-  TiSocialTwitter,
-  TiSocialGithubCircular,
-} from 'react-icons/ti'
-
-import {
   BsLinkedin,
   BsTwitter,
   BsGithub
 } from 'react-icons/bs'
+
 
 interface Member {
   name: string
@@ -21,14 +16,13 @@ interface Member {
   twitter?: string
 }
 
+
 const MemberCard = ({
   member,
-  advisor,
-  small
+  advisor
 }: {
   member: Member
   advisor?: boolean
-  small?: boolean
 }) => {
   // changing color whether member is an advisor or core team.
   const iconColors = advisor
@@ -38,29 +32,29 @@ const MemberCard = ({
   return (
     <li
       className={
-        'w-80vw sm:w-full max-w-sm border-white border border-opacity-5 p-3 xs:p-4 rounded-md text-gray-200 relative flex flex-col items-center lg:block text-center lg:text-left bg-grey-darkest'
+        'w-full max-w-[350px] border-white border border-opacity-5 rounded-md text-gray-200 relative flex flex-col space-y-1 items-center lg:block text-center lg:text-left bg-grey-darkest'
       }
     >
       <Image
         placeholder='blur'
         blurDataURL={member.image || '/images/Logos/MGH/mgh_logo.png'}
         src={member.image || '/images/Logos/MGH/mgh_logo.png'}
-        width={300}
-        height={300}
+        width={350}
+        height={350}
         loading='lazy'
         objectFit='cover'
-        className='rounded'
+        className='rounded-t'
       />
       <h3
         className={
           (advisor ? 'reverse-text-gradient ' : 'text-gradient ') +
-          'text-xl xl:text-2xl pb-1'
+          'text-xl xl:text-2xl px-3 pt-2'
         }
       >
         {member.name}
       </h3>
-      <h4 className='text-base border-none pb-1 font-light'>{member.position}</h4>
-      <ul className={`text-2xl ${!small && 'pb-4'} w-full flex relative justify-center space-x-3 lg:justify-start`}>
+      <h4 className='text-base border-none font-light px-3 text-gray-400'>{member.position}</h4>
+      <ul className={`text-2xl w-full flex relative px-3 pt-3 justify-center space-x-3 lg:justify-start`}>
         {member.linkedin && (
           <a href={member.linkedin} className='cursor-pointer' target='_blank'>
             <BsLinkedin
@@ -83,7 +77,7 @@ const MemberCard = ({
           </a>
         )}
       </ul>
-      {!small && <p>{member.description}</p>}
+      <p className='p-4'>{member.description}</p>
     </li>
   )
 }

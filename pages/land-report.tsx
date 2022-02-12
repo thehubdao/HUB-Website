@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NextPage } from "next";
 import Head from "next/head";
 
-
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
 

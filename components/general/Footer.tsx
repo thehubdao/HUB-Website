@@ -91,7 +91,6 @@ const Footer = () => {
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 font- text-xl lg:grid-cols-1 backdrop-blur-lg p-5 xl:grid-cols-2 rounded justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-24">
-                {/* <div className="flex flex-col justify-center items-start space-y-2"> */}
                 <a href="/" className="nav-item">
                     Home
                 </a>

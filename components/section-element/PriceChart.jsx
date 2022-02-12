@@ -59,29 +59,6 @@ const options = {
         },
         intersect: false,
         shared: false
-        // marker: {
-        //     show: false
-        // },
-        // style: {
-        //     fontColor: '#000000'
-        // },
-        // theme: "dark",
-        // y: {
-        //     formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
-        //         return `$${value.toFixed(4)}`
-        //     },
-        //     title: {
-        //         formatter: function (seriesName) {
-        //             return
-        //         }
-        //     }
-        // },
-        // x: {
-        //     formatter: function (value, { series, seriesIndex, dataPointIndex, w }) {
-        //         return `${new Date(value).toLocaleDateString()}`
-        //     }
-        // },
-
     },
     fill: {
         type: "gradient",
@@ -115,6 +92,7 @@ const options = {
 
     },
 }
+
 
 const PriceChart = ({ chartData }) => {
 

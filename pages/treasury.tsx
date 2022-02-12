@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import "animate.css"
-
 import { createConnection } from "mysql2/promise";
 
-import { FiExternalLink } from "react-icons/fi"
+import landsJson from "../data/lands.json"
+import assetsJson from "../data/assets.json"
 
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
-import landsJson from "../data/lands.json"
-import assetsJson from "../data/assets.json"
 import LandCard from "../components/section-element/LandCard";
 import CryptoCard from "../components/section-element/CryptoCard";
 
@@ -128,17 +125,6 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         <div className="flex flex-col items-center space-y-3 w-1/2 -mb-20">
                             <p className="text-lg sm:text-2xl lg:text-5xl font-medium">${totalTreasuryValue.toLocaleString('en-GB')}</p>
                             <p className="text-gray-400 text-lg sm:text-2xl lg:text-3xl min-w-max flex-grow">Total Treasury Value</p>
-
-                            {/* <div className="flex space-x-5 items-center pt-2">
-                            <a href="https://opensea.io/0x2a9da28bcbf97a8c008fd211f5127b860613922d" target="_blank" className="flex items-center max-w-max space-x-1 hover:text-blue-400 transition duration-300 ease-in-out" >
-                                <span className="font-medium">Opensea</span>
-                                <FiExternalLink className="mb-0.5" />
-                            </a>
-                            <a href="https://gnosis-safe.io/app/eth:0x2a9Da28bCbF97A8C008Fd211f5127b860613922D/balances" target="_blank" className="flex items-center max-w-max space-x-1 hover:text-blue-400 transition duration-300 ease-in-out" >
-                                <span className="font-medium">Gnosis</span>
-                                <FiExternalLink className="mb-0.5" />
-                            </a>
-                        </div> */}
 
                             <div className="flex font-medium items-center space-x-1 pt-2">
                                 <a href="/impressum" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Opensea</a>

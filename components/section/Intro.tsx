@@ -1,6 +1,6 @@
+import "animate.css"
 import Image from "next/image"
 import { FaDiscord, FaTwitter } from "react-icons/fa";
-import Button from "../elements/Button";
 
 
 const Intro = () => {
@@ -27,7 +27,6 @@ const Intro = () => {
                     </a>
 
                 </div>
-                {/* <Button text="Join Community" link="https://discord.gg/8WJVMDXZwH" /> */}
             </div>
 
         </div>

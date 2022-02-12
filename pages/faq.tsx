@@ -1,13 +1,12 @@
 import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import "animate.css"
 
+import faqJson from "../data/faq.json"
 
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
-import Question from "../components/Question";
-import faqJson from "../data/faq.json"
+import Question from "../components/section-element/Question";
 
 
 const FAQPage: NextPage = () => {

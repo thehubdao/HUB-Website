@@ -1,6 +1,6 @@
-import Partner from "../section-element/Partner"
-
 import collaboratorJSON from "../../data/collaborators.json"
+
+import Partner from "../section-element/Partner"
 
 
 const Collaborators = () => {
@@ -12,7 +12,6 @@ const Collaborators = () => {
             <div className="w-20 -rotate-90 flex items-center justify-center">
                 <h1 className={` font-normal text-6xl`}>Collaborators</h1>
             </div>
-
 
             <div className="relative w-full grow grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 place-items-center items-center">
 

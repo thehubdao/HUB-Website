@@ -7,6 +7,7 @@ interface IssueProps {
     solution_text: string;
 }
 
+
 const Issue = ({problem, solution_title, solution_text}: IssueProps) => {
     return (
 

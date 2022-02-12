@@ -15,5 +15,3 @@ const BlogCard = ({ title, article, date, link, classes }: any) => {
 }
 
 export default BlogCard
-
-

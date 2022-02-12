@@ -1,6 +1,6 @@
 import { Zoom, Fade } from "react-awesome-reveal";
-import Problems from "../Problems"
-import Solutions from "../Solutions";
+import Problems from "../v1.0/Problems"
+import Solutions from "../v1.0/Solutions";
 
 const Infrastructure = () => {
 

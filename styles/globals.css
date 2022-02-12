@@ -28,52 +28,6 @@
   }
 }
 
-.nav-item {
-  @apply transform hover:scale-105 transition-all duration-200 ease-linear hover:text-blue-400;
-}
-
-.nav-item-selected {
-  @apply hidden lg:block pb-1 text-xl font-medium bg-transparent;
-}
-
-.social-media-icon {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-gray-300 transform hover:scale-110 transition duration-200 ease-linear;
-}
-
-.button {
-  @apply text-center rounded-full px-4 sm:px-6 pb-1.5 pt-2 sm:pb-2 sm:pt-2.5 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
-}
-
-.button-text {
-  @apply text-gray-300 font-medium text-base;
-}
-
-.long-text {
-  @apply text-grey text-base lg:text-lg xl:text-xl max-w-md lg:max-w-2xl;
-}
-
-.short-text {
-  @apply z-10 text-grey;
-}
-
-.toolbar-top {
-  @apply z-50 p-5 top-5 fixed w-11/12 text-gray-200 rounded-2xl bg-white transition-all duration-500 bg-opacity-20;
-}
-
-.toolbar-scroll {
-  @apply z-50 p-5 top-0 fixed w-11/12 text-gray-200 rounded-b-2xl bg-white transition-all duration-500 bg-opacity-20 backdrop-filter backdrop-blur-3xl;
-}
-
-.toolbar-top-small {
-  @apply p-5 top-0 fixed w-full text-gray-200 bg-white bg-opacity-20 backdrop-filter backdrop-blur-3xl;
-}
-
-
-
-.space-img {
-  --animate-duration: 5s;
-}
-
 html {
   @apply bg-black;
   scroll-behavior: smooth;
@@ -101,11 +55,6 @@ h6 {
 }
 
 
-.progress-ring__circle {
-  stroke-dashoffset: 250;
-  stroke-dasharray: 500 500;
-}
-
 .members-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
 }
@@ -128,7 +77,21 @@ h6 {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+.nav-item {
+  @apply transform hover:scale-105 transition-all duration-200 ease-linear hover:text-blue-400;
+}
 
+.social-media-icon {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-gray-300 transform hover:scale-110 transition duration-200 ease-linear;
+}
+
+.button {
+  @apply text-center rounded-full px-4 sm:px-6 pb-1.5 pt-2 sm:pb-2 sm:pt-2.5 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
+}
+
+.space-img {
+  --animate-duration: 5s;
+}
 
 #chart .apexcharts-tooltip {
   @apply border-none shadow-none bg-transparent font-medium

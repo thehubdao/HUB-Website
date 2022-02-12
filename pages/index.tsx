@@ -1,21 +1,13 @@
-import { useEffect, useState } from 'react';
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import "animate.css"
 
 import Intro from "../components/section/Intro";
-import Infrastructure from "../components/Infrastructure";
 import Footer from "../components/general/Footer";
-import NFTs from '../components/NFTs';
-import Lands from '../components/Lands';
-import NPTStructure from '../components/NPT';
-import Governance from '../components/Governance';
 import Tokenomics from "../components/section/Tokenomics";
 import Roadmap from '../components/section/Roadmap';
 import Team from '../components/section/Team';
 import Partner from '../components/section/Collaborators';
 import Press from '../components/section/Press';
-import Ocean from '../components/Ocean';
 import { Toolbar } from '../components';
 import DAO from '../components/section/DAO';
 import Ecosystem from '../components/section/Ecosystem';
@@ -45,19 +37,7 @@ const Home: NextPage = ({ tokenData }: any) => {
                     <Assets />
 
                     <Tools />
-
-                    {/* <Infrastructure /> */}
-
-                    {/* <NFTs /> */}
-
-                    {/* <Lands /> */}
-
-                    {/* <NPTStructure /> */}
-
-                    {/* <Governance /> */}
-
-                    {/* <Ocean /> */}
-
+                    
                     <Tokenomics />
 
                     <Roadmap />

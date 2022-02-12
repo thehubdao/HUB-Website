@@ -27,7 +27,7 @@ const Dataverse = () => {
                 </a>
 
                 <a href='https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd' target="_blank" className='relative h-40 flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
-                    <p className='z-10 max-w-3/4 text-xl'>MGH Chainlink Node providing on-chain valuation data</p>
+                    <p className='z-10 max-w-3/4 text-xl'>MGH Chainlink Oracle Node providing on-chain valuation data</p>
                     <img src="/images/Logos/Cryptos/LINK.png" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-40 transition duration-200 ease-linear' />
                 </a>
 

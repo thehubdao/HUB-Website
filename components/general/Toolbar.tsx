@@ -70,5 +70,3 @@ const Toolbar = ({ dark }: any) => {
 }
 
 export default Toolbar
-
-

@@ -1,10 +1,12 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
-import { Footer, MemberCard, Toolbar } from '../components'
+
 import team from '../data/team.json'
 import advisors from '../data/advisors.json'
+
+import { Footer, MemberCard, Toolbar } from '../components'
 import Button from '../components/elements/Button'
+
 
 const TeamPage: NextPage = () => {
   return (

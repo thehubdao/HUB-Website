@@ -1,7 +1,7 @@
 import Member from "./Member";
-import teamJson from "../data/team.json";
+import teamJson from "../../data/team.json";
 import Link from "next/link";
-import MemberCard from "./section-element/MemberCard";
+import MemberCard from "../section-element/MemberCard";
 
 
 const Team = () => {
@@ -16,7 +16,7 @@ const Team = () => {
 
                     <div className="relative w-full grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 justify-items-center">
                         {teamJson.slice(0, 10).map((member, key) => (
-                            <MemberCard key={key} member={member} small />
+                            <MemberCard key={key} member={member} />
                         ))}
                     </div>
 
