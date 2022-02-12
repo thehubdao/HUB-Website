@@ -3,13 +3,14 @@ const Roadmap = () => {
     return (
 
         <>
-            <div className="w-full min-h-screen py-44 px-10 flex flex-col space-y-20">
+            <div className="w-full min-h-screen py-44 px-5 sm:px-10 flex flex-col space-y-20">
 
                 <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
 
                     <hr className="border-pink-600 w-[55%] border z-[-1] hidden lg:block" />
+                    <div className="border border-pink-600 h-[85%] absolute top-16 left-8 z-[-1] block lg:hidden" />
 
-                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                    <p className="absolute z-[-2] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
                         2021
                     </p>
 
@@ -45,13 +46,15 @@ const Roadmap = () => {
                         <hr className="border-blue-500 w-3/4 border absolute top-0 right-0" />
                     </div>
 
+                    <div className="border border-pink-600 h-1/4 absolute top-16 left-8 z-[-1] block lg:hidden" />
+                    <div className="border border-blue-500 h-3/4 absolute top-1/4 left-8 z-[-1] block lg:hidden" />
 
 
-                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                    <p className="absolute z-[-2] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
                         2022
                     </p>
 
-                    <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-10 xl:space-x-20 space-y-10 lg:space-y-0 -mt-7 pl-0 lg:pl-5 min-h-max">
+                    <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-10 xl:space-x-20 space-y-10 lg:space-y-0 -mt-7 pl-0 lg:pl-5 min-h-max w-full">
 
                         <div className="flex flex-row lg:flex-col space-y-0 lg:space-y-5 space-x-5 xs:space-x-10 lg:space-x-0 items-start w-full lg:w-1/4">
                             <p className="rounded-full bg-pink-600 shadow-color_pink scale-125 font-medium text-3xl ml-0 lg:ml-10 text-gray-200 pt-3.5 w-15 h-15 min-w-[3.75rem] text-center">
@@ -96,8 +99,9 @@ const Roadmap = () => {
                 <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
 
                     <hr className="border-blue-500 w-[55%] border hidden lg:block" />
+                    <div className="border border-blue-600 h-[85%] absolute top-16 left-8 z-[-1] block lg:hidden" />
 
-                    <p className="absolute z-[-1] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
+                    <p className="absolute z-[-2] left-0 top-0 font-bold text-8xl xs:text-9xl text-white opacity-20">
                         2023
                     </p>
 

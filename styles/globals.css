@@ -35,7 +35,7 @@ html {
 }
 
 h1 {
-  @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium py-3;
+  @apply text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-medium py-3;
 }
 
 h2 {
@@ -44,10 +44,6 @@ h2 {
 
 h3 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-medium;
-}
-
-h4 {
-  @apply text-gray-200 text-xl sm:text-2xl font-medium mb-3 z-10 border-b max-w-max;
 }
 
 h6 {
@@ -78,7 +74,7 @@ h6 {
 }
 
 .nav-item {
-  @apply transform hover:scale-105 transition-all duration-200 ease-linear hover:text-blue-400;
+  @apply transition duration-200 ease-linear hover:text-blue-400 min-w-max;
 }
 
 .social-media-icon {

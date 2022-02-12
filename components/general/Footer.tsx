@@ -29,13 +29,13 @@ const Footer = () => {
     }
 
     return (
-        <footer className="mt-44 relative flex flex-col lg:flex-row justify-around items-center space-x-0 space-y-10 lg:space-y-0 lg:space-x-10 px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
+        <footer className="mt-44 relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-5 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
 
-            <img src="/images/Logos/MGH/mgh_logo.png" className="absolute w-1/2 -right-20 top-5 z-[-1] blur opacity-50" />
+            <img src="/images/Logos/MGH/mgh_logo.png" className="absolute w-3/4 lg:w-1/2 -right-20 top-44 lg:top-5 z-[-1] blur-sm xs:blur opacity-50" />
 
-            <div className="flex flex-col justify-start items-center space-y-2">
+            <div className="flex flex-col justify-start items-center space-y-2 backdrop-blur-lg rounded p-0 sm:p-5">
 
-                <p className="text-sm sm:text md:text-lg lg:text-base text-center text-gray-400 font-medium px-3">Stay up to date for the latest from MGH!</p>
+                <p className="text-sm sm:text md:text-lg lg:text-base text-center text-gray-400 font-medium">Stay up to date for the latest from MGH!</p>
 
                 <form onSubmit={formSubmitted} onFocus={() => setMessage("")} className="relative flex items-center w-full max-w-sm">
                     <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" required className="bg-transparent w-full border text-white py-3 px-4 focus:outline-none rounded-full placeholder-white placeholder-opacity-75" />
@@ -46,7 +46,7 @@ const Footer = () => {
                 </form>
                 <p className="text-xs text-gray-400 font-medium mt-2">{message}</p>
 
-                <div className="self-end flex flex-row items-center justify-center flex-wrap space-x-5 pt-6">
+                <div className="flex flex-row items-center justify-center flex-wrap space-x-2 sm:space-x-5 pt-3 sm:pt-6">
 
                     <a href="https://metagamehub.medium.com" className="cursor-pointer" target="_blank" >
                         <FaMedium className="social-media-icon" />
@@ -81,7 +81,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <div className="flex text-gray-400 items-center space-x-1 absolute bottom-5">
+                <div className="flex text-gray-400 items-center space-x-1 absolute bottom-5 text-sm sm:text-base">
                     <a href="/impressum" className=' hover:text-blue-500 transition ease-linear duration-200'>Terms of Use</a>
                     <hr className="border-gray-600 w-5 rotate-90" />
                     <a href="/datenschutz" className=' hover:text-blue-500 transition ease-linear duration-200'>Privacy Policy</a>
@@ -90,7 +90,7 @@ const Footer = () => {
 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 font- text-xl lg:grid-cols-1 backdrop-blur-lg p-5 xl:grid-cols-2 rounded justify-items-center md:justify-items-around xl:justify-items-start gap-3 gap-x-24">
+            <div className="grid grid-cols-2 backdrop-blur-lg p-0 sm:p-5 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
                 <a href="/" className="nav-item">
                     Home
                 </a>

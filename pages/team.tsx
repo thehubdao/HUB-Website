@@ -4,8 +4,10 @@ import Head from 'next/head'
 import team from '../data/team.json'
 import advisors from '../data/advisors.json'
 
-import { Footer, MemberCard, Toolbar } from '../components'
+import Footer from '../components/general/Footer'
+import Toolbar from '../components/general/Toolbar'
 import Button from '../components/elements/Button'
+import MemberCard from '../components/section-element/MemberCard'
 
 
 const TeamPage: NextPage = () => {

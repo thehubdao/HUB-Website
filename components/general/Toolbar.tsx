@@ -22,7 +22,7 @@ const Toolbar = ({ dark }: any) => {
                             <img src="/images/Logos/MGH/mgh_logo.png" className={`h-12 w-12`} />
                         </a>
                         <Link href="/treasury" >
-                            <a className="nav-item">Treasury</a>
+                            <a className="nav-item pt-1">Treasury</a>
                         </Link>
                         <Link href="/tools">
                             <a className="nav-item pt-1">Tools</a>
@@ -36,9 +36,9 @@ const Toolbar = ({ dark }: any) => {
                         <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
                     </div>
 
-                    <div className="flex flex-grow space-x-8 items-center justify-end mr-5">
-                        <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item pt-1">Voting</a>
-                        <a href="https://app.metagamehub.io" target="_blank" className="nav-item pt-1">Launch App</a>
+                    <div className="flex flex-grow space-x-8 items-center justify-end mr-5 pt-1">
+                        <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
+                        <a href="https://app.metagamehub.io" target="_blank" className="nav-item">Launch App</a>
                     </div>
 
                 </nav>
@@ -51,15 +51,15 @@ const Toolbar = ({ dark }: any) => {
                     <a className="nav-item">Treasury</a>
                 </Link>
                 <Link href="/tools">
-                    <a className="nav-item pt-1">Tools</a>
+                    <a className="nav-item">Tools</a>
                 </Link>
                 <Link href="/token">
-                    <a className="nav-item pt-1">Token</a>
+                    <a className="nav-item">Token</a>
                 </Link>
                 <Link href="/team">
-                    <a className="nav-item pt-1">Contributors</a>
+                    <a className="nav-item">Contributors</a>
                 </Link>
-                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item pt-1">Whitepaper</a>
+                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">Whitepaper</a>
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">Voting</a>
                 <a href="https://app.metagamehub.io" target="_blank" className="nav-item">Launch App</a>
             </nav>

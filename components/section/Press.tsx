@@ -35,12 +35,13 @@ const Press = () => {
 
 
     return (
-        <div className="w-full min-h-screen py-10 px-10 flex flex-col justify-center">
-            <div className="flex items-center justify-center space-x-20">
+        <div className="w-full min-h-screen py-10 flex flex-col justify-center">
 
-                <div className="flex flex-col text-center lg:text-left items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-20">
+
+                <div className="flex flex-col text-center lg:text-left items-center lg:items-start px-5 sm:px-10">
                     <h1 className={`font-normal text-center lg:text-left mb-5 max-w-min`}>Stay updated!</h1>
-                    <p className="text-gray-00 pl-0 lg:pl-2 max-w-md">Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
+                    <p className="text-sm sm:text-base pl-0 lg:pl-2 max-w-md">Join the MGH newsletter and stay on point about news, public launch, NFT drops and more.</p>
 
                     <form onSubmit={formSubmitted} onFocus={() => setMessage("")} className="ml-0 lg:ml-2 relative flex items-center mt-6 w-full max-w-sm">
                         <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email address" required className="bg-transparent w-full text-white py-3 px-4 focus:outline-none border rounded-full placeholder-white placeholder-opacity-75" />
@@ -53,7 +54,7 @@ const Press = () => {
                 </div>
 
 
-                <div className="flex overflow-x-auto py-10 px-10 no-scroll-bar max-w-full">
+                <div className="flex overflow-x-auto py-10 px-5 sm:px-10 no-scroll-bar max-w-full">
                     {[...pressJson].reverse().map((article, key) => (
                         <BlogCard key={key} date={article.date} link={article.link} title={article.title} article={article.text} />
                     ))}

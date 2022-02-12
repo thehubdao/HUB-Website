@@ -16,14 +16,14 @@ const Intro = () => {
 
             <div className={`absolute inset-0 h-full w-full flex flex-col justify-center items-center text-center px-2`}>
                 <h6 className={`text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 xl:text-8xl mb-4`}>MeTagaMeHUb DaO</h6>
-                <p className={`text-3xl text-gray-200 w-full mb-16`}>Navigating through the Open Metaverse together</p>
+                <p className={`text-lg xs:text-xl md:text-2xl xl:text-3xl w-full mb-16`}>Navigating through the Open Metaverse together</p>
                 <div className="backdrop-blur-xl rounded-3xl flex space-x-10 p-4 px-8">
                     <a href="https://twitter.com/MGH_DAO" className="cursor-pointer" target="_blank" >
-                        <FaTwitter className="social-media-icon text-5xl text-pink-600" />
+                        <FaTwitter className="social-media-icon text-4xl lg:text-5xl text-pink-600" />
                     </a>
 
                     <a href="https://discord.gg/8WJVMDXZwH" className="cursor-pointer" target="_blank" >
-                        <FaDiscord className="social-media-icon text-5xl text-pink-600" />
+                        <FaDiscord className="social-media-icon text-4xl lg:text-5xl text-pink-600" />
                     </a>
 
                 </div>

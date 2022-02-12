@@ -13,9 +13,10 @@ import DAO from '../components/section/DAO';
 import Ecosystem from '../components/section/Ecosystem';
 import Assets from '../components/section/Assets';
 import Tools from '../components/section/Tools';
+import Issues from '../components/section/Issues';
 
 
-const Home: NextPage = ({ tokenData }: any) => {
+const Home: NextPage = () => {
 
     return (
         <>
@@ -28,11 +29,13 @@ const Home: NextPage = ({ tokenData }: any) => {
             <main className="flex flex-col items-center text-gray-200 select-none">
                 <Intro />
 
-                <div className="max-w-full 2xl:max-w-screen-2xl ">
+                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-44">
 
                     <DAO />
 
                     <Ecosystem />
+
+                    <Issues />
 
                     <Assets />
 
@@ -53,21 +56,9 @@ const Home: NextPage = ({ tokenData }: any) => {
             </main>
 
             <Footer />
-
-
         </>
     )
 }
 
-export async function getServerSideProps() {
-    const res = await fetch("https://api.coingecko.com/api/v3/coins/metagamehub-dao?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false")
-    const tokenData = await res.json();
-
-    return {
-        props: {
-            tokenData,
-        },
-    }
-}
 
 export default Home
