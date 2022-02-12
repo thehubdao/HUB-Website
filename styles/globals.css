@@ -117,7 +117,16 @@ h6 {
   @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-pink-500 to-pink-500;
 }
 
+.no-scroll-bar {
+  /* hide scrollbar but allow scrolling */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
 
+.no-scroll-bar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 
 
 
