@@ -3,7 +3,7 @@ import Chart from "react-apexcharts"
 const options = {
     chart: {
         id: "basic-bar",
-
+        width: '100%'
     },
     stroke: {
         curve: 'smooth',
@@ -49,7 +49,13 @@ const options = {
     },
     tooltip: {
         custom: function ({ series, seriesIndex, dataPointIndex, w }) {
-            return ''
+            return '<div class="arrow_box">' +
+                "<p class='header'>" +
+                new Date(w.globals.labels[dataPointIndex]).toLocaleDateString() +
+                "</p><p>$" +
+                series[seriesIndex][dataPointIndex].toFixed(4) +
+                "</p>" +
+                "</div>"
         },
         intersect: false,
         shared: false
@@ -77,8 +83,24 @@ const options = {
         // },
 
     },
-
-
+    fill: {
+        type: "gradient",
+        gradient: {
+            shade: 'dark',
+            shadeIntensity: 1,
+            opacityFrom: 0.4,
+            opacityTo: 0.8,
+            stops: [0, 100]
+        }
+    },
+    colors: ['#db2777'],
+    markers: {
+        colors: ['#db2777'],
+        strokeWidth: 0,
+        hover: {
+            size: 4
+        }
+    },
     dataLabels: {
         enabled: false
     },
@@ -89,6 +111,7 @@ const options = {
         zoom: {
             enabled: false
         },
+        offsetX: 30
 
     },
 }
