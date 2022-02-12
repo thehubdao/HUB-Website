@@ -130,14 +130,3 @@ h6 {
 
 
 
-#chart .apexcharts-tooltip {
-  @apply border-none shadow-none bg-transparent font-medium
-}
-
-#chart .arrow_box {
-  @apply text-xl flex flex-col p-2 rounded bg-grey-darkest
-}
-
-#chart .arrow_box .header {
-  @apply font-normal text-base text-gray-400
-}

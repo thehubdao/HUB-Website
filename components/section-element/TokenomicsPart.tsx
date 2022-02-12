@@ -6,10 +6,10 @@ interface TokenomicsPartProps {
 }
 
 const TokenomicsPart = ({title, size, color, distance}: TokenomicsPartProps) => {
-    const distanceClass = `top-[${distance}%]`
-    const sizeClass = `h-[${size}%]`
-    const textColorClass = `text-${color}`
-    const borderColorClass = `border-${color}`
+    // const distanceClass = `top-[${distance}%]`
+    // const sizeClass = `h-[${size}%]`
+    // const textColorClass = `text-${color}`
+    // const borderColorClass = `border-${color}`
 
     return (
         <div className={`flex space-x-0 absolute  w-96`}>
