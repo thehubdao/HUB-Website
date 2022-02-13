@@ -19,19 +19,19 @@ const TeamPage: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className='animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-52'>
+      <main className='animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-48 px-5 sm:px-10'>
         <h1 className='mb-10 text-gradient text-center font-normal'>
           Core contributors
         </h1>
         <Button text='Contribute' link='/contribute' />
 
-        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-6 md:px-16 px-8 py-8 mt-14'>
+        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-7 py-8 mt-14'>
           {team.map((member, key) => (
             <MemberCard key={key} member={member} />
           ))}
         </ul>
         <h1 className='pt-32 pb-10 text-center reverse-text-gradient font-normal'>Our Advisors</h1>
-        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-6 md:px-16 px-8 py-8'>
+        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-7 py-8'>
           {advisors.map((advisor, key) => (
             <MemberCard key={key} member={advisor} advisor />
           ))}

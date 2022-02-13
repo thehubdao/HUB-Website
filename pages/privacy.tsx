@@ -14,10 +14,11 @@ const PrivacypolicyPage: NextPage = () => {
         <meta name="description" content="Privacy is very important for us! Find our policy on this page." />
       </Head>
 
-      <main className="flex flex-col items-center bg-gray-100 pt-20 lg:pt-32 pb-20">
-        <Toolbar dark={false} />
+      <Toolbar dark={false} />
 
-        <div className="text-gray-200 p-6 md:p-10 max-w-full 2xl:max-w-screen-2xl">
+      <main className="flex flex-col items-center bg-gray-100 pt-28 lg:pt-48 pb-20">
+
+        <div className="text-gray-200 p-5 md:p-10 max-w-screen-2xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-10 text-black text-opacity-80">Privacy Policy</h1>
 
           <p className="py-1 text-black text-opacity-70">

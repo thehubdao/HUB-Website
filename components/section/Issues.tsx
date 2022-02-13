@@ -6,7 +6,7 @@ const Issues = () => {
         <div className="min-h-screen w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-start">
 
                 <div className="w-screen sticky top-0 min-h-screen z-50">
-                    <h2 className="w-full text-center leading-tight font-normal bg-black px-5 pt-5 lg:pt-10 pb-20 xl:pb-36">Solving <span className="text-pink-600 font-medium text-8l">key issues</span> within the Metaverse</h2>
+                    <h2 className="w-full text-center leading-tight font-normal bg-black px-5 pt-5 lg:pt-10 pb-20 xl:pb-36">Solving <span className="text-pink-600 font-medium">key issues</span> within the Metaverse</h2>
                 </div>
 
                 <div className="flex flex-col min-h-screen">
