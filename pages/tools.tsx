@@ -18,9 +18,9 @@ const TokenPage: NextPage = () => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 select-none p-10 pt-64 w-full">
+            <main className="flex flex-col items-center text-gray-200 select-none pt-28 lg:pt-48 w-full">
 
-                <div className="flex flex-col space-y-44 w-full 2xl:max-w-screen-2xl">
+                <div className="flex flex-col space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
                     <div className="flex items-center space-x-10 w-full pb-20">
                         <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">We provide you with all the tools to have a seamless metaverse experience!</h1>

@@ -5,7 +5,7 @@ const LandCard = ({ img, title, link, classes }: any) => {
     return (
 
         <a href={link} target="_blank">
-            <div className={`${classes} group w-40 h-40 m-2 text-center hover:scale-105 relative flex flex-col rounded bg-grey-darkest transition duration-200 ease-linear border border-white border-opacity-5 hover:border-opacity0 cursor-pointer`}>
+            <div className={`${classes} group w-32 md:w-40 h-32 md:h-40 m-2 text-center hover:scale-105 relative flex flex-col rounded bg-grey-darkest transition duration-200 ease-linear border border-white border-opacity-5 hover:border-opacity0 cursor-pointer`}>
 
                 <div className="relative text-center w-full pb-full">
                     <Image

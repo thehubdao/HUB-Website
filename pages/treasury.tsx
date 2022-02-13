@@ -115,16 +115,17 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 select-none p-10 pt-64 w-full">
+            <main className="flex flex-col items-center text-gray-200 select-none pt-28 lg:pt-48 w-full">
 
-                <div className="flex flex-col w-full 2xl:max-w-screen-2xl ">
-                    <div className="flex justify-between items-center space-x-10 w-full pb-44">
+                <div className="flex flex-col w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal text-9xl">Treasury</h1>
+                    <div className="flex flex-col sm:flex-row justify-between items-center space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 w-full pb-20 lg:pb-44">
 
-                        <div className="flex flex-col items-center space-y-3 w-1/2 -mb-20">
-                            <p className="text-lg sm:text-2xl lg:text-5xl font-medium">${totalTreasuryValue.toLocaleString('en-GB')}</p>
-                            <p className="text-gray-400 text-lg sm:text-2xl lg:text-3xl min-w-max flex-grow">Total Treasury Value</p>
+                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal">Treasury</h1>
+
+                        <div className="flex flex-col items-center space-y-1 lg:space-y-3 w-1/2 -mb-20">
+                            <p className="text-2xl md:text-3xl lg:text-5xl font-medium">${totalTreasuryValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-base md:text-lg lg:text-3xl min-w-max flex-grow">Total Treasury Value</p>
 
                             <div className="flex font-medium items-center space-x-1 pt-2">
                                 <a href="/impressum" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Opensea</a>
@@ -136,13 +137,13 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     </div>
 
 
-                    <div className="flex items-center space-x-24 justify-between w-full py-10">
-                        <div className="flex flex-col space-y-2">
-                            <p className="text-base sm:text-xl lg:text-4xl font-medium pt-1.5">${totalCryptoValue.toLocaleString('en-GB')}</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl min-w-max flex-grow">Cryptocurrencies</p>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalCryptoValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl min-w-max flex-grow">Cryptocurrencies</p>
                         </div>
 
-                        <div className="flex flex-grow flex-wrap max-w-3/4">
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
                             {cryptoValues.filter((token: { symbol: string; }) => !["Ocean Data LPs", "Quickswap LPs"].includes(token.symbol)).map((element: any, key: any) => {
                                 if (element.value > 0) {
                                     return (
@@ -154,13 +155,13 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     </div>
 
 
-                    <div className="flex items-center space-x-24 justify-between w-full py-10">
-                        <div className="flex flex-col space-y-2">
-                            <p className="text-base sm:text-xl lg:text-4xl font-medium pt-1.5">${totalNFTValue.toLocaleString('en-GB')}</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl flex-grow">NFTs</p>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalNFTValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl flex-grow">NFTs</p>
                         </div>
 
-                        <div className="flex flex-grow flex-wrap max-w-3/4">
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
                             <CryptoCard name="Sandbox" clicked={showLands === "Sandbox"} value={totalSandboxValue} logo="/images/Logos/Cryptos/SAND.png" onClick={() => handleClick("Sandbox")} />
                             <CryptoCard name="Decentraland" clicked={showLands === "Decentraland"} value={totalDecentralandValue} logo="/images/Logos/Cryptos/MANA.png" onClick={() => handleClick("Decentraland")} />
                             <CryptoCard name="Somnium" clicked={showLands === "Somnium"} value={totalSomniumValue} logo="/images/Logos/somnium-space-logo.png" onClick={() => handleClick("Somnium")} />
@@ -241,14 +242,13 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         </div>
                     }
 
-
-                    <div className="flex items-center space-x-24 justify-between w-full py-10">
-                        <div className="flex flex-col space-y-2">
-                            <p className="text-base sm:text-xl lg:text-4xl font-medium pt-1.5">${totalAssetsValue.toLocaleString('en-GB')}</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl flex-grow">Assets</p>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalAssetsValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl flex-grow">Assets</p>
                         </div>
 
-                        <div className="flex flex-grow flex-wrap max-w-3/4">
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
                             <CryptoCard name="Quickswap LPs" value={totalQuickswapValue} logo="/images/Logos/Cryptos/Quickswap LPs.png" onClick={() => window.open("https://info.quickswap.exchange/#/account/0x16d0F35b8A4bfc49391d9c374d5AF4ec2dFB25bc", "_blank")} />
                             <CryptoCard name="Ocean Data LPs" value={totalOceanValue} logo="/images/Logos/Cryptos/Ocean Data LPs.png" onClick={() => window.open("https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd", "_blank")} />
                             <CryptoCard name="Metaverse Valuation Node" logo="/images/Logos/Cryptos/LINK.png" onClick={() => window.open("https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations", "_blank")} />
