@@ -90,7 +90,7 @@ const Footer = () => {
 
 
 
-            <div className="grid grid-cols-2 backdrop-blur-lg p-5 pb-10 lg:pb-0 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
+            <div className="grid grid-cols-2 backdrop-blur-lg p-5 pb-10 lg:pb-5 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
                 <a href="/" className="nav-item">
                     Home
                 </a>
