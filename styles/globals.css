@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-  @apply text-5xl sm:text-6xl xl:text-7xl font-medium py-3;
+  @apply text-4xl sm:text-6xl xl:text-7xl font-medium py-3;
 }
 
 h3 {

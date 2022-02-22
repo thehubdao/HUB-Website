@@ -23,12 +23,12 @@ const Tools = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center space-y-5 lg:space-y-10 w-full lg:w-1/2 pb-20">
+            <div className="flex flex-col items-center space-y-5 lg:space-y-10 w-full lg:w-1/2 pb-20 lg:pb-0">
                 <h1 className="text-center lg:text-left max-w-2xl font-normal">Intuitive tools to manage the Metaverse</h1>
-                <div className="flex items-center space-x-0 sm:space-x-10 flex-grow">
+                <div className="flex justify-center lg:justify-start items-center space-x-0 sm:space-x-10 flex-grow w-full">
                     <Button text="Launch App" link="https://app.metagamehub.io" />
                     <Link href="/tools">
-                        <a className="text-lg sm:text-xl text-pink-500 hover:scale-105 transition ease-linear min-w-max duration-200">Learn more</a>
+                        <a className="text-lg sm:text-xl text-pink-600 hover:scale-105 transition ease-linear min-w-max duration-200">Learn more</a>
                     </Link>
                 </div>
 

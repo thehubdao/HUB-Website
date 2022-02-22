@@ -29,7 +29,10 @@ const ContributePage: NextPage = () => {
 
                         <div className="flex flex-col items-center space-y-10 w-full lg:w-1/2">
                             <p className={`text-base lg:text-lg text-center max-w-2xl`}>MGH is a Decentralized Autonomous Organization, which means that MGH is community-driven. Implementing the MGH working groups is a huge step towards more contributions from the community side and from everyone who is interested in contributing to MGH’s ecosystem by earning rewards in form of MGH tokens. At MGH, we envision working groups of the next generation of employment and are looking very forward to your application. Visit the <a href="https://www.notion.so/13613b99202d4829865e3e199490e8cf?v=f1d9d6776ed64cfbaac6959ce7fb1a67" target="_blank" className={`text-pink-600`}>Operations Board</a> of the working groups to learn more about what MGH DAO is working on.</p>
-                            <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                            <div className="flex items-center space-x-0 sm:space-x-10 flex-grow">
+                                <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                                <a href="https://the-dac.gitbook.io/metagamehub-dao/dao/working-groups" target="_blank" className="text-lg sm:text-xl text-pink-600 hover:scale-105 transition ease-linear min-w-max duration-200">Learn more</a>
+                            </div>
                         </div>
 
                     </div>
@@ -43,7 +46,10 @@ const ContributePage: NextPage = () => {
                         })}
                     </div>
 
-                    <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                    <div className="flex items-center space-x-0 sm:space-x-10 flex-grow">
+                        <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                        <a href="https://the-dac.gitbook.io/metagamehub-dao/dao/working-groups" target="_blank" className="text-lg sm:text-xl text-pink-600 hover:scale-105 transition ease-linear min-w-max duration-200">Learn more</a>
+                    </div>
 
                 </div>
 
