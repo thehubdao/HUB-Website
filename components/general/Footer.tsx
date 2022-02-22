@@ -81,13 +81,14 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <div className="flex text-gray-400 items-center space-x-1 absolute bottom-5 text-sm sm:text-base">
-                    <a href="/terms" className=' hover:text-blue-500 transition ease-linear duration-200'>Terms of Use</a>
-                    <hr className="border-gray-600 w-5 rotate-90" />
-                    <a href="/privacy" className=' hover:text-blue-500 transition ease-linear duration-200'>Privacy Policy</a>
-                </div>
             </div>
 
+
+            <div className="flex text-gray-400 items-center space-x-1 absolute bottom-4 text-sm sm:text-base">
+                <a href="/terms" className=' hover:text-blue-500 transition ease-linear duration-200'>Terms of Use</a>
+                <hr className="border-gray-600 w-5 rotate-90" />
+                <a href="/privacy" className=' hover:text-blue-500 transition ease-linear duration-200'>Privacy Policy</a>
+            </div>
 
 
             <div className="grid grid-cols-2 backdrop-blur-lg p-5 pb-10 lg:pb-5 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
