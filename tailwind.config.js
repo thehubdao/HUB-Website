@@ -28,6 +28,9 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
       },
+      borderWidth: {
+        '3': '3px'
+      },
       inset: {
         '15': '3.75rem',
         '18': '4.5rem',
@@ -77,8 +80,8 @@ module.exports = {
       boxShadow: {
         round: '0 0px 30px -15px rgba(0, 0, 0, 0.25)',
         color: '0 0px 20px 0px rgba(250, 250, 250, 0.5)',
-        color_blue: '0 0px 20px 0px rgba(96, 165, 250, 1)',
-        color_pink: '0 0px 20px 0px rgba(236, 72, 153, 1)',
+        color_blue: '0 0px 20px 0px rgba(96, 165, 250, 0.7)',
+        color_pink: '0 0px 20px 0px rgba(236, 72, 153, 0.7)',
         color_pink_focus: '0 0px 20px 3px rgba(236, 72, 153, 1)',
         subtle: '1px 2px 10px 0px rgba(250, 250, 250, 0.15)',
         colorbottom: '0 0px 40px 0px rgba(250, 250, 250, 0.1)',

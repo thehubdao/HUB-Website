@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import "animate.css"
-
 import { createConnection } from "mysql2/promise";
 
-
-import Footer from "../components/Footer";
-import Toolbar from "../components/Toolbar";
 import landsJson from "../data/lands.json"
 import assetsJson from "../data/assets.json"
-import SmallLandCard from "../components/SmallLandCard";
-import CryptoCard from "../components/CryptoCard";
+
+import Footer from "../components/general/Footer";
+import Toolbar from "../components/general/Toolbar";
+import LandCard from "../components/section-element/LandCard";
+import CryptoCard from "../components/section-element/CryptoCard";
 
 
 const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) => {
@@ -99,14 +97,14 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     assetsJson.map((element, key) => {
         if (element.metaverse === "XONE") {
             return (
-                <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
             );
         }
     })
 
     var xones = [];
     for (var i = 1159; i < 1213; i++) {
-        xones.push(<SmallLandCard key={i} classes="" img="/images/Assets/xone.png" title={`XONE #${i}`} link={`https://opensea.io/assets/0x9ec46a3dd227fd5977c7f1997c043122a703ff2a/${i}`} metaverse="XONE" />);
+        xones.push(<LandCard key={i} classes="" img="/images/Assets/xone.png" title={`XONE #${i}`} link={`https://opensea.io/assets/0x9ec46a3dd227fd5977c7f1997c043122a703ff2a/${i}`} metaverse="XONE" />);
     }
 
     return (
@@ -115,105 +113,72 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                 <title>MGH - Treasury</title>
                 <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
             </Head>
+            <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center pb-40">
-                <Toolbar dark={true} />
+            <main className="flex flex-col items-center text-gray-200 select-none pt-28 lg:pt-48 w-full">
 
-                <div className="flex flex-col items-center p-5 sm:p-10 w-full 2xl:max-w-screen-2xl">
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-600 to-pink-600 text-center mt-20 lg:mt-32">Treasury</h1>
-                    <a href="https://gnosis-safe.io/app/eth:0x2a9Da28bCbF97A8C008Fd211f5127b860613922D/balances" target="_blank" className="button mt-5 mb-20">
-                        <p className="button-text">View Treasury</p>
-                    </a>
+                <div className="flex flex-col w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                    <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-5 w-full max-w-3xl self-start mb-10">
-                        <p className="text-gray-200 text-lg sm:text-2xl lg:text-4xl font-bold min-w-max flex-grow">Total Treasury Value</p>
-                        <p className="text-gray-400 text-lg sm:text-2xl lg:text-4xl font-bold">${totalTreasuryValue.toLocaleString('en-GB')}</p>
-                    </div>
+                    <div className="flex flex-col sm:flex-row justify-between items-center space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 w-full pb-20 lg:pb-44">
 
-                    <div className="flex items-center space-x-5 w-full max-w-3xl self-start mb-7 pl-0 sm:pl-1">
-                        <hr className="border-pink-600 rounded-full h-12 sm:h-7 lg:h-10 border-4" />
-                        <div className="flex flex-col sm:flex-row w-full">
-                            <p className="text-gray-200 text-base sm:text-xl lg:text-3xl font-medium min-w-max pt-1.5 flex-grow">Cryptocurrencies</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">${totalCryptoValue.toLocaleString('en-GB')}</p>
+                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal">Treasury</h1>
+
+                        <div className="flex flex-col items-center space-y-1 lg:space-y-3 w-1/2 -mb-20">
+                            <p className="text-2xl md:text-3xl lg:text-5xl font-medium">${totalTreasuryValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-base md:text-lg lg:text-3xl min-w-max flex-grow">Total Treasury Value</p>
+
+                            <div className="flex font-medium items-center space-x-1 pt-2">
+                                <a href="/impressum" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Opensea</a>
+                                <hr className="border-gray-400 w-5 rotate-90" />
+                                <a href="/datenschutz" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Gnosis</a>
+                            </div>
+
                         </div>
                     </div>
 
 
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalCryptoValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl min-w-max flex-grow">Cryptocurrencies</p>
+                        </div>
 
-                    <div className="flex w-full flex-wrap items-center self-start ml-0 sm:ml-2 ">
-
-                        {cryptoValues.filter((token: { symbol: string; }) => !["Ocean Data LPs", "Quickswap LPs"].includes(token.symbol)).map((element: any, key: any) => {
-                            if (element.value > 0) {
-                                return (
-                                    <CryptoCard key={key} name={element.symbol} value={element.value} />
-                                );
-                            }
-                        })}
-
-                    </div>
-
-
-                    <div className="flex items-center space-x-5 w-full max-w-3xl self-start mb-7 pl-0 sm:pl-1 mt-10">
-                        <hr className="border-blue-500 rounded-full h-12 sm:h-7 lg:h-10 border-4" />
-                        <div className="flex flex-col sm:flex-row w-full">
-                            <p className="text-gray-200 text-base sm:text-xl lg:text-3xl font-medium min-w-max pt-1.5 flex-grow">NFTs</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">${totalNFTValue.toLocaleString('en-GB')}</p>
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
+                            {cryptoValues.filter((token: { symbol: string; }) => !["Ocean Data LPs", "Quickswap LPs"].includes(token.symbol)).map((element: any, key: any) => {
+                                if (element.value > 0) {
+                                    return (
+                                        <CryptoCard key={key} name={element.symbol} value={element.value} />
+                                    );
+                                }
+                            })}
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap items-center self-start ml-0 sm:ml-2">
 
-                        <div onClick={() => handleClick("Sandbox")} className={`relative flex flex-col m-2 items-center select-none justify-center space-y-1 sm:space-y-2 rounded-xl ${showLands === "Sandbox" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/Cryptos/SAND.png" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Sandbox</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSandboxValue.toLocaleString('en-GB')}</p>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalNFTValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl flex-grow">NFTs</p>
                         </div>
 
-                        <div onClick={() => handleClick("Decentraland")} className={`${showLands === "Decentraland" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/Cryptos/MANA.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Decentraland</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalDecentralandValue.toLocaleString('en-GB')}</p>
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
+                            <CryptoCard name="Sandbox" clicked={showLands === "Sandbox"} value={totalSandboxValue} logo="/images/Logos/Cryptos/SAND.png" onClick={() => handleClick("Sandbox")} />
+                            <CryptoCard name="Decentraland" clicked={showLands === "Decentraland"} value={totalDecentralandValue} logo="/images/Logos/Cryptos/MANA.png" onClick={() => handleClick("Decentraland")} />
+                            <CryptoCard name="Somnium" clicked={showLands === "Somnium"} value={totalSomniumValue} logo="/images/Logos/somnium-space-logo.png" onClick={() => handleClick("Somnium")} />
+                            <CryptoCard name="FLUF" clicked={showLands === "FLUF"} value={totalFlufValue} logo="/images/Logos/flufworld-logo.png" onClick={() => handleClick("FLUF")} />
+                            <CryptoCard name="XONE" clicked={showLands === "XONE"} value={totalXoneValue} logo="/images/Logos/xone-logo.png" onClick={() => handleClick("XONE")} />
+                            <CryptoCard name="ENS" clicked={showLands === "ENS"} value={totalENSValue} logo="/images/Assets/ens.png" onClick={() => handleClick("ENS")} />
+                            <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} />
                         </div>
-
-                        <div onClick={() => handleClick("Somnium")} className={`${showLands === "Somnium" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/somnium-space-logo.png" className={`h-12 md:h-14 object-contain`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Somnium Space</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalSomniumValue.toLocaleString('en-GB')}</p>
-                        </div>
-
-                        <div onClick={() => handleClick("FLUF")} className={`${showLands === "FLUF" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/flufworld-logo.png" className={`h-12 md:h-14 object-contain`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">FLUF World</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalFlufValue.toLocaleString('en-GB')}</p>
-                        </div>
-
-                        <div onClick={() => handleClick("XONE")} className={`${showLands === "XONE" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/xone-logo.png" className={`h-12 md:h-14 object-contain`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">XONE</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalXoneValue.toLocaleString('en-GB')}</p>
-                        </div>
-
-                        <div onClick={() => handleClick("ENS")} className={`${showLands === "ENS" ? "bg-gray-400 bg-opacity-20" : "bg-grey-darkest"} select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button cursor-pointer p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Assets/ens.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">ENS Domains</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalENSValue.toLocaleString('en-GB')}</p>
-                        </div>
-
-                        <a href="https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816" target="_blank" className={`relative flex flex-col m-2 items-center select-none justify-center space-y-1 sm:space-y-2 rounded-xl bg-grey-darkest shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Assets/uniswap-positions.svg" className={`h-10 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1 text-center min-w-max">Uniswap V3 Positions</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalUniswapValue.toLocaleString('en-GB')}</p>
-                        </a>
-
                     </div>
 
 
                     {showLands === "Sandbox" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
+                        <div className="flex flex-wrap w-full pb-20">
                             {landsJson.map((element, key) => {
                                 if (element.metaverse === "Sandbox") {
                                     return (
-                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
@@ -221,7 +186,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             {assetsJson.map((element, key) => {
                                 if (element.metaverse === "Sandbox") {
                                     return (
-                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
@@ -229,11 +194,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     }
 
                     {showLands === "Decentraland" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
+                        <div className="flex flex-wrap w-full pb-20">
                             {landsJson.map((element, key) => {
                                 if (element.metaverse === "Decentraland") {
                                     return (
-                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
@@ -241,11 +206,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     }
 
                     {showLands === "Somnium" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
+                        <div className="flex flex-wrap w-full pb-20">
                             {landsJson.map((element, key) => {
                                 if (element.metaverse === "Somnium") {
                                     return (
-                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
@@ -253,11 +218,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     }
 
                     {showLands === "FLUF" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
+                        <div className="flex flex-wrap w-full pb-20">
                             {assetsJson.map((element, key) => {
                                 if (element.metaverse === "FLUFWorld") {
                                     return (
-                                        <SmallLandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
                                     );
                                 }
                             })}
@@ -265,47 +230,29 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                     }
 
                     {showLands === "XONE" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
-
+                        <div className="flex flex-wrap w-full pb-20">
                             {xones}
                         </div>
                     }
 
                     {showLands === "ENS" &&
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 place-content-start gap-5 w-full my-5 pl-2">
-                            <SmallLandCard classes="text-xs" img="/images/Assets/ens.png" title="mghdao.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65094968028965490667962940604995070354564234685879228165394497380248733853575" />
-                            <SmallLandCard classes="text-xs" img="/images/Assets/ens.png" title="metagamehub.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65976217577879806189239991483658207330501404736298853056691685243794338078597" />
+                        <div className="flex flex-wrap w-full pb-20">
+                            <LandCard classes="" img="/images/Assets/ens.png" title="mghdao.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65094968028965490667962940604995070354564234685879228165394497380248733853575" />
+                            <LandCard classes="" img="/images/Assets/ens.png" title="metagamehub.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65976217577879806189239991483658207330501404736298853056691685243794338078597" />
                         </div>
                     }
 
-
-                    <div className="flex items-center space-x-5 w-full max-w-3xl self-start mb-7 pl-0 sm:pl-1 mt-10">
-                        <hr className="border-green-600 rounded-full h-12 sm:h-7 lg:h-10 border-4" />
-                        <div className="flex flex-col sm:flex-row w-full">
-                            <p className="text-gray-200 text-base sm:text-xl lg:text-3xl font-medium min-w-max pt-1.5 flex-grow">Assets</p>
-                            <p className="text-gray-400 text-base sm:text-xl lg:text-3xl font-medium pt-1.5">${totalAssetsValue.toLocaleString('en-GB')}</p>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 justify-between w-full py-10">
+                        <div className="flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0">
+                            <p className="text-xl md:text-2xl lg:text-4xl font-medium pt-1.5">${totalAssetsValue.toLocaleString('en-GB')}</p>
+                            <p className="text-gray-400 text-sm md:text-lg lg:text-3xl flex-grow">Assets</p>
                         </div>
-                    </div>
 
-                    <div className="flex flex-wrap items-center self-start ml-0 sm:ml-2">
-
-                        <a href="https://info.quickswap.exchange/#/account/0x16d0F35b8A4bfc49391d9c374d5AF4ec2dFB25bc" target="_blank" className={`bg-grey-darkest select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/Cryptos/Quickswap LPs.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Quickswap LPs</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalQuickswapValue.toLocaleString('en-GB')}</p>
-                        </a>
-
-                        <a href="https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd" target="_blank" className={`bg-grey-darkest select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/Cryptos/Ocean Data LPs.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1">Ocean Data LPs</p>
-                            <p className="font-medium text-gray-200 text-lg sm:text-xl pt-2">${totalOceanValue.toLocaleString('en-GB')}</p>
-                        </a>
-
-                        <a href="https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations" target="_blank" className={`bg-grey-darkest select-none flex flex-col m-2 items-center justify-center space-y-1 sm:space-y-2 rounded-xl shadow-button p-2 px-3 pt-4 w-32 sm:w-40 h-32 sm:h-40`}>
-                            <img src="/images/Logos/Cryptos/LINK.png" className={`h-12 md:h-14 group-hover:grayscale-0 transition duration-300 ease-in-out`} />
-                            <p className="font-medium text-gray-400 text-xs md:text-sm pt-1 text-center">Metaverse Valuation Node</p>
-                        </a>
-
+                        <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
+                            <CryptoCard name="Quickswap LPs" value={totalQuickswapValue} logo="/images/Logos/Cryptos/Quickswap LPs.png" onClick={() => window.open("https://info.quickswap.exchange/#/account/0x16d0F35b8A4bfc49391d9c374d5AF4ec2dFB25bc", "_blank")} />
+                            <CryptoCard name="Ocean Data LPs" value={totalOceanValue} logo="/images/Logos/Cryptos/Ocean Data LPs.png" onClick={() => window.open("https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd", "_blank")} />
+                            <CryptoCard name="Metaverse Valuation Node" logo="/images/Logos/Cryptos/LINK.png" onClick={() => window.open("https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations", "_blank")} />
+                        </div>
                     </div>
 
                 </div>

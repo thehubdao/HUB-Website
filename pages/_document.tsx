@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 
+
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx)
@@ -11,7 +12,7 @@ class MyDocument extends Document {
                 <Head>
                     <script
                         async
-                        src={`https://www.googletagmanager.com/gtag/js?id==UA-183649821-6`}
+                        src={`https://www.googletagmanager.com/gtag/js?id=G-LRQJQN7NC2`}
                     />
 
                     <script
@@ -20,9 +21,8 @@ class MyDocument extends Document {
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
-                            gtag('config', 'UA-183649821-6', {
-                            page_path: window.location.pathname,
-                            });
+                            gtag('config', 'G-LRQJQN7NC2');
+                            gtag('config', 'UA-220708011-1');
                         `,
                         }}
                     />

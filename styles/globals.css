@@ -5,33 +5,6 @@
 
 @layer base {
 
-  /* @font-face {
-    font-family: 'Montserrat';
-    font-weight: 100;
-    src: url("./fonts/Montserrat/Montserrat-Thin.ttf");
-  }
-  @font-face {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    src: url("./fonts/Montserrat/Montserrat-Light.ttf");
-  }
-  @font-face {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
-  }
-  @font-face {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
-  }
-  @font-face {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
-  } */
-
-  
   @font-face {
     font-family: 'Alterwave';
     font-weight: 400;
@@ -55,52 +28,6 @@
   }
 }
 
-.nav-item {
-  @apply transform hover:scale-110 transition-all duration-500 ease-in-out hover:text-blue-400;
-}
-
-.nav-item-selected {
-  @apply hidden lg:block pb-1 text-xl font-medium bg-transparent;
-}
-
-.social-media-icon {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-gray-200 transform hover:scale-125 transition duration-300 ease-in-out;
-}
-
-.button {
-  @apply text-center rounded-full px-4 sm:px-6 pb-1.5 pt-2 sm:pb-2 sm:pt-2.5 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
-}
-
-.button-text {
-  @apply text-gray-300 font-medium text-base;
-}
-
-.long-text {
-  @apply text-grey text-base lg:text-lg xl:text-xl max-w-md lg:max-w-2xl;
-}
-
-.short-text {
-  @apply z-10 text-grey;
-}
-
-.toolbar-top {
-  @apply z-50 p-5 top-5 fixed w-11/12 text-gray-200 rounded-2xl bg-white transition-all duration-500 bg-opacity-20;
-}
-
-.toolbar-scroll {
-  @apply z-50 p-5 top-0 fixed w-11/12 text-gray-200 rounded-b-2xl bg-white transition-all duration-500 bg-opacity-20 backdrop-filter backdrop-blur-3xl;
-}
-
-.toolbar-top-small {
-  @apply p-5 top-0 fixed w-full text-gray-200 bg-white bg-opacity-20 backdrop-filter backdrop-blur-3xl;
-}
-
-
-
-.space-img {
-  --animate-duration: 5s;
-}
-
 html {
   @apply bg-black;
   scroll-behavior: smooth;
@@ -108,30 +35,21 @@ html {
 }
 
 h1 {
-  @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium py-3;
+  @apply text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-medium py-3;
 }
 
 h2 {
-  @apply text-5xl sm:text-6xl xl:text-7xl font-medium py-3;
+  @apply text-4xl sm:text-6xl xl:text-7xl font-medium py-3;
 }
 
 h3 {
-  @apply text-3xl xs:text-4xl  sm:text-5xl lg:text-6xl font-medium py-3;
-}
-
-h4 {
-  @apply text-gray-200 text-xl sm:text-2xl font-medium mb-3 z-10 border-b max-w-max;
+  @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-medium;
 }
 
 h6 {
-  @apply text-3xl xs:text-4xl  sm:text-5xl lg:text-6xl font-lighters py-2;
+  @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-lighters py-2;
 }
 
-
-.progress-ring__circle {
-  stroke-dashoffset: 250;
-  stroke-dasharray: 500 500;
-}
 
 .members-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
@@ -142,4 +60,43 @@ h6 {
 }
 .reverse-text-gradient {
   @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-pink-500 to-pink-500;
+}
+
+.no-scroll-bar {
+  /* hide scrollbar but allow scrolling */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.nav-item {
+  @apply transition duration-200 ease-linear hover:text-blue-400 min-w-max;
+}
+
+.social-media-icon {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl text-gray-300 transform hover:scale-110 transition duration-200 ease-linear;
+}
+
+.button {
+  @apply text-center rounded-full px-4 sm:px-6 pb-1.5 pt-2 sm:pb-2 sm:pt-2.5 bg-gray-400 bg-opacity-10 transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-button sm:hover:shadow-color border border-white border-opacity-20 hover:border-opacity-70 cursor-pointer;
+}
+
+.space-img {
+  --animate-duration: 5s;
+}
+
+#chart .apexcharts-tooltip {
+  @apply border-none shadow-none bg-transparent font-medium
+}
+
+#chart .arrow_box {
+  @apply text-xl flex flex-col p-2 rounded bg-grey-darkest
+}
+
+#chart .arrow_box .header {
+  @apply font-normal text-base text-gray-400
 }
