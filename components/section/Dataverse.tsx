@@ -23,22 +23,22 @@ const Dataverse = () => {
 
                 <a href='https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
                     <p className='z-10 max-w-3/4 text-base xs:text-lg lg:text-xl'>Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace</p>
-                    <img src="/images/Logos/Cryptos/OCEAN.png" className='absolute top-0 right-0 h-full p-3 py-5 gray opacity-10 group-hover:opacity-20 transition duration-200 ease-linear' />
+                    <img src="/images/Logos/Cryptos/webp/OCEAN.webp" className='absolute top-0 right-0 h-full p-3 py-5 gray opacity-10 group-hover:opacity-20 transition duration-200 ease-linear' />
                 </a>
 
                 <a href='https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
                     <p className='z-10 max-w-3/4 text-base xs:text-lg lg:text-xl'>MGH Chainlink Oracle Node providing on-chain valuation data</p>
-                    <img src="/images/Logos/Cryptos/LINK.png" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-40 transition duration-200 ease-linear' />
+                    <img src="/images/Logos/Cryptos/webp/LINK.webp" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-40 transition duration-200 ease-linear' />
                 </a>
 
                 <a href='https://app.metagamehub.io/valuation' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
                     <p className='z-10  max-w-3/4 text-base xs:text-lg lg:text-xl'>MGH dApp LAND Valuation Interface for The Sandbox and Decentraland<br /> <span className='italic text-gray-400'>(Axie Infinity cooming soon!)</span></p>
-                    <img src="/images/Logos/Cryptos/MGH.png" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
+                    <img src="/images/Logos/Cryptos/webp/MGH.webp" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
                 </a>
 
                 <a href='https://docs.metagamehub.io' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
                     <p className='z-10  max-w-3/4 text-base xs:text-lg lg:text-xl'>Direct API Access and Integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more</p>
-                    <img src="/images/Logos/Cryptos/MGH.png" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
+                    <img src="/images/Logos/Cryptos/webp/MGH.webp" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
                 </a>
 
             </div>

@@ -59,7 +59,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
 
                             <div className="flex font-medium items-center text-blue-500 space-x-10 pt-2">
                                 <a href="https://coinmarketcap.com/currencies/metagamehub-dao/" target="_blank" className="h-full w-32 sm:w-44 cursor-pointer">
-                                    <img src="/images/Logos/cmc.png" className="object-scale-down w-full h-full" />
+                                    <img src="/images/Logos/webp/cmc.webp" className="object-scale-down w-full h-full" />
                                 </a>
                                 <a href="https://www.coingecko.com/coins/metagamehub-dao" target="_blank" className="h-full w-28 sm:w-36 cursor-pointer">
                                     <img src="/images/Logos/coingecko.svg" className="object-scale-down w-full h-full" />
@@ -99,9 +99,9 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                         </div>
 
                         <div className="w-full pt-10 sm:pt-20 flex flex-col sm:flex-row space-x-0 sm:space-x-5 space-y-5 sm:space-y-0 self-center max-w-xs px-10 sm:max-w-2xl">
-                            <Partner link="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8765b1a0eb57ca49be7eacd35b24a574d0203656" logo="/images/Logos/uniswap.svg.png" />
-                            <Partner link="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc3c604f1943b8c619c5d65cd11a876e9c8edcf10" logo="/images/Logos/quickswap.png" />
-                            <Partner link="https://bilaxy.com/trade/MGH_ETH" logo="/images/Logos/bilaxy.png" />
+                            <Partner link="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8765b1a0eb57ca49be7eacd35b24a574d0203656" logo="/images/Logos/webp/uniswap.svg.webp" />
+                            <Partner link="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc3c604f1943b8c619c5d65cd11a876e9c8edcf10" logo="/images/Logos/webp/quickswap.webp" />
+                            <Partner link="https://bilaxy.com/trade/MGH_ETH" logo="/images/Logos/webp/bilaxy.webp" />
                         </div>
                     </div>
 

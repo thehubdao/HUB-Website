@@ -26,8 +26,8 @@ const Team = () => {
                         <div key={key} className="group rounded relative w-52 lg:w-48 2xl:w-52 h-52 ml-6">
                             <Image
                                 placeholder='blur'
-                                blurDataURL={member.image || '/images/Logos/MGH/mgh_logo.png'}
-                                src={member.image || '/images/Logos/MGH/mgh_logo.png'}
+                                blurDataURL={member.image || '/images/Logos/MGH/webp/mgh_logo.webp'}
+                                src={member.image || '/images/Logos/MGH/webp/mgh_logo.webp'}
                                 layout="fill"
                                 loading='lazy'
                                 objectFit='cover'

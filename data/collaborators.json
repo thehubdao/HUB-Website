@@ -1,23 +1,23 @@
 [
     {
         "link": "https://chain.link",
-        "logo": "/images/Collaborators/chainlink.png"
+        "logo": "/images/Collaborators/webp/chainlink.webp"
     },
     {
         "link": "https://oceanprotocol.com",
-        "logo": "/images/Collaborators/ocean.png"
+        "logo": "/images/Collaborators/webp/ocean.webp"
     },
     {
         "link": "https://www.sandbox.game/",
-        "logo": "/images/Collaborators/sandbox.png"
+        "logo": "/images/Collaborators/webp/sandbox.webp"
     },
     {
         "link": "https://decentraland.org",
-        "logo": "/images/Collaborators/decentraland.png"
+        "logo": "/images/Collaborators/webp/decentraland.webp"
     },
     {
         "link": "https://polygon.technology",
-        "logo": "/images/Collaborators/polygon.png"
+        "logo": "/images/Collaborators/webp/polygon.webp"
     },
     {
         "link": "https://my.amazingblocks.io",
@@ -25,7 +25,7 @@
     },
     {
         "link": "https://dezentralizedfinance.com",
-        "logo": "/images/Collaborators/defi.png"
+        "logo": "/images/Collaborators/webp/defi.webp"
     },
     {
         "link": "https://defitimes.io",
@@ -33,7 +33,7 @@
     },
     {
         "link": "http://itrmachines.com",
-        "logo": "/images/Collaborators/itrm.png"
+        "logo": "/images/Collaborators/webp/itrm.webp"
     },
     {
         "link": "https://picipo.io",
@@ -45,14 +45,18 @@
     },
     {
         "link": "https://www.blockchaingamealliance.org",
-        "logo": "/images/Collaborators/blockchaingamealliance.png"
+        "logo": "/images/Collaborators/webp/blockchaingamealliance.webp"
     },
     {
         "link": "https://zharta.io",
-        "logo": "/images/Collaborators/zharta.jpeg"
+        "logo": "/images/Collaborators/webp/zharta.webp"
     },
     {
         "link": "https://rainemagazine.com",
-        "logo": "/images/Collaborators/raine.png"
+        "logo": "/images/Collaborators/webp/raine.webp"
+    },
+    {
+        "link": "https://parcel.so",
+        "logo": "/images/Collaborators/webp/parcel.webp"
     }
 ]

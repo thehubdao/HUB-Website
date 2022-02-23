@@ -2,7 +2,7 @@
   {
     "name": "Nicolas Weber",
     "position": "Founder, Ops, Tech, Awareness, Legal",
-    "image": "/images/Team/nicolas.png",
+    "image": "/images/Team/webp/nicolas.webp",
     "linkedin": "https://www.linkedin.com/in/nicolas97weber/",
     "description": "On a mission to foster decentralization",
     "twitter": "https://twitter.com/thenicolasweber"
@@ -10,7 +10,7 @@
   {
     "name": "Camilo Echeverri",
     "position": "Co-founder, Ops, Tech, Awareness",
-    "image": "/images/Team/camilo.png",
+    "image": "/images/Team/webp/camilo-echeverri.webp",
     "linkedin": "https://www.linkedin.com/in/caem2017/",
     "description": "MetaFi Degen and DAO maximalist",
     "twitter": "https://twitter.com/xtimesyequalsk"
@@ -18,7 +18,7 @@
   {
     "name": "Lukas Philipp",
     "position": "Co-founder, Ops, Tech, Awareness",
-    "image": "/images/Team/lukas.jpeg",
+    "image": "/images/Team/webp/lukas.webp",
     "linkedin": "https://www.linkedin.com/in/lukasph/",
     "twitter": "https://twitter.com/thelukasphilipp",
     "description": "4+ years financial background in asset valuation and portfolio management. Web3 conceptioner and blockchain enthusiast."
@@ -26,7 +26,7 @@
   {
     "name": "Jean Feier",
     "position": "Co-founder, Ops, Awareness",
-    "image": "/images/Team/jean.jpeg",
+    "image": "/images/Team/webp/jean.webp",
     "linkedin": "https://www.linkedin.com/in/jeanine-feierfeil/",
     "twitter": "https://twitter.com/JEANFEIER",
     "description": "Defining vision, changing tradition and building with innovative minds. Driven to create products, experiences and art."
@@ -34,7 +34,7 @@
   {
     "name": "Youssef Gabsi",
     "position": "Co-founder, Ops, Awareness",
-    "image": "/images/Team/youssef.jpeg",
+    "image": "/images/Team/webp/youssef.webp",
     "linkedin": "https://www.linkedin.com/in/youssef-gabsi/",
     "twitter": "https://twitter.com/GabsiYoussef1",
     "description": "Asset management and real estate consultant converted into Web3 front office specialist "
@@ -42,7 +42,7 @@
   {
     "name": "Phil Thomsen",
     "position": "Tech",
-    "image": "/images/Team/phil.jpeg",
+    "image": "/images/Team/webp/phil.webp",
     "github": "https://github.com/DAC-PhilThomsen",
     "linkedin": "https://www.linkedin.com/company/metagamehub-dao/mycompany/",
     "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
@@ -50,14 +50,14 @@
   {
     "name": "Oskar Latussek",
     "position": "Tech",
-    "image": "/images/Team/oskar.jpeg",
+    "image": "/images/Team/webp/oskar.webp",
     "linkedin": "https://www.linkedin.com/in/oskar-latussek/",
     "description": "Fullstack developer with focus on web3 integration and passion for UI/UX design. Background in financial economics and business development."
   },
   {
     "name": "Christian Werner",
     "position": "Metaverse Development",
-    "image": "/images/Team/christian.jpeg",
+    "image": "/images/Team/webp/christian.webp",
     "linkedin": "https://www.linkedin.com/in/christian-werner-5aab41171/",
     "description": "Game Designer, Consultant and Lecturer in Game Design at the FH Aachen and HS Fresenius, Cologne. Metaverse Dev Group Lead."
   },
@@ -65,7 +65,7 @@
   {
     "name": "Camilo Alaguna",
     "position": "Tech, AI & Data Science",
-    "image": "/images/Team/camilo.jpeg",
+    "image": "/images/Team/webp/camilo.webp",
     "github": "https://github.com/camilourd",
     "linkedin": "https://www.linkedin.com/in/camilo-alaguna/",
     "description": "Computer Scientist with strong experience in AI and entrepreneur. Passionate of solving problems using computational tools."
@@ -73,21 +73,21 @@
   {
     "name": "Santiago Hernandez",
     "position": "Tech, AI & Data Science",
-    "image": "/images/Team/santiago.png",
+    "image": "/images/Team/webp/santiago.webp",
     "linkedin": "https://www.linkedin.com/in/santiago-h-hernandez/",
     "description": "Fullstack developer with focus on devops and web3 integration passionate about Fintech and high frequency trading. Background in algorithmic trading, cyber security and business development."
   },
   {
     "name": "Felix Sander",
     "position": "Awareness",
-    "image": "/images/Team/felix.jpeg",
+    "image": "/images/Team/webp/felix.webp",
     "linkedin": "https://www.linkedin.com/in/felix-sander/",
     "description": "10+ years experience in digital marketing, growth hacking and community building. Active advisor to blockchain startups since 2017. "
   },
   {
     "name": "Jonathan Lübeck",
     "position": "Metaverse Development",
-    "image": "/images/Team/jonathan.jpg",
+    "image": "/images/Team/webp/jonathan.webp",
     "twitter": "https://twitter.com/cblech2",
     "github": "https://github.com/cblech",
     "description": "Studying IT at the University of applied Science in Aachen. Main developer and maintainer of dcl-edit"
@@ -95,21 +95,21 @@
   {
     "name": "Vanessa Miske",
     "position": "Metaverse Development",
-    "image": "/images/Team/vanessa.png",
+    "image": "/images/Team/webp/vanessa.webp",
     "twitter": "https://twitter.com/Lune_meya",
     "description": "IT-Student at FH Aachen Germany focusing on Media & Games, Part of the Metaverse Dev Group"
   },
   {
     "name": "Michael Gantner",
     "position": "Metaverse Development",
-    "image": "/images/Team/michael.jpg",
+    "image": "/images/Team/webp/michael.webp",
     "github": "https://github.com/MichiGandi",
     "description": "Studying Computer-Science at the FH Aachen in Germany. Part of the Metaverse Dev Group."
   },
   {
     "name": "Susanne Bataloff",
     "position": "Metaverse Development",
-    "image": "/images/Team/susanne.jpeg",
+    "image": "/images/Team/webp/susanne.webp",
     "linkedin": "https://www.linkedin.com/in/susanne-bataloff/",
     "twitter": "https://twitter.com/susi23x01",
     "github": "https://github.com/susi2301",
@@ -118,21 +118,21 @@
   {
     "name": "Robin Prock",
     "position": "Awareness",
-    "image": "/images/Team/robin.jpeg",
+    "image": "/images/Team/webp/robin.webp",
     "linkedin": "https://www.linkedin.com/in/robin-prock-931612210/",
     "description": "Experienced copywriter & writer"
   },
   {
     "name": "Mauro Guz Bejar",
     "position": "Tech",
-    "image": "/images/Team/mauro.jpeg",
+    "image": "/images/Team/webp/mauro.webp",
     "linkedin": "https://www.linkedin.com/in/mauro-gb-5b657b209/",
     "description": "Web3 and Smart Contracts Engineer with a special focus in accessibility and security"
   },
   {
     "name": "Pierre Baumann",
     "position": "Blockchain Developer",
-    "image": "/images/Team/pierre.jpeg",
+    "image": "/images/Team/webp/pierre.webp",
     "linkedin": "https://www.linkedin.com/in/pierre-baumann-8b1473229",
     "github": "https://github.com/DAC-PierreBaumann",
     "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
@@ -140,14 +140,14 @@
   {
     "name": "Branko Vlahov",
     "position": "Awareness",
-    "image": "/images/Team/branko.png",
+    "image": "/images/Team/webp/branko.webp",
     "linkedin": "https://www.linkedin.com/in/brankovlahov/",
     "description": "10 + years of experience in the Motion Design industry. Efficient in animating with the Adobe Suite and Cinema 4D. Finished AP degree in Multimedia Design at the Bussiness Academy of Aarhus."
   },
   {
     "name": "Alejandra Corbella",
     "position": "Awareness",
-    "image": "/images/Team/alejandra.jpeg",
+    "image": "/images/Team/webp/alejandra.webp",
     "twitter": "https://twitter.com/alecorbella_",
     "linkedin": "https://www.linkedin.com/in/alejandra-corbella-obregon-a6637ba9/",
     "description": "Studied Entrepreneurship at Tufts University. Working as a Community Manager and Content Strategist."
@@ -155,7 +155,7 @@
   {
     "name": "Javan Sardarabady",
     "position": "Awareness",
-    "image": "/images/Team/javan.jpeg",
+    "image": "/images/Team/webp/javan.webp",
     "linkedin": "https://www.linkedin.com/in/javan-sardarabady-301a48215/",
     "description": "Economics student at the University of Konstanz with focus on political economy. Passionate about decentralized governance."
   }

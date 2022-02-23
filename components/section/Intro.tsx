@@ -9,7 +9,7 @@ const Intro = () => {
         <div className="w-full h-screen relative flex justify-end">
 
             <div className={`h-screen relative w-full xl:w-4/5 opacity-75`}>
-                <Image src="/images/space-2.jpg" layout="fill" className="transform scale-125 rotate-180 animate__animated animate__zoomIn space-img z-0 object-scale-down" />
+                <Image src="/images/webp/space-2.webp" layout="fill" className="transform scale-125 rotate-180 animate__animated animate__zoomIn space-img z-0 object-scale-down" />
             </div>
 
             {/* MeTagaMeHUb DaO from-blue-400 via-pink-400 to-pink-600 */}

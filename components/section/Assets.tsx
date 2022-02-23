@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Button from "../elements/Button"
 
 
@@ -6,7 +7,8 @@ const Assets = () => {
         <div className="min-h-screen w-full py-10">
 
             <div className="h-screen w-full sticky top-0">
-                <img src="/images/collage.jpg" className="object-cover h-full w-full" />
+                {/* <Image src="/images/collage.jpg" layout="fill" objectFit="cover" quality={100} /> */}
+                <img src="/images/webp/collage.webp" className="object-cover h-full w-full" />
             </div>
 
             <div className="min-h-screen sticky top-0 flex items-start justify-center">

@@ -37,8 +37,8 @@ const MemberCard = ({
     >
       <Image
         placeholder='blur'
-        blurDataURL={member.image || '/images/Logos/MGH/mgh_logo.png'}
-        src={member.image || '/images/Logos/MGH/mgh_logo.png'}
+        blurDataURL={member.image || '/images/Logos/MGH/webp/mgh_logo.webp'}
+        src={member.image || '/images/Logos/MGH/webp/mgh_logo.webp'}
         width={350}
         height={350}
         loading='lazy'

@@ -105,9 +105,6 @@ module.exports = {
       padding: {
         full: '100%'
       },
-      backgroundImage:  {
-        'hero-pattern': "url('/public/images/pool_punk.png')",
-      },
       colors: {
         grey: {
           darkest: '#101010',

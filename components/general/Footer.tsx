@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { FaLinkedin, FaTelegramPlane, FaDiscord, FaEthereum, FaInstagram, FaTwitter, FaMedium, FaYoutube } from "react-icons/fa";
 
@@ -31,7 +32,7 @@ const Footer = () => {
     return (
         <footer className="mt-10 sm:mt-44 relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-2 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
 
-            <img src="/images/Logos/MGH/mgh_logo.png" className="absolute w-3/4 lg:w-1/2 -right-20 top-44 lg:top-5 z-[-1] blur-sm xs:blur opacity-50" />
+            <img src="/images/Logos/MGH/webp/mgh_logo.webp" className="absolute w-3/4 lg:w-1/2 -right-20 top-44 lg:top-5 z-[-1] blur-sm xs:blur opacity-50" />
 
             <div className="flex flex-col justify-start items-center space-y-2 backdrop-blur-lg rounded p-4 sm:p-5">
 
@@ -92,44 +93,65 @@ const Footer = () => {
 
 
             <div className="grid grid-cols-2 backdrop-blur-lg p-5 pb-10 lg:pb-5 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
-                <a href="/" className="nav-item">
-                    Home
-                </a>
+
+                <Link href="/">
+                    <a className="nav-item">
+                        Home
+                    </a>
+                </Link>
+
                 <a href="https://app.metagamehub.io" target="_blank" className="nav-item">
                     MGH dApp
                 </a>
 
-                <a href="/treasury" target="_blank" className="nav-item">
-                    Treasury
-                </a>
-                <a href="https://discord.gg/8WJVMDXZwH" className="nav-item">
+                <Link href="/treasury">
+                    <a className="nav-item">
+                        Treasury
+                    </a>
+                </Link>
+
+                <a href="https://discord.gg/8WJVMDXZwH" className="nav-item" target="_blank">
                     Community
                 </a>
 
-                <a href="/tools" className="nav-item" target="_blank">
-                    Tools
-                </a>
+                <Link href="/tools">
+                    <a className="nav-item">
+                        Tools
+                    </a>
+                </Link>
+
                 <a href="https://snapshot.org/#/metagamehub.eth" target="_blank" className="nav-item">
                     Voting
                 </a>
 
-                <a href="/token" className="nav-item" target="_blank">
-                    Token
-                </a>
+                <Link href="/token">
+                    <a className="nav-item">
+                        Token
+                    </a>
+                </Link>
+
                 <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
                     Whitepaper
                 </a>
 
-                <a href="/team" className="nav-item">
-                    Contributors
-                </a>
-                <a href="/faq" target="_blank" className="nav-item">
-                    FAQ
-                </a>
+                <Link href="/team">
+                    <a className="nav-item">
+                        Contributors
+                    </a>
+                </Link>
 
-                <a href="/contribute" target="_blank" className="nav-item">
-                    Contribute
-                </a>
+                <Link href="/faq">
+                    <a className="nav-item">
+                        FAQ
+                    </a>
+                </Link>
+
+                <Link href="/contribute">
+                    <a className="nav-item">
+                        Contribute
+                    </a>
+                </Link>
+
                 <a href="https://github.com/metagamehub" className="nav-item" target="_blank">
                     GitHub
                 </a>

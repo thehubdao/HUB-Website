@@ -10,8 +10,8 @@ const LandCard = ({ img, title, link, classes }: any) => {
                 <div className="relative text-center w-full pb-full">
                     <Image
                         placeholder='blur'
-                        blurDataURL={img || '/images/Logos/MGH/mgh_logo.png'}
-                        src={img || '/images/Logos/MGH/mgh_logo.png'}
+                        blurDataURL={img || '/images/Logos/MGH/webp/mgh_logo.webp'}
+                        src={img || '/images/Logos/MGH/webp/mgh_logo.webp'}
                         layout='fill'
                         loading='lazy'
                         objectFit='contain'
