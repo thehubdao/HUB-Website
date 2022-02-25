@@ -128,9 +128,9 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <p className="text-gray-400 text-base md:text-lg lg:text-3xl min-w-max flex-grow">Total Treasury Value</p>
 
                             <div className="flex font-medium items-center space-x-1 pt-2">
-                                <a href="/impressum" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Opensea</a>
+                                <a href="https://opensea.io/0x2a9da28bcbf97a8c008fd211f5127b860613922d" target="_blank" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Opensea</a>
                                 <hr className="border-gray-400 w-5 rotate-90" />
-                                <a href="/datenschutz" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Gnosis</a>
+                                <a href="https://gnosis-safe.io/app/eth:0x2a9Da28bCbF97A8C008Fd211f5127b860613922D/balances" target="_blank" className=' hover:text-blue-400 transition ease-in-out pt-0.5 duration-300'>Gnosis</a>
                             </div>
 
                         </div>
