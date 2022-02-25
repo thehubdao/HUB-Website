@@ -9,26 +9,22 @@
     font-family: 'Alterwave';
     font-weight: 400;
     src: url("./fonts/Alterwave/Alterwave-Thin.ttf");
-    font-display: swap;
   }
   @font-face {
     font-family: 'Alterwave';
     font-weight: 500;
     src: url("./fonts/Alterwave/Alterwave-Light.ttf");
-    font-display: swap;
   }
   @font-face {
     font-family: 'Alterwave';
     font-weight: 600;
     src: url("./fonts/Alterwave/Alterwave-Regular.ttf");
-    font-display: swap;
   }
 
   @font-face {
     font-family: 'Lighters';
     font-weight: 400;
     src: url("./fonts/Lighters-Regular.ttf");
-    font-display: swap;
   }
 }
 
