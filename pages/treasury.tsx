@@ -27,6 +27,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     const [totalOceanValue, setTotalOceanValue] = useState(0)
     const [totalQuickswapValue, setTotalQuickswapValue] = useState(0)
     const [totalAssetsValue, setTotalAssetsValue] = useState(0)
+    console.log(nftValues)
 
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         setTotalCryptoValue(cryptoSum)
 
         const sandboxLandSum = landValues.filter((land: { metaverse: string; }) => land.metaverse === "sandbox").reduce((acc: any, curr: any) => acc + curr.priceUsd, 0)
-        const sandboxAssetsSum = nftValues.find((nft: { name: string; }) => nft.name === "the-sandbox-assets").value_7
+        const sandboxAssetsSum = nftValues.filter((nft: { name: string; }) => ["the-sandbox-assets", "snoop-dogg-doggies"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
         const sandboxSumRounded = Math.round(sandboxLandSum + sandboxAssetsSum)
         setTotalSandboxValue(sandboxSumRounded)
 
