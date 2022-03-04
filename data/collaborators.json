@@ -58,5 +58,13 @@
     {
         "link": "https://parcel.so",
         "logo": "/images/Collaborators/webp/parcel.webp"
+    },
+    {
+        "link": "https://www.venly.io",
+        "logo": "/images/Collaborators/webp/venly.webp"
+    },
+    {
+        "link": "https://www.metaring.one",
+        "logo": "/images/Collaborators/webp/metaring.webp"
     }
 ]

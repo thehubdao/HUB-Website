@@ -165,5 +165,12 @@
     "linkedin": "https://www.linkedin.com/in/snj-peters/",
     "image": "/images/Advisors/webp/simon-peters.webp",
     "description": "Managing Director of DECUS Network. All-in entrepreneur with a passion for challenging markets and disruptive technology."
+  },
+  {
+    "name": "Ricardo Parro",
+    "position": "Tech Advisor / Visionary",
+    "linkedin": "https://www.linkedin.com/in/ricardoparro/",
+    "image": "/images/Advisors/webp/ricardo.webp",
+    "description": "15 years experience working with startups as a CTO and software engineer."
   }
 ]
