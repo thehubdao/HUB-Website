@@ -7,7 +7,7 @@ const Tokenomics = () => {
 
     return (
 
-        <div className="min-h-screen relative w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
+        <div className="relative w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
 
             <h1 className={`text-transparent bg-clip-text bg-gradient-to-b from-pink-600 max-w-max to-blue-600 font-normal`}>MGH Token</h1>
             <Link href={'/token'}>

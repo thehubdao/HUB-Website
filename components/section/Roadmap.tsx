@@ -3,7 +3,7 @@ const Roadmap = () => {
     return (
 
         <>
-            <div className="w-full min-h-screen py-44 px-5 sm:px-10 flex flex-col space-y-20">
+            <div className="w-full py-10 px-5 sm:px-10 flex flex-col space-y-20">
 
                 <div className={`relative w-full flex flex-col items-center lg:items-start pt-28 min-h-max`}>
 

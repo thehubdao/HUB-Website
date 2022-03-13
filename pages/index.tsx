@@ -14,6 +14,7 @@ import Ecosystem from '../components/section/Ecosystem';
 import Assets from '../components/section/Assets';
 import Tools from '../components/section/Tools';
 import Issues from '../components/section/Issues';
+import Blank from '../components/section/Blank';
 
 
 const Home: NextPage = () => {
@@ -29,9 +30,9 @@ const Home: NextPage = () => {
             <main className="flex flex-col items-center text-gray-200 select-none">
                 <Intro />
 
-                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-44">
+                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
 
-                    <DAO />
+                    {/* <DAO /> */}
 
                     <Ecosystem />
 
@@ -40,6 +41,8 @@ const Home: NextPage = () => {
                     <Assets />
 
                     <Tools />
+
+                    {/* <Blank /> */}
                     
                     <Tokenomics />
 

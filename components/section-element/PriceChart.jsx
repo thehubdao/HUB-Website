@@ -39,6 +39,7 @@ const options = {
         axisTicks: {
             show: false
         },
+        logarithmic: true,
         axisBorder: {
             show: false
         },

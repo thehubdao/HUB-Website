@@ -10,7 +10,7 @@ const Team = () => {
     return (
 
         <>
-            <div className="w-full min-h-screen py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
+            <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
 
 
                 <h1 className={`text-blue-500 font-normal`}>Initiators</h1>

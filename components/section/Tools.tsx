@@ -5,7 +5,7 @@ import Button from "../elements/Button"
 
 const Tools = () => {
     return (
-        <div className="min-h-screen w-full py-10 px-5 sm:px-10 flex flex-col-reverse lg:flex-row items-center justify-between space-x-0 lg:space-x-10 xl:space-x-20">
+        <div className="w-full py-10 px-5 sm:px-10 flex flex-col-reverse lg:flex-row items-center justify-center space-x-0 lg:space-x-10 xl:space-x-20">
 
             <div className="flex flex-col space-y-10 lg:space-y-5 w-full lg:w-1/2 max-w-2xl">
                 <div className='flex flex-col p-5 bg-grey-darkest items-center lg:items-start text-center lg:text-left hover:scale-[1.01] transition duration-200 ease-linear border-white border border-opacity-5 rounded'>

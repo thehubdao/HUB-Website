@@ -2,7 +2,7 @@ import Button from "../elements/Button"
 
 const DAO = () => {
     return (
-        <div className="min-h-screen w-full py-10 px-5 sm:px-10 flex flex-col lg:flex-row space-x-0 lg:space-x-32 space-y-10 lg:space-y-0 items-center justify-around">
+        <div className="w-full py-10 px-5 sm:px-10 flex flex-col lg:flex-row space-x-0 lg:space-x-32 space-y-10 lg:space-y-0 items-center justify-around">
             <h1 className="text-left max-w-min font-normal"><span className="text-pink-600 font-medium text-6xl sm:text-7xl md:text-8xl xl:text-9xl">D</span>ecentralized <span className="text-pink-600 font-medium text-6xl sm:text-7xl md:text-8xl xl:text-9xl">A</span>utonomous <span className="text-pink-600 font-medium text-6xl sm:text-7xl md:text-8xl xl:text-9xl">O</span>rganisation</h1>
 
             <div className='flex flex-col p-5 bg-grey-darkest items-center space-y-10 hover:scale-[1.01] transition duration-200 ease-linear border-white border border-opacity-5 rounded'>

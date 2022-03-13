@@ -7,7 +7,7 @@ const Collaborators = () => {
 
     return (
 
-        <div className={`w-full flex flex-col lg:flex-row items-center  space-x-0 lg:space-x-10 py-10 px-5 sm:px-10 min-h-screen`}>
+        <div className={`w-full flex flex-col lg:flex-row items-center space-x-0 lg:space-x-10 py-10 px-5 sm:px-10`}>
 
             <div className="w-20 rotate-0 lg:-rotate-90 flex items-center justify-center">
                 <h1 className={`font-normal`}>Collaborators</h1>

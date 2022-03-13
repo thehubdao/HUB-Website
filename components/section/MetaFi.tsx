@@ -23,12 +23,20 @@ const MetaFi = () => {
                 </p>
             </a>
 
-            <div className="h-full w-full max-w-6xl flex flex-col lg:flex-row p-7 pt-8 space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 items-center bg-grey-darkest border border-white/5 rounded hover:scale-[1.01] transition duration-200 ease-linear">
+            {/* <div className="h-full w-full max-w-6xl flex flex-col lg:flex-row p-7 pt-8 space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 items-center bg-grey-darkest border border-white/5 rounded hover:scale-[1.01] transition duration-200 ease-linear">
                 <h3 className="font-normal text-blue-500 w-full lg:w-1/4 min-w-[25%]">Metaverse Staking</h3>
                 <p className="text-base sm:text-lg lg:text-xl">
                     By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens.
                 </p>
+            </div> */}
+
+            <div className="h-full w-full max-w-6xl flex flex-col lg:flex-row p-7 pt-8 space-x-0 lg:space-x-24 space-y-5 lg:space-y-0 items-center bg-grey-darkest border border-white/5 rounded hover:scale-[1.01] transition duration-200 ease-linear">
+                <h3 className="font-normal text-blue-500 w-full lg:w-1/4 min-w-[25%]">LAND Trading Bot</h3>
+                <p className="text-base sm:text-lg lg:text-xl">
+                    By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens.
+                </p>
             </div>
+
             <div className='pt-5'>
                 <Button text="Launch App" link="https://app.metagamehub.io" />
             </div>

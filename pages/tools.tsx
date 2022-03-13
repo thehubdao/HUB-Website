@@ -22,8 +22,8 @@ const TokenPage: NextPage = () => {
 
                 <div className="flex flex-col space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                    <div className="flex items-center space-x-10 w-full pb-20">
-                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">We provide you with all the tools to have a seamless metaverse experience!</h1>
+                    <div className="flex items-center text-center space-x-10 w-full pb-20">
+                        <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH DAO is building a user focused homebase via development and aggregation for an intuitive and interoperable Open Metaverse Experience.</h2>
                     </div>
 
                     <Dataverse />
