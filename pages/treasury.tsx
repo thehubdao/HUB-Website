@@ -23,12 +23,12 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     const [totalXoneValue, setTotalXoneValue] = useState(0)
     const [totalUniswapValue, setTotalUniswapValue] = useState(0)
     const [totaldripShadesValue, setTotaldripShadesValue] = useState(0)
+    const [totalwowPixiesValue, setTotalwowPixiesValue] = useState(0)
     const [totalENSValue, setTotalENSValue] = useState(0)
     const [totalNFTValue, setTotalNFTValue] = useState(0)
     const [totalOceanValue, setTotalOceanValue] = useState(0)
     const [totalQuickswapValue, setTotalQuickswapValue] = useState(0)
     const [totalAssetsValue, setTotalAssetsValue] = useState(0)
-    console.log(nftValues)
 
 
     useEffect(() => {
@@ -70,7 +70,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         const dripShadesSumRounded = Math.round(dripShadesSum)
         setTotaldripShadesValue(dripShadesSumRounded)
 
-        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + xoneSumRounded + ensSumRounded + uniswapSumRounded + dripShadesSumRounded
+        const wowPixiesSum = nftValues.find((nft: { name: string; }) => nft.name === "wow-pixies-v2").value_7
+        const wowPixiesSumRounded = Math.round(wowPixiesSum)
+        setTotalwowPixiesValue(wowPixiesSumRounded)
+
+        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + xoneSumRounded + ensSumRounded + uniswapSumRounded + dripShadesSumRounded + wowPixiesSumRounded
         setTotalNFTValue(nftSum)
 
 
@@ -176,6 +180,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <CryptoCard name="ENS" clicked={showLands === "ENS"} value={totalENSValue} logo="/images/Assets/webp/ens.webp" onClick={() => handleClick("ENS")} />
                             <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} />
                             <CryptoCard name="Drip Shades" value={totaldripShadesValue} logo="https://lh3.googleusercontent.com/GThBKtJoDNClfmSc_tFcLoz6otilERBlobIKZaAcysaOW7dmpp2n3REqEVuqTb0_Xo1QgU04-HWaH26VakSlSBjsox5WYf8EndA5wPk=s0" onClick={() => window.open("https://opensea.io/assets/matic/0x897243a54b03b46a17b55d5609465e9719a6ffa0/210624583337114373395836055367340864637790190801098222508621955082", "_blank")} />
+                            <CryptoCard name="Wow Pixies" value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
                         </div>
                     </div>
 
@@ -246,6 +251,18 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         <div className="flex flex-wrap w-full pb-20">
                             <LandCard classes="" img="/images/Assets/webp/ens.webp" title="mghdao.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65094968028965490667962940604995070354564234685879228165394497380248733853575" />
                             <LandCard classes="" img="/images/Assets/webp/ens.webp" title="metagamehub.eth" link="https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/65976217577879806189239991483658207330501404736298853056691685243794338078597" />
+                        </div>
+                    }
+
+                    {showLands === "wowPixies" &&
+                        <div className="flex flex-wrap w-full pb-20">
+                            {[3875, 980, 3675, 4999, 5049, 4583, 1091, 3499, 4684, 4683, 429, 4682, 4398, 289, 3667, 85, 3424, 4249, 4964,
+                                5096, 4402, 5470, 4540, 4573, 4528, 3170, 2630, 4088, 4017, 4116, 4084, 4111, 4093, 4089, 4086, 4016, 1908,
+                                5190, 4287, 3855].map((id, key) => {
+                                    return (
+                                        <LandCard key={key} classes="" img={`https://ipfs.io/ipfs/QmPLddSa7wPExSNsNDya3cjUbiMKuFPsLm4ygojqm7XLjk/${id}.jpg`} title={`Pixie #${id}`} link={`https://opensea.io/assets/0xb67812ce508b9fc190740871032237c24b6896a0/${id}`} />
+                                    );
+                                })}
                         </div>
                     }
 

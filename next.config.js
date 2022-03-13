@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  async redirects () {
+  images: {
+    domains: ['gateway.pinata.cloud', 'ipfs.io'],
+  },
+  async redirects() {
     return [
       {
         source: '/docs/mghdao_engl_whitepaper.pdf',
