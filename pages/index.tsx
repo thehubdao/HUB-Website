@@ -15,6 +15,7 @@ import Assets from '../components/section/Assets';
 import Tools from '../components/section/Tools';
 import Issues from '../components/section/Issues';
 import Blank from '../components/section/Blank';
+import Achievements from '../components/section/Achievements';
 
 
 const Home: NextPage = () => {
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
 
                 <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
 
-                    {/* <DAO /> */}
+
 
                     <Ecosystem />
 
@@ -43,10 +44,14 @@ const Home: NextPage = () => {
                     <Tools />
 
                     {/* <Blank /> */}
-                    
+
                     <Tokenomics />
 
+                    <Achievements />
+
                     <Roadmap />
+
+                    <DAO />
 
                     <Team />
 
