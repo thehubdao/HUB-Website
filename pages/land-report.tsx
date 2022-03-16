@@ -52,7 +52,7 @@ const LandReport: NextPage = () => {
                             <p className={`text-base sm:text-lg lg:text-xl xl:text-2xl text-center lg:text-left`}>The Sandbox most undervalued LANDs</p>
                         </div>
 
-                        <img src="images/land-report.png" className="max-w-full lg:max-w-3xl w-full lg:w-1/2" />
+                        <img src="images/webp/land-report.webp" className="max-w-full lg:max-w-3xl w-full lg:w-1/2" />
                     </div>
 
                     <div className="flex flex-col-reverse lg:flex-row space-x-0 lg:space-x-20 items-center justify-evenly w-full py-0 sm:py-20">

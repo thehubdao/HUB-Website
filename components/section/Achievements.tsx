@@ -29,16 +29,16 @@ const Achievements = () => {
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
                         <div className="flex space-x-2">
-                            <img src="/images/Logos/Cryptos/SAND.png" className="w-auto h-7" />
-                            <img src="/images/Logos/Cryptos/MANA.png" className="w-auto h-7" />
-                            <img src="/images/Logos/xone-logo.png" className="w-auto h-7" />
-                            <img src="/images/Logos/somnium-space-logo.png" className="w-auto h-7" />
+                            <img src="/images/Logos/Cryptos/webp/SAND.webp" className="w-auto h-7" />
+                            <img src="/images/Logos/Cryptos/webp/MANA.webp" className="w-auto h-7" />
+                            <img src="/images/Logos/webp/xone-logo.webp" className="w-auto h-7" />
+                            <img src="/images/Logos/webp/somnium-space-logo.webp" className="w-auto h-7" />
                         </div>
                         <p className="text-gray-400">Building & Investing across various Metaverses</p>
                     </div>
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
-                        <img src="/images/Logos/Cryptos/MANA.png" className="w-auto h-12" />
+                        <img src="/images/Logos/Cryptos/webp/MANA.webp" className="w-auto h-12" />
                         <p className="text-gray-400">DCL-Edit launch with Decentraland Team</p>
                     </div>
 
@@ -48,7 +48,7 @@ const Achievements = () => {
                     </div>
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
-                        <img src="/images/Logos/Cryptos/MATIC.png" className="w-auto h-12" />
+                        <img src="/images/Logos/Cryptos/webp/MATIC.webp" className="w-auto h-12" />
                         <p className="text-gray-400">Polygon Migration (ca. 1,000 members already)</p>
                     </div>
 
