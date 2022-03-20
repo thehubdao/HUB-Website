@@ -36,7 +36,7 @@ const Dataverse = () => {
                     <img src="/images/Logos/Cryptos/webp/MGH.webp" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
                 </a>
 
-                <a href='https://docs.metagamehub.io' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
+                <a href='https://api.metagamehub.io' target="_blank" className='relative h-40 max-w-lg flex group items-center rounded bg-grey-darkest border border-white/5 p-5 hover:scale-[1.02] transition duration-200 ease-linear'>
                     <p className='z-10  max-w-3/4 text-base xs:text-lg lg:text-xl'>Direct API access and widget creation and integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more</p>
                     <img src="/images/Logos/Cryptos/webp/MGH.webp" className='absolute top-0 right-0 h-full p-3 py-5 grayscale opacity-20 group-hover:opacity-50 transition duration-200 ease-linear' />
                 </a>
