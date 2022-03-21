@@ -132,8 +132,8 @@ const Footer = () => {
                     </a>
                 </Link>
 
-                <a href="https://www.metagamehub.io/docs/mgh_whitepaper_v3.pdf" target="_blank" className="nav-item">
-                    Whitepaper
+                <a href="https://docs.metagamehub.io" target="_blank" className="nav-item">
+                    Learn more
                 </a>
 
                 <Link href="/team">
