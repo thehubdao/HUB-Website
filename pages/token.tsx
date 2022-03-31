@@ -25,7 +25,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 select-none pt-28 lg:pt-48 w-full">
+            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
 
                 <div className="flex flex-col items-center w-full max-w-screen-2xl px-5 sm:px-10">
 

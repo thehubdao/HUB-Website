@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 select-none">
+            <main className="flex flex-col items-center text-gray-200 ">
                 <Intro />
 
                 <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
