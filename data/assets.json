@@ -118,5 +118,17 @@
         "link": "https://opensea.io/Assets/0xd0318da435dbce0b347cc6faa330b5a9889e3585/1102",
         "image": "/images/Assets/webp/brains_1102.webp",
         "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "EGGs #8469",
+        "link": "https://opensea.io/assets/0x575ec01a9e70bf3e192a774eb265c46ec993e4cc/8469",
+        "image": "/images/Assets/webp/eggs_8469.webp",
+        "metaverse": "FLUFWorld"
+    },
+    {
+        "title": "EGGs #8470",
+        "link": "https://opensea.io/assets/0x575ec01a9e70bf3e192a774eb265c46ec993e4cc/8470",
+        "image": "/images/Assets/webp/eggs_8470.webp",
+        "metaverse": "FLUFWorld"
     }
 ]

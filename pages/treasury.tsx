@@ -46,7 +46,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         setTotalDecentralandValue(decentralandSumRounded)
 
 
-        const flufSum = nftValues.filter((nft: { name: string; }) => ["fluf-world-thingies", "partybear", "asm-aifa-all-stars", "fluf-world", "asm-brains", "fluf-world-burrows"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
+        const flufSum = nftValues.filter((nft: { name: string; }) => ["fluf-world-thingies", "partybear", "asm-aifa-all-stars", "fluf-world", "asm-brains", "fluf-world-burrows", "fluf-world-eggs"].includes(nft.name)).reduce((acc: any, curr: any) => acc + curr.value_7, 0)
         const flufSumRounded = Math.round(flufSum)
         setTotalFlufValue(flufSumRounded)
 
