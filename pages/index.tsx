@@ -16,6 +16,10 @@ import Tools from '../components/section/Tools';
 import Issues from '../components/section/Issues';
 import Blank from '../components/section/Blank';
 import Achievements from '../components/section/Achievements';
+import CTAs from '../components/section/CTAs';
+import Communnity from '../components/section/Community';
+import Links from '../components/section/Links';
+import Token from '../components/section/Token';
 
 
 const Home: NextPage = () => {
@@ -31,33 +35,40 @@ const Home: NextPage = () => {
             <main className="flex flex-col items-center text-gray-200 ">
                 <Intro />
 
-                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
+                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-24">
+
+                    <CTAs />
+
+                    <Communnity />
 
 
+                    <Links />
 
-                    <Ecosystem />
+                    {/* <Ecosystem /> */}
 
-                    <Issues />
+                    {/* <Issues /> */}
 
-                    <Assets />
+                    {/* <Assets /> */}
 
-                    <Tools />
+                    {/* <Tools /> */}
 
                     {/* <Blank /> */}
 
-                    <Tokenomics />
+                    {/* <Tokenomics /> */}
 
                     <Achievements />
 
-                    <Roadmap />
+                    {/* <Roadmap /> */}
 
-                    <DAO />
+                    {/* <DAO /> */}
 
-                    <Team />
+                    {/* <Team /> */}
 
                     <Partner />
 
-                    <Press />
+                    <Token />
+
+                    {/* <Press /> */}
 
                 </div>
 

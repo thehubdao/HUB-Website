@@ -172,15 +172,15 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         </div>
 
                         <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
-                            <CryptoCard name="Sandbox" clicked={showLands === "Sandbox"} value={totalSandboxValue} logo="/images/Logos/Cryptos/webp/SAND.webp" onClick={() => handleClick("Sandbox")} />
+                            <CryptoCard name="Sandbox" clicked={showLands === "Sandbox"} value={totalSandboxValue} logo="/images/Logos/Cryptos/webp/SAND.webp" onClick={() => handleClick("Sandbox")}/>
                             <CryptoCard name="Decentraland" clicked={showLands === "Decentraland"} value={totalDecentralandValue} logo="/images/Logos/Cryptos/webp/MANA.webp" onClick={() => handleClick("Decentraland")} />
                             <CryptoCard name="Somnium" clicked={showLands === "Somnium"} value={totalSomniumValue} logo="/images/Logos/webp/somnium-space-logo.webp" onClick={() => handleClick("Somnium")} />
                             <CryptoCard name="FLUF" clicked={showLands === "FLUF"} value={totalFlufValue} logo="/images/Logos/webp/flufworld-logo.webp" onClick={() => handleClick("FLUF")} />
                             <CryptoCard name="XONE" clicked={showLands === "XONE"} value={totalXoneValue} logo="/images/Logos/webp/xone-logo.webp" onClick={() => handleClick("XONE")} />
                             <CryptoCard name="ENS" clicked={showLands === "ENS"} value={totalENSValue} logo="/images/Assets/webp/ens.webp" onClick={() => handleClick("ENS")} />
-                            <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} />
-                            <CryptoCard name="Drip Shades" value={totaldripShadesValue} logo="https://lh3.googleusercontent.com/GThBKtJoDNClfmSc_tFcLoz6otilERBlobIKZaAcysaOW7dmpp2n3REqEVuqTb0_Xo1QgU04-HWaH26VakSlSBjsox5WYf8EndA5wPk=s0" onClick={() => window.open("https://opensea.io/assets/matic/0x897243a54b03b46a17b55d5609465e9719a6ffa0/210624583337114373395836055367340864637790190801098222508621955082", "_blank")} />
-                            <CryptoCard name="Wow Pixies" value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
+                            <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} external/>
+                            <CryptoCard name="Drip Shades" value={totaldripShadesValue} logo="https://lh3.googleusercontent.com/GThBKtJoDNClfmSc_tFcLoz6otilERBlobIKZaAcysaOW7dmpp2n3REqEVuqTb0_Xo1QgU04-HWaH26VakSlSBjsox5WYf8EndA5wPk=s0" onClick={() => window.open("https://opensea.io/assets/matic/0x897243a54b03b46a17b55d5609465e9719a6ffa0/210624583337114373395836055367340864637790190801098222508621955082", "_blank")} external />
+                            <CryptoCard name="Wow Pixies" clicked={showLands === "wowPixies"} value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
                         </div>
                     </div>
 
@@ -273,9 +273,9 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                         </div>
 
                         <div className="flex flex-grow flex-wrap max-w-full lg:max-w-3/4">
-                            <CryptoCard name="Quickswap LPs" value={totalQuickswapValue} logo="/images/Logos/Cryptos/webp/Quickswap_LPs.webp" onClick={() => window.open("https://info.quickswap.exchange/#/account/0x16d0F35b8A4bfc49391d9c374d5AF4ec2dFB25bc", "_blank")} />
-                            <CryptoCard name="Ocean Data LPs" value={totalOceanValue} logo="/images/Logos/Cryptos/webp/Ocean_Data_LPs.webp" onClick={() => window.open("https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd", "_blank")} />
-                            <CryptoCard name="Metaverse Valuation Node" logo="/images/Logos/Cryptos/webp/LINK.webp" onClick={() => window.open("https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations", "_blank")} />
+                            <CryptoCard name="Quickswap LPs" value={totalQuickswapValue} logo="/images/Logos/Cryptos/webp/Quickswap_LPs.webp" onClick={() => window.open("https://info.quickswap.exchange/#/account/0x16d0F35b8A4bfc49391d9c374d5AF4ec2dFB25bc", "_blank")} external/>
+                            <CryptoCard name="Ocean Data LPs" value={totalOceanValue} logo="/images/Logos/Cryptos/webp/Ocean_Data_LPs.webp" onClick={() => window.open("https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd", "_blank")} external/>
+                            <CryptoCard name="Metaverse Valuation Node" logo="/images/Logos/Cryptos/webp/LINK.webp" onClick={() => window.open("https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations", "_blank")} external/>
                         </div>
                     </div>
 

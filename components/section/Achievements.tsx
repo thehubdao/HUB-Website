@@ -9,7 +9,7 @@ const Achievements = () => {
         <>
             <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
 
-                <h1 className={`text-pink- font-normal`}>Achievements</h1>
+                <h2 className={`text-pink- font-normal`}>Achievements</h2>
 
                 <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center items-center max-w-max">
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
