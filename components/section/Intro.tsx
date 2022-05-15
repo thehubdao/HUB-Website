@@ -15,7 +15,7 @@ const Intro = () => {
             {/* MeTagaMeHUb DaO from-blue-400 via-pink-400 to-pink-600 */}
 
             <div className={`absolute inset-0 h-full w-full flex flex-col justify-center items-start text-left px-2 pl-10`}>
-                <h6 className={`text-blue-500 xl:text-4xl mb-4`}>MeTagaMeHUb DaO</h6>
+                <h6 className={`text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 xl:text-4xl mb-4 `}>MeTagaMeHUb DaO</h6>
                 <p className={`text-lg xs:text-xl md:text-2xl xl:text-6xl w-full mb-8 font-medium text-pink-600`}>Your Homebase in the Open Metaverse</p>
                 <p className={`text-sm xs:text-base md:text-lg xl:text-3xl w-full max-w-xl text-blue-500`}>MetaGameHub DAO develops Infrastructure and Applications to be a Hub for Open Metaverse experiences</p>
                 {/* <div className="backdrop-blur-lg rounded-3xl flex space-x-10 p-4 px-8">
