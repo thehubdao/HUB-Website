@@ -172,5 +172,13 @@
     "linkedin": "https://www.linkedin.com/in/ricardoparro/",
     "image": "/images/Advisors/webp/ricardo.webp",
     "description": "15 years experience working with startups as a CTO and software engineer."
+  },
+  {
+    "name": "Justin Goldston",
+    "position": "",
+    "linkedin": "https://www.linkedin.com/in/justin-goldston/",
+    "twitter": "https://twitter.com/phd_justin",
+    "image": "/images/Advisors/justin.jpg",
+    "description": "Professor, Founder, Author, and Five-Time TEDx speaker on blockchain looking to democratize education with the metaverse."
   }
 ]
