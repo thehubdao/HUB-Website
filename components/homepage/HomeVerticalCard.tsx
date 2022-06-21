@@ -20,7 +20,9 @@ const HomeVerticalCard = ({ title, text, link, buttonText, src }: HomeCard) => {
           className='rounded z-30 w-full mb-8 '
         />
         <div className='flex flex-col gap-4 items-center text-center'>
-          <h3 className='md:text-3xl lg:text-4xl 2xl:text-6xl'>{title}</h3>
+          <h3 className='md:text-3xl lg:text-4xl 2xl:text-6xl font-anton'>
+            {title}
+          </h3>
           <p>{text}</p>
           <a
             role='button'

@@ -95,6 +95,7 @@ module.exports = {
       fontFamily: {
         // 'sans': ['Quicksand', 'sans-serif'],
         // 'sans': ['Montserrat', 'sans-serif'],
+        anton: ['anton', 'sans-serif'],
         sans: ['Alterwave', 'sans-serif'],
         prompt: ['Prompt', 'sans-serif'],
         lighters: ['Lighters', 'sans-serif'],
