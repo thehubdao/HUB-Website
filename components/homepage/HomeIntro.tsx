@@ -30,11 +30,13 @@ const HomeIntro = () => {
           </div>
           {/* Text Box */}
 
-          <h1 className='text-8xl'>METAGAMEHUB</h1>
+          <h1 className='text-9xl'>METAGAMEHUB</h1>
           <div className='flex gap-4'>
-            <h2 className='text-8xl'>DAO</h2>
+            <h2 className='text-9xl'>DAO</h2>
             <div>
-              <h3 className='text-2xl'>Your Homebase in the Open Metaverse</h3>
+              <h3 className='text-2xl text-pink-400'>
+                Your Homebase in the Open Metaverse
+              </h3>
               <p className='w-96'>
                 MetaGameHub DAO develops Infrastructure and Applications to be a
                 Hub for Open Metaverse experiences

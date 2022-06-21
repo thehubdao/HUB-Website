@@ -14,10 +14,10 @@ const HomeHorizontalCard = ({
         <img
           src={src}
           loading='lazy'
-          className='rounded z-30 w-full object-cover mb-4'
+          className='rounded z-30 w-full object-cover mb-4 2xl:mb-8'
         />
-        <div className='flex flex-col gap-4 text-center items-center'>
-          <p>{text}</p>
+        <div className='flex flex-col gap-4 text-center items-center font-medium'>
+          <p className='2xl:text-xl'>{text}</p>
           <a
             role='button'
             href={link}

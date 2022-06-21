@@ -39,16 +39,17 @@ html {
 
 h1 {
   @apply text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-medium py-3;
+  font-family: anton;
 }
 
 h2 {
   @apply text-4xl sm:text-6xl xl:text-7xl font-medium py-3;
+  font-family: anton;
 }
 
 h3 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-medium;
 }
-
 h6 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-lighters py-2;
 }
