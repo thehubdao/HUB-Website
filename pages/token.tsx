@@ -53,7 +53,17 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                                         <FiExternalLink className="mb-1.5 text-gray-400" />
                                     </a>
                                 </div>
-                                <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Contract</p>
+                                <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Ethereum Contract</p>
+                            </div>
+
+                            <div className="flex flex-col">
+                                <div className="flex space-x-2 items-center">
+                                    <p className="text-xxs sm:text-lg font-medium select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
+                                    <a href="https://polygonscan.com/token/0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10" target="_blank">
+                                        <FiExternalLink className="mb-1.5 text-gray-400" />
+                                    </a>
+                                </div>
+                                <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Polygon Contract</p>
                             </div>
 
 
@@ -98,15 +108,21 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
 
                         </div>
 
-                        <div className="w-full pt-10 sm:pt-20 flex flex-col sm:flex-row space-x-0 sm:space-x-5 space-y-5 sm:space-y-0 self-center max-w-xs px-10 sm:max-w-2xl">
-                            <Partner link="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8765b1a0eb57ca49be7eacd35b24a574d0203656" logo="/images/Logos/webp/uniswap.svg.webp" />
-                            <Partner link="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc3c604f1943b8c619c5d65cd11a876e9c8edcf10" logo="/images/Logos/webp/quickswap.webp" />
-                            <Partner link="https://bilaxy.com/trade/MGH_ETH" logo="/images/Logos/webp/bilaxy.webp" />
+                        <div className="flex flex-col items-center space-y-5 pt-10">
+                            <p className={`text-3xl text-center`}>Available on:</p>
+
+                            <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 self-center">
+                                <Partner classes="max-w-[14rem]" link="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8765b1a0eb57ca49be7eacd35b24a574d0203656" logo="/images/Logos/webp/uniswap.svg.webp" />
+                                <Partner classes="max-w-[14rem]" link="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc3c604f1943b8c619c5d65cd11a876e9c8edcf10" logo="/images/Logos/webp/quickswap.webp" />
+                                <Partner classes="max-w-[14rem]" link="https://bilaxy.com/trade/MGH_ETH" logo="/images/Logos/webp/bilaxy.webp" />
+                            </div>
                         </div>
+
+
                     </div>
 
 
-                    <div className="min-h-screen relative w-full flex flex-col">
+                    {/* <div className="min-h-screen relative w-full flex flex-col">
 
                         <div className={`w-full flex h-screen flex-col md:flex-row space-y-20 md:space-y-0 items-center mt-20 justify-center`}>
 
@@ -136,7 +152,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
 
                         </div>
 
-                    </div>
+                    </div> */}
 
 
                 </div>

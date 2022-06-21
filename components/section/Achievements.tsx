@@ -1,6 +1,6 @@
 import { AiOutlineTrophy } from "react-icons/ai"
 import { FaUniversity } from "react-icons/fa"
-import {IoShareSocialOutline} from "react-icons/io5"
+import { IoShareSocialOutline } from "react-icons/io5"
 
 const Achievements = () => {
 
@@ -9,12 +9,41 @@ const Achievements = () => {
         <>
             <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
 
-                <h1 className={`text-pink- font-normal`}>Achievements</h1>
+                <h2 className={`text-pink- font-normal`}>Achievements</h2>
 
-                <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center items-center max-w-max">
+                <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center max-w-max">
+
+
+                    <a href="https://port.oceanprotocol.com/t/mgh-dao-bringing-nft-valuation-data-for-axie-infinity-to-the-ocean-marketplace/1189" target="_blank" className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4">
+                        <div className="flex items-center -space-x-7">
+                            <AiOutlineTrophy className="text-blue-500 text-6xl " />
+                            <img src="/images/Logos/Cryptos/webp/OCEAN.webp" className="w-auto h-12" />
+                        </div>
+                        <p className="text-gray-300 text-lg">$9000 Grant by Ocean Protocol</p>
+                    </a>
+
+                    <a href="https://port.oceanprotocol.com/t/round-10-proposal-mgh-unleash-nft-market-data/966" target="_blank" className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4">
+                        <div className="flex items-center -space-x-7">
+                            <AiOutlineTrophy className="text-blue-500 text-6xl " />
+                            <img src="/images/Logos/Cryptos/webp/OCEAN.webp" className="w-auto h-12" />
+                        </div>
+                        <p className="text-gray-300 text-lg">$9000 Grant by Ocean Protocol</p>
+                    </a>
+
+                    <a href="https://governance.decentraland.org/proposal/?id=0cb35ba0-7e05-11ec-9447-6b730f00647d" target="_blank" className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4">
+                    <div className="flex items-center -space-x-7">
+                            <AiOutlineTrophy className="text-blue-500 text-6xl " />
+                            <img src="/images/Logos/Cryptos/webp/MANA.webp" className="w-auto h-12" />
+                        </div>
+                        <p className="text-gray-300 text-lg">$5000 Ocean by Decentraland</p>
+                    </a>
+
+                </div>
+
+                <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center max-w-max">
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
                         <p className="text-3xl text-pink-500 font-medium ">30+</p>
-                        <p className="text-gray-400">Core contributors</p>
+                        <p className="text-gray-400">Core contributors from all over the world</p>
                     </div>
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
@@ -23,7 +52,7 @@ const Achievements = () => {
                     </div>
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
-                        <p className="text-3xl text-pink-500 font-medium">30,000+</p>
+                        <p className="text-3xl text-pink-500 font-medium">160,000+</p>
                         <p className="text-gray-400">Average monthly requests on valuation tool</p>
                     </div>
 
@@ -42,10 +71,10 @@ const Achievements = () => {
                         <p className="text-gray-400">DCL-Edit launch with Decentraland Team</p>
                     </div>
 
-                    <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
+                    {/* <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
                         <AiOutlineTrophy className="text-blue-400 text-5xl " />
                         <p className="text-gray-400">Grants from Decentraland and Ocean Protocol</p>
-                    </div>
+                    </div> */}
 
                     <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
                         <img src="/images/Logos/Cryptos/webp/MATIC.webp" className="w-auto h-12" />

@@ -6,6 +6,7 @@ import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
 import MetaFi from "../components/section/MetaFi";
 import Dataverse from "../components/section/Dataverse";
+import ToolCard from "../components/section-element/ToolCard";
 
 
 const TokenPage: NextPage = () => {
@@ -20,14 +21,19 @@ const TokenPage: NextPage = () => {
 
             <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
 
-                <div className="flex flex-col space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
+                <div className="flex flex-col items-center space-y-32 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                    <div className="flex items-center text-center space-x-10 w-full pb-20">
-                        <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH DAO is building a user focused homebase via development and aggregation for an intuitive and interoperable Open Metaverse Experience.</h2>
+                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH Tools</h1>
+
+                    <div className="flex w-full flex-wrap gap-5">
+                        <ToolCard title="Datasets" text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace" link="https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd" button="Buy Datasets" />
+                        <ToolCard title="Chainlink Oracle" text="MGH Chainlink Oracle Node providing on-chain valuation data" link="https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations" button="Get Data" />
+                        <ToolCard title="Valuation Interface" text="MGH dApp LAND Valuation Interface for The Sandbox and Decentraland (Axie Infinity cooming soon!)" link="https://app.metagamehub.io/valuation" button="Launch App" />
+                        <ToolCard title="Valuation API" text="Direct API access and widget creation and integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more" link="https://api.metagamehub.io" button="Documentation" />
+                        <ToolCard title="$MGH Staking" text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens." link="https://app.metagamehub.io/stake" button="Stake $MGH" />
+                        <ToolCard title="NFT Pools" text="Users can select a pool based on their NFTs, lock them in along with MGH as collateral and mint NFT Pool Tokens in return. This allows the user to diversify their NFT holdings and hedge their overall exposure." link="https://app.metagamehub.io/pools" button="Launch App" />
+                        <ToolCard title="LAND Trading Bot" text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens." />
                     </div>
-
-                    <Dataverse />
-                    <MetaFi />
 
                 </div>
             </main>

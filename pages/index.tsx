@@ -24,33 +24,41 @@ const Home: NextPage = () => {
 
 <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
 
+<CTAs />
 
+<Communnity />
 
 <Ecosystem />
 
-                    <Issues />
+<Links />
 
-                    <Assets />
+{/* <Ecosystem /> */}
 
-                    <Tools />
+        {/* <Issues /> */}
 
-                    <Blank />
+        {/* <Assets /> */}
 
-                    <Tokenomics />
+        {/* <Tools /> */}
 
-                    <Achievements />
+        {/* <Blank /> */}
 
-                    <Roadmap />
+        {/* <Tokenomics /> */}
 
-                    <DAO />
+        {/* <Achievements /> */}
 
-                    <Team />
+        {/* <Roadmap /> */}
 
-                    <Partner />
+        {/* <DAO /> */}
 
-                    <Press />
+        {/* <Team /> */}
 
-                </div> */}
+        {/* <Partner /> */}
+
+        {/* <Token /> */}
+
+        {/* <Press /> */}
+
+        {/* </div>  */}
       </main>
 
       <Footer />

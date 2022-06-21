@@ -1,6 +1,6 @@
 interface ButtonProps {
     text: string;
-    link: string;
+    link?: string;
     sameTab?: boolean;
     classes?: string;
 }

@@ -11,8 +11,8 @@ export interface HomeCard {
 
 const HomeVerticalCard = ({ title, text, link, buttonText, src }: HomeCard) => {
   return (
-    <div className='2xl:w-[440px] 2xl:h-[680px] xl:h-500 xl:w-300 p-8 2xl:bg-gray-700 rounded-xl  '>
-      <div className='relative bottom-40'>
+    <div className='md:h-[500px] md:w-[290px] 2xl:w-[440px] 2xl:h-[680px] xl:h-[550px] xl:w-[350px] p-8 bg-gray-700 rounded-xl  '>
+      <div className='relative 2xl:bottom-40 lg:bottom-34 '>
         <img
           placeholder='blur'
           src={src}
@@ -20,7 +20,7 @@ const HomeVerticalCard = ({ title, text, link, buttonText, src }: HomeCard) => {
           className='rounded z-30 w-full mb-8 '
         />
         <div className='flex flex-col gap-4 items-center text-center'>
-          <h3>{title}</h3>
+          <h3 className='md:text-3xl lg:text-4xl 2xl:text-6xl'>{title}</h3>
           <p>{text}</p>
           <a
             role='button'
