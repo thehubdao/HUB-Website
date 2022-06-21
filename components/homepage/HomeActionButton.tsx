@@ -11,7 +11,7 @@ const HomeActionButton = ({ link, text }: Props) => {
       href={link}
       target='_blank'
       role='button'
-      className='w-56 py-2 cursor-pointer bg-gray-800 rounded-lg text-center'
+      className='w-56 py-2 cursor-pointer bg-gray-800 rounded-lg text-center hover:bg-blue-300 hover:text-gray-800 transition-all font-medium'
     >
       {text}
     </a>

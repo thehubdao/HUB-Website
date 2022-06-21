@@ -2,29 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-
   @font-face {
     font-family: 'Alterwave';
     font-weight: 400;
-    src: url("./fonts/Alterwave/Alterwave-Thin.ttf");
+    src: url('./fonts/Alterwave/Alterwave-Thin.ttf');
   }
   @font-face {
     font-family: 'Alterwave';
     font-weight: 500;
-    src: url("./fonts/Alterwave/Alterwave-Light.ttf");
+    src: url('./fonts/Alterwave/Alterwave-Light.ttf');
   }
   @font-face {
     font-family: 'Alterwave';
     font-weight: 600;
-    src: url("./fonts/Alterwave/Alterwave-Regular.ttf");
+    src: url('./fonts/Alterwave/Alterwave-Regular.ttf');
   }
 
   @font-face {
     font-family: 'Lighters';
     font-weight: 400;
-    src: url("./fonts/Lighters-Regular.ttf");
+    src: url('./fonts/Lighters-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Anton';
+    font-weight: 400;
+    src: url('./fonts/Anton-Regular.ttf');
   }
 }
 
@@ -50,7 +53,6 @@ h6 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-lighters py-2;
 }
 
-
 .members-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
 }
@@ -66,7 +68,7 @@ h6 {
   /* hide scrollbar but allow scrolling */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 .no-scroll-bar::-webkit-scrollbar {
@@ -90,13 +92,13 @@ h6 {
 }
 
 #chart .apexcharts-tooltip {
-  @apply border-none shadow-none bg-transparent font-medium
+  @apply border-none shadow-none bg-transparent font-medium;
 }
 
 #chart .arrow_box {
-  @apply text-xl flex flex-col p-2 rounded bg-grey-darkest
+  @apply text-xl flex flex-col p-2 rounded bg-grey-darkest;
 }
 
 #chart .arrow_box .header {
-  @apply font-normal text-base text-gray-400
+  @apply font-normal text-base text-gray-400;
 }
