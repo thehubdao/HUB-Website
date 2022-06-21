@@ -70,5 +70,21 @@
     {
         "link": "https://xone.gg",
         "logo": "/images/Collaborators/xone.svg"
+    },
+    {
+        "link": "https://bonuz.market",
+        "logo": "/images/Collaborators/bonuz.webp"
+    },
+    {
+        "link": "https://pax.world",
+        "logo": "/images/Collaborators/pax-world.svg"
+    },
+    {
+        "link": "https://revolvegames.io",
+        "logo": "/images/Collaborators/revolve.svg"
+    },
+    {
+        "link": "https://www.helsinkiblockchaincenter.com",
+        "logo": "/images/Collaborators/helsinki-blochain-center.jpg"
     }
 ]
