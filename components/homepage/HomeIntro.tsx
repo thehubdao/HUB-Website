@@ -10,7 +10,7 @@ const HomeIntro = () => {
         muted
         className='w-screen min-h-screen absolute top-0 object-cover -z-10'
       >
-        <source src='/videos/SPACEBG.MP4' type='video/mp4' />
+        <source src='/images/SPACEBG.MP4' type='video/mp4' />
       </video>
 
       {/* Bottom */}
