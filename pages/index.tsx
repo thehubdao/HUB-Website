@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className='text-gray-200 pt-40 min-h-screen'>
+      <main className='text-gray-200 pt-[10vh] md:pt-40 min-h-screen'>
         <HomeIntro />
         <HomeCardsSection />
         {/* <Intro />

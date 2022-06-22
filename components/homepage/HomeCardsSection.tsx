@@ -58,7 +58,7 @@ const HomeCardsSection = () => {
         ))}
       </ul>
       {/* Horizontal Cards */}
-      <ul className='flex flex-col md:flex-row w-full justify-around gap-16 xl:gap-8'>
+      <ul className='flex flex-col md:flex-row w-full items-center md:justify-around gap-16 xl:gap-8'>
         {horizontalCards.map(({ text, buttonText, link, src }) => (
           <li key={text}>
             <HomeHorizontalCard
