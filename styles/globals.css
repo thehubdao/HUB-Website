@@ -29,6 +29,11 @@
     font-weight: 400;
     src: url('./fonts/Anton-Regular.ttf');
   }
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url('./fonts/Inter Variable/Inter.ttf');
+  }
 }
 
 html {
@@ -49,9 +54,17 @@ h2 {
 
 h3 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-medium;
+  font-family: inter;
 }
 h6 {
   @apply text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-lighters py-2;
+}
+
+/* p {
+  font-family: inter;
+} */
+body {
+  font-family: inter;
 }
 
 .members-grid {

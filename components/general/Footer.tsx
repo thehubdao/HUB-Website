@@ -30,7 +30,7 @@ const Footer = () => {
     }
 
     return (
-        <footer className="mt-10 sm:mt-44 relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-2 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
+        <footer className="mt-10 relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-2 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
 
             <img src="/images/Logos/MGH/webp/mgh_logo.webp" className="absolute w-3/4 lg:w-1/2 -right-20 top-44 lg:top-5 z-[-1] blur-sm xs:blur opacity-50" />
 

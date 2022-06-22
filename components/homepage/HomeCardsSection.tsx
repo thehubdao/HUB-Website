@@ -44,7 +44,7 @@ const HomeCardsSection = () => {
   return (
     <section className='p-20 min-h-screen w-full'>
       {/* Vertical Cards */}
-      <ul className='flex justify-around w-full mb-40 xl:mb-80 '>
+      <ul className='flex flex-col md:flex-row justify-around w-full mb-40 xl:mb-80 items-center gap-20 xl:gap-0 flex-wrap '>
         {verticalCards.map(({ title, text, buttonText, link, src }) => (
           <li key={title}>
             <HomeVerticalCard
@@ -58,7 +58,7 @@ const HomeCardsSection = () => {
         ))}
       </ul>
       {/* Horizontal Cards */}
-      <ul className='flex flex-col md:flex-row w-full justify-around gap-8'>
+      <ul className='flex flex-col md:flex-row w-full justify-around gap-16 xl:gap-8'>
         {horizontalCards.map(({ text, buttonText, link, src }) => (
           <li key={text}>
             <HomeHorizontalCard
