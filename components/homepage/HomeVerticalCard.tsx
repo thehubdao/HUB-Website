@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 export interface HomeCard {
   title: string
@@ -11,7 +10,7 @@ export interface HomeCard {
 
 const HomeVerticalCard = ({ title, text, link, buttonText, src }: HomeCard) => {
   return (
-    <div className='w-full xs:h-[500px] xs:w-[290px] 2xl:w-[440px] 2xl:h-[680px] xl:h-[550px] xl:w-[350px] p-8 bg-gray-700 rounded-xl'>
+    <div className='w-full h-[450px] xs:h-[500px] xs:w-[290px] 2xl:w-[440px] 2xl:h-[680px] xl:h-[550px] xl:w-[350px] p-8 bg-gray-700 rounded-xl'>
       <div className='relative bottom-24 2xl:bottom-40 sm:bottom-24 xl:bottom-34 '>
         <img
           placeholder='blur'
@@ -27,7 +26,7 @@ const HomeVerticalCard = ({ title, text, link, buttonText, src }: HomeCard) => {
           <a
             role='button'
             href={link}
-            className='text-center block bg-red-400 w-44 rounded-md py-1 hover:scale-105 transition-all font-medium'
+            className='text-center block bg-pink-400 w-44 rounded-md py-1 hover:scale-105 transition-all font-medium'
           >
             {buttonText}
           </a>

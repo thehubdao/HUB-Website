@@ -7,21 +7,21 @@ const HomeCardsSection = () => {
     {
       text: 'Find undervalued Metaverse LAND with our AI supported valuation tools.',
       title: 'INVEST',
-      link: 'hola',
+      link: 'https://app.metagamehub.io/valuation',
       buttonText: 'Valuation Tool',
       src: '/images/HomeCards/INVESTPNG.png',
     },
     {
       text: 'Leverage our game development group to create your metaverse experiences.',
       title: 'BUILD',
-      link: 'hola',
+      link: '/build',
       buttonText: 'Game Dev',
       src: '/images/HomeCards/BUILDPNG.png',
     },
     {
       text: 'Explore a variety of tools for a convenient journey through the Open Metaverse.',
       title: 'USE',
-      link: 'hola',
+      link: '/tools',
       buttonText: 'Metaverse Tools',
       src: '/images/HomeCards/USEPNG.png',
     },
@@ -29,13 +29,13 @@ const HomeCardsSection = () => {
   const horizontalCards: Omit<HomeCard, 'title'>[] = [
     {
       text: 'Evaluate Metaverse LANDs',
-      link: 'hola',
+      link: 'https://app.metagamehub.io/valuation',
       buttonText: 'Evaluate LANDs',
       src: '/images/HomeCards/EVALUATELANDSPNG.png',
     },
     {
       text: 'Build your experience in the Metaverse with us',
-      link: 'hola',
+      link: '/build',
       buttonText: 'BUILD WITH US',
       src: '/images/HomeCards/BUILDWITHUSPNG.png',
     },

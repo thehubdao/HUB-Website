@@ -21,7 +21,7 @@ const HomeHorizontalCard = ({
           <a
             role='button'
             href={link}
-            className='text-center block bg-red-400 w-44 rounded-md py-1 transition-all hover:scale-105 font-medium'
+            className='text-center block bg-pink-400 w-44 rounded-md py-1 transition-all hover:scale-105 font-medium'
           >
             {buttonText}
           </a>
