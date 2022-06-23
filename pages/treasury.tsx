@@ -24,6 +24,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
     const [totalUniswapValue, setTotalUniswapValue] = useState(0)
     const [totaldripShadesValue, setTotaldripShadesValue] = useState(0)
     const [totalwowPixiesValue, setTotalwowPixiesValue] = useState(0)
+    const [totalexclusibleValue, setTotalExclusibleValue] = useState(0)
     const [totalENSValue, setTotalENSValue] = useState(0)
     const [totalNFTValue, setTotalNFTValue] = useState(0)
     const [totalOceanValue, setTotalOceanValue] = useState(0)
@@ -74,7 +75,11 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
         const wowPixiesSumRounded = Math.round(wowPixiesSum)
         setTotalwowPixiesValue(wowPixiesSumRounded)
 
-        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + xoneSumRounded + ensSumRounded + uniswapSumRounded + dripShadesSumRounded + wowPixiesSumRounded
+        const exclusibleSum = nftValues.find((nft: { name: string; }) => nft.name === "exclusible-penthouse-v2").value_7
+        const exclusibleSumRounded = Math.round(exclusibleSum)
+        setTotalExclusibleValue(exclusibleSumRounded)
+
+        const nftSum = sandboxSumRounded + decentralandSumRounded + somniumSumRounded + flufSumRounded + xoneSumRounded + ensSumRounded + uniswapSumRounded + dripShadesSumRounded + wowPixiesSumRounded + exclusibleSumRounded
         setTotalNFTValue(nftSum)
 
 
@@ -181,6 +186,7 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} />
                             <CryptoCard name="Drip Shades" value={totaldripShadesValue} logo="https://lh3.googleusercontent.com/GThBKtJoDNClfmSc_tFcLoz6otilERBlobIKZaAcysaOW7dmpp2n3REqEVuqTb0_Xo1QgU04-HWaH26VakSlSBjsox5WYf8EndA5wPk=s0" onClick={() => window.open("https://opensea.io/assets/matic/0x897243a54b03b46a17b55d5609465e9719a6ffa0/210624583337114373395836055367340864637790190801098222508621955082", "_blank")} />
                             <CryptoCard name="Wow Pixies" value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
+                            <CryptoCard name="Exclusible Penthouses" value={totalexclusibleValue} logo="/images/Logos/exclusible-logo.jpg" onClick={() => handleClick("Exclusible")} />
                         </div>
                     </div>
 
@@ -263,6 +269,18 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                                         <LandCard key={key} classes="" img={`https://ipfs.io/ipfs/QmPLddSa7wPExSNsNDya3cjUbiMKuFPsLm4ygojqm7XLjk/${id}.jpg`} title={`Pixie #${id}`} link={`https://opensea.io/assets/0xb67812ce508b9fc190740871032237c24b6896a0/${id}`} />
                                     );
                                 })}
+                        </div>
+                    }
+
+                    {showLands === "Exclusible" &&
+                        <div className="flex flex-wrap w-full pb-20">
+                            {assetsJson.map((element, key) => {
+                                if (element.metaverse === "Exclusible") {
+                                    return (
+                                        <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                                    );
+                                }
+                            })}
                         </div>
                     }
 
