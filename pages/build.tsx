@@ -26,7 +26,7 @@ const BuildPage: NextPage = () => {
                 <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
                     <div className="flex flex-col lg:flex-row justify-between items-center space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 w-full mb-44">
 
-                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal max-w-full lg:max-w-min text-center lg:text-left">MGH Metaverse Development</h1>
+                        <h1 className="text-gray-200 font-normal max-w-full lg:max-w-min text-center lg:text-left">MGH Metaverse Development</h1>
 
                         <div className="flex flex-col items-center space-y-10 w-full lg:w-1/2">
                             <p className={`text-base lg:text-lg text-center max-w-xl`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>

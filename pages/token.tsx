@@ -31,7 +31,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
 
                     <div className="flex flex-col lg:flex-row items-center space-x-0 lg:space-x-20 space-y-10 sm:space-y-20 lg:space-y-0 w-full pb-44">
 
-                        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal">MGH Token</h1>
+                        <h1>MGH Token</h1>
 
                         <div className="flex flex-col space-y-5 flex-grow pl-0 lg:pl-20 xl:pl-40">
                             <div className="flex space-x-5 sm:space-x-20">

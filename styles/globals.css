@@ -4,35 +4,40 @@
 
 @layer base {
   @font-face {
-    font-family: 'Alterwave';
+    font-family: "Alterwave";
     font-weight: 400;
-    src: url('./fonts/Alterwave/Alterwave-Thin.ttf');
+    src: url("./fonts/Alterwave/Alterwave-Thin.ttf");
   }
   @font-face {
-    font-family: 'Alterwave';
+    font-family: "Alterwave";
     font-weight: 500;
-    src: url('./fonts/Alterwave/Alterwave-Light.ttf');
+    src: url("./fonts/Alterwave/Alterwave-Light.ttf");
   }
   @font-face {
-    font-family: 'Alterwave';
+    font-family: "Alterwave";
     font-weight: 600;
-    src: url('./fonts/Alterwave/Alterwave-Regular.ttf');
+    src: url("./fonts/Alterwave/Alterwave-Regular.ttf");
   }
 
   @font-face {
-    font-family: 'Lighters';
+    font-family: "Lighters";
     font-weight: 400;
-    src: url('./fonts/Lighters-Regular.ttf');
+    src: url("./fonts/Lighters-Regular.ttf");
   }
   @font-face {
-    font-family: 'Anton';
+    font-family: "Anton";
     font-weight: 400;
-    src: url('./fonts/Anton-Regular.ttf');
+    src: url("./fonts/Anton-Regular.ttf");
   }
   @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 400;
-    src: url('./fonts/Inter Variable/Inter.ttf');
+    src: url("./fonts/Inter Variable/Inter.ttf");
+  }
+  @font-face {
+    font-family: "FiraSans";
+    font-weight: 400;
+    src: url("./fonts/Fira_Sans/FiraSans-Light.ttf");
   }
 }
 
@@ -64,7 +69,7 @@ h6 {
   font-family: inter;
 } */
 body {
-  font-family: inter;
+  font-family: firasans;
 }
 
 .members-grid {

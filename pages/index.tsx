@@ -1,11 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import Footer from '../components/general/Footer'
-import { Toolbar } from '../components'
-import { HomeCardsSection, HomeIntro } from '../components/homepage'
-import Achievements from '../components/section/Achievements'
-import Collaborators from '../components/section/Collaborators'
+import Footer from "../components/general/Footer";
+import { Toolbar } from "../components";
+import { HomeCardsSection, HomeIntro } from "../components/homepage";
+import Achievements from "../components/section/Achievements";
+import Collaborators from "../components/section/Collaborators";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className="text-gray-200 pt-[10vh] md:pt-40 min-h-screen">
+      <main className="text-gray-200 pt-[10vh] md:pt-40 min-h-screen bg-[#141216]">
         <div className="flex flex-col gap-36">
           <HomeIntro />
           <HomeCardsSection />
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

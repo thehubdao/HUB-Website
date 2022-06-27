@@ -20,7 +20,7 @@ const TeamPage: NextPage = () => {
       <Toolbar dark={true} />
 
       <main className='animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-48 px-5 sm:px-10'>
-        <h1 className='mb-10 text-gradient text-center font-normal'>
+        <h1 className='mb-10 text-gray-200 text-center font-normal'>
           Core contributors
         </h1>
         <Button text='Contribute' link='/contribute' />

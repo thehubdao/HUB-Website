@@ -193,7 +193,7 @@ const TreasuryPage: NextPage = ({
         <main className='flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full'>
           <div className='flex flex-col w-full 2xl:max-w-screen-2xl px-5 sm:px-10'>
             <div className='flex flex-col sm:flex-row justify-between items-center space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 w-full pb-20 lg:pb-44'>
-              <h1 className='text-transparent bg-clip-text bg-gradient-to-b from-blue-500 via-pink-500 to-pink-600 font-normal'>
+              <h1 className='text-gray-200 font-normal'>
                 Treasury
               </h1>
 

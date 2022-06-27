@@ -1,46 +1,52 @@
-import React from 'react'
-import { HomeActionButton } from '.'
+import React from "react";
+import { HomeActionButton } from ".";
 
 const HomeIntro = () => {
   return (
-    <section className='w-screen h-screen'>
+    <section className="w-screen min-h-screen">
       <video
         loop
         autoPlay
         muted
-        className='w-screen min-h-screen absolute top-0 object-cover -z-10'
+        className="w-screen min-h-screen absolute top-0 object-cover"
       >
-        <source src='/videos/bgvideo.mp4' type='video/mp4' />
+        <source src="/videos/bgvideo.mp4" type="video/mp4" />
       </video>
 
       {/* Bottom */}
-      <div className='pt-[45vh]'>
+      <div className="absolute bottom-12 z-40 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0">
         {/* Action Buttons and Big Text */}
-        <div className='md:pl-14'>
+        <div className="md:pl-14 z-40">
           {/* Action Buttons */}
-          <div className='flex gap-4 justify-center md:justify-start mb-4 md:mb-0'>
+          <div className="flex gap-4 justify-center md:justify-start mb-4 md:mb-0">
             <HomeActionButton
-              text='Voting'
-              link='https://snapshot.org/#/metagamehub.eth'
+              text="Voting"
+              link="https://snapshot.org/#/metagamehub.eth"
             />
             <HomeActionButton
-              text='Launch App'
-              link='https://app.metagamehub.io'
+              text="Launch App"
+              link="https://app.metagamehub.io"
             />
           </div>
           {/* Text Box */}
 
-          <h1 className='text-4xl xs:text-6xl text-center md:text-left md:text-9xl'>METAGAMEHUB</h1>
-          <div className='flex flex-col md:flex-row gap-4 items-center'>
-            <h2 className='text-5xl xs:text-7xl md:text-9xl'>DAO</h2>
-            <div className='text-center md:text-left'>
-              <h3 className='text-2xl text-pink-400'>
-                Your Homebase in the Open Metaverse
-              </h3>
-              <p className='m-auto md:m-0 w-96'>
-                MetaGameHub DAO develops Infrastructure and Applications to be a
-                Hub for Open Metaverse experiences
-              </p>
+          <div className="flex flex-col gap-4 md:gap-0">
+            <h1 className="text-4xl xs:text-6xl text-center md:text-left md:text-9xl pb-0 text-gray-200 z-40">
+              METAGAMEHUB
+            </h1>
+            <div className="z-20 flex flex-col md:flex-row gap-4 items-center">
+              <h2 className="text-5xl xs:text-7xl md:text-9xl pt-0 z-20">
+                DAO
+              </h2>
+              <div className="text-center md:text-left z-20">
+                <h3 className="text-2xl text-pink-reco">
+                  Your Homebase in the Open Metaverse
+                </h3>
+                <p className="m-auto md:m-0 w-96">
+                  MetaGameHub DAO develops Infrastructure and Applications to be
+                  a Hub for Open Metaverse experiences
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +54,7 @@ const HomeIntro = () => {
         <div></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HomeIntro
+export default HomeIntro;

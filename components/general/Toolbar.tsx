@@ -45,7 +45,7 @@ const Toolbar = ({ dark }: any) => {
           </Link>
 
           {/* Rest of Links */}
-          <div className="flex gap-8">
+          <div className="flex gap-16">
             <Link href="/tools">
               <a className="nav-item pt-1">Use Tools</a>
             </Link>
