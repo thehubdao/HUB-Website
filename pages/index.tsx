@@ -6,6 +6,7 @@ import { Toolbar } from "../components";
 import { HomeCardsSection, HomeIntro } from "../components/homepage";
 import Achievements from "../components/section/Achievements";
 import Collaborators from "../components/section/Collaborators";
+import AvailableOn from "../components/section/AvailableOn";
 
 const Home: NextPage = () => {
   return (
@@ -23,8 +24,9 @@ const Home: NextPage = () => {
         <div className="flex flex-col gap-36">
           <HomeIntro />
           <HomeCardsSection />
-          <Collaborators />
           <Achievements />
+          <Collaborators />
+          <AvailableOn />
         </div>
       </main>
 
