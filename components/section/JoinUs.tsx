@@ -8,11 +8,26 @@ import {
 } from "react-icons/fa";
 
 const links = {
-  twitter: { icon: <FaTwitter className="text-6xl" />, link: "" },
-  instagram: { icon: <FaInstagram className="text-6xl" />, link: "" },
-  discord: { icon: <FaDiscord className="text-6xl" />, link: "" },
-  linkedin: { icon: <FaLinkedin className="text-6xl" />, link: "" },
-  telegram: { icon: <FaTelegram className="text-6xl" />, link: "" },
+  twitter: {
+    icon: <FaTwitter className="text-6xl" />,
+    link: "https://twitter.com/MGH_DAO",
+  },
+  instagram: {
+    icon: <FaInstagram className="text-6xl" />,
+    link: "https://www.instagram.com/metagamehub_dao/",
+  },
+  discord: {
+    icon: <FaDiscord className="text-6xl" />,
+    link: "https://discord.gg/KjMkxyYh",
+  },
+  linkedin: {
+    icon: <FaLinkedin className="text-6xl" />,
+    link: "https://www.linkedin.com/company/metagamehub-dao/",
+  },
+  telegram: {
+    icon: <FaTelegram className="text-6xl" />,
+    link: "https://web.telegram.org/z/#-1458226801",
+  },
 };
 
 const JoinUs = () => {
