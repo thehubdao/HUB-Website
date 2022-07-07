@@ -17,7 +17,7 @@ const Achievements = () => {
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
-                className="w-auto h-30"
+                className="w-auto h-26 md:h-30"
               />
             </div>
             <p className="text-gray-300 text-sm">
@@ -34,7 +34,7 @@ const Achievements = () => {
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/DECENTRALAND.svg"
-                className="w-auto h-30"
+                className="w-auto h-26 md:h-30"
               />
             </div>
             <p className="text-gray-300 text-sm">
@@ -51,7 +51,7 @@ const Achievements = () => {
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
-                className="w-auto h-30"
+                className="w-auto h-26 md:h-30"
               />
             </div>
             <p className="text-gray-300 text-sm">
