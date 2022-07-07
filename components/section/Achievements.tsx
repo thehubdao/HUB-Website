@@ -14,7 +14,7 @@ const Achievements = () => {
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
           >
-            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
                 className="w-auto h-30"
@@ -31,7 +31,7 @@ const Achievements = () => {
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
           >
-            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/DECENTRALAND.svg"
                 className="w-auto h-30"
@@ -48,7 +48,7 @@ const Achievements = () => {
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
           >
-            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
                 src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
                 className="w-auto h-30"
