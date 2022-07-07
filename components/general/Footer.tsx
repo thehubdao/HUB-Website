@@ -38,7 +38,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="mt-10 relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-2 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden">
+    <footer className="relative flex flex-col lg:flex-row justify-around items-center space-y-20 lg:space-y-0 space-x-0 lg:space-x-10 px-2 sm:px-10 py-10 pb-16 pt-64 w-full text-gray-200 overflow-hidden bg-[#111111]">
       <div className="flex flex-col justify-start items-center space-y-2 backdrop-blur-lg rounded p-4 sm:p-5">
         <p className="text-sm sm:text md:text-lg lg:text-base text-center text-gray-400 font-medium">
           Stay up to date for the latest from MGH!

@@ -8,38 +8,21 @@ const Achievements = () => {
       <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
         <h2 className={`text-pink- font-normal`}>ACHIEVEMENTS</h2>
 
-        <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center max-w-max">
+        <div className="relative my-16 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center max-w-max">
           <a
             href="https://port.oceanprotocol.com/t/mgh-dao-bringing-nft-valuation-data-for-axie-infinity-to-the-ocean-marketplace/1189"
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
           >
-            <div className="flex items-center -space-x-7">
-              <AiOutlineTrophy className="text-blue-500 text-6xl " />
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
               <img
-                src="/images/Logos/Cryptos/webp/OCEAN.webp"
-                className="w-auto h-12"
+                src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
+                className="w-auto h-30"
               />
             </div>
-            <p className="text-gray-300 text-lg">
-              $9000 Grant by Ocean Protocol
-            </p>
-          </a>
-
-          <a
-            href="https://port.oceanprotocol.com/t/round-10-proposal-mgh-unleash-nft-market-data/966"
-            target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
-          >
-            <div className="flex items-center -space-x-7">
-              <AiOutlineTrophy className="text-blue-500 text-6xl " />
-              <img
-                src="/images/Logos/Cryptos/webp/OCEAN.webp"
-                className="w-auto h-12"
-              />
-            </div>
-            <p className="text-gray-300 text-lg">
-              $9000 Grant by Ocean Protocol
+            <p className="text-gray-300 text-sm">
+              Grant by Ocean Protocol
+              <p className="text-pink-500 text-lg">$9000</p>
             </p>
           </a>
 
@@ -48,14 +31,33 @@ const Achievements = () => {
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
           >
-            <div className="flex items-center -space-x-7">
-              <AiOutlineTrophy className="text-blue-500 text-6xl " />
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
               <img
-                src="/images/Logos/Cryptos/webp/MANA.webp"
-                className="w-auto h-12"
+                src="/images/Logos/Cryptos/svgs/DECENTRALAND.svg"
+                className="w-auto h-30"
               />
             </div>
-            <p className="text-gray-300 text-lg">$5000 Ocean by Decentraland</p>
+            <p className="text-gray-300 text-sm">
+              Ocean by Decentraland
+              <p className="text-pink-500 text-lg">$5000</p>
+            </p>
+          </a>
+
+          <a
+            href="https://port.oceanprotocol.com/t/round-10-proposal-mgh-unleash-nft-market-data/966"
+            target="_blank"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
+          >
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-grey-darkest h-40 w-56 py-20 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5">
+              <img
+                src="/images/Logos/Cryptos/svgs/OCEAN_PROTOCOL.svg"
+                className="w-auto h-30"
+              />
+            </div>
+            <p className="text-gray-300 text-sm">
+              Grant by Ocean Protocol
+              <p className="text-pink-500 text-lg">$9000</p>
+            </p>
           </a>
         </div>
 
