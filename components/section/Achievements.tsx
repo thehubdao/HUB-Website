@@ -6,7 +6,7 @@ const Achievements = () => {
   return (
     <>
       <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
-        <h2 className={`text-pink- font-normal`}>ACHIEVEMENTS</h2>
+        <h2 className={`text-pink- font-normal mb-16`}>ACHIEVEMENTS</h2>
 
         <div className="relative my-16 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center max-w-max">
           <a
