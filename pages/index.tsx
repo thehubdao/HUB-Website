@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className="text-gray-200 pt-[10vh] md:pt-40 min-h-screen bg-[#111111]">
+      <main className="text-gray-200 pt-[10vh] md:pt-40 min-h-screen bg-[#141216]">
         <div className="flex flex-col gap-36">
           <HomeIntro />
           <HomeCardsSection />
