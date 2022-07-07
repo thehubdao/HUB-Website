@@ -62,20 +62,20 @@ const Achievements = () => {
         </div>
 
         <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center max-w-max">
-          <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
-            <p className="text-3xl text-pink-500 font-medium ">30+</p>
+          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+            <p className="text-xl text-pink-500 font-inter">30+</p>
             <p className="text-gray-400">
               Core contributors from all over the world
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
-            <p className="text-3xl text-pink-500 font-medium">$1.6 Mio</p>
+          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+            <p className="text-xl text-pink-500 font-inter">$1.6 Mio</p>
             <p className="text-gray-400">Decentralized community fundraise</p>
           </div>
 
-          <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-56 p-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
-            <p className="text-3xl text-pink-500 font-medium">160,000+</p>
+          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+            <p className="text-xl text-pink-500 font-inter">160,000+</p>
             <p className="text-gray-400">
               Average monthly requests on valuation tool
             </p>
