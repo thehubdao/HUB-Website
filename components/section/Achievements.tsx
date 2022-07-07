@@ -12,7 +12,7 @@ const Achievements = () => {
           <a
             href="https://port.oceanprotocol.com/t/mgh-dao-bringing-nft-valuation-data-for-axie-infinity-to-the-ocean-marketplace/1189"
             target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-72 p-4 mb-28 md:mb-0"
           >
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
@@ -29,7 +29,7 @@ const Achievements = () => {
           <a
             href="https://governance.decentraland.org/proposal/?id=0cb35ba0-7e05-11ec-9447-6b730f00647d"
             target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4 mb-28 md:mb-0"
           >
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
