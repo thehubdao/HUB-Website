@@ -21,27 +21,24 @@ const BuildPage: NextPage = () => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
+            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
 
                 <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
-                    <div className="flex flex-col lg:flex-row justify-between items-center space-x-0 lg:space-x-10 space-y-10 lg:space-y-0 w-full mb-44">
+                    <div className="flex flex-col justify-between items-center space-x-0 space-y-10 lg:space-y-0 w-full mb-44">
 
-                        <h1 className="text-gray-200 font-normal max-w-full lg:max-w-min text-center lg:text-left">MGH Metaverse Development</h1>
+                        <h1 className="text-gray-200 font-normal max-w-full text-center xs:text-md sm:text-15/2xl">
+                            MGH METAVERSE
+                            <h1 className="text-pink-reco text-center pt-0 xs:text-6xl sm:text-8xl">DEVELOPMENT </h1>
+                        </h1>
+                        
+                        <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-lg">
+                            <p className={`text-sm text-center max-w-xl mb-6`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
 
-                        <div className="flex flex-col items-center space-y-10 w-full lg:w-1/2">
-                            <p className={`text-base lg:text-lg text-center max-w-xl`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
-                            {/* <div className="flex space-x-5">
-                                <Button text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
-                                <Button text="Book a meeting" link="https://calendly.com/nicolas-weber-1/30min" />
-                            </div> */}
-
-                            <div className="flex items-center space-x-0 sm:space-x-10 flex-grow">
-                                <Button text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
-                                <a href="https://calendly.com/nicolas-weber-1/30min" target="_blank" className="text-lg sm:text-xl text-pink-600 hover:scale-105 transition ease-linear min-w-max duration-200">Book a meeting</a>
+                            <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
+                                <Button classes="text-sm" text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
+                                <Button classes="text-sm" text="Book a meeting" link="https://calendly.com/nicolas-weber-1/30min"/>
                             </div>
-
                         </div>
-
                     </div>
 
                     <h3 className="font-normal mb-10">What MGH offers</h3>

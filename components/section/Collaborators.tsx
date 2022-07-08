@@ -5,7 +5,7 @@ import Partner from "../section-element/Partner";
 const Collaborators = () => {
   return (
     <div
-      className={`w-full flex flex-col items-center space-x-0 lg:space-x-10 py-10 px-5 sm:px-10`}
+      className={`w-full flex flex-col items-center space-x-0 py-10 px-5 sm:px-10`}
     >
       <div className="w-20 flex items-center justify-center mb-16">
         <h2 className={`font-normal`}>NETWORK</h2>
