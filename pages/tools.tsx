@@ -18,11 +18,11 @@ const TokenPage: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
-        <div className="flex flex-col items-center space-y-32 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
-          <h1 className="text-gray-200">MGH Tools</h1>
+      <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111] xl:px-24 pb-3">
+        <div className="flex flex-col items-center space-y-24 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
+          <h1 className="text-gray-200">MGH TOOLS</h1>
 
-          <div className="flex w-full flex-wrap gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <ToolCard
               title="Datasets"
               text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace"
@@ -42,16 +42,16 @@ const TokenPage: NextPage = () => {
               button="Launch App"
             />
             <ToolCard
-              title="Valuation API"
-              text="Direct API access and widget creation and integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more"
-              link="https://api.metagamehub.io"
-              button="Documentation"
-            />
-            <ToolCard
               title="$MGH Staking"
               text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens."
               link="https://app.metagamehub.io/stake"
               button="Stake $MGH"
+            />
+            <ToolCard
+              title="Valuation API"
+              text="Direct API access and widget creation and integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more"
+              link="https://api.metagamehub.io"
+              button="Documentation"
             />
             <ToolCard
               title="NFT Pools"
@@ -62,6 +62,8 @@ const TokenPage: NextPage = () => {
             <ToolCard
               title="LAND Trading Bot"
               text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens."
+              classes="col-span-1 md:col-span-2 lg:col-span-3 md:max-w-fit"
+              textClasses="lg:px-52"
             />
           </div>
         </div>

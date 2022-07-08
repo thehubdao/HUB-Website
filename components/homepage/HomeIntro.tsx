@@ -3,7 +3,7 @@ import { HomeActionButton } from ".";
 
 const HomeIntro = () => {
   return (
-    <section className="w-screen min-h-screen">
+    <section className="w-full min-h-screen">
       <video
         loop
         autoPlay

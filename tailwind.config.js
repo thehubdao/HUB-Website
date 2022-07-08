@@ -99,10 +99,11 @@ module.exports = {
         sans: ["Alterwave", "sans-serif"],
         prompt: ["Prompt", "sans-serif"],
         lighters: ["Lighters", "sans-serif"],
-        inter: ["Inter",  "sans-serif"]
+        inter: ["Inter", "sans-serif"]
       },
       fontSize: {
         xxs: "0.5rem",
+        "15/2xl": "5rem"
       },
       transitionDuration: {
         2000: "2000ms",
