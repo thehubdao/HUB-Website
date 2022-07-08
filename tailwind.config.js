@@ -99,6 +99,7 @@ module.exports = {
         sans: ["Alterwave", "sans-serif"],
         prompt: ["Prompt", "sans-serif"],
         lighters: ["Lighters", "sans-serif"],
+        inter: ["Inter", "sans-serif"]
       },
       fontSize: {
         xxs: "0.5rem",
