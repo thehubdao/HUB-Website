@@ -62,18 +62,19 @@ const Achievements = () => {
         </div>
 
         <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center max-w-max">
+
           <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">30+</p>
             <p className="text-gray-400">
               Core contributors from all over the world
             </p>
           </div>
-
           <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">$1.6 Mio</p>
-            <p className="text-gray-400">Decentralized community fundraise</p>
+            <p className="text-gray-400">
+              Decentralized community fundraise
+            </p>
           </div>
-
           <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">160,000+</p>
             <p className="text-gray-400">
@@ -87,10 +88,10 @@ const Achievements = () => {
             </p>
           </div>
           <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
-          <img
-                src="/images/Logos/Cryptos/svgs/BUILD.svg"
-                className="w-auto h-16"
-              />
+            <img
+              src="/images/Logos/Cryptos/svgs/BUILD.svg"
+              className="w-auto h-16"
+            />
             <p className="text-gray-400">
               Building & Investing across various Metaverses
             </p>
@@ -116,11 +117,11 @@ const Achievements = () => {
           </div>
 
           <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 rounded py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
-          <img
-                src="/images/Logos/Cryptos/svgs/INTERNSHIP.svg"
-                className="w-auto h-16"
-              />
-            <p className="text-gray-400 md:text-xs">
+            <img
+              src="/images/Logos/Cryptos/svgs/INTERNSHIP.svg"
+              className="w-auto h-16"
+            />
+            <p className="text-gray-400 text-xs">
               University collaborations and internships with Aachen, Frankfurt,
               Cologne, Buenos Aires, Bogota and South Korea
             </p>
