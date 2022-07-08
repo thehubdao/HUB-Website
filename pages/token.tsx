@@ -25,53 +25,50 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
+            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
 
                 <div className="flex flex-col items-center w-full max-w-screen-2xl px-5 sm:px-10">
 
-                    <div className="flex flex-col lg:flex-row items-center space-x-0 lg:space-x-20 space-y-10 sm:space-y-20 lg:space-y-0 w-full pb-44">
+                    <div className="flex flex-col items-center space-x-0 lg:space-x-20 space-y-10 sm:space-y-20 lg:space-y-0 w-full pb-44">
 
-                        <h1>MGH Token</h1>
+                        <div className="flex flex-col space-y-5 flex-grow justify-items-center pl-0 lg:pl-auto xl:pl-auto">
 
-                        <div className="flex flex-col space-y-5 flex-grow pl-0 lg:pl-20 xl:pl-40">
-                            <div className="flex space-x-5 sm:space-x-20">
-                                <div className="flex flex-col">
-                                    <p className="text-lg sm:text-2xl font-medium">MGH</p>
-                                    <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Symbol</p>
-                                </div>
+                            <h1 className="text-8xl text-center">MGH TOKEN</h1>
 
-                                <div className="flex flex-col">
-                                    <p className="text-lg sm:text-2xl font-medium">18</p>
-                                    <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Decimals</p>
+                            <div className="flex flex-col h-20 space-x-5 sm:space-x-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
+                                <div className="flex">
+                                    <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max">Symbol</p>
+                                    <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">MGH</p>
+                                    <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max pl-5">Decimals</p>
+                                    <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">18</p>
                                 </div>
                             </div>
 
-                            <div className="flex flex-col">
-                                <div className="flex space-x-2 items-center">
-                                    <p className="text-xxs sm:text-lg font-medium select-text">0x8765b1a0eb57ca49be7eacd35b24a574d0203656</p>
+                            <div className="flex flex-col h-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
+                                <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max ">Ethereum Contract</p>
+                                <div className="flex items-center">
+                                    <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0x8765b1a0eb57ca49be7eacd35b24a574d0203656</p>
                                     <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656" target="_blank">
-                                        <FiExternalLink className="mb-1.5 text-gray-400" />
+                                        <FiExternalLink className="mb-1.5 text-pink-400 pl-0.5" />
                                     </a>
                                 </div>
-                                <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Ethereum Contract</p>
                             </div>
 
-                            <div className="flex flex-col">
-                                <div className="flex space-x-2 items-center">
-                                    <p className="text-xxs sm:text-lg font-medium select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
+                            <div className="flex flex-col h-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
+                                <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max">Polygon Contract</p>
+                                <div className="flex items-center">
+                                    <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
                                     <a href="https://polygonscan.com/token/0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10" target="_blank">
-                                        <FiExternalLink className="mb-1.5 text-gray-400" />
+                                        <FiExternalLink className="mb-1.5 text-pink-400 pl-0.5" />
                                     </a>
                                 </div>
-                                <p className="text-gray-400 text-sm sm:text-lg min-w-max flex-grow">Polygon Contract</p>
                             </div>
 
-
-                            <div className="flex font-medium items-center text-blue-500 space-x-10 pt-2">
-                                <a href="https://coinmarketcap.com/currencies/metagamehub-dao/" target="_blank" className="h-full w-32 sm:w-44 cursor-pointer">
+                            <div className="flex font-medium h-20 items-center text-blue-500 place-content-around">
+                                <a href="https://coinmarketcap.com/currencies/metagamehub-dao/" target="_blank" className="h-full w-30 sm:w-44 cursor-pointer">
                                     <img src="/images/Logos/webp/cmc.webp" className="object-scale-down w-full h-full" />
                                 </a>
-                                <a href="https://www.coingecko.com/coins/metagamehub-dao" target="_blank" className="h-full w-28 sm:w-36 cursor-pointer">
+                                <a href="https://www.coingecko.com/coins/metagamehub-dao" target="_blank" className="h-full w-30 sm:w-36 cursor-pointer">
                                     <img src="/images/Logos/coingecko.svg" className="object-scale-down w-full h-full" />
                                 </a>
                             </div>
