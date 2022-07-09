@@ -23,15 +23,15 @@ const BuildPage: NextPage = () => {
 
             <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
 
-                <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
-                    <div className="flex flex-col justify-between items-center space-x-0 space-y-10 lg:space-y-0 w-full mb-44">
+                <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl px-5 sm:px-15">
+                    <div className="flex flex-col justify-between items-center lg:space-y-0 w-full mb-44">
 
-                        <h1 className="text-gray-200 font-normal max-w-full text-center xs:text-md sm:text-15/2xl">
+                        <h1 className="text-gray-200 font-normal max-w-full text-center xs:text-md sm:text-7xl md:text-17/2xl">
                             MGH METAVERSE
-                            <h1 className="text-pink-reco text-center pt-0 xs:text-6xl sm:text-8xl">DEVELOPMENT </h1>
+                            <h1 className="text-pink-reco text-center pt-0 xs:text-6xl sm:text-8xl md:text-9xl">DEVELOPMENT </h1>
                         </h1>
                         
-                        <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-lg">
+                        <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-2xl text-stone-400">
                             <p className={`text-sm text-center max-w-xl mb-6`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
 
                             <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
@@ -41,12 +41,12 @@ const BuildPage: NextPage = () => {
                         </div>
                     </div>
 
-                    <h3 className="font-normal mb-10">What MGH offers</h3>
+                    <h1 className="font-normal mb-10 text-7xl text-center">WHAT MGH OFFERS</h1>
 
-                    <div className="flex w-full flex-wrap gap-5">
-                        <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-5/6 gap-5">
+                        <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery"/>
                         <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://calendly.com/nicolas-weber-1/30min" button="Build with us" />
-                        <ToolCard title="DCL Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" />
+                        <ToolCard title="Decentraland Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" classes="col-span-1 md:col-span-2 md:max-w-full lg:col-span-1"/>
                     </div>
 
                     <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 space-x-0 lg:space-x-28 items-center my-44 w-full">
