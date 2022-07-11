@@ -19,7 +19,7 @@ const ContributePage: NextPage = () => {
             </Head>
             <Toolbar dark={true} />
 
-            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
+            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
 
                 <div className="flex flex-col items-center w-full max-w-screen-2xl px-5 sm:px-10">
 
@@ -50,11 +50,8 @@ const ContributePage: NextPage = () => {
                         <Button text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
                         <a href="https://the-dac.gitbook.io/metagamehub-dao/dao/working-groups" target="_blank" className="text-lg sm:text-xl text-pink-600 hover:scale-105 transition ease-linear min-w-max duration-200">Learn more</a>
                     </div>
-
                 </div>
-
             </main>
-
             <Footer />
         </>
     )
