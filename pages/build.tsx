@@ -23,7 +23,7 @@ const BuildPage: NextPage = () => {
 
             <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
 
-                <div className="flex flex-col items-center w-full 2xl:max-w-screen-2xl px-5 sm:px-15">
+                <div className="flex flex-col items-center w-full 2xl:max-w-screen-3xl px-5 sm:px-15">
                     <div className="flex flex-col justify-between items-center lg:space-y-0 w-full mb-44">
 
                         <h1 className="text-gray-200 font-normal max-w-full text-center xs:text-md sm:text-7xl md:text-17/2xl">
@@ -44,90 +44,91 @@ const BuildPage: NextPage = () => {
                     <h1 className="font-normal mb-10 text-7xl text-center">WHAT MGH OFFERS</h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-5/6 gap-5">
-                        <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery"/>
-                        <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://calendly.com/nicolas-weber-1/30min" button="Build with us" />
-                        <ToolCard title="Decentraland Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" classes="col-span-1 md:col-span-2 md:max-w-full lg:col-span-1"/>
+                        <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
+                        <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://calendly.com/nicolas-weber-1/30min" button="Build with us" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
+                        <ToolCard title="Decentraland Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 space-x-0 lg:space-x-28 items-center my-44 w-full">
-                        <div className="flex flex-col w-full lg:w-1/2">
-                            <h3 className="font-normal mb-5 lg:mb-10 text-pink-600">Why building with MGH?</h3>
-                            <p className="text-lg max-w-4xl">We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers.<br /> We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
+                    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 items-center my-44 w-full md:w-5/6   ">
+
+                        <div className="grid md:grid-rows-2 w-full gap-4 h-full">
+                            <div className="mb-5 lg:mb-10 h-full flex items-center">
+                                <h1 className="font-normal text-pink-reco text-center">WHY BUILDING WITH MGH?</h1>
+                            </div>
+                            <div className={`flex relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full h-full`}>
+                                <p className={`font-normal text-md w-full pb-5 grow text-stone-400`}>We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers.<br /> We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
+                            </div>
                         </div>
 
-                        <div className="flex flex-col space-y-6 w-full lg:w-1/2">
-                            <div className="">
-                                <p className="text-2xl md:text-4xl text-blue-500 w-full pb-2">Play2Earn Implementations</p>
-                                <p className='font-normal text-lg w-full max-w-2xl'>Metaverse game development, Play2Earn implementations, Engagement Models for communities</p>
-                            </div>
-                            <hr className="border border-white/30 w-5/6" />
-                            <div className="">
-                                <p className="text-2xl md:text-4xl text-blue-500 w-full pb-2">Possibility to build in any Metaverse</p>
-                                <p className='font-normal text-lg w-full max-w-2xl'>Metaverse design in various metaverses such as Decentraland, The Sandbox and Somnium Space. Development of tools for Metaverses like an editor for Decentraland (dcl-edit).</p>
-                            </div>
-                            <hr className="border border-white/30 w-5/6" />
-                            <div className="">
-                                <p className="text-2xl md:text-4xl text-blue-500 w-full pb-2">Modelling of unique assets for custom experiences</p>
-                                <p className='font-normal text-lg w-full max-w-2xl'>We have expert modellers working with state-of-the art tools like Blender and Fusion 360 that are able to create 3D models for Metaverses like Decentraland and Somnium Space.</p>
-                            </div>
-                            <hr className="border border-white/30 w-5/6" />
-                            <div className="">
-                                <p className="text-2xl md:text-4xl text-blue-500 w-full pb-2">Modern 3D engines</p>
-                                <p className='font-normal text-lg w-full max-w-2xl'>We have Unity 3D developers and programmers with years of experience in App development and game development. We can leverage these skills for any Metaverse project that allows for coding custom complex logic like Decentraland.</p>
-                            </div>
+                        <div className="grid md:grid-rows-4 gap-4 w-full">
+                            <ToolCard
+                                title="Play2Earn Implementations"
+                                text="Metaverse game development, Play2Earn implementations, Engagement Models for communities"
+                                classes="sm:max-w-full sm:text-left"
+                            />
+                            <ToolCard
+                                title="Possibility to build in any Metaverse"
+                                text="Metaverse design in various metaverses such as Decentraland, The Sandbox and Somnium Space. Development of tools for Metaverses like an editor for Decentraland (dcl-edit)."
+                                classes="sm:max-w-full sm:text-left"
+                            />
+                            <ToolCard
+                                title="Modelling of unique assets for custom experiences"
+                                text="We have expert modellers working with state-of-the art tools like Blender and Fusion 360 that are able to create 3D models for Metaverses like Decentraland and Somnium Space."
+                                classes="sm:max-w-full sm:text-left"
+                            />
+                            <ToolCard
+                                title="Modern 3D engines"
+                                text="We have Unity 3D developers and programmers with years of experience in App development and game development. We can leverage these skills for any Metaverse project that allows for coding custom complex logic like Decentraland."
+                                classes="sm:max-w-full sm:text-left"
+                            />
                         </div>
                     </div>
 
-                    <h3 className="font-normal mb-10">Packages</h3>
+                    <h1 className="font-normal mb-10">PACKAGES</h1>
 
-                    <div className="flex flex-col lg:flex-row w-full gap-10 pb-10 items-center justify-center">
-                        <div className="flex flex-col items-center text-center w-full lg:w-1/3">
-                            <p className="text-5xl text-pink-600 pb-2">Starter</p>
-                            <p className="text-gray-400">Basic experience on small land</p>
-                            <p className="text-4xl text-gray-200 py-4">$10k - 40k</p>
-                            <p className="text-gray-400">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-10 items-center justify-center w-full md:w-5/6">
+                        <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>Starter</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>Basic experience on small land</p>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>$10k - 40k</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 appealing landscape<br />
                                 customer contact points<br />
                                 basic asset collection<br />
                                 basic customer engagement model<br />
                                 minimal programming
                             </p>
+                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
-                        <div className="flex flex-col items-center text-center w-full lg:w-1/3">
-                            <p className="text-5xl text-pink-600 pb-2">Corporate</p>
-                            <p className="text-gray-400">Richer experience on medium land</p>
-                            <p className="text-4xl text-gray-200 py-4">$20k- 125k</p>
-                            <p className="text-gray-400">
+                        <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>Corporate</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>Richer experience on medium land</p>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>$20k- 125k</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 larger appealing landscape<br />
                                 several customer contact points<br />
                                 extended asset collection<br />
                                 refined customer engagement model<br />
                                 programming of basic custom behaviours
                             </p>
+                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
-                        <div className="flex flex-col items-center text-center w-full lg:w-1/3">
-                            <p className="text-5xl text-pink-600 pb-2">World</p>
-                            <p className="text-gray-400">World-like experience on large land</p>
-                            <p className="text-4xl text-gray-200 py-4">$Custom</p>
-                            <p className="text-gray-400">
+                        <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>World</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>World-like experience on large land</p>
+                            <p className='font-inter text-2xl text-pink-reco w-full'>Custom</p>
+                            <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 very large appealing landscape<br />
                                 customer contact points as desired<br />
                                 big asset collection<br />
                                 optimal customer engagement model<br />
-                                programming of advanced custom behaviours
-                            </p>
+                                programming of advanced custom behaviours</p>
+                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
-
                     </div>
-
-                    <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
-
                 </div>
             </main>
-
             <Footer />
-
-
         </>
     )
 };
