@@ -26,30 +26,25 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
             <Toolbar dark={true} />
 
             <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
-
                 <div className="flex flex-col items-center w-full max-w-screen-2xl px-5 sm:px-10">
-
-                    <div className="flex flex-col items-center space-x-0 lg:space-x-20 space-y-10 sm:space-y-20 lg:space-y-0 w-full pb-44">
-
+                    <div className="flex flex-col items-center space-x-0 lg:space-x-20 space-y-10 sm:space-y-20 lg:space-y-0 w-full">
                         <div className="flex flex-col space-y-5 flex-grow justify-items-center pl-0 lg:pl-auto xl:pl-auto">
-
                             <h1 className="text-8xl text-center">MGH TOKEN</h1>
-
                             <div className="flex flex-col h-20 space-x-5 sm:space-x-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
                                 <div className="flex">
-                                    <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max">Symbol</p>
+                                    <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max">Symbol</p>
                                     <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">MGH</p>
-                                    <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max pl-5">Decimals</p>
+                                    <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max pl-5">Decimals</p>
                                     <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">18</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col h-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
-                                <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max ">Ethereum Contract</p>
+                                <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max ">Ethereum Contract</p>
                                 <div className="flex items-center">
                                     <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0x8765b1a0eb57ca49be7eacd35b24a574d0203656</p>
                                     <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656" target="_blank">
-                                        <FiExternalLink className="mb-1.5 text-pink-400 pl-0.5" />
+                                        <FiExternalLink className="mb-1.5 text-pink-reco pl-0.5" />
                                     </a>
                                 </div>
                             </div>
@@ -59,7 +54,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                                 <div className="flex items-center">
                                     <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
                                     <a href="https://polygonscan.com/token/0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10" target="_blank">
-                                        <FiExternalLink className="mb-1.5 text-pink-400 pl-0.5" />
+                                        <FiExternalLink className="mb-1.5 text-pink-reco pl-0.5" />
                                     </a>
                                 </div>
                             </div>
@@ -72,14 +67,47 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                                     <img src="/images/Logos/coingecko.svg" className="object-scale-down w-full h-full" />
                                 </a>
                             </div>
-
                         </div>
                     </div>
 
-                    <div id="chart" className="w-screen min-h-screen flex flex-col space-y-10 cursor-default">
-                        <PriceChart chartData={chartData} />
+                    {/* <div className="min-h-screen relative w-full flex flex-col">
 
-                        <div className="flex flex-col md:flex-row space-x-0 md:space-x-10 lg:space-x-20 space-y-5 md:space-y-0 justify-center px-5 md:px-10">
+                        <div className={`w-full flex h-screen flex-col md:flex-row space-y-20 md:space-y-0 items-center mt-20 justify-center`}>
+
+                            <div className="flex flex-col items-center space-y-10 lg:space-y-16 w-full md:w-1/2">
+
+                                <div className="flex flex-col space-y-1 text-center md:text-right w-1/2">
+                                    <p className="text-lg sm:text-xl lg:text-4xl font-medium">{tokenData.market_data.circulating_supply.toLocaleString('en-GB', { maximumFractionDigits: 0 })}</p>
+                                    <p className="text-gray-400 text-sm sm:text-lg lg:text-2xl flex-grow">Circulating Supply</p>
+                                </div>
+
+                                <div className="flex flex-col space-y-1 text-center md:text-right w-1/2">
+                                    <p className="text-lg sm:text-xl lg:text-4xl font-medium">{tokenData.market_data.total_supply.toLocaleString('en-GB', { maximumFractionDigits: 0 })}</p>
+                                    <p className="text-gray-400 text-sm sm:text-lg lg:text-2xl flex-grow">Total Supply</p>
+                                </div>
+
+                            </div>
+
+                            <div className="relative h-[85%] flex-grow self-start md:self-center">
+                                <TokenomicsPart title="Sale/Liquidity" classes="top-0 h-[24%] text-blue-800" borderColor="border-blue-800" size={24} />
+                                <TokenomicsPart title="Staking/Bonding" classes="top-[25%] h-[24%] text-blue-700" borderColor="border-blue-700" size={24} />
+                                <TokenomicsPart title="Treasury" classes="top-[50%] h-[20%] text-blue-600" borderColor="border-blue-600" size={20} />
+                                <TokenomicsPart title="Metaverse Rewards" classes="top-[71%] h-[16%] text-blue-500" borderColor="border-blue-500" size={16} />
+                                <TokenomicsPart title="Early Contributors" classes="top-[88%] h-[6%] text-blue-400" borderColor="border-blue-400" size={6} />
+                                <TokenomicsPart title="Initiators" classes="top-[95%] h-[6%] text-blue-300" borderColor="border-blue-300" size={6} />
+                                <TokenomicsPart title="Marketing" classes="top-[102%] h-[4%] text-blue-200" borderColor="border-blue-200" size={4} />
+                            </div>
+                        </div>
+                    </div> */}
+                </div>
+                <div className="w-full">
+                    <PriceChart chartData={chartData} />
+                </div>
+
+                <div className="flex flex-col items-center space-x-0 lg:space-x-20 sm:space-y-20 lg:space-y-0 w-full">
+                    <div id="chart" className="w-full min-h-full flex flex-col space-y-10 cursor-default">
+
+                        <div className="flex flex-col md:flex-row space-x-0 md:space-x-10 lg:space-x-20 space-y-5 md:space-y-0 justify-center px-5 md:px-10 pt-10">
                             <div className="flex flex-col space-y-1">
                                 <div className="flex items-end space-x-3">
                                     <p className="text-base md:text-xl lg:text-3xl font-medium">$ {tokenData.market_data.current_price.usd.toLocaleString('en-GB', { maximumFractionDigits: 4 })}</p>
@@ -114,44 +142,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                                 <Partner classes="max-w-[14rem]" link="https://bilaxy.com/trade/MGH_ETH" logo="/images/Logos/webp/bilaxy.webp" />
                             </div>
                         </div>
-
-
                     </div>
-
-
-                    {/* <div className="min-h-screen relative w-full flex flex-col">
-
-                        <div className={`w-full flex h-screen flex-col md:flex-row space-y-20 md:space-y-0 items-center mt-20 justify-center`}>
-
-                            <div className="flex flex-col items-center space-y-10 lg:space-y-16 w-full md:w-1/2">
-
-                                <div className="flex flex-col space-y-1 text-center md:text-right w-1/2">
-                                    <p className="text-lg sm:text-xl lg:text-4xl font-medium">{tokenData.market_data.circulating_supply.toLocaleString('en-GB', { maximumFractionDigits: 0 })}</p>
-                                    <p className="text-gray-400 text-sm sm:text-lg lg:text-2xl flex-grow">Circulating Supply</p>
-                                </div>
-
-                                <div className="flex flex-col space-y-1 text-center md:text-right w-1/2">
-                                    <p className="text-lg sm:text-xl lg:text-4xl font-medium">{tokenData.market_data.total_supply.toLocaleString('en-GB', { maximumFractionDigits: 0 })}</p>
-                                    <p className="text-gray-400 text-sm sm:text-lg lg:text-2xl flex-grow">Total Supply</p>
-                                </div>
-
-                            </div>
-
-                            <div className="relative h-[85%] flex-grow self-start md:self-center">
-                                <TokenomicsPart title="Sale/Liquidity" classes="top-0 h-[24%] text-blue-800" borderColor="border-blue-800" size={24} />
-                                <TokenomicsPart title="Staking/Bonding" classes="top-[25%] h-[24%] text-blue-700" borderColor="border-blue-700" size={24} />
-                                <TokenomicsPart title="Treasury" classes="top-[50%] h-[20%] text-blue-600" borderColor="border-blue-600" size={20} />
-                                <TokenomicsPart title="Metaverse Rewards" classes="top-[71%] h-[16%] text-blue-500" borderColor="border-blue-500" size={16} />
-                                <TokenomicsPart title="Early Contributors" classes="top-[88%] h-[6%] text-blue-400" borderColor="border-blue-400" size={6} />
-                                <TokenomicsPart title="Initiators" classes="top-[95%] h-[6%] text-blue-300" borderColor="border-blue-300" size={6} />
-                                <TokenomicsPart title="Marketing" classes="top-[102%] h-[4%] text-blue-200" borderColor="border-blue-200" size={4} />
-                            </div>
-
-                        </div>
-
-                    </div> */}
-
-
                 </div>
             </main>
 

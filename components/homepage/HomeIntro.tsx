@@ -8,17 +8,17 @@ const HomeIntro = () => {
         loop
         autoPlay
         muted
-        className="w-screen min-h-screen absolute top-0 object-cover"
+        className="w-full min-h-screen absolute top-0 object-cover"
       >
         <source src="/videos/bgvideo.mp4" type="video/mp4" />
       </video>
 
       {/* Bottom */}
-      <div className="absolute bottom-12 z-40 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0">
+      <div className="absolute bottom-12 z-40 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0 w-full">
         {/* Action Buttons and Big Text */}
-        <div className="md:pl-14 z-40">
+        <div className="md:pl-14 z-40 w-full">
           {/* Action Buttons */}
-          <div className="flex gap-4 justify-center md:justify-start mb-4 md:mb-0">
+          <div className="flex flex-col gap-4 items-center md:flex-row md:justify-start mb-4 md:mb-0 w-max-full">
             <HomeActionButton
               text="Voting"
               link="https://snapshot.org/#/metagamehub.eth"
@@ -30,7 +30,7 @@ const HomeIntro = () => {
           </div>
           {/* Text Box */}
 
-          <div className="flex flex-col gap-4 md:gap-0">
+          <div className="flex flex-col gap-4 md:gap-0 w-full">
             <h1 className="text-4xl xs:text-6xl text-center md:text-left md:text-9xl pb-0 text-gray-200 z-40">
               METAGAMEHUB
             </h1>
@@ -42,7 +42,7 @@ const HomeIntro = () => {
                 <h3 className="text-2xl text-pink-reco">
                   Your Homebase in the Open Metaverse
                 </h3>
-                <p className="m-auto md:m-0 w-96">
+                <p className="m-auto md:m-0 w-full">
                   MetaGameHub DAO develops Infrastructure and Applications to be
                   a Hub for Open Metaverse experiences
                 </p>

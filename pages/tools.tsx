@@ -20,7 +20,7 @@ const TokenPage: NextPage = () => {
 
       <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111] xl:px-24 pb-3">
         <div className="flex flex-col items-center space-y-24 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
-          <h1 className="text-gray-200 text-8xl">MGH TOOLS</h1>
+          <h1 className="text-gray-200 text-8xl text-center">MGH TOOLS</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <ToolCard

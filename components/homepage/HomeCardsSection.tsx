@@ -59,7 +59,7 @@ const HomeCardsSection = () => {
       </ul>
       <JoinUs />
       {/* Vertical Cards */}
-      <ul className="flex flex-col md:flex-row justify-around w-full items-center gap-20 xl:gap-0 flex-wrap ">
+      <ul className="flex flex-col md:flex-row justify-around items-center gap-20 xl:gap-0 flex-wrap ">
         {verticalCards.map(({ title, text, buttonText, link, src }) => (
           <li key={title}>
             <HomeVerticalCard

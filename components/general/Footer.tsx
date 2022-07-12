@@ -150,14 +150,14 @@ const Footer = () => {
       <div className="flex text-gray-400 items-center space-x-1 absolute bottom-4 text-sm sm:text-base">
         <a
           href="/terms"
-          className=" hover:text-blue-500 transition ease-linear duration-200"
+          className=" hover:text-pink-reco transition ease-linear duration-200"
         >
           Terms of Use
         </a>
         <hr className="border-gray-600 w-5 rotate-90" />
         <a
           href="/privacy"
-          className=" hover:text-blue-500 transition ease-linear duration-200"
+          className=" hover:text-pink-reco transition ease-linear duration-200"
         >
           Privacy Policy
         </a>
@@ -165,68 +165,68 @@ const Footer = () => {
 
       <div className="grid grid-cols-2 backdrop-blur-lg p-5 pb-10 lg:pb-5 rounded text-lg sm:text-xl justify-items-start gap-1 sm:gap-3 gap-x-12 sm:gap-x-32">
         <Link href="/">
-          <a className="nav-item">Home</a>
+          <a className="nav-item hover:text-pink-reco">Home</a>
         </Link>
 
         <a
           href="https://app.metagamehub.io"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           MGH dApp
         </a>
 
         <Link href="/treasury">
-          <a className="nav-item">Treasury</a>
+          <a className="nav-item hover:text-pink-reco">Treasury</a>
         </Link>
 
         <a
           href="https://discord.gg/8WJVMDXZwH"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
           target="_blank"
         >
           Community
         </a>
 
         <Link href="/tools">
-          <a className="nav-item">Tools</a>
+          <a className="nav-item hover:text-pink-reco">Tools</a>
         </Link>
 
         <a
           href="https://snapshot.org/#/metagamehub.eth"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           Voting
         </a>
 
         <Link href="/token">
-          <a className="nav-item">Token</a>
+          <a className="nav-item hover:text-pink-reco">Token</a>
         </Link>
 
         <a
           href="https://docs.metagamehub.io"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           Learn more
         </a>
 
         <Link href="/team">
-          <a className="nav-item">Contributors</a>
+          <a className="nav-item hover:text-pink-reco">Contributors</a>
         </Link>
 
         <Link href="/faq">
-          <a className="nav-item">FAQ</a>
+          <a className="nav-item hover:text-pink-reco">FAQ</a>
         </Link>
 
         <Link href="/contribute">
-          <a className="nav-item">Contribute</a>
+          <a className="nav-item hover:text-pink-reco">Contribute</a>
         </Link>
 
         <a
           href="https://github.com/metagamehub"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
           target="_blank"
         >
           GitHub
