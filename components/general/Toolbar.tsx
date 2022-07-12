@@ -47,19 +47,19 @@ const Toolbar = ({ dark }: any) => {
           {/* Rest of Links */}
           <div className="flex gap-16">
             <Link href="/tools">
-              <a className="nav-item pt-1">Use Tools</a>
+              <a className="nav-item pt-1 hover:text-pink-reco">Use Tools</a>
             </Link>
             <Link href="/token">
-              <a className="nav-item pt-1">Token</a>
+              <a className="nav-item pt-1 hover:text-pink-reco">Token</a>
             </Link>
             <Link href="/build">
-              <a className="nav-item pt-1">Metaverse Dev.</a>
+              <a className="nav-item pt-1 hover:text-pink-reco">Metaverse Dev.</a>
             </Link>
             <Link href="/treasury">
-              <a className="nav-item pt-1">Treasury</a>
+              <a className="nav-item pt-1 hover:text-pink-reco">Treasury</a>
             </Link>
             <Link href="/team">
-              <a className="nav-item pt-1">Contributors</a>
+              <a className="nav-item pt-1 hover:text-pink-reco">Contributors</a>
             </Link>
           </div>
         </nav>
@@ -81,35 +81,35 @@ const Toolbar = ({ dark }: any) => {
         } p-5 top-0 fixed w-full backdrop-filter backdrop-blur-2xl bg-black bg-opacity-10 flex flex-col space-y-5 items-center pt-20`}
       >
         <Link href="/treasury">
-          <a className="nav-item">Treasury</a>
+          <a className="nav-item hover:text-pink-reco">Treasury</a>
         </Link>
         <Link href="/tools">
-          <a className="nav-item">Tools</a>
+          <a className="nav-item hover:text-pink-reco">Tools</a>
         </Link>
         <Link href="/token">
-          <a className="nav-item">Token</a>
+          <a className="nav-item hover:text-pink-reco">Token</a>
         </Link>
         <Link href="/team">
-          <a className="nav-item">Contributors</a>
+          <a className="nav-item hover:text-pink-reco">Contributors</a>
         </Link>
         <a
           href="https://docs.metagamehub.io"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           Learn more
         </a>
         <a
           href="https://snapshot.org/#/metagamehub.eth"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           Voting
         </a>
         <a
           href="https://app.metagamehub.io"
           target="_blank"
-          className="nav-item"
+          className="nav-item hover:text-pink-reco"
         >
           Launch App
         </a>
