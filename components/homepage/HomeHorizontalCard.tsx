@@ -8,7 +8,7 @@ const HomeHorizontalCard = ({
   src,
 }: Omit<HomeCard, "title">) => {
   return (
-    <div className="p-8 bg-[#292929] rounded-xl h-[300px] w-[350px] lg:h-[350px] lg:w-[400px] xl:h-[400px] xl:w-[500px] relative 2xl:h-[510px] 2xl:w-[650px]">
+    <div className="p-8 bg-[#292929] rounded-xl h-[300px] w-[32 0px] lg:h-[350px] lg:w-[400px] xl:h-[400px] xl:w-[500px] relative 2xl:h-[510px] 2xl:w-[650px]">
       <div className="relative bottom-24 xl:bottom-30 2xl:bottom-40">
         <img
           src={src}
