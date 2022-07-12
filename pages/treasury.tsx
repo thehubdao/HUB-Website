@@ -192,7 +192,7 @@ const TreasuryPage: NextPage = ({
 
         <main className='flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]'>
           <div className='flex flex-col w-full 2xl:max-w-screen-2xl px-5 sm:px-10'>
-            <div className='flex flex-col flex-row justify-between items-center space-x-0 space-y-20 md:pb-10 lg:space-y-0 w-full pb-20 lg:pb-44'>
+            <div className='flex flex-col flex-row justify-between items-center space-x-0 space-y-5 md:pb-10 lg:space-y-0 w-full pb-10 lg:pb-30'>
               <h1 className='text-gray-200 font-normal pb-16 lg:text-8xl'>
                 TREASURY
               </h1>
@@ -201,9 +201,10 @@ const TreasuryPage: NextPage = ({
                 <p className='md:text-md lg:text-lg flex-grow'>
                   Total Treasury Value
                 </p>
-                <p className='text-2xl md:text-6xl lg:text-8xl font-anton text-pink-500'>
-                  ${totalTreasuryValue.toLocaleString('en-GB')}
-                </p>
+                <div className='flex text-2xl md:text-6xl lg:text-8xl font-anton'>
+                  <p>$</p>
+                  <p className='text-pink-500'>{totalTreasuryValue.toLocaleString('en-GB')}</p>
+                </div>
                 <div className='flex items-center space-x-1 pt-2 '>
                   <a
                     href='https://opensea.io/0x2a9da28bcbf97a8c008fd211f5127b860613922d'
@@ -224,7 +225,7 @@ const TreasuryPage: NextPage = ({
               </div>
             </div>
 
-            <div className='flex flex-col flex-row items-start items-center space-x-0 space-y-5 md:space-x-12 justify-between w-full'>
+            <div className='flex flex-col flex-row items-start items-center space-x-0 space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
                 <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-400'>
                   ${totalCryptoValue.toLocaleString('en-GB')}
@@ -234,7 +235,7 @@ const TreasuryPage: NextPage = ({
                 </p>
               </div>
 
-              <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 items-center'>
+              <div className='flex flex-grow place-content-center flex-wrap max-w-full lg:max-w-3/4 items-center'>
                 {cryptoValues
                   .filter(
                     (token: { symbol: string }) =>
@@ -256,7 +257,7 @@ const TreasuryPage: NextPage = ({
               </div>
             </div>
 
-            <div className='flex flex-col flex-row items-start items-center space-x-0 md:space-x-12 space-y-5 justify-between w-full py-10'>
+            <div className='flex flex-col flex-row items-start items-center space-x-0 space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
                 <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-400'>
                   ${totalNFTValue.toLocaleString('en-GB')}
@@ -266,7 +267,7 @@ const TreasuryPage: NextPage = ({
                 </p>
               </div>
 
-              <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 items-center'>
+              <div className='flex flex-grow place-content-center flex-wrap max-w-full lg:max-w-3/4 items-center'>
                 <CryptoCard
                   name='Sandbox'
                   clicked={showLands === 'Sandbox'}
@@ -486,7 +487,7 @@ const TreasuryPage: NextPage = ({
                 </p>
               </div>
 
-              <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4'>
+              <div className='flex flex-grow place-content-center flex-wrap max-w-full lg:max-w-3/4'>
                 <CryptoCard
                   name='Quickswap LPs'
                   value={totalQuickswapValue}
@@ -591,7 +592,7 @@ const TreasuryPage: NextPage = ({
               </p>
             </div>
 
-            <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 md:space-x-12 lg:space-x-24'>
+            <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 lg:space-x-24'>
               {cryptoValues
                 .filter(
                   (token: { symbol: string }) =>
@@ -621,7 +622,7 @@ const TreasuryPage: NextPage = ({
               </p>
             </div>
 
-            <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 md:space-x-12 lg:space-x-24'>
+            <div className='flex flex-grow flex-wrap max-w-full lg:max-w-3/4 lg:space-x-24'>
               <CryptoCard
                 name='Sandbox'
                 clicked={showLands === 'Sandbox'}

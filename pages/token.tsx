@@ -32,17 +32,17 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                             <h1 className="text-8xl text-center">MGH TOKEN</h1>
                             <div className="flex flex-col h-20 space-x-5 sm:space-x-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
                                 <div className="flex">
-                                    <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max">Symbol</p>
-                                    <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">MGH</p>
-                                    <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max pl-5">Decimals</p>
-                                    <p className="text-md sm:text-lg text-gray-500 font-medium pl-2">18</p>
+                                    <p className="text-smxs:text-md sm:text-lg text-pink-reco font-inter min-w-max">Symbol</p>
+                                    <p className="text-sm xs:text-md sm:text-lg text-gray-500 font-medium pl-2">MGH</p>
+                                    <p className="text-sm xs:text-md sm:text-lg text-pink-reco font-inter min-w-max pl-5">Decimals</p>
+                                    <p className="text-sm xs:text-md sm:text-lg text-gray-500 font-medium pl-2">18</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col h-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
-                                <p className="text-sm sm:text-lg text-pink-reco font-inter min-w-max ">Ethereum Contract</p>
+                                <p className=" text-sm xs:text-md sm:text-lg text-pink-reco font-inter min-w-max ">Ethereum Contract</p>
                                 <div className="flex items-center">
-                                    <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0x8765b1a0eb57ca49be7eacd35b24a574d0203656</p>
+                                    <p className="text-sm xs:text-md sm:text-lg font-medium text-gray-500 select-text">0x8765b1a0eb57ca49be7eacd35b24a574d0203656</p>
                                     <a href="https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656" target="_blank">
                                         <FiExternalLink className="mb-1.5 text-pink-reco pl-0.5" />
                                     </a>
@@ -50,9 +50,9 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                             </div>
 
                             <div className="flex flex-col h-20 bg-[#262626] rounded-lg pl-6 p-2 place-content-center">
-                                <p className="text-sm sm:text-lg text-pink-400 font-inter min-w-max">Polygon Contract</p>
+                                <p className="text-sm xs:text-md sm:text-lg text-pink-400 font-inter min-w-max">Polygon Contract</p>
                                 <div className="flex items-center">
-                                    <p className="text-xxs sm:text-lg font-medium text-gray-500 select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
+                                    <p className="text-sm xs:text-md sm:text-lg font-medium text-gray-500 select-text">0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10</p>
                                     <a href="https://polygonscan.com/token/0xc3C604F1943B8C619c5D65cd11A876e9C8eDCF10" target="_blank">
                                         <FiExternalLink className="mb-1.5 text-pink-reco pl-0.5" />
                                     </a>
@@ -107,13 +107,13 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                 <div className="flex flex-col items-center space-x-0 lg:space-x-20 sm:space-y-20 lg:space-y-0 w-full">
                     <div id="chart" className="w-full min-h-full flex flex-col space-y-10 cursor-default">
 
-                        <div className="flex flex-col md:flex-row space-x-0 md:space-x-10 lg:space-x-20 space-y-5 md:space-y-0 justify-center px-5 md:px-10 pt-10">
+                        <div className="flex flex-col items-center  md:flex-row space-x-0 md:space-x-10 lg:space-x-20 space-y-5 md:space-y-0 justify-center px-5 md:px-10 pt-10">
                             <div className="flex flex-col space-y-1">
                                 <div className="flex items-end space-x-3">
                                     <p className="text-base md:text-xl lg:text-3xl font-medium">$ {tokenData.market_data.current_price.usd.toLocaleString('en-GB', { maximumFractionDigits: 4 })}</p>
                                     <p className={`text-sm md:text-lg lg:text-xl font-medium ${tokenData.market_data.price_change_percentage_24h > 0 ? "text-green-600" : "text-red-600"} `}>{tokenData.market_data.price_change_percentage_24h.toFixed(2)}%</p>
                                 </div>
-                                <p className="text-gray-400 text-sm md:text-base lg:text-xl flex-grow">Price</p>
+                                <p className="text-gray-400 text-center text-sm md:text-base lg:text-xl flex-grow">Price</p>
                             </div>
 
                             <div className="flex flex-col space-y-1">
@@ -127,7 +127,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                             </div>
 
                             <div className="flex flex-col space-y-1">
-                                <p className="text-base md:text-xl lg:text-3xl font-medium">$ {tokenData.market_data.fully_diluted_valuation.usd.toLocaleString('en-GB')}</p>
+                                <p className="text-base text-center md:text-xl lg:text-3xl font-medium">$ {tokenData.market_data.fully_diluted_valuation.usd.toLocaleString('en-GB')}</p>
                                 <p className="text-gray-400 text-sm md:text-base lg:text-xl flex-grow">Fully Diluted Market Cap</p>
                             </div>
 
