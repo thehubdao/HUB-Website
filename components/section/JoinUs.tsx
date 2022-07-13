@@ -34,7 +34,6 @@ const JoinUs = () => {
   return (
     <div className="text-center min-h-screen flex items-center justify-center">
       <div>
-        <h3 className="mb-8 text-xl text-pink-reco">Working Groups</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 justify-items-center gap-4 mb-8">
           {Object.keys(links).map((key) => (
             <a
@@ -46,7 +45,7 @@ const JoinUs = () => {
             </a>
           ))}
         </div>
-        <h2 className="text-8xl">JOIN US!</h2>
+        <a href="/contribute"><h2 className="text-8xl">JOIN US!</h2></a>
       </div>
     </div>
   );

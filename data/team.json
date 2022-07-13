@@ -106,49 +106,5 @@
     "twitter": "https://twitter.com/susi23x01",
     "github": "https://github.com/susi2301",
     "description": "Game Design & Management Student at HS Fresenius Cologne, Graphic designer & Social Media Lead at Fresenius Green Office, part of Metaverse DevGroup."
-  },
-  {
-    "name": "Robin Prock",
-    "position": "Awareness",
-    "image": "/images/Team/webp/robin.webp",
-    "linkedin": "https://www.linkedin.com/in/robin-prock-931612210/",
-    "description": "Experienced copywriter & writer"
-  },
-  {
-    "name": "Mauro Guz Bejar",
-    "position": "Tech",
-    "image": "/images/Team/webp/mauro.webp",
-    "linkedin": "https://www.linkedin.com/in/mauro-gb-5b657b209/",
-    "description": "Web3 and Smart Contracts Engineer with a special focus in accessibility and security"
-  },
-  {
-    "name": "Pierre Baumann",
-    "position": "Blockchain Developer",
-    "image": "/images/Team/webp/pierre.webp",
-    "linkedin": "https://www.linkedin.com/in/pierre-baumann-8b1473229",
-    "github": "https://github.com/DAC-PierreBaumann",
-    "description": "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems."
-  },
-  {
-    "name": "Branko Vlahov",
-    "position": "Awareness",
-    "image": "/images/Team/webp/branko.webp",
-    "linkedin": "https://www.linkedin.com/in/brankovlahov/",
-    "description": "10 + years of experience in the Motion Design industry. Efficient in animating with the Adobe Suite and Cinema 4D. Finished AP degree in Multimedia Design at the Bussiness Academy of Aarhus."
-  },
-  {
-    "name": "Alejandra Corbella",
-    "position": "Awareness",
-    "image": "/images/Team/webp/alejandra.webp",
-    "twitter": "https://twitter.com/alecorbella_",
-    "linkedin": "https://www.linkedin.com/in/alejandra-corbella-obregon-a6637ba9/",
-    "description": "Studied Entrepreneurship at Tufts University. Working as a Community Manager and Content Strategist."
-  },
-  {
-    "name": "Javan Sardarabady",
-    "position": "Awareness",
-    "image": "/images/Team/webp/javan.webp",
-    "linkedin": "https://www.linkedin.com/in/javan-sardarabady-301a48215/",
-    "description": "Economics student at the University of Konstanz with focus on political economy. Passionate about decentralized governance."
   }
 ]
