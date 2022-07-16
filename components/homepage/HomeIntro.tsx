@@ -14,11 +14,11 @@ const HomeIntro = () => {
       </video>
 
       {/* Bottom */}
-      <div className="absolute bottom-12 z-40 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0 w-full">
+      <div className="absolute bottom-12 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0 w-full">
         {/* Action Buttons and Big Text */}
-        <div className="md:pl-14 z-40 w-full">
+        <div className="md:pl-14 w-full">
           {/* Action Buttons */}
-          <div className="flex flex-col gap-4 items-center md:flex-row md:justify-start mb-4 md:mb-0 w-max-full">
+          <div className="flex flex-col z-30 gap-4 items-center md:flex-row md:justify-start mb-4 md:mb-0 w-max-full">
             <HomeActionButton
               text="Voting"
               link="https://snapshot.org/#/metagamehub.eth"
@@ -31,14 +31,14 @@ const HomeIntro = () => {
           {/* Text Box */}
 
           <div className="flex flex-col gap-4 md:gap-0 w-full">
-            <h1 className="text-4xl xs:text-6xl text-center md:text-left md:text-9xl pb-0 text-gray-200 z-40">
+            <h1 className="text-4xl xs:text-6xl text-center md:text-left md:text-9xl pb-0 text-gray-200 z-20">
               METAGAMEHUB
             </h1>
             <div className="z-20 flex flex-col md:flex-row gap-4 items-center">
               <h2 className="text-5xl xs:text-7xl md:text-9xl pt-0 z-20">
                 DAO
               </h2>
-              <div className="text-center md:text-left z-20">
+              <div className="text-center md:text-left z-20 md:w-1/2 xl:w-1/3 2xl:w-1/5">
                 <h3 className="text-2xl text-pink-reco">
                   Your Homebase in the Open Metaverse
                 </h3>

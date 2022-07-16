@@ -192,12 +192,12 @@ const TreasuryPage: NextPage = ({
 
         <main className='flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]'>
           <div className='flex flex-col w-full 2xl:max-w-screen-2xl px-5 sm:px-10'>
-            <div className='flex flex-col flex-row justify-between items-center space-x-0 space-y-5 md:pb-10 lg:space-y-0 w-full pb-10 lg:pb-30'>
+            <div className='flex flex-col justify-between items-center space-x-0 space-y-5 md:pb-10 lg:space-y-0 w-full pb-10 lg:pb-30'>
               <h1 className='text-gray-200 font-normal pb-16 lg:text-8xl'>
                 TREASURY
               </h1>
 
-              <div className='flex flex-col items-center space-y-1 lg:space-y-3 w-1/2 mb-20 rounded-lg p-5 bg-[#262626]'>
+              <div className='flex flex-col items-center space-y-1 lg:space-y-3 w-2/3 md:w-1/2 mb-20 rounded-lg p-5 bg-[#262626]'>
                 <p className='md:text-md lg:text-lg flex-grow'>
                   Total Treasury Value
                 </p>
@@ -209,7 +209,7 @@ const TreasuryPage: NextPage = ({
                   <a
                     href='https://opensea.io/0x2a9da28bcbf97a8c008fd211f5127b860613922d'
                     target='_blank'
-                    className='md:text-md lg:text-lg hover:text-blue-400 transition ease-in-out pt-0.5 pr-3 duration-300'
+                    className='md:text-md lg:text-lg hover:text-pink-reco transition ease-in-out pt-0.5 pr-3 duration-300'
                   >
                     Opensea
                   </a>
@@ -217,7 +217,7 @@ const TreasuryPage: NextPage = ({
                   <a
                     href='https://gnosis-safe.io/app/eth:0x2a9Da28bCbF97A8C008Fd211f5127b860613922D/balances'
                     target='_blank'
-                    className='md:text-md lg:text-lg hover:text-blue-400 transition ease-in-out pt-0.5 pl-3 duration-300'
+                    className='md:text-md lg:text-lg hover:text-pink-reco transition ease-in-out pt-0.5 pl-3 duration-300'
                   >
                     Gnosis
                   </a>
@@ -225,9 +225,9 @@ const TreasuryPage: NextPage = ({
               </div>
             </div>
 
-            <div className='flex flex-col flex-row items-start items-center space-x-0 space-y-5 justify-between w-full py-10'>
+            <div className='flex flex-col items-center space-x-0 space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
-                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-400'>
+                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-reco'>
                   ${totalCryptoValue.toLocaleString('en-GB')}
                 </p>
                 <p className='text-gray-200 text-sm md:text-md lg:text-lg min-w-max flex-grow'>
@@ -257,9 +257,9 @@ const TreasuryPage: NextPage = ({
               </div>
             </div>
 
-            <div className='flex flex-col flex-row items-start items-center space-x-0 space-y-5 justify-between w-full py-10'>
+            <div className='flex flex-col items-center space-x-0 space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
-                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-400'>
+                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-reco'>
                   ${totalNFTValue.toLocaleString('en-GB')}
                 </p>
                 <p className='text-gray-200 text-sm md:text-md lg:text-lg min-w-max flex-grow'>
@@ -477,9 +477,9 @@ const TreasuryPage: NextPage = ({
               </div>
             )}
 
-            <div className='flex flex-col flex-row items-start items-center space-x-0  space-y-5 justify-between w-full py-10'>
+            <div className='flex flex-col items-center space-x-0  space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
-                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-400'>
+                <p className='text-sm md:text-md lg:text-lg font-inter px-20 text-pink-reco'>
                   ${totalAssetsValue.toLocaleString('en-GB')}
                 </p>
                 <p className='text-gray-200 text-sm md:text-md lg:text-lg min-w-max flex-grow'>
@@ -582,7 +582,7 @@ const TreasuryPage: NextPage = ({
             </div>
           </div>
 
-          <div className='flex flex-col lg:flex-row items-start items-center space-x-0  space-y-5 lg:space-y-0 justify-between w-full py-10'>
+          <div className='flex flex-col lg:flex-row items-center space-x-0  space-y-5 lg:space-y-0 justify-between w-full py-10'>
             <div className='flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0'>
               <p className='text-xl md:text-2xl lg:text-4xl font-medium pt-1.5'>
                 ${totalCryptoValue.toLocaleString('en-GB')}
@@ -612,7 +612,7 @@ const TreasuryPage: NextPage = ({
             </div>
           </div>
 
-          <div className='flex flex-col lg:flex-row items-start items-center space-x-0 space-y-5 lg:space-y-0 justify-between w-full py-10'>
+          <div className='flex flex-col lg:flex-row items-center space-x-0 space-y-5 lg:space-y-0 justify-between w-full py-10'>
             <div className='flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0'>
               <p className='text-xl md:text-2xl lg:text-4xl font-medium pt-1.5'>
                 ${totalNFTValue.toLocaleString('en-GB')}
@@ -829,7 +829,7 @@ const TreasuryPage: NextPage = ({
             </div>
           )}
 
-          <div className='flex flex-col lg:flex-row items-start items-center space-x-0 space-y-5 lg:space-y-0 justify-between w-full py-10'>
+          <div className='flex flex-col lg:flex-row items-center space-x-0 space-y-5 lg:space-y-0 justify-between w-full py-10'>
             <div className='flex flex-col space-y-1 lg:space-y-2 pl-2 lg:pl-0'>
               <p className='text-xl md:text-2xl lg:text-4xl font-medium pt-1.5'>
                 ${totalAssetsValue.toLocaleString('en-GB')}
