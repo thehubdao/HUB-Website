@@ -49,15 +49,11 @@ const BuildPage: NextPage = () => {
                         <ToolCard title="Decentraland Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
                     </div>
 
-                    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 items-center my-44 w-full md:w-5/6   ">
+                    <div className="relative flex flex-col items-center my-44 w-full md:w-5/6   ">
 
-                        <div className="grid md:grid-rows-2 w-full gap-4 h-full">
-                            <div className="mb-5 lg:mb-10 h-full flex items-center">
-                                <h1 className="font-normal text-pink-reco text-center">WHY BUILDING WITH MGH?</h1>
-                            </div>
-                            <div className={`flex relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full h-full`}>
-                                <p className={`font-normal text-md w-full pb-5 grow text-stone-400`}>We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers.<br /> We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
-                            </div>
+                        <div className="flex flex-col md:grid-rows-2 w-full h-full justify-center items-center">
+                            <h1 className="font-normal text-pink-reco text-center">WHY BUILDING WITH MGH?</h1>
+                            <p className={`font-normal text-md w-full pb-5 grow text-stone-400 text-center max-w-2xl`}>We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers. We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
                         </div>
 
                         <div className="grid md:grid-rows-4 gap-4 w-full">
