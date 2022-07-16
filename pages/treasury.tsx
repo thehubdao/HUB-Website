@@ -185,8 +185,8 @@ const TreasuryPage: NextPage = ({ cryptoValues, landValues, nftValues }: any) =>
                             <CryptoCard name="ENS" clicked={showLands === "ENS"} value={totalENSValue} logo="/images/Assets/webp/ens.webp" onClick={() => handleClick("ENS")} />
                             <CryptoCard name="Uniswap V3" value={totalUniswapValue} logo="/images/Assets/uniswap-positions.svg" onClick={() => window.open("https://opensea.io/assets/0xc36442b4a4522e871399cd717abdd847ab11fe88/153816", "_blank")} />
                             <CryptoCard name="Drip Shades" value={totaldripShadesValue} logo="https://lh3.googleusercontent.com/GThBKtJoDNClfmSc_tFcLoz6otilERBlobIKZaAcysaOW7dmpp2n3REqEVuqTb0_Xo1QgU04-HWaH26VakSlSBjsox5WYf8EndA5wPk=s0" onClick={() => window.open("https://opensea.io/assets/matic/0x897243a54b03b46a17b55d5609465e9719a6ffa0/210624583337114373395836055367340864637790190801098222508621955082", "_blank")} />
-                            <CryptoCard name="Wow Pixies" value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
-                            <CryptoCard name="Exclusible Penthouses" value={totalexclusibleValue} logo="/images/Logos/exclusible-logo.jpg" onClick={() => handleClick("Exclusible")} />
+                            <CryptoCard name="Wow Pixies" clicked={showLands === "Wow Pixies"} value={totalwowPixiesValue} logo="/images/Logos/wow-pixies.jpg" onClick={() => handleClick("wowPixies")} />
+                            <CryptoCard name="Exclusible Penthouses" clicked={showLands === "Exclusible Penthouses"} value={totalexclusibleValue} logo="/images/Logos/exclusible-logo.jpg" onClick={() => handleClick("Exclusible")} />
                         </div>
                     </div>
 
