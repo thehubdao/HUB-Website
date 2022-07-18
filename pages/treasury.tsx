@@ -347,6 +347,13 @@ const TreasuryPage: NextPage = ({
                   logo='/images/Logos/wow-pixies.jpg'
                   onClick={() => handleClick('wowPixies')}
                 />
+                <CryptoCard
+                  name="Exclusible Penthouses"
+                  clicked={showLands === 'Exclusible'}
+                  value={totalexclusibleValue}
+                  logo="/images/Logos/exclusible-logo.jpg"
+                  onClick={() => handleClick("Exclusible")}
+                />
               </div>
             </div>
 
@@ -482,6 +489,20 @@ const TreasuryPage: NextPage = ({
                 })}
               </div>
             )}
+
+            {showLands === "Exclusible" && (
+              <div className="flex flex-wrap w-full pb-20">
+                {assetsJson.map((element, key) => {
+                  if (element.metaverse === "Exclusible") {
+                    return (
+                      <LandCard key={key} classes="" img={element.image} title={element.title} link={element.link} metaverse={element.metaverse} />
+                    );
+                  }
+                })}
+              </div>
+            )}
+                
+            
 
             <div className='flex flex-col items-center space-x-0  space-y-5 justify-between w-full py-10'>
               <div className='flex flex-col bg-[#262626] items-center rounded-lg py-2'>
