@@ -8,11 +8,11 @@ const Achievements = () => {
       <div className="w-full py-10 px-5 sm:px-10 flex flex-col items-center justify-center">
         <h2 className={`text-pink- font-normal mb-16`}>ACHIEVEMENTS</h2>
 
-        <div className="relative my-16 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center items-center max-w-max">
+        <div className="relative my-16 w-full grid gap-0 grid-cols-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 justify-items-center items-center max-w-max">
           <a
             href="https://port.oceanprotocol.com/t/mgh-dao-bringing-nft-valuation-data-for-axie-infinity-to-the-ocean-marketplace/1189"
             target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-72 p-4 mb-28 md:mb-0"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 p-4 mb-28 lg:mb-0"
           >
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
@@ -29,7 +29,7 @@ const Achievements = () => {
           <a
             href="https://governance.decentraland.org/proposal/?id=0cb35ba0-7e05-11ec-9447-6b730f00647d"
             target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4 mb-28 md:mb-0"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 p-4 mb-28 lg:mb-0"
           >
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
@@ -38,15 +38,32 @@ const Achievements = () => {
               />
             </div>
             <p className="text-gray-300 text-sm">
-              Ocean by Decentraland
+              Grant by Decentraland
               <p className="text-pink-500 text-lg">$5000</p>
+            </p>
+          </a>
+
+          <a
+            href="https://governance.decentraland.org/proposal/?id=0cb35ba0-7e05-11ec-9447-6b730f00647d"
+            target="_blank"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 p-4 mb-28 lg:mb-0"
+          >
+            <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+              <img
+                src="/images/Logos/Cryptos/svgs/DECENTRALAND.svg"
+                className="w-auto h-26 md:h-30"
+              />
+            </div>
+            <p className="text-gray-300 text-sm">
+              Grant by Decentraland
+              <p className="text-pink-500 text-lg">$240000</p>
             </p>
           </a>
 
           <a
             href="https://port.oceanprotocol.com/t/round-10-proposal-mgh-unleash-nft-market-data/966"
             target="_blank"
-            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 w-56 p-4"
+            className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 p-4 mb-28 lg:mb-0"
           >
             <div className="flex flex-col items-center justify-evenly text-center space-y-3 bg-[#262626] h-40 w-48 py-24 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
               <img
