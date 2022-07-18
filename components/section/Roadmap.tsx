@@ -28,7 +28,7 @@ const Roadmap = () => {
                                 Q1
                             </p>
                             <p className="text-lg  text-gray-200 max-w-sm lg:max-w-4/4 2xl:max-w-3/4">
-                                NFT Pools and NFT Pool Tokens, IP NFT, Valuation Tool V2, Decentraland Editor, WG launch, Awareness expansion
+                                Valuation Tool V2, Decentraland Editor, WG launch, Awareness expansion
                             </p>
                         </div>
 

@@ -58,14 +58,12 @@ const Footer = () => {
           />
           <button className="absolute flex items-center justify-around bg-gray-200 right-0 h-4/5 rounded-full mr-1 w-1/6">
             <svg
-              className={`${
-                processing ? "block" : "hidden"
-              } animate-spin-slow h-6 w-6 border-4 border-t-gray-300 border-l-gray-300 border-gray-800 rounded-full `}
+              className={`${processing ? "block" : "hidden"
+                } animate-spin-slow h-6 w-6 border-4 border-t-gray-300 border-l-gray-300 border-gray-800 rounded-full `}
             />
             <span
-              className={`${
-                processing ? "hidden" : "block"
-              } text-black font-medium  w-full`}
+              className={`${processing ? "hidden" : "block"
+                } text-black font-medium  w-full`}
             >
               Join
             </span>

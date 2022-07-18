@@ -27,6 +27,7 @@ const TreasuryPage: NextPage = ({
   const [totalUniswapValue, setTotalUniswapValue] = useState(0)
   const [totaldripShadesValue, setTotaldripShadesValue] = useState(0)
   const [totalwowPixiesValue, setTotalwowPixiesValue] = useState(0)
+  const [totalexclusibleValue, setTotalExclusibleValue] = useState(0)
   const [totalENSValue, setTotalENSValue] = useState(0)
   const [totalNFTValue, setTotalNFTValue] = useState(0)
   const [totalOceanValue, setTotalOceanValue] = useState(0)
@@ -113,6 +114,10 @@ const TreasuryPage: NextPage = ({
     const wowPixiesSumRounded = Math.round(wowPixiesSum)
     setTotalwowPixiesValue(wowPixiesSumRounded)
 
+    const exclusibleSum = nftValues.find((nft: { name: string; }) => nft.name === "exclusible-penthouse-v2").value_7
+    const exclusibleSumRounded = Math.round(exclusibleSum)
+    setTotalExclusibleValue(exclusibleSumRounded)
+
     const nftSum =
       sandboxSumRounded +
       decentralandSumRounded +
@@ -122,7 +127,8 @@ const TreasuryPage: NextPage = ({
       ensSumRounded +
       uniswapSumRounded +
       dripShadesSumRounded +
-      wowPixiesSumRounded
+      wowPixiesSumRounded +
+      exclusibleSumRounded 
     setTotalNFTValue(nftSum)
 
     const quickswapSum = cryptoValues.find(
