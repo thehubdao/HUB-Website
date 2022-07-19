@@ -4,11 +4,9 @@ import Head from "next/head";
 
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
-import MetaFi from "../components/section/MetaFi";
-import Dataverse from "../components/section/Dataverse";
 import Button from "../components/elements/Button";
 import ToolCard from "../components/section-element/ToolCard";
-import Question from "../components/section-element/Question";
+import Carrousel from "../components/section/Carrousel"
 
 
 const BuildPage: NextPage = () => {
@@ -56,7 +54,9 @@ const BuildPage: NextPage = () => {
                             <p className={`font-normal text-md w-full pb-5 grow text-stone-400 text-center max-w-2xl`}>We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers. We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
                         </div>
 
-                        <div className="grid md:grid-rows-4 gap-4 w-full">
+                        <Carrousel />
+
+                        {/* <div className="grid md:grid-rows-4 gap-4 w-full">
                             <ToolCard
                                 title="Play2Earn Implementations"
                                 text="Metaverse game development, Play2Earn implementations, Engagement Models for communities"
@@ -77,7 +77,7 @@ const BuildPage: NextPage = () => {
                                 text="We have Unity 3D developers and programmers with years of experience in App development and game development. We can leverage these skills for any Metaverse project that allows for coding custom complex logic like Decentraland."
                                 classes="sm:max-w-full sm:text-left"
                             />
-                        </div>
+                        </div> */}
                     </div>
 
                     <h1 className="font-normal mb-10">PACKAGES</h1>

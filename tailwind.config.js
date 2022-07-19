@@ -59,6 +59,10 @@ module.exports = {
         15: "3.75rem",
         30: "7.5rem",
         "80vw": "80vw",
+        "another": "2.2rem"
+      },
+      left: {
+        "1/10": '10%'
       },
       scale: {
         55: ".55",
