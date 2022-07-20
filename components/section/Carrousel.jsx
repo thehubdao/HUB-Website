@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const dataCarrousel = [
   {
@@ -25,16 +25,15 @@ const dataCarrousel = [
 
 const Carrousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
-
+  
   const handleOnNextClick = () => {
-    setCurrentSlide((currentSlide + 1) % dataCarrousel.length)
+    const nextSlide = (currentSlide + 1) % dataCarrousel.length
+    setCurrentSlide(nextSlide)
   }
 
   const handleOnPrevClick = () => {
-    if (currentSlide > 0)
-      setCurrentSlide(currentSlide - 1)
-    else
-      setCurrentSlide(dataCarrousel.length - 1)
+    const prevSlide = ((currentSlide + dataCarrousel.length - 1) % dataCarrousel.length)
+    setCurrentSlide(prevSlide)
   }
 
   return (
