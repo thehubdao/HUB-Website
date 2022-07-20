@@ -109,7 +109,9 @@ module.exports = {
       },
       fontSize: {
         xxs: "0.5rem",
-        "17/2xl": "6.69rem"
+        "15/2xl": "3.1rem",
+        "16/2xl": "5.0rem",
+        "17/2xl": "6.67rem"
       },
       transitionDuration: {
         2000: "2000ms",

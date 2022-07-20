@@ -24,9 +24,9 @@ const BuildPage: NextPage = () => {
                 <div className="flex flex-col items-center w-full 2xl:max-w-screen-3xl px-5 sm:px-15">
                     <div className="flex flex-col justify-between items-center lg:space-y-0 w-full mb-44">
 
-                        <h1 className="text-gray-200 font-normal max-w-full text-center xs:text-md sm:text-7xl md:text-17/2xl">
+                        <h1 className="text-gray-200 font-normal max-w-full text-center text-15/2xl sm:text-16/2xl md:text-17/2xl">
                             MGH METAVERSE
-                            <h1 className="text-pink-reco text-center pt-0 xs:text-6xl sm:text-8xl md:text-9xl">DEVELOPMENT </h1>
+                            <h1 className="text-pink-reco text-center pt-0 text-6xl sm:text-8xl md:text-9xl">DEVELOPMENT </h1>
                         </h1>
                         
                         <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-2xl text-stone-400">
