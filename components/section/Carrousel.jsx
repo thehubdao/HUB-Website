@@ -23,7 +23,7 @@ const Carrousel = ({dataCarrousel}) => {
   return (
     <div className="max-w-screen-2xl m-auto h-full">
       <div className="w-full relative h-full">
-        <div className="flex h-80vh min-h-60vh md:h-auto md:w-80vw items-center animate-fade-in-slow">
+        <div className="flex h-80vh min-h-75vh md:h-auto md:w-80vw items-center animate-fade-in-slow">
           <img src={dataCarrousel[currentSlide].image} className="absolute rounded-3xl object-cover h-full w-full" alt="background image" />
           <div className="relative top-0 w-full p-16 lg:px-44">
             <h1 className="text-center text-2xl md:text-5xl xl:text-7xl text-slate-100 ">{dataCarrousel[currentSlide].title}</h1>

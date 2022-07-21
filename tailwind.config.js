@@ -32,7 +32,7 @@ module.exports = {
         "3/4": "75%",
       },
       minHeight: {
-        "60vh": "60vh"
+        "75vh": "75vh"
       },
       borderWidth: {
         3: "3px",
