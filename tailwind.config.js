@@ -31,6 +31,9 @@ module.exports = {
         "1/2": "50%",
         "3/4": "75%",
       },
+      minHeight: {
+        "75vh": "75vh"
+      },
       borderWidth: {
         3: "3px",
       },
@@ -53,12 +56,19 @@ module.exports = {
         26: "6.5rem",
         30: "7.5rem",
         42: "10.5rem",
+        "60vh": "60vh",
+        "80vh": "80vh"
       },
       width: {
         18: "4.5rem",
         15: "3.75rem",
         30: "7.5rem",
+        "70vw": "70vw",
         "80vw": "80vw",
+        "another": "2.2rem"
+      },
+      left: {
+        "1/10": '10%'
       },
       scale: {
         55: ".55",
@@ -105,7 +115,9 @@ module.exports = {
       },
       fontSize: {
         xxs: "0.5rem",
-        "17/2xl": "6.5rem"
+        "15/2xl": "3.1rem",
+        "16/2xl": "5.0rem",
+        "17/2xl": "6.67rem"
       },
       transitionDuration: {
         2000: "2000ms",
