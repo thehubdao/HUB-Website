@@ -20,10 +20,10 @@ const Achievements = () => {
                 className="w-auto h-26 md:h-30"
               />
             </div>
-            <p className="text-gray-300 text-sm">
-              Grant by Ocean Protocol
+            <div className="block">
+              <p className="text-gray-300 text-sm">Grant by Ocean Protocol</p>
               <p className="text-pink-500 text-lg">$9000</p>
-            </p>
+            </div>
           </a>
 
           <a
@@ -37,10 +37,10 @@ const Achievements = () => {
                 className="w-auto h-26 md:h-30"
               />
             </div>
-            <p className="text-gray-300 text-sm">
-              Grant by Decentraland
+            <div className="block">
+              <p className="text-gray-300 text-sm">Grant by Decentraland</p>
               <p className="text-pink-500 text-lg">$5000</p>
-            </p>
+            </div>
           </a>
 
           <a
@@ -54,10 +54,10 @@ const Achievements = () => {
                 className="w-auto h-26 md:h-30"
               />
             </div>
-            <p className="text-gray-300 text-sm">
-              Grant by Decentraland
+            <div className="block">
+              <p className="text-gray-300 text-sm">Grant by Decentraland</p>
               <p className="text-pink-500 text-lg">$240000</p>
-            </p>
+            </div>
           </a>
 
           <a
@@ -71,10 +71,10 @@ const Achievements = () => {
                 className="w-auto h-26 md:h-30"
               />
             </div>
-            <p className="text-gray-300 text-sm">
-              Grant by Ocean Protocol
+            <div className="block">
+              <p className="text-gray-300 text-sm">Grant by Ocean Protocol</p>
               <p className="text-pink-500 text-lg">$9000</p>
-            </p>
+            </div>
           </a>
         </div>
 

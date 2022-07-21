@@ -11,6 +11,29 @@ import Carrousel from "../components/section/Carrousel"
 
 const BuildPage: NextPage = () => {
 
+    const dataCarrousel = [
+        {
+            image: '/images/Carrousel/carrousel1.png',
+            title: 'PLAY2EARN IMPLEMENTATIONS',
+            content: 'Metaverse game development, Play2Earn implementations, Engagement Models for communities'
+        },
+        {
+            image: '/images/Carrousel/carrousel2.png',
+            title: 'POSSIBILITY TO BUILD IN ANY METAVERSE',
+            content: 'Metaverse design in various metaverses such as Decentraland, The Sandbox and Somnium Space. Development of tools for Metaverses like an editor for Decentraland (dcl-edit).'
+        },
+        {
+            image: '/images/Carrousel/carrousel3.png',
+            title: 'MODELLING OF UNIQUE ASSETS FOR CUSTOM EXPERIENCES',
+            content: 'We have expert modellers working with state-of-the art tools like Blender and Fusion 360 that are able to create 3D models for Metaverses like Decentraland and Somnium Space.'
+        },
+        {
+            image: '/images/Carrousel/carrousel4.png',
+            title: 'MODERN 3D ENGINES',
+            content: 'We have Unity 3D developers and programmers with years of experience in App development and game development. We can leverage these skills for any Metaverse project that allows for coding custom complex logic like Decentraland.'
+        }
+    ]
+
     return (
         <>
             <Head>
@@ -23,15 +46,13 @@ const BuildPage: NextPage = () => {
 
                 <div className="flex flex-col items-center w-full 2xl:max-w-screen-3xl px-5 sm:px-15">
                     <div className="flex flex-col justify-between items-center lg:space-y-0 w-full mb-44">
-
-                        <h1 className="text-gray-200 font-normal max-w-full text-center text-15/2xl sm:text-16/2xl md:text-17/2xl">
-                            MGH METAVERSE
-                            <h1 className="text-pink-reco text-center pt-0 text-6xl sm:text-8xl md:text-9xl">DEVELOPMENT </h1>
-                        </h1>
+                        <div className="block">
+                            <h1 className="text-gray-200 font-normal max-w-full text-center text-15/2xl sm:text-16/2xl md:text-17/2xl pb-0"> MGH METAVERSE</h1>
+                            <h2 className="text-pink-reco text-center pt-0 text-6xl sm:text-8xl md:text-9xl">DEVELOPMENT </h2>
+                        </div>
                         
                         <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-2xl text-stone-400">
                             <p className={`text-sm text-center max-w-xl mb-6`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
-
                             <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
                                 <Button classes="text-sm" text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
                                 <Button classes="text-sm" text="Book a meeting" link="https://calendly.com/nicolas-weber-1/30min"/>
@@ -54,7 +75,7 @@ const BuildPage: NextPage = () => {
                             <p className={`font-normal text-md w-full pb-5 grow text-stone-400 text-center max-w-2xl`}>We are a group of talented and experienced Game Designers and Developers, Artists, 3D Modellers and UX Designers. We design and create any kinds of assets like avatars, wearables and furniture for current Metaverses like Decentraland and The Sandbox.</p>
                         </div>
 
-                        <Carrousel />
+                        <Carrousel dataCarrousel={dataCarrousel}/>
 
                         {/* <div className="grid md:grid-rows-4 gap-4 w-full">
                             <ToolCard

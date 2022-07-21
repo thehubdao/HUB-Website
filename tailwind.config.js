@@ -31,6 +31,9 @@ module.exports = {
         "1/2": "50%",
         "3/4": "75%",
       },
+      minHeight: {
+        "60vh": "60vh"
+      },
       borderWidth: {
         3: "3px",
       },
@@ -53,11 +56,14 @@ module.exports = {
         26: "6.5rem",
         30: "7.5rem",
         42: "10.5rem",
+        "60vh": "60vh",
+        "80vh": "80vh"
       },
       width: {
         18: "4.5rem",
         15: "3.75rem",
         30: "7.5rem",
+        "70vw": "70vw",
         "80vw": "80vw",
         "another": "2.2rem"
       },

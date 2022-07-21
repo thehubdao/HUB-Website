@@ -8,7 +8,7 @@ const HomeIntro = () => {
         loop
         autoPlay
         muted
-        className="w-full min-h-screen absolute top-0 3xl:-top-1/4 object-cover"
+        className="w-full min-h-screen absolute top-0 object-cover h-screen"
       >
         <source src="/videos/bgvideo.mp4" type="video/mp4" />
       </video>
@@ -38,7 +38,7 @@ const HomeIntro = () => {
               <h2 className="text-5xl xs:text-7xl md:text-9xl pt-0 z-20">
                 DAO
               </h2>
-              <div className="text-center md:text-left z-20 md:w-1/2 xl:w-1/3 2xl:w-1/5">
+              <div className="text-center md:text-left z-20 md:w-1/2 xl:w-1/3 2xl:w-1/4">
                 <h3 className="text-2xl text-pink-reco">
                   Your Homebase in the Open Metaverse
                 </h3>
