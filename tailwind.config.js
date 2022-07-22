@@ -60,7 +60,7 @@ module.exports = {
         "60vh": "60vh",
         "80vh": "80vh",
         "overScreen120": "120vh",
-        "overScreen140": "140vh"
+        "overScreen130": "130vh"
       },
       width: {
         18: "4.5rem",
