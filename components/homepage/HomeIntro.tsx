@@ -8,7 +8,7 @@ const HomeIntro = () => {
         loop
         autoPlay
         muted
-        className="w-full min-h-screen absolute top-0 object-cover h-screen"
+        className="w-full min-h-screen absolute top-0 object-cover h-overScreen object-bottom"
       >
         <source src="/videos/bgvideo.mp4" type="video/mp4" />
       </video>

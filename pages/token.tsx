@@ -101,7 +101,7 @@ const TokenPage: NextPage = ({ tokenData, chartData }: any) => {
                     </div> */}
                 </div>
                 
-                <div className="w-full h-96">
+                <div className="w-full h-60vh">
                     <PriceChart chartData={chartData} />
                 </div>
 

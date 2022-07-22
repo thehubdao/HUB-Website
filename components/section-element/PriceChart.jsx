@@ -64,7 +64,7 @@ const options = {
     fill: {
         type: "gradient",
         gradient: {
-            shade: 'dark',
+            gradientToColors: ['#111111'],
             shadeIntensity: 1,
             opacityFrom: 0.4,
             opacityTo: 0.8,
@@ -89,7 +89,7 @@ const options = {
         zoom: {
             enabled: false
         },
-        offsetX: 30
+        offsetX: 0
 
     },
 }
@@ -106,7 +106,7 @@ const PriceChart = ({ chartData }) => {
             options={options}
             series={series}
             type="area"
-            width="90%"
+            width="100%"
             height="50%"
         />
     )
