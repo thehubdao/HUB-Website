@@ -59,7 +59,8 @@ module.exports = {
         42: "10.5rem",
         "60vh": "60vh",
         "80vh": "80vh",
-        "overScreen": "120vh"
+        "overScreen120": "120vh",
+        "overScreen140": "140vh"
       },
       width: {
         18: "4.5rem",
