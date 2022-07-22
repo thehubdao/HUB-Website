@@ -32,6 +32,7 @@ module.exports = {
         "3/4": "75%",
       },
       minHeight: {
+        "96": "6rem",
         "75vh": "75vh"
       },
       borderWidth: {

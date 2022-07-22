@@ -22,10 +22,10 @@ const GalleryPage: NextPage = () => {
 
                 <div className="flex flex-col items-center space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH Metaverse Gallery</h1>
+                    <h1 className="text-gray-200">MGH METAVERSE GALLERY</h1>
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
-                        <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%]">
+                        <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
                             <h3 className="font-normal text-blue-500">The<br />Sandbox</h3>
                             <img src="/images/Logos/Cryptos/webp/SAND.webp" className="absolute top-0 right-0 lg:left-0 h-full lg:h-2/3 grayscale opacity-10" />
                         </div>
@@ -49,13 +49,12 @@ const GalleryPage: NextPage = () => {
                             <img src="/images/Gallery/Sandbox/18.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
                             <img src="/images/Gallery/Sandbox/19.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
                             <img src="/images/Gallery/Sandbox/20.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
-
                         </div>
-                        <div className="flex items-center w-44 backdrop-blur-lg -ml-5 z-10 rounded" />
+                        <div className="flex items-center w-72 backdrop-blur-lg -ml-5 z-10 rounded" />
                     </div>
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
-                        <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%]">
+                        <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
                             <h3 className="font-normal text-red-500">Decentraland</h3>
                             <img src="/images/Logos/Cryptos/webp/MANA.webp" className="absolute top-0 right-0 lg:left-0 h-full lg:h-2/3 grayscale opacity-10" />
                         </div>
@@ -78,9 +77,9 @@ const GalleryPage: NextPage = () => {
                     </div>
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
-                        <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%]">
+                        <div className="relative flex flex-col sm:flex-row sm:items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
                             <h3 className="font-normal text-white">Sominium<br />Space</h3>
-                            <img src="/images/Logos/webp/somnium-space-logo.webp" className="absolute top-0 right-0 lg:left-0 h-full lg:h-1/2 grayscale opacity-10" />
+                            <img src="/images/Logos/webp/somnium-space-logo.webp" className="relative sm:absolute top-0 right-0 lg:left-0 max-h-24 sm:max-h-full sm:h-full lg:h-1/2 grayscale opacity-10" />
                         </div>
                         <div className=" flex space-x-5 overflow-x-auto no-scroll-bar snap-x snap-mandatory">
                             <img src="/images/Gallery/SomniumSpace/1.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
