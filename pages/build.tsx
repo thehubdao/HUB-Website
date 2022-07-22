@@ -65,6 +65,11 @@ const BuildPage: NextPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-5/6 gap-5">
                         <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
                         <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://calendly.com/nicolas-weber-1/30min" button="Build with us" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
+                        {/* <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm">
+                            <h1>prueba</h1>
+                            <h1>de </h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div> */}
                         <ToolCard title="Decentraland Edit" text="Simplifying scene building on Decentraland with the best SDK on the market" link="https://dcl-edit.com" button="Learn more" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
                     </div>
 
