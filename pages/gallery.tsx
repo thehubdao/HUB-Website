@@ -22,7 +22,7 @@ const GalleryPage: NextPage = () => {
 
                 <div className="flex flex-col items-center space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
 
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH Metaverse Gallery</h1>
+                    <h1 className="text-gray-200">MGH METAVERSE GALLERY</h1>
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
                         <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%]">
@@ -49,9 +49,8 @@ const GalleryPage: NextPage = () => {
                             <img src="/images/Gallery/Sandbox/18.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
                             <img src="/images/Gallery/Sandbox/19.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
                             <img src="/images/Gallery/Sandbox/20.png.webp" className="lg:h-72 w-5/6 lg:w-full h-auto object-cover snap-center snap-always rounded" />
-
                         </div>
-                        <div className="flex items-center w-44 backdrop-blur-lg -ml-5 z-10 rounded" />
+                        <div className="flex items-center w-72 backdrop-blur-lg -ml-5 z-10 rounded" />
                     </div>
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
