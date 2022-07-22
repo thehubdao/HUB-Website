@@ -7,10 +7,10 @@ interface WorkingGroupCardProps {
 const WorkingGroupCard = ({ title, description }: WorkingGroupCardProps) => {
     return (
 
-        <div className={`mr-5 sm:mr-10 flex flex-col p-5 min-w-[16rem] xs:min-w-[20rem] sm:min-w-[24rem] rounded text-left bg-gray-300 hover:scale-[1.02] transition duration-200 ease-linear select-text`}>
+        <div className={`mr-5 flex flex-col p-5 min-w-[16rem] xs:min-w-[17rem] sm:min-w-[18rem] lg:min-w-[18.5rem] rounded-xl text-center bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear select-text`}>
 
-            <p className="text-black text-3xl font-semibold">{title}</p>
-            <p className="mt-3 text-black text-opacity-70 font-medium">{description}</p>
+            <p className="font-inter text-2xl text-pink-reco w-full pb-5">{title}</p>
+            <p className=" font-normal text-md grow ">{description}</p>
 
         </div>
 
