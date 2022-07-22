@@ -32,25 +32,28 @@ const ContributePage: NextPage = () => {
                         <div className="flex flex-col relative text-center max-w-full p-10 items-center rounded-xl bg-[#292929]  border-transparent border-opacity-5 ">
                             <p className={`text-sm text-center max-w-xl mb-6`}>MGH is a Decentralized Autonomous Organization, which means that MGH is community-driven. Implementing the MGH working groups is a huge step towards more contributions from the community side and from everyone who is interested in contributing to MGH’s ecosystem by earning rewards in form of MGH tokens. At MGH, we envision working groups of the next generation of employment and are looking very forward to your application. Visit the <a href="https://www.notion.so/13613b99202d4829865e3e199490e8cf?v=f1d9d6776ed64cfbaac6959ce7fb1a67" target="_blank" className={`text-pink-600`}>Operations Board</a> of the working groups to learn more about what MGH DAO is working on.</p>
                             <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
-                            <Button classes="text-sm" text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
-                            <Button classes="text-sm" text="Learn more" link="https://docs.metagamehub.io/governance/bounties/team-definition/working-group-wg"/>
+                                <Button classes="text-sm" text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
+                                <Button classes="text-sm" text="Learn more" link="https://docs.metagamehub.io/governance/bounties/team-definition/working-group-wg" />
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="flex overflow-x-auto pt-32 pb-16 no-scroll-bar max-w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5 mt-20">
 
                         {wgJSON.map((element, key) => {
                             return (
                                 <WorkingGroupCard key={key} title={element.title} description={element.description} />
                             );
                         })}
+
+
                     </div>
+
 
                     <div className="items-center space-y-6 flex-col sm:flex-row">
                         <Button classes="text-sm" text="Apply" link="https://forms.gle/QCf3hYRR9dn7Ztzj7" />
-                        <Button classes="text-sm" text="Learn more" link="https://docs.metagamehub.io/governance/bounties/team-definition/working-group-wg"/>
+                        <Button classes="text-sm" text="Learn more" link="https://docs.metagamehub.io/governance/bounties/team-definition/working-group-wg" />
                     </div>
                 </div>
             </main>
