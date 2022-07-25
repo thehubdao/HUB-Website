@@ -44,7 +44,7 @@ const Achievements = () => {
           </a>
 
           <a
-            href="https://governance.decentraland.org/proposal/?id=0cb35ba0-7e05-11ec-9447-6b730f00647d"
+            href="https://governance.decentraland.org/proposal/?id=4b6bb7e0-eed8-11ec-aa01-87bd234b340d"
             target="_blank"
             className="flex flex-col items-center justify-evenly text-center space-y-3 h-40 p-4 mb-28 lg:mb-0"
           >
