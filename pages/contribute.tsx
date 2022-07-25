@@ -20,11 +20,8 @@ const ContributePage: NextPage = () => {
             <Toolbar dark={true} />
 
             <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111]">
-
                 <div className="flex flex-col items-center w-full max-w-screen-lg px-10 sm:px-10">
-
                     <div className="flex flex-col lg:items-center space-x-0 space-y-10 w-full mb-10">
-
                         <div className="block">
                             <h1 className="text-gray-200 font-normal max-w-full text-center text-15/2xl sm:text-16/2xl md:text-17/2xl pb-0">WORKING</h1>
                             <h2 className="text-pink-500 text-center pt-0 text-6xl sm:text-8xl md:text-9xl">GROUPS</h2>

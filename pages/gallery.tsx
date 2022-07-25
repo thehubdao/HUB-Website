@@ -26,7 +26,7 @@ const GalleryPage: NextPage = () => {
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
                         <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
-                            <h3 className="font-normal text-blue-500">The<br />Sandbox</h3>
+                            <h3 className="font-normal text-blue-500">THE<br />SNADBOX</h3>
                             <img src="/images/Logos/Cryptos/webp/SAND.webp" className="absolute top-0 right-0 lg:left-0 h-full lg:h-2/3 grayscale opacity-10" />
                         </div>
                         <div className=" flex space-x-5 overflow-x-auto no-scroll-bar snap-x snap-mandatory">
@@ -55,7 +55,7 @@ const GalleryPage: NextPage = () => {
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
                         <div className="relative flex items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
-                            <h3 className="font-normal text-red-500">Decentraland</h3>
+                            <h3 className="font-normal text-red-500">DECENTRALAND</h3>
                             <img src="/images/Logos/Cryptos/webp/MANA.webp" className="absolute top-0 right-0 lg:left-0 h-full lg:h-2/3 grayscale opacity-10" />
                         </div>
                         <div className=" flex space-x-5 overflow-x-auto no-scroll-bar snap-x snap-mandatory">
@@ -78,7 +78,7 @@ const GalleryPage: NextPage = () => {
 
                     <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 w-full items-stretch">
                         <div className="relative flex flex-col sm:flex-row sm:items-end w-full lg:w-1/3 backdrop-blur-lg -mr-10 z-10 pr-10 rounded min-w-[30%] min-h-96">
-                            <h3 className="font-normal text-white">Sominium<br />Space</h3>
+                            <h3 className="font-normal text-white">SOMINIUM<br />SPACE</h3>
                             <img src="/images/Logos/webp/somnium-space-logo.webp" className="relative sm:absolute top-0 right-0 lg:left-0 max-h-24 sm:max-h-full sm:h-full lg:h-1/2 grayscale opacity-10" />
                         </div>
                         <div className=" flex space-x-5 overflow-x-auto no-scroll-bar snap-x snap-mandatory">
