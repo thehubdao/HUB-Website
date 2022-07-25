@@ -19,19 +19,17 @@ const TeamPage: NextPage = () => {
       </Head>
       <Toolbar dark={true} />
 
-      <main className='animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-48 px-5 sm:px-10'>
-        <h1 className='mb-10 text-gradient text-center font-normal'>
-          Core contributors
-        </h1>
+      <main className=' bg-[#111111] animate-fade-in-slow flex flex-col items-center pt-28 lg:pt-48 px-5 sm:px-10'>
+        <h1 className='mb-10 text-gray-200 text-center font-normal md:text-8xl'>CORE CONTRIBUTORS</h1>
         <Button text='Contribute' link='/contribute' />
 
-        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-7 py-8 mt-14'>
+        <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center w-full max-w-screen-2xl gap-5 py-8 mt-14'>
           {team.map((member, key) => (
             <MemberCard key={key} member={member} />
           ))}
         </ul>
-        <h1 className='pt-32 pb-10 text-center reverse-text-gradient font-normal'>Our Advisors</h1>
-        <ul className='members-grid justify-items-center w-full max-w-screen-2xl gap-7 py-8'>
+        <h1 className='mb-10 text-gray-200 text-center font-normal mt-16 md:text-8xl'>OUR ADVISORS</h1>
+        <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center w-full max-w-screen-2xl gap-7 py-8'>
           {advisors.map((advisor, key) => (
             <MemberCard key={key} member={advisor} advisor />
           ))}

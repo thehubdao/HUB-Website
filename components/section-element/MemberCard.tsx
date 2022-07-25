@@ -25,14 +25,12 @@ const MemberCard = ({
   advisor?: boolean
 }) => {
   // changing color whether member is an advisor or core team.
-  const iconColors = advisor
-    ? 'text-pink-500 hover:text-pink-600 '
-    : 'text-blue-400 hover:text-blue-600 '
+  const iconColors = 'text-slate-100 hover:text-slate-200 '
 
   return (
     <li
       className={
-        'w-full max-w-[350px] border-white border border-opacity-5 rounded-md text-gray-200 relative flex flex-col space-y-1 items-center lg:block text-center lg:text-left bg-grey-darkest'
+        'w-full max-w-[350px] border-white border border-opacity-5 rounded-md text-stone-400 space-y-1 items-center lg:block text-center bg-[#262626]'
       }
     >
       <Image
@@ -47,14 +45,13 @@ const MemberCard = ({
       />
       <h3
         className={
-          (advisor ? 'reverse-text-gradient ' : 'text-gradient ') +
-          'text-xl xl:text-2xl px-3 pt-2'
+          'text-pink-reco text-xl xl:text-2xl px-3 pt-2'
         }
       >
         {member.name}
       </h3>
-      <h4 className='text-base border-none font-light px-3 text-gray-400'>{member.position}</h4>
-      <ul className={`text-2xl w-full flex relative px-3 pt-3 justify-center space-x-3 lg:justify-start`}>
+      <h4 className='text-base border-none font-light px-3 text-stone-400'>{member.position}</h4>
+      <ul className={`text-2xl w-full flex relative px-3 pt-3 justify-center space-x-3`}>
         {member.linkedin && (
           <a href={member.linkedin} className='cursor-pointer' target='_blank'>
             <BsLinkedin

@@ -1,72 +1,38 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import Intro from "../components/section/Intro";
 import Footer from "../components/general/Footer";
-import Tokenomics from "../components/section/Tokenomics";
-import Roadmap from '../components/section/Roadmap';
-import Team from '../components/section/Team';
-import Partner from '../components/section/Collaborators';
-import Press from '../components/section/Press';
-import { Toolbar } from '../components';
-import DAO from '../components/section/DAO';
-import Ecosystem from '../components/section/Ecosystem';
-import Assets from '../components/section/Assets';
-import Tools from '../components/section/Tools';
-import Issues from '../components/section/Issues';
-import Blank from '../components/section/Blank';
-import Achievements from '../components/section/Achievements';
-
+import { Toolbar } from "../components";
+import { HomeCardsSection, HomeIntro } from "../components/homepage";
+import Achievements from "../components/section/Achievements";
+import Collaborators from "../components/section/Collaborators";
+import AvailableOn from "../components/section/AvailableOn";
 
 const Home: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>MetaGameHub DAO</title>
+        <meta
+          name="description"
+          content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data."
+        />
+      </Head>
+      <Toolbar dark={true} />
 
-    return (
-        <>
-            <Head>
-                <title>MetaGameHub DAO</title>
-                <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
-            </Head>
-            <Toolbar dark={true} />
+      <main className="text-gray-200 pt-[10vh] md:pt-40 min-h-full bg-[#111111]">
+        <div className="flex flex-col gap-36">
+          <HomeIntro />
+          <HomeCardsSection />
+          <Achievements />
+          <Collaborators />
+          <AvailableOn />
+        </div>
+      </main>
 
-            <main className="flex flex-col items-center text-gray-200 ">
-                <Intro />
+      <Footer />
+    </>
+  );
+};
 
-                <div className="max-w-full 2xl:max-w-screen-2xl flex flex-col space-y-48">
-
-
-
-                    <Ecosystem />
-
-                    <Issues />
-
-                    <Assets />
-
-                    <Tools />
-
-                    {/* <Blank /> */}
-
-                    <Tokenomics />
-
-                    <Achievements />
-
-                    <Roadmap />
-
-                    <DAO />
-
-                    <Team />
-
-                    <Partner />
-
-                    <Press />
-
-                </div>
-
-            </main>
-
-            <Footer />
-        </>
-    )
-}
-
-
-export default Home
+export default Home;
