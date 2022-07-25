@@ -112,7 +112,6 @@ const BuildPage: NextPage = () => {
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>Starter</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>Basic experience on small land</p>
-                            <p className='font-inter text-2xl text-pink-reco w-full'>$10k - 40k</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 appealing landscape<br />
                                 customer contact points<br />
@@ -125,7 +124,6 @@ const BuildPage: NextPage = () => {
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>Corporate</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>Richer experience on medium land</p>
-                            <p className='font-inter text-2xl text-pink-reco w-full'>$20k- 125k</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 larger appealing landscape<br />
                                 several customer contact points<br />
@@ -138,7 +136,6 @@ const BuildPage: NextPage = () => {
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>World</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>World-like experience on large land</p>
-                            <p className='font-inter text-2xl text-pink-reco w-full'>Custom</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
                                 very large appealing landscape<br />
                                 customer contact points as desired<br />
