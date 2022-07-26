@@ -112,21 +112,37 @@ const BuildPage: NextPage = () => {
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>Starter</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
-                                Basic experience on small land,  appealing landscape, customer contact points, basic asset collection, basic customer engagement model, minimal programming
+                                Basic experience on small land<br/>
+                                appealing landscape<br/>
+                                customer contact points<br/>
+                                basic asset collection<br/>
+                                basic customer engagement model<br/>
+                                minimal programming
                             </p>
                             <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>Corporate</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
-                                Richer experience on medium land, larger appealing landscape, several customer contact points, extended asset collection, refined customer engagement model, programming of basic custom behaviours
+                                Richer experience on medium land<br/>
+                                larger appealing landscape<br/>
+                                several customer contact points<br/>
+                                extended asset collection<br/>
+                                refined customer engagement model<br/>
+                                programming of basic custom behaviours
                             </p>
                             <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>World</p>
                             <p className={`font-normal text-md pb-5 grow text-stone-400`}>
-                                World-like experience on large land, very large appealing landscape, customer contact points as desired, big asset collection, optimal customer engagement model, programming of advanced custom behaviours</p>
+                                World-like experience on large land<br/>
+                                very large appealing landscape<br/> 
+                                customer contact points as desired<br/>
+                                big asset collection<br/>
+                                optimal customer engagement model<br/>
+                                programming of advanced custom behaviours
+                            </p>
                             <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
                         </div>
                     </div>
