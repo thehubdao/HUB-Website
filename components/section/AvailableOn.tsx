@@ -13,7 +13,7 @@ const AvailableOn = () => {
     return (
       <div className="text-center min-h-screen flex items-center justify-center">
         <div className="flex flex-col items-center ">
-          <h2 className='text-5xl text-center mb-16'>AVAILABLE ON:</h2>
+          <h2 className='text-5xl text-center mb-16'>AVAILABLE ON</h2>
 
           <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 self-center">
             <Partner
