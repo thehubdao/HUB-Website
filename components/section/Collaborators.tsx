@@ -8,7 +8,7 @@ const Collaborators = () => {
       className={`w-full flex flex-col items-center space-x-0 py-10 px-5 sm:px-10`}
     >
       <div className="w-20 flex items-center justify-center mb-16">
-        <h2 className={`font-normal`}>NETWORK</h2>
+        <h2 className={`font-normal`}>PARTNERS</h2>
       </div>
 
       <div className="relative mt-10 md:mt-0 w-full lg:w-4/5 grow-0 lg:grow grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
