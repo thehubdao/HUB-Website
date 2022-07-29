@@ -27,6 +27,7 @@ const HomeCardsSection = () => {
       src: "/images/HomeCards/USEPNG.png",
     },
   ];
+
   const horizontalCards: Omit<HomeCard, "title">[] = [
     {
       text: "Evaluate Metaverse LANDs",
@@ -37,7 +38,7 @@ const HomeCardsSection = () => {
     {
       text: "Build your experience in the Metaverse with us",
       link: "/build",
-      buttonText: "BUILD WITH US",
+      buttonText: "Build with us",
       src: "/images/HomeCards/BUILDWITHUSPNG.png",
     },
   ];

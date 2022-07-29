@@ -16,7 +16,7 @@ const HomeIntro = () => {
       {/* Bottom */}
       <div className="absolute bottom-12 -translate-x-2/4 left-2/4 md:left-auto md:translate-x-0 w-full">
         {/* Action Buttons and Big Text */}
-        <div className="md:pl-14 w-full">
+        <div className="md:pl-10 xl:pl-14 w-full">
           {/* Action Buttons */}
           <div className="flex flex-col z-30 gap-4 items-center md:flex-row md:justify-start mb-4 md:mb-0 w-max-full">
             <HomeActionButton
