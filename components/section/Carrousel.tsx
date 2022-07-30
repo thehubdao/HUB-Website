@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from 'framer-motion'
 
-const Carrousel = ({dataCarrousel}) => {
+const Carrousel = ({dataCarrousel}: any) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   
   const handleOnNextClick = () => {
@@ -14,12 +14,12 @@ const Carrousel = ({dataCarrousel}) => {
     setCurrentSlide(prevSlide)
   }
 
-  const handleSlide = (index) => {
+  const handleSlide = (index: number) => {
     const slide = Math.abs((index) % dataCarrousel.length)
     setCurrentSlide(slide)
   }
 
-  const indicatorButtons = dataCarrousel.map((slide, index) => <button key={index} className={`w-3 h-3 rounded-sm border ${(index === currentSlide) ? "w-12 bg-slate-50" : ""}`} onClick={() => handleSlide(index)}></button>)
+  const indicatorButtons = dataCarrousel.map((slide: any, index: number) => <button key={index} className={`w-3 h-3 rounded-sm border ${(index === currentSlide) ? "w-12 bg-slate-50" : ""}`} onClick={() => handleSlide(index)}></button>)
 
   return (
     <div className="max-w-screen-2xl m-auto h-full">
