@@ -25,7 +25,7 @@ const CarrouselGallery = ({ dataCarrousel }: any) => {
         <button
           type="button"
           className="flex relative z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none target"
-          onClick={() => {sideScroll(contentWrapper.current, 30, 500, -50)}}
+          onClick={() => {sideScroll(contentWrapper.current, 10, 500, -30)}}
         >
           <span className="inline-flex justify-center items-center w-8 h-8 rounded-full border group-hover:bg-white/50group-focus:outline-none">
             <svg aria-hidden="true" className="w-3 h-3 text-slate-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 19l-7-7 7-7"></path></svg>
@@ -36,7 +36,7 @@ const CarrouselGallery = ({ dataCarrousel }: any) => {
         <button
             type="button"
             className="flex relative z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            onClick={() => {sideScroll(contentWrapper.current, 30, 500, 50)}}
+            onClick={() => {sideScroll(contentWrapper.current, 10, 500, 30)}}
           >
             <span className="inline-flex justify-center items-center w-8 h-8 rounded-full border group-focus:outline-none">
               <svg aria-hidden="true" className="w-3 h-3 text-slate-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 5l7 7-7 7"></path></svg>
