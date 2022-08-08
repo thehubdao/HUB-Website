@@ -18,7 +18,7 @@ const links = {
   },
   discord: {
     icon: <FaDiscord className="text-6xl" />,
-    link: "https://discord.gg/KjMkxyYh",
+    link: "https://discord.gg/uG5XaP6ms3",
   },
   linkedin: {
     icon: <FaLinkedin className="text-6xl" />,
@@ -40,6 +40,7 @@ const JoinUs = () => {
               key={key}
               className=" w-28 p-6 bg-[#292929] transition-all hover:scale-110"
               href={links[key as keyof typeof links].link}
+              target="_blank"
             >
               {links[key as keyof typeof links].icon}
             </a>
