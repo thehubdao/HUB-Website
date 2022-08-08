@@ -55,7 +55,7 @@ const BuildPage: NextPage = () => {
                             <p className={`text-center max-w-xl mb-6`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
                             <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
                                 <Button classes="text-sm" text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
-                                <Button classes="text-sm" text="Book a meeting" link="https://calendly.com/nicolas-weber-1/30min"/>
+                                <Button classes="text-sm" text="Book a meeting" link="https://meetings.hubspot.com/youssef-gabsi"/>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const BuildPage: NextPage = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-5/6 gap-5">
                         <ToolCard title="Experienced Team" text="Our team got experience in coding on The SandBox, Decentraland and Somnium Space. We partner with global brands and artists to deliver you an all-in-one solution." link="/gallery" button="See Gallery" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
-                        <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://calendly.com/nicolas-weber-1/30min" button="Build with us" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
+                        <ToolCard title="Iterative Work Solution" text="Be an active part of the development by giving us regular feedback (iterative work method). Feel safe and in control by reviewing each step of the project evolution. To create your dream together." link="https://meetings.hubspot.com/youssef-gabsi" button="Build with us" classes="col-span-1 md:col-span-2 xs:max-w-full lg:col-span-1"/>
                         {/* <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm">
                             <h1>prueba</h1>
                             <h1>de </h1>
@@ -119,7 +119,7 @@ const BuildPage: NextPage = () => {
                                 basic customer engagement model<br/>
                                 minimal programming
                             </p>
-                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
+                            <Button text="Book a Package" link="https://meetings.hubspot.com/youssef-gabsi" />
                         </div>
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>Corporate</p>
@@ -131,7 +131,7 @@ const BuildPage: NextPage = () => {
                                 refined customer engagement model<br/>
                                 programming of basic custom behaviours
                             </p>
-                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
+                            <Button text="Book a Package" link="https://meetings.hubspot.com/youssef-gabsi" />
                         </div>
                         <div className={`flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-sm sm:max-w-full h-full`}>
                             <p className='font-inter text-2xl text-pink-reco w-full'>World</p>
@@ -143,7 +143,7 @@ const BuildPage: NextPage = () => {
                                 optimal customer engagement model<br/>
                                 programming of advanced custom behaviours
                             </p>
-                            <Button text="Book a Package" link="https://calendly.com/nicolas-weber-1/30min" />
+                            <Button text="Book a Package" link="https://meetings.hubspot.com/youssef-gabsi" />
                         </div>
                     </div>
                 </div>
