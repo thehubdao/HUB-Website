@@ -8,7 +8,7 @@ const HomeHorizontalCard = ({
   src,
 }: Omit<HomeCard, "title">) => {
   return (
-    <div className="p-8 bg-[#292929] rounded-xl h-[300px] w-[32 0px] lg:h-[350px] lg:w-[400px] xl:h-[400px] xl:w-[500px] relative 2xl:h-[510px] 2xl:w-[650px]">
+    <div className="p-8 bg-[#292929] rounded-xl h-[320px] w-[320px] lg:h-[340px] lg:w-[400px] xl:h-[400px] xl:w-[500px] relative 2xl:h-[510px] 2xl:w-[650px]">
       <div className="relative bottom-18 lg:bottom-24 xl:bottom-30 2xl:bottom-40">
         <img
           src={src}
@@ -20,7 +20,7 @@ const HomeHorizontalCard = ({
           <a
             role="button"
             href={link}
-            className="text-center block bg-pink-reco w-44 rounded-md py-1 transition-all hover:scale-105 font-medium"
+            className="absolute top-[19rem] lg:relative lg:top-0 text-center block bg-pink-reco w-44 rounded-md py-1 transition-all hover:scale-105 font-medium"
           >
             {buttonText}
           </a>

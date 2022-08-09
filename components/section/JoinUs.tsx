@@ -32,9 +32,9 @@ const links = {
 
 const JoinUs = () => {
   return (
-    <div className="text-center min-h-screen flex items-center justify-center">
+    <div className="text-center min-h-screen flex items-center justify-center mb-20">
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 justify-items-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-5 flex-wrap mb-10">
           {Object.keys(links).map((key) => (
             <a
               key={key}
@@ -46,7 +46,7 @@ const JoinUs = () => {
             </a>
           ))}
         </div>
-        <a href="/contribute"><h2 className="text-8xl">JOIN US!</h2></a>
+        <a href="/contribute"><h2 className="lg:text-8xl">JOIN US!</h2></a>
       </div>
     </div>
   );
