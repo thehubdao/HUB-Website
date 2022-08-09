@@ -7,7 +7,6 @@ import { FiExternalLink } from "react-icons/fi";
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
 import Partner from "../components/section-element/Partner";
-import TokenomicsPart from "../components/section-element/TokenomicsPart";
 
 const PriceChart = dynamic(
     () => import('../components/section-element/PriceChart'),

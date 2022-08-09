@@ -74,5 +74,17 @@
     {
         "link": "https://www.helsinkiblockchaincenter.com",
         "logo": "/images/Collaborators/helsinki-blochain-center.jpg"
+    },
+    {
+        "link": "https://www.moonbash.io/",
+        "logo": "/images/Collaborators/moonbash.png"
+    },
+    {
+        "link": "https://my.nrverse.io/",
+        "logo": "/images/Collaborators/nrverse.webp"
+    },
+    {
+        "link": "https://fitchin.gg/",
+        "logo": "/images/Collaborators/fitchin.png"
     }
 ]

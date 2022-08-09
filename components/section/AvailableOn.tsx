@@ -11,7 +11,7 @@ const links = {
 const AvailableOn = () => {
   {
     return (
-      <div className="text-center min-h-screen flex items-center justify-center">
+      <div className="text-center min-h-[60vh] flex items-center justify-center">
         <div className="flex flex-col items-center ">
           <h2 className='text-5xl text-center mb-16'>AVAILABLE ON</h2>
 

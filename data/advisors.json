@@ -55,41 +55,11 @@
     "linkedin": "https://www.linkedin.com/in/harald-horrmann/"
   },
   {
-    "name": "Sebastian Rocha",
-    "description": "Entrepreneur and DeFI enthusiast. Working on solutions for the frictionless use and movement of capital.",
-    "twitter": "https://twitter.com/RcBastian",
-    "linkedin": "https://www.linkedin.com/in/sebastian-rochac/",
-    "position": "ITRM",
-    "image": "/images/Advisors/webp/sebastian.webp"
-  },
-  {
-    "name": "Andres Fonseca",
-    "position": "ITRM",
-    "description": "Tech entrepreneur, economist, science enthusiast and Matrix believer. Constantly searching new ways to solve problems with the use of AI.",
-    "twitter": "https://twitter.com/andresfonsecad",
-    "linkedin": "https://www.linkedin.com/in/andresfonsecad/",
-    "image": "/images/Advisors/webp/andres.webp"
-  },
-  {
-    "name": "Wolfgang Männel",
-    "position": "Strategy Advisor",
-    "description": "Wolfgang Männel is a Venture Capital Investor in the Blockchain Space. In over 30 years of his international career, he has combined experience as an investor, consultant, and entrepreneur.",
-    "linkedin": "https://www.linkedin.com/in/wolfgang-maennel/",
-    "image": "/images/Advisors/webp/wolfgang.webp"
-  },
-  {
     "name": "Sagar Barvaliya",
     "position": "Blockrocket",
     "image": "/images/Advisors/webp/sagar.webp",
     "description": "Sagar is an Investment Manager at Blockrocket, A leading investor for early-stage blockchain-based startups. He is in charge of Blockrocket’s startup sourcing as well as portfolio management. An ex-Engineer with several years of work experience in the automotive sector of leading OEMs in Germany decided to dedicate his attention to the blockchain space a few years ago.",
     "linkedin": "https://www.linkedin.com/in/sagar-barvaliya-73337644/"
-  },
-  {
-    "name": "Max Zheng",
-    "position": "Strategy Advisor",
-    "description": "Head of Corporate Development in a European VC focusing on blockchain startups. Built and advised multiple blockchain startups.",
-    "image": "/images/Advisors/webp/max.webp",
-    "linkedin": "https://www.linkedin.com/in/max-zheng/"
   },
   {
     "name": "Federico Fernández",
@@ -108,70 +78,12 @@
     "linkedin": "https://www.linkedin.com/in/darryll-colthrust/"
   },
   {
-    "name": "Simon Olson",
-    "position": "General Advisor",
-    "description": "Venture Capital Investor and advisor at Founder Institute, Singularity University, Techstars, MIT Launch and Y-Combinator",
-    "twitter": "https://twitter.com/SimonOlsn",
-    "linkedin": "https://www.linkedin.com/in/simonolson/",
-    "image": "/images/Advisors/webp/simon.webp"
-  },
-  {
-    "name": "Alexander Strober",
-    "position": "Tech Advisor",
-    "description": "Business Analyst with 5+ years of experience in finance and tech in the banking industry. Alex worked on several EVM based blockchain projects.",
-    "image": "/images/Advisors/webp/alexander.webp"
-  },
-  {
     "name": "Marc Lanz",
     "position": "Workandsun Canarias",
     "description": "Co-founded, directed, owned and reinvented different companies and projects over the past 10 years, most of them in the digital sphere, delivering marketing strategies and overall business solutions for customers in diverse industries.",
     "image": "/images/Advisors/webp/marc.webp",
     "twitter": "https://twitter.com/marc_lanz",
     "linkedin": "https://www.linkedin.com/in/marclanz/"
-  },
-  {
-    "name": "Riccardo Silvestri",
-    "position": "Operations Advisor",
-    "description": "4+ years of experience in consulting and project management in Consumer Goods and Pharma. Strategic thinker and value builder.",
-    "image": "/images/Advisors/webp/riccardo.webp",
-    "twitter": "https://twitter.com/Riccsilvestri8",
-    "linkedin": "https://www.linkedin.com/in/riccardo-silvestri-b6632b158/"
-  },
-  {
-    "name": "Larry Pang",
-    "position": "IoTex",
-    "description": "Head of Business Development at IoTex. Experienced strategy consultant working with 15+ Fortune 500 clients in the Tech & Finance sector.",
-    "linkedin": "https://www.linkedin.com/in/larry-pang/ ",
-    "twitter": "https://twitter.com/larrypang",
-    "image": "/images/Advisors/webp/larry.webp"
-  },
-  {
-    "name": "Tomal Ganuly",
-    "position": "Detecom / Telekom",
-    "description": "Globally experienced manager with a strong passion for blockchain technology, the Automotive industry, and DLT related start-ups, consulting international corporations in terms of strategy and digitalization.",
-    "linkedin": "https://www.linkedin.com/in/tganguly/",
-    "image": "/images/Advisors/webp/tomal.webp"
-  },
-  {
-    "name": "Wolfgang Krämer",
-    "position": "Detecom / Telekom",
-    "description": "15+ years of experience in international strategy and management consulting.",
-    "linkedin": "https://www.linkedin.com/in/wolfgang-kraemer/",
-    "image": "/images/Advisors/webp/wolfgang-krämer.webp"
-  },
-  {
-    "name": "Simon Peters",
-    "position": "DECUS Network GmbH",
-    "linkedin": "https://www.linkedin.com/in/snj-peters/",
-    "image": "/images/Advisors/webp/simon-peters.webp",
-    "description": "Managing Director of DECUS Network. All-in entrepreneur with a passion for challenging markets and disruptive technology."
-  },
-  {
-    "name": "Ricardo Parro",
-    "position": "Tech Advisor / Visionary",
-    "linkedin": "https://www.linkedin.com/in/ricardoparro/",
-    "image": "/images/Advisors/webp/ricardo.webp",
-    "description": "15 years experience working with startups as a CTO and software engineer."
   },
   {
     "name": "Justin Goldston",

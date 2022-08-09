@@ -18,7 +18,7 @@ const links = {
   },
   discord: {
     icon: <FaDiscord className="text-6xl" />,
-    link: "https://discord.gg/KjMkxyYh",
+    link: "https://discord.gg/uG5XaP6ms3",
   },
   linkedin: {
     icon: <FaLinkedin className="text-6xl" />,
@@ -32,20 +32,21 @@ const links = {
 
 const JoinUs = () => {
   return (
-    <div className="text-center min-h-screen flex items-center justify-center">
+    <div className="text-center min-h-screen flex items-center justify-center mb-20">
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 justify-items-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-5 flex-wrap mb-10">
           {Object.keys(links).map((key) => (
             <a
               key={key}
               className=" w-28 p-6 bg-[#292929] transition-all hover:scale-110"
               href={links[key as keyof typeof links].link}
+              target="_blank"
             >
               {links[key as keyof typeof links].icon}
             </a>
           ))}
         </div>
-        <a href="/contribute"><h2 className="text-8xl">JOIN US!</h2></a>
+        <a href="/contribute"><h2 className="lg:text-8xl">JOIN US!</h2></a>
       </div>
     </div>
   );

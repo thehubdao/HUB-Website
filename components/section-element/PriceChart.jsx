@@ -103,6 +103,7 @@ const PriceChart = ({ chartData }) => {
 
     return (
         <Chart
+            className="text-black"
             options={options}
             series={series}
             type="area"
