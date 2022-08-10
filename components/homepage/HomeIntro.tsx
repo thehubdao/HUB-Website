@@ -19,7 +19,7 @@ const HomeIntro = () => {
         <div className="md:pl-10 xl:pl-14 w-full">
 
           {/* Text Box */}
-          <div className="flex flex-col gap-4 md:gap-0 w-full">
+          <div className="flex flex-col gap-4 md:gap-0 w-full pb-6">
             <h1 className="text-5xl xs:text-6xl text-center md:text-left md:text-9xl pb-0 text-gray-200 z-20">
               METAGAMEHUB<span className="md:hidden"> DAO</span>
             </h1>
