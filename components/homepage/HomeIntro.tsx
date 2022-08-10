@@ -10,7 +10,7 @@ const HomeIntro = () => {
         muted
         className="w-full min-h-screen absolute top-0 object-cover h-screen object-center"
       >
-        <source src="/videos/bgvideo.mp4" type="video/mp4" />
+        <source src="https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Videos/bgvideo.mp4" type="video/mp4" />
       </video>
 
       {/* Bottom */}
