@@ -32,7 +32,7 @@ const HomeIntro = () => {
                   Navigating through the Open Metaverse together
                 </h3>
                 <p className="m-auto md:m-0 w-full text-md md:text-xl">
-                  MetaGameHub DAO is building the Homebase within the Open Metaverse to foster and intuitive, aggregated user experience
+                  MetaGameHub DAO is building the Homebase within the Open Metaverse to foster an intuitive, aggregated user experience
                 </p>
               </div>
             </div>
