@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Find undervalued Metaverse LAND with our AI supported valuation tools.",
+    "title": "INVEST",
+    "link": "https://app.metagamehub.io/valuation",
+    "buttonText": "Valuation Tool",
+    "src": "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/INVESTPNG.png"
+  },
+  {
+    "text": "Leverage our game development group to create your metaverse experiences.",
+    "title": "BUILD",
+    "link": "/build",
+    "buttonText": "Game Dev",
+    "src": "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/BUILDPNG.png"
+  },
+  {
+    "text": "Explore a variety of tools for a convenient journey through the Open Metaverse.",
+    "title": "USE",
+    "link": "/tools",
+    "buttonText": "Metaverse Tools",
+    "src": "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/USEPNG.png"
+  }
+]

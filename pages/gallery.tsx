@@ -6,68 +6,13 @@ import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
 import CarrouselGallery from "../components/section/CarrouselGallery";
 
+//data import
+import Sandbox from "../data/Gallery/Sandbox.json"
+import Decentraland from "../data/Gallery/Decentraland.json"
+import SomniumSpace from "../data/Gallery/SomniumSpace.json"
+
 
 const GalleryPage: NextPage = () => {
-
-    const Sandbox = {
-        title: "The Sandbox",
-        images: [
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/1.png",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/2.png",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/3.png",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/4.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/5.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/6.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/7.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/8.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/9.png",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/10.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/11.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/12.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/13.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/14.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/15.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/16.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/17.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/18.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/19.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Sandbox/20.png.webp",
-        ]
-    }
-
-    const Decentraland = {
-        title: "Decentraland",
-        images: [
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/1.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/2.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/3.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/4.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/5.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/6.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/7.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/8.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/9.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/10.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/11.jpg.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/12.jpg.webp",
-        ]
-    }
-
-    const SomniumSpace = {
-        title: "Somnium Space",
-        images: [
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/1.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/2.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/3.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/4.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/5.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/6.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/7.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/8.png.webp",
-            "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/9.png.webp",
-        ]
-    }
-
     return (
         <>
             <Head>
