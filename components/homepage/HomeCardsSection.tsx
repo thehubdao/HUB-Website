@@ -10,21 +10,21 @@ const HomeCardsSection = () => {
       title: "INVEST",
       link: "https://app.metagamehub.io/valuation",
       buttonText: "Valuation Tool",
-      src: "/images/HomeCards/INVESTPNG.png",
+      src: "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/INVESTPNG.png",
     },
     {
       text: "Leverage our game development group to create your metaverse experiences.",
       title: "BUILD",
       link: "/build",
       buttonText: "Game Dev",
-      src: "/images/HomeCards/BUILDPNG.png",
+      src: "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/BUILDPNG.png",
     },
     {
       text: "Explore a variety of tools for a convenient journey through the Open Metaverse.",
       title: "USE",
       link: "/tools",
       buttonText: "Metaverse Tools",
-      src: "/images/HomeCards/USEPNG.png",
+      src: "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/USEPNG.png",
     },
   ];
 
@@ -33,13 +33,13 @@ const HomeCardsSection = () => {
       text: "Evaluate Metaverse LANDs",
       link: "https://app.metagamehub.io/valuation",
       buttonText: "Evaluate LANDs",
-      src: "/images/HomeCards/EVALUATELANDSPNG.png",
+      src: "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/EVALUATELANDSPNG.png",
     },
     {
       text: "Build your experience in the Metaverse with us",
       link: "/build",
       buttonText: "Build with us",
-      src: "/images/HomeCards/BUILDWITHUSPNG.png",
+      src: "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/HomeCards/BUILDWITHUSPNG.png",
     },
   ];
 
