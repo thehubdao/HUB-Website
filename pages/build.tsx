@@ -39,6 +39,8 @@ const BuildPage: NextPage = () => {
                     </div>
 
                     <video
+                        onContextMenu={() => false}
+                        controlsList="nodownload"
                         controls
                         className="w-full object-cover object-center max-w-2xl  mb-44"
                     >
