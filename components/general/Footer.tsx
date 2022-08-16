@@ -138,10 +138,10 @@ const Footer = () => {
         </div>
 
         <a
-          href="mailto:info@metagamehub.org"
+          href="https://docs.metagamehub.io/our-ecosystem/business"
           className="pt-3 text-gray-400 hover:text-pink-500 transition duration-200"
         >
-          info@metagamehub.org
+          Business & Partnership Proposals
         </a>
       </div>
 

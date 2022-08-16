@@ -54,7 +54,7 @@ const BuildPage: NextPage = () => {
                         <div className="flex flex-col relative text-center p-10 items-center justify-center rounded-xl bg-[#292929] hover:scale-[1.02] transition duration-200 ease-linear border-transparent border-opacity-5 max-w-full sm:max-w-2xl text-stone-400">
                             <p className={`text-sm text-center max-w-xl mb-6`}>We are creating meaningful experiences for your audience with an individual and lasting appeal. With our experts in the field of Game Design, we are able to deliver true value and create places that people enjoy and are eager to come back to.</p>
                             <div className="flex items-center space-x-0 sm:space-x-10 flex-col sm:flex-row">
-                                <Button classes="text-sm" text="Meet our Devs." link="https://twitter.com/mgh_metadev" />
+                                <Button classes="text-sm" text="Meet our Devs." link="/team" />
                                 <Button classes="text-sm" text="Book a meeting" link="https://calendly.com/nicolas-weber-1/30min"/>
                             </div>
                         </div>
