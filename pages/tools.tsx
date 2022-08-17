@@ -22,7 +22,7 @@ const TokenPage: NextPage = () => {
         <div className="flex flex-col items-center space-y-24 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
           <h1 className="text-gray-200 text-8xl text-center">MGH TOOLS</h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <ToolCard
               title="Datasets"
               text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace"
@@ -36,12 +36,6 @@ const TokenPage: NextPage = () => {
               button="Get Data"
             />
             <ToolCard
-              title="Valuation Interface"
-              text="AI price estimations and analytics for Metaverse assets (The Sandbox, Decentraland, Axie Infinity, Somnium Space)"
-              link="https://app.metagamehub.io/valuation"
-              button="Launch App"
-            />
-            <ToolCard
               title="Valuation API"
               text="Easy access and integration of our price estimations for Asset Managers, Funds, NFT Marketplaces and many more"
               link="https://api.metagamehub.io"
@@ -50,14 +44,21 @@ const TokenPage: NextPage = () => {
             <ToolCard
               title="DCL Edit"
               text="The first editor for the Decentraland SDK. Use it to easily build Metaverse experiences with no coding knowledge"
+              textClasses="lg:px-30"
+              link="https://dcl-edit.com/"
+              button="Try it out!"
             />
             <ToolCard
               title="Metaverse Staking Protocol"
               text="Stake your $MANA and $SAND on a vault that leverages a trading bot and our AI price estimation algorithm to buy and sell LANDs on established NFT marketplaces. All the profits are shared between the stakers"
-              classes="col-span-1 md:col-span-2 md:max-w-fit"
-              textClasses="lg:px-52"
               link="https://docs.metagamehub.io/metaverse-tools/metafi"
               button="Coming soon!"
+            />
+            <ToolCard
+              title="Valuation Interface"
+              text="AI price estimations and analytics for Metaverse assets (The Sandbox, Decentraland, Axie Infinity, Somnium Space)"
+              link="https://app.metagamehub.io/valuation"
+              button="Launch App"
             />
           </div>
         </div>
