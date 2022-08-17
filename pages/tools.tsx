@@ -22,7 +22,7 @@ const TokenPage: NextPage = () => {
         <div className="flex flex-col items-center space-y-24 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
           <h1 className="text-gray-200 text-8xl text-center">MGH TOOLS</h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <ToolCard
               title="Datasets"
               text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace"
@@ -37,33 +37,27 @@ const TokenPage: NextPage = () => {
             />
             <ToolCard
               title="Valuation Interface"
-              text="MGH dApp LAND Valuation Interface for The Sandbox and Decentraland (Axie Infinity cooming soon!)"
+              text="AI price estimations and analytics for Metaverse assets (The Sandbox, Decentraland, Axie Infinity, Somnium Space)"
               link="https://app.metagamehub.io/valuation"
               button="Launch App"
             />
             <ToolCard
-              title="$MGH Staking"
-              text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens."
-              link="https://app.metagamehub.io/stake"
-              button="Stake $MGH"
-            />
-            <ToolCard
               title="Valuation API"
-              text="Direct API access and widget creation and integration for Assetmanager, DeFi Protocols, NFT Marketplaces, and many more"
+              text="Easy access and integration of our price estimations for Asset Managers, Funds, NFT Marketplaces and many more"
               link="https://api.metagamehub.io"
               button="Documentation"
             />
             <ToolCard
-              title="NFT Pools"
-              text="Users can select a pool based on their NFTs, lock them in along with MGH as collateral and mint NFT Pool Tokens in return. This allows the user to diversify their NFT holdings and hedge their overall exposure."
-              link="https://app.metagamehub.io/pools"
-              button="Launch App"
+              title="DCL Edit"
+              text="The first editor for the Decentraland SDK. Use it to easily build Metaverse experiences with no coding knowledge"
             />
             <ToolCard
-              title="LAND Trading Bot"
-              text="By staking MGH tokens users can passively earn rewards. The community can also earn Liquidity Pool tokens (LP) by providing MGH tokens and NPTs to the MGH/NPT Liquidity Pool. The LPs can be staked afterwards to farm additional MGH tokens."
-              classes="col-span-1 md:col-span-2 lg:col-span-3 md:max-w-fit"
+              title="Metaverse Staking Protocol"
+              text="Stake your $MANA and $SAND on a vault that leverages a trading bot and our AI price estimation algorithm to buy and sell LANDs on established NFT marketplaces. All the profits are shared between the stakers"
+              classes="col-span-1 md:col-span-2 md:max-w-fit"
               textClasses="lg:px-52"
+              link="https://docs.metagamehub.io/metaverse-tools/metafi"
+              button="Coming soon!"
             />
           </div>
         </div>
