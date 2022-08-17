@@ -26,6 +26,7 @@ const TokenPage: NextPage = () => {
             <ToolCard
               title="Datasets"
               text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace"
+              textClasses="lg:px-25"
               link="https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd"
               button="Buy Datasets"
             />
@@ -50,6 +51,7 @@ const TokenPage: NextPage = () => {
             />
             <ToolCard
               title="Metaverse Staking Protocol"
+              textClasses="text-sm"
               text="Stake your $MANA and $SAND on a vault that leverages a trading bot and our AI price estimation algorithm to buy and sell LANDs on established NFT marketplaces. All the profits are shared between the stakers"
               link="https://docs.metagamehub.io/metaverse-tools/metafi"
               button="Coming soon!"
