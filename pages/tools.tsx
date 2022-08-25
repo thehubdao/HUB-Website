@@ -4,40 +4,71 @@ import Head from "next/head";
 
 import Footer from "../components/general/Footer";
 import Toolbar from "../components/general/Toolbar";
-import MetaFi from "../components/section/MetaFi";
-import Dataverse from "../components/section/Dataverse";
-
+import ToolCard from "../components/section-element/ToolCard";
 
 const TokenPage: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>MGH - Metaverse Tools</title>
+        <meta
+          name="description"
+          content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data."
+        />
+      </Head>
+      <Toolbar dark={true} />
 
-    return (
-        <>
-            <Head>
-                <title>MGH - Metaverse Tools</title>
-                <meta name="description" content="Governance of metaverse related items, fair valuation and minting of NFT backed tokens and provision of metaverse market data." />
-            </Head>
-            <Toolbar dark={true} />
+      <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full bg-[#111111] xl:px-24 pb-3">
+        <div className="flex flex-col items-center space-y-24 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
+          <h1 className="text-gray-200 text-8xl text-center">MGH TOOLS</h1>
 
-            <main className="flex flex-col items-center text-gray-200 pt-28 lg:pt-48 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <ToolCard
+              title="Datasets"
+              text="Datasets containing key stats about Metaverse LANDs on the OCEAN Marketplace"
+              textClasses="lg:px-25"
+              link="https://market.oceanprotocol.com/asset/did:op:8331D69bF312604542D5f5f41D859dA27568B7cd"
+              button="Buy Datasets"
+            />
+            <ToolCard
+              title="Chainlink Oracle"
+              text="MGH Chainlink Oracle Node providing on-chain valuation data"
+              link="https://market.link/data-providers/5a443923-252a-4208-8b4e-b01c04ff6fa4/integrations"
+              button="Get Data"
+            />
+            <ToolCard
+              title="Valuation API"
+              text="Easy access and integration of our price estimations for Asset Managers, Funds, NFT Marketplaces and many more"
+              link="https://api.metagamehub.io"
+              button="Documentation"
+            />
+            <ToolCard
+              title="DCL Edit"
+              text="The first editor for the Decentraland SDK. Use it to easily build Metaverse experiences with no coding knowledge"
+              textClasses="lg:px-30"
+              link="https://dcl-edit.com/"
+              button="Try it out!"
+            />
+            <ToolCard
+              title="Metaverse Staking Protocol"
+              textClasses="text-sm"
+              text="Stake your $MANA and $SAND on a vault that leverages a trading bot and our AI price estimation algorithm to buy and sell LANDs on established NFT marketplaces. All the profits are shared between the stakers"
+              link="https://docs.metagamehub.io/metaverse-tools/metafi"
+              button="Coming soon!"
+            />
+            <ToolCard
+              title="Valuation Interface"
+              text="AI price estimations and analytics for Metaverse assets (The Sandbox, Decentraland, Axie Infinity, Somnium Space)"
+              link="https://app.metagamehub.io/valuation"
+              button="Launch App"
+            />
+          </div>
+        </div>
+      </main>
 
-                <div className="flex flex-col space-y-44 w-full 2xl:max-w-screen-2xl px-5 sm:px-10">
-
-                    <div className="flex items-center text-center space-x-10 w-full pb-20">
-                        <h2 className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-pink-600 font-normal">MGH DAO is building a user focused homebase via development and aggregation for an intuitive and interoperable Open Metaverse Experience.</h2>
-                    </div>
-
-                    <Dataverse />
-                    <MetaFi />
-
-                </div>
-            </main>
-
-            <Footer />
-
-
-        </>
-    )
+      <Footer />
+    </>
+  );
 };
-
 
 export default TokenPage;
