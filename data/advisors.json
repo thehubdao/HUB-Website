@@ -180,5 +180,12 @@
     "twitter": "https://twitter.com/phd_justin",
     "image": "/images/Advisors/justin.jpg",
     "description": "Professor, Founder, Author, and Five-Time TEDx speaker on blockchain looking to democratize education with the metaverse."
+  },
+  {
+    "name": "Dr. Holger Sprengel",
+    "position": "",
+    "linkedin": "https://www.linkedin.com/in/holgersprengel/",
+    "image": "/images/Advisors/holger.jpg",
+    "description": "Entrepreneur, business angel, innovator & advisor - building ventures since 1999."
   }
 ]
