@@ -29,7 +29,7 @@ const Carrousel = ({dataCarrousel}: any) => {
           initial={{ scale: 0.9 }}
           animate={{ scale: 1  }}
           exit={{ scale: 0.9 }}
-          className="flex h-80vh min-h-75vh md:h-auto md:w-80vw 2xl:w-full items-center animate-fade-in-slow"
+          className="flex h-80vh min-h-75vh md:h-auto md:w-80vw max-w-screen-2xl items-center animate-fade-in-slow"
         >
           <img src={dataCarrousel[(currentSlide + 1) % dataCarrousel.length].image} className="hidden absolute rounded-3xl object-cover h-full w-full" alt="background image" />
           <img src={dataCarrousel[currentSlide].image} className="absolute rounded-3xl object-cover h-full w-full" alt="background image" />
