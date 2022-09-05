@@ -16,6 +16,22 @@
     "twitter": "https://twitter.com/innoprenuer"
   },
   {
+    "name": "Sebastien Borget",
+    "position": "Strategy Advisor",
+    "image": "/images/Advisors/sebastien.jpeg",
+    "linkedin": "https://www.linkedin.com/in/borgetsebastien/",
+    "twitter": "https://twitter.com/borgetsebastienr",
+    "description": "Co-Founder & COO of The Sandbox. President of the Blockchain Game Alliance, advocating for NFTs & blockchain in games."
+  },
+  {
+    "name": "Hamzah Khan",
+    "position": "Strategy Advisor",
+    "image": "/images/Advisors/hamzah.jpeg",
+    "linkedin": "https://www.linkedin.com/in/hamzahkhan1/",
+    "twitter": "https://twitter.com/_khanhamzah",
+    "description": "Head of DeFi at Polygon. Passionate about bringing open financial technology to the world"
+  },
+  {
     "name": "Nova Lorraine",
     "position": "Creative & Branding Advisor",
     "image": "/images/Advisors/webp/nova.webp",
