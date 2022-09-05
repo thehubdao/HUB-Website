@@ -80,33 +80,33 @@ const Achievements = () => {
           
         </div>
 
-        <div className="relative mt-10 w-full grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center max-w-max">
+        <div className="relative mt-10 w-full grid gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center max-w-max">
 
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">30+</p>
             <p className="text-gray-400">
               Core contributors from all over the world
             </p>
           </div>
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">$1.6 Mio</p>
             <p className="text-gray-400">
               Decentralized community fundraise
             </p>
           </div>
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">160,000+</p>
             <p className="text-gray-400">
               Average monthly requests on valuation tool
             </p>
           </div>
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <p className="text-xl text-pink-500 font-inter">10,000+</p>
             <p className="text-gray-400">
               Organic members in groups across channels
             </p>
           </div>
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <img
               src="/images/Logos/Cryptos/svgs/BUILD.svg"
               className="w-auto h-16"
@@ -116,7 +116,7 @@ const Achievements = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <img
               src="/images/Logos/Cryptos/webp/MANA.webp"
               className="w-auto h-16"
@@ -125,7 +125,7 @@ const Achievements = () => {
               DCL-Edit launch with Decentraland Team
             </p>
           </div>
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <img
               src="/images/Logos/Cryptos/webp/MATIC.webp"
               className="w-auto h-16"
@@ -135,7 +135,7 @@ const Achievements = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-evenly text-center bg-[#262626] h-40 w-56 py-10 px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
+          <div className="flex flex-col items-center justify-evenly text-center p-2 bg-[#262626] h-[140px] w-[160px] py-[20px] md:h-40 md:w-56 md:py-10 md:px-3 hover:scale-105 transition duration-200 ease-linear border-white border border-opacity-5 rounded-md">
             <img
               src="/images/Logos/Cryptos/svgs/INTERNSHIP.svg"
               className="w-auto h-16"
