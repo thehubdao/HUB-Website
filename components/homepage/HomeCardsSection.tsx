@@ -12,7 +12,7 @@ const HomeCardsSection = () => {
   const horizontalCards: Omit<HomeCard, "title">[] = horizontalCardsData
 
   return (
-    <section className="p-20 min-h-screen w-full">
+    <section className="p-10 min-h-screen w-full">
       {/* Horizontal Cards */}
       <ul className="flex flex-col md:flex-row w-full items-center xl:justify-center md:justify-around gap-16 xl:gap-8 mb-16 sm:mb-0">
         {horizontalCards.map(({ text, buttonText, link, src }) => (
