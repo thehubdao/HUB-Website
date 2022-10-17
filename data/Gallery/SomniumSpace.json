@@ -1,14 +1,14 @@
 {
   "title": "Somnium Space",
   "images": [
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/1.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/2.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/3.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/4.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/5.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/6.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/7.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/8.png.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/SomniumSpace/9.png.webp"
+      "/images/Gallery/SomniumSpace/1.png.webp",
+      "/images/Gallery/SomniumSpace/2.png.webp",
+      "/images/Gallery/SomniumSpace/3.png.webp",
+      "/images/Gallery/SomniumSpace/4.png.webp",
+      "/images/Gallery/SomniumSpace/5.png.webp",
+      "/images/Gallery/SomniumSpace/6.png.webp",
+      "/images/Gallery/SomniumSpace/7.png.webp",
+      "/images/Gallery/SomniumSpace/8.png.webp",
+      "/images/Gallery/SomniumSpace/9.png.webp"
   ]
 }

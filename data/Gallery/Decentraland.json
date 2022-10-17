@@ -1,17 +1,17 @@
 {
   "title": "Decentraland",
   "images": [
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/1.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/2.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/3.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/4.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/5.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/6.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/7.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/8.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/9.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/10.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/11.jpg.webp",
-      "https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Images/Gallery/Decentraland/12.jpg.webp"
+      "/images/Gallery/Decentraland/1.jpg.webp",
+      "/images/Gallery/Decentraland/2.jpg.webp",
+      "/images/Gallery/Decentraland/3.jpg.webp",
+      "/images/Gallery/Decentraland/4.jpg.webp",
+      "/images/Gallery/Decentraland/5.jpg.webp",
+      "/images/Gallery/Decentraland/6.jpg.webp",
+      "/images/Gallery/Decentraland/7.jpg.webp",
+      "/images/Gallery/Decentraland/8.jpg.webp",
+      "/images/Gallery/Decentraland/9.jpg.webp",
+      "/images/Gallery/Decentraland/10.jpg.webp",
+      "/images/Gallery/Decentraland/11.jpg.webp",
+      "/images/Gallery/Decentraland/12.jpg.webp"
   ]
 }
