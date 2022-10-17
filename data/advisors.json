@@ -122,5 +122,13 @@
     "linkedin": "https://www.linkedin.com/in/ficha-sanchez-00319976/",
     "image": "/images/Advisors/ficha.jpeg",
     "description": "Journalist with more than 20 years experience in broadcasting and sports industry. Now working on fan engagement and metaverse solutions for clubs and federations."
+  },
+  {
+    "name": "Dennis Weidner",
+    "position": "",
+    "linkedin": "https://www.linkedin.com/in/dennis-weidner/",
+    "twitter": "https://twitter.com/Weidner_Dennis",
+    "image": "/images/Advisors/dennis.jpeg",
+    "description": "German Crypto & NFT Investor. He is running a Gaming Guild on Polygon and invested in >1000 NFTs already. He is building with Cryptoticker.io an educational Crypto platform to drive mass adoption forward."
   }
 ]
