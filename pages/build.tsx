@@ -44,7 +44,7 @@ const BuildPage: NextPage = () => {
                         controls
                         className="w-full object-cover object-center max-w-2xl  mb-44"
                     >
-                        <source src="https://mgh-webside-assets.s3.eu-central-1.amazonaws.com/Videos/mgh_trailer.mp4" type="video/mp4" />
+                        <source src="https://mgh-website.s3.amazonaws.com/MGH+Trailer+Raw.mp4" type="video/mp4" />
                     </video>
 
                     <h1 className="font-normal mb-10 text-7xl text-center">WHAT MGH OFFERS</h1>
